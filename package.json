@@ -1,0 +1,33 @@
+{
+  "name": "raku",
+  "version": "1.0.0",
+  "description": "Restaurant Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mbarbotiko/Raku.git"
+  },
+  "keywords": [
+    "Sushi",
+    "Restaurant",
+    "Happy",
+    "Hour",
+    "Drinks",
+    "West",
+    "End"
+  ],
+  "author": "Margarita Barbotiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mbarbotiko/Raku/issues"
+  },
+  "homepage": "https://github.com/Mbarbotiko/Raku#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "sass": "^1.16.1"
+  }
+}

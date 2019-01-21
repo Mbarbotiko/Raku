@@ -1,0 +1,402 @@
+body, html{
+    margin-top:-10px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-toggler{
+    position: absolute;
+    right:10%;
+    top:50%;   
+}
+
+.homepage-landing{
+    background-color:black;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    top:0px;
+    left:0px;
+    height:110vh;
+    width:100vw;
+    z-index:1;
+    height: 110vmin;
+    overflow: hidden;
+}
+
+.homepage-landing img{
+    width: 110vw;
+    height:110vh;
+    position: absolute;
+    left:0;
+    top:0;
+    object-fit: cover;
+
+}
+
+#blackoverlay{
+    background: black;
+    opacity:.5;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    display: table;
+    width: 110vw;
+    height:110vh;
+
+}
+
+@keyframes firstLandingtransition {
+	0% {
+       
+        opacity:0;
+    }
+    40% {
+        
+        opacity:1;
+    }
+  
+    90% {
+       
+        opacity:0
+    }
+    100% {
+      
+        opacity:.0
+    }
+
+
+}
+
+/* #first .top{
+	animation-name: firstLandingtransition;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+
+} */
+
+
+.homepage-landing .bottom{
+	animation-name: firstLandingtransition;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    animation-duration: 15s;
+
+}
+
+#homepage-header{
+    width: 40%;
+    position:relative;
+    margin:auto;
+    top:18rem;
+    text-align: center;
+    color:white;
+    height: 80vh;
+    overflow: hidden;
+ 
+}
+
+#main-nav{
+    background-color:rgba(5, 5, 5, 0.3)!important;
+    position: absolute;
+    z-index: 2;
+    width:100%;
+    letter-spacing: 10px;
+
+}
+
+/* .mr-auto{
+   display:block;
+   width: 50%;
+   text-align: center;
+   margin:auto 0;
+  
+}
+
+.nav-item{
+
+} */
+
+
+.nav-item span{
+    color:white;
+    
+}
+
+/* .navbar-nav{
+    margin-top:3vh;
+
+} */
+
+.bg-light{
+    padding-top:4vh;
+}
+
+
+
+.nav-link{
+    color:white!important;
+    border-bottom:1px solid rgb(57, 196, 57);   
+
+}
+
+.nav-link:hover{
+    color:rgb(57, 196, 57)!important;
+}
+
+#homepage-header h1{
+    line-height: 150%;
+}
+.homepage-headline span{
+    color:rgb(57, 196, 57);
+}
+
+
+.logo{
+    width:250px;
+   position:relative;
+   margin-top:25px;
+   left:0px;
+
+}
+
+.homepage-headline{
+    font-size:7vw;
+    font-size:6.5vh;
+}
+
+.homepageheader-subtext{
+    margin:auto;
+    font-size:3vw;
+    font-size:3vh;
+    width:75%;
+    margin-top:5em;
+}
+
+.feature.left{
+    background-color:white;
+    color:black;
+    width:50%;
+    float:left;
+
+}
+
+.feature.right{
+    background-color:black;
+    color:white;
+    width:50%;
+    float:left;    
+}
+
+.feature{
+    text-align: center;
+    height:1.5em;
+    font-size:2.5em;
+    position: relative;
+    z-index:2;
+}
+
+.strike.left{
+    left:25%;
+
+}
+
+.strike.right{
+
+    right:-25%;
+  
+}
+
+.strike{
+    border-top:2px rgb(52, 231, 112) solid;
+    width:50%;
+    height:200px;
+    float:left;
+    position:relative;
+    top:-35px;
+    z-index:-1;
+    opacity: .5;
+
+}
+
+.dishes-header{
+    position:relative;
+    font-size:2.5em;
+    margin:auto 0;
+    text-align: center;
+    top:1em;
+
+}
+
+.ingredients{
+    position:relative;
+    font-size:1.5em;
+    margin:auto 0;
+    text-align: center;
+    top:2em;
+       
+}
+
+   .ingredients span{
+        font-size: 1.75em;
+    }
+
+
+#dishes .dish{
+    width:25%;
+    float: left;
+    background-size:cover;
+    height:300px;
+    background-position:center;
+    
+  
+}
+
+.ingredients span{
+    color:rgb(57, 196, 57);
+    font-size:20pt;
+}
+
+#dishes .dish>div{
+    position: relative;
+    background: black;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .5s;
+    transition-duration: 1.5s;
+    display: table;
+    height:300px;
+    border: white solid 1.5px;
+
+}
+
+
+#dishes .dish:hover > div {
+	opacity: 0.7;
+}
+
+
+
+.dish1{
+    background-image:url("../images/dish1.jpg");
+    width:25%;
+    border:solid white 1.5px;
+}
+
+
+
+.dish2{
+    background-image:url("../images/dish2.jpg");
+    width:25%;
+    border:solid white 1.5px;
+}
+
+.dish3{
+
+    background-image:url("../images/dish3.jpg");
+    width:25%;
+    border:solid white 1.5px;
+}
+
+.dish4{
+    background-image:url("../images/dish4.jpg");
+    width:25%;
+    border:solid white 1.5px;
+}
+
+.dish5{
+    background-image:url("../images/dish5.jpg");
+    width:25%;
+    border:solid white 1.5px;
+    
+}
+
+.dish6{
+    background-image:url("../images/dish6.jpg");
+    width:25%;
+    border:solid white 1.5px;
+   
+}
+
+.dish7{
+    background-image:url("../images/dish7.jpg");
+    width:25%;
+    border:solid white 1.5px;
+}
+
+.dish8{
+    background-image:url("../images/dish8.jpg");
+    width:25%;
+    
+ 
+
+}
+
+#dishes .dish:nth-child(8n+2)>div,
+#dishes .dish:nth-child(8n+4)>div,
+#dishes .dish:nth-child(8n+5)>div,
+#dishes .dish:nth-child(8n+7)>div{
+    background: white;
+    color:black;
+    border: black solid 1.5px;
+}
+
+.reviews.left{
+    width:33%;
+}
+
+.left .logo{
+    left:50%;
+    top:0px;
+}
+
+.reviews.right{
+    width:67%;
+}
+
+.reviews{
+    float:left;
+    height:250px;
+}
+
+#show-reviews{
+    display: table;
+    width:70%;
+    position: relative;
+    left:10%;
+    height:250px;
+
+}
+
+#show-reviews h1{
+    font-size:22pt;
+    color:rgb(57, 196, 57);
+    margin:auto;
+    position: relative;
+    top:50px; 
+}
+
+#show-reviews p{
+    font-size:14pt;
+    margin:auto;
+    position: relative;
+    padding-top:25px;
+    top:50px;
+}
+
+.location{
+    padding-top:25px;
+    color:white;
+    text-align: center;
+    padding-bottom:25px;
+    clear: both;
+    background-image: linear-gradient(rgba(57,196, 57, 0.9), rgba(0,0,0,0.9)),url("../images/skyline.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position:relative;
+    overflow: hidden;
+    
+}
+
