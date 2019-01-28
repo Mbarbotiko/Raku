@@ -1,6 +1,10 @@
 $(function () {
     console.log('javascript file linked');
 
+    if(window.location.pathname!='/'){
+        console.log('heybuddy')
+    }
+
     // let locationLink = document.querySelectorAll('[data-value ="location"]')[0];
 
     // let homeLink = document.querySelectorAll('[data-value ="home"]')[0];

@@ -1,3 +1,7 @@
-
+body, html {
+  font-family: "Julius Sans One", "sans-serif";
+  color: black;
+  background-color: #faf5ed;
+}
 
 /*# sourceMappingURL=main.css.map */

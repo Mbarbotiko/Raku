@@ -1,15 +1,9 @@
-// $font-style: 'Julius Sans One', 'sans-serif';
-// $primary-color: rgb(57, 196, 57);
-// $seconday-color:white;
-// $background: black;
-// $menu-header: 30pt;
-// $mainMenu-header: 88pt;
-
 // sass --watch main.scss main.css
+$font-style: 'Julius Sans One', 'sans-serif';
+$primary-color: black;
+$secondary-color:white;
+$background-color:rgb(250, 245, 237);
 
-// #testing{
-//     background-color:red;
-// }
 // %section-shared{
 //     background-color:$background;
 //     overflow: auto;
@@ -36,12 +30,11 @@
 //       @include menu-radius(rotate(30deg)); 
 //     }
 
-// body, html{
-//     font-family:$font-style;
-//     color:$primary-color;
-//     background-color:$background;
-// }
-
+body, html{
+    font-family:$font-style;
+    color:$primary-color;
+    background-color:$background-color;
+}
 
 // .bg-menu{
 //     background-image:url('../images/group-3.jpg');
