@@ -1,33 +1,30 @@
-$font-style: 'Julius Sans One', 'sans-serif';
-$primary-color: rgb(57, 196, 57);
-$seconday-color:white;
-$background: black;
-$menu-header: 30pt;
-$mainMenu-header: 88pt;
+// $font-style: 'Julius Sans One', 'sans-serif';
+// $primary-color: rgb(57, 196, 57);
+// $seconday-color:white;
+// $background: black;
+// $menu-header: 30pt;
+// $mainMenu-header: 88pt;
 
 // sass --watch main.scss main.css
 
-#testing{
-    background-color:red;
-}
-%section-shared{
-    background-color:$background;
-    overflow: auto;
-    padding-bottom:5%;
-}
+// #testing{
+//     background-color:red;
+// }
+// %section-shared{
+//     background-color:$background;
+//     overflow: auto;
+//     padding-bottom:5%;
+// }
 
-%backgroundImg{
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-    height:50vh;
-    background-color:$background;   
-}
+// %backgroundImg{
+//     background-repeat:no-repeat;
+//     background-size:cover;
+//     background-position:center;
+//     position:relative;
+//     height:50vh;
+//     background-color:$background;   
+// }
 
-#test{
-    background-color:red;
-}
 
 // @mixin menu-radius($radius){
 //     -webkit-transform: $radius;
@@ -38,150 +35,46 @@ $mainMenu-header: 88pt;
 //   .for sections later { 
 //       @include menu-radius(rotate(30deg)); 
 //     }
-body, html{
-    font-family:$font-style;
-    color:$primary-color;
-    background-color:$background;
-}
 
-.loader img{
-    width: 75px;
-}
+// body, html{
+//     font-family:$font-style;
+//     color:$primary-color;
+//     background-color:$background;
+// }
 
-.bg-menu{
-    background-image:url('../images/group-3.jpg');
-    @extend %backgroundImg;
-}
 
-.bg-appetizer{
-    background-image:url('../images/appetizer.jpg');
-    @extend %backgroundImg;
+// .bg-menu{
+//     background-image:url('../images/group-3.jpg');
+//     @extend %backgroundImg;
+// }
 
-}
-.bg-entree{
-    background-image:url('../images/burger.jpg');
-    @extend %backgroundImg;
-}
-.bg-drinks{
-    background-image:url('../images/drinks.jpg');
-    @extend %backgroundImg;
-}
 
-.overlay{
-    height:50vh;
-    background-color:$background;
-    position: absolute;
-    right:-30%;
-    top:85%;
-    display: table;
-    width:160%;
-    border-top-left-radius:100%;
-    border-top-right-radius:100%;
-}
+// .overlay{
+//     height:50vh;
+//     background-color:$background;
+//     position: absolute;
+//     right:-30%;
+//     top:85%;
+//     display: table;
+//     width:160%;
+//     border-top-left-radius:100%;
+//     border-top-right-radius:100%;
+// }
 
-#underheader-overlay{
-    height:100vh;
-    background-color:$background;
-    position: absolute;
-    right:-50%;
-    top:85%;
-    display: table;
-    width:200%;
-    border-top-left-radius:100%;
-    border-top-right-radius:100%;
-}
+// .menu-appetizers{
+//     @extend %section-shared;
+// }
 
-.happyhour{
-    height:50vh;
-}
+// .menu-entree{
+//     @extend %section-shared;
+// }
 
-.happyhour p{
-    position: relative;
-    width:50%;
-    color:$seconday-color;
-    font-size:40pt;
-    text-align: center;
-    margin-left:25%;
-    border-top:1px solid white;
-    border-bottom:1px solid white;
-    z-index: 1;
-}
+// .menu-drinks{
+//     @extend %section-shared;
+// }
 
-#happy{
-    color:$primary-color;
-}
-
-#header-overlay{
-    height:50vh;
-    width:100%;
-    background-color:$primary-color;
-    position: absolute;
-    display: table;
-    opacity: .6;
-    top:0px;
-    left:0px; 
-}
-
-#main-header{
-    position: relative;
-    width:50%;
-    font-size: $mainMenu-header;
-    color: $seconday-color;
-    padding-top:5%;
-    text-align: center;
-    border-bottom:1px solid white;
-    margin-left:25%;
-    z-index: 1;    
-}
-
-span{
-    color:$primary-color;
-    font-size: $menu-header+10;
-}
-
-#dot{
-    font-size: 20pt;
-    color:$background;
-}
-
-#mainMenu-letter{
-    color:$background;
-    font-size:$mainMenu-header;
-}
-
-#mainMenu-letter2{
-    color:$seconday-color;
-    font-size:$mainMenu-header;
-}
-
-#brackets{
-    color:$seconday-color;
-    font-size: $mainMenu-header;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-.menu-header{
-    position: relative;
-    font-size: $menu-header;
-    text-align: center;
-    color:$seconday-color;    
-    z-index: 1;
-    padding-bottom:5%;
-}
-
-.menu-appetizers{
-    @extend %section-shared;
-}
-
-.menu-entree{
-    @extend %section-shared;
-}
-
-.menu-drinks{
-    @extend %section-shared;
-}
-@import 'table';
+//above are examples below is actual code
 
 @import 'footer';
 
-@import 'menumedia';
+@import 'mediaScreens';
