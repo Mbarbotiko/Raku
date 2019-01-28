@@ -4,11 +4,84 @@ $primary-color: black;
 $secondary-color:white;
 $background-color:rgb(250, 245, 237);
 
-// %section-shared{
-//     background-color:$background;
-//     overflow: auto;
-//     padding-bottom:5%;
+//shared sections
+%backgroundImg{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    height:100vh;
+    background-color:$primary-color;   
+//second scroll bar issue
+}
+
+
+body, html{
+    font-family:$font-style;
+    color:$primary-color;
+    background-color:$background-color;
+}
+
+.hd-ft-bar{
+    background-color:$primary-color;
+    color: $secondary-color;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}
+
+.navbar img{
+    width:100px;
+    margin-left:10%;
+}
+
+.landing-image{
+    @extend %backgroundImg;
+}
+
+.home{
+    background-image:url('../images/group-1.jpg')
+
+}
+
+// .homepage-landing{
+//     background-color:black;
+//     background-size:cover;
+//     background-position:center;
+//     position:relative;
+//     top:0px;
+//     left:0px;
+//     height:110vh;
+//     width:100vw;
+//     z-index:1;
+//     height: 110vmin;
+//     overflow: hidden;
 // }
+
+// .homepage-landing img{
+//     width: 110vw;
+//     height:110vh;
+//     position: absolute;
+//     left:0;
+//     top:0;
+//     object-fit: cover;
+
+// }
+
+// #blackoverlay{
+//     background: black;
+//     opacity:.5;
+//     position: absolute;
+//     left:0;
+//     top:0;
+//     z-index: -1;
+//     display: table;
+//     width: 110vw;
+//     height:110vh;
+
+// }
+
 
 // %backgroundImg{
 //     background-repeat:no-repeat;
@@ -30,11 +103,6 @@ $background-color:rgb(250, 245, 237);
 //       @include menu-radius(rotate(30deg)); 
 //     }
 
-body, html{
-    font-family:$font-style;
-    color:$primary-color;
-    background-color:$background-color;
-}
 
 // .bg-menu{
 //     background-image:url('../images/group-3.jpg');
