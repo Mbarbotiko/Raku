@@ -10,7 +10,7 @@ $background-color:rgb(250, 245, 237);
     background-size:cover;
     background-position:center;
     position:relative;
-    height:100vh;
+    height:80vh;
     background-color:$primary-color;   
 //second scroll bar issue
 }
@@ -29,11 +29,13 @@ body, html{
     text-align: center;
     vertical-align: middle;
     line-height: 40px;
+    overflow: hidden;
+    clear:both;
 }
 
 .navbar img{
-    width:100px;
     margin-left:10%;
+    width:100px;
 }
 
 .landing-image{
@@ -44,6 +46,64 @@ body, html{
     background-image:url('../images/group-1.jpg')
 
 }
+.home-aboutus{
+    width:100%;
+    background-color:green;
+    text-align: center;
+    
+}
+
+.home-aboutus h1{
+    line-height: 3em;;
+}
+
+.aboutus-wrapper{
+    width:90%;
+    background-color:purple;
+    border-top:solid blue 2px;
+    border-bottom: solid blue 2px;
+    margin-bottom:2%;
+    float: left;
+    margin-left:5%;
+}
+
+.aboutus-wrapper img{
+max-width: 100%;
+max-height: 100%;
+}
+
+// .panel{
+   
+// }
+
+.left-side{
+    width:25%;
+    background-color:yellow;
+    float: left;
+}
+
+.right-side{
+    width:25%;
+    background-color:aqua;
+    float: left;
+}
+
+.middle{
+    width: 50%;
+    float: left;
+}
+
+#loader-footer{
+    clear:both;
+    text-align: center
+}
+
+// .social-media{
+
+// }
+
+
+
 
 // .homepage-landing{
 //     background-color:black;
