@@ -10,7 +10,7 @@ $background-color:rgb(250, 245, 237);
     background-size:cover;
     background-position:center;
     position:relative;
-    height:80vh;
+    height:90vh;
     background-color:$primary-color;   
 //second scroll bar issue
 }
@@ -20,6 +20,18 @@ body, html{
     font-family:$font-style;
     color:$primary-color;
     background-color:$background-color;
+}
+
+
+
+.headers{
+    font-size:30pt;   
+    letter-spacing: 8px;
+    line-height: 3em;
+}
+
+.headers span{
+    font-size:20pt;    
 }
 
 .hd-ft-bar{
@@ -38,6 +50,52 @@ body, html{
     width:100px;
 }
 
+#loader-nav .nav-link span{
+    font-size: 8pt; 
+}
+
+#loader-nav .nav-link{
+letter-spacing: 8px;
+}
+
+.navbar-nav{
+    margin-left:15%;
+}
+
+#homepage-header{
+    width: 40%;
+    position:relative;
+    margin:auto;
+    top:4rem;
+    text-align: center;
+    color:white;
+    height: 80vh;
+    overflow: hidden;
+ 
+}
+
+.homepage-headline{
+    font-size:7vw;
+    font-size:6.5vh;
+}
+
+
+.homepageheader-subtext{
+    margin:auto;
+    font-size:3vw;
+    font-size:3vh;
+    width:75%;
+    margin-top:1em;
+}
+.homepageheader-subtext span{
+    color:rgb(235, 74, 26);
+}
+
+.homepage-headline span{
+    color:rgb(235, 74, 26);
+}
+
+
 .landing-image{
     @extend %backgroundImg;
 }
@@ -53,16 +111,13 @@ body, html{
     
 }
 
-.home-aboutus h1{
-    line-height: 3em;;
-}
 
 .aboutus-wrapper{
     width:90%;
     background-color:purple;
     border-top:solid blue 2px;
     border-bottom: solid blue 2px;
-    margin-bottom:2%;
+    margin-bottom:5%;
     float: left;
     margin-left:5%;
 }
@@ -72,9 +127,9 @@ max-width: 100%;
 max-height: 100%;
 }
 
-// .panel{
-   
-// }
+.panel{
+    text-align: center;
+}
 
 .left-side{
     width:25%;
@@ -100,86 +155,6 @@ max-height: 100%;
 
 // .social-media{
 
-// }
-
-
-
-
-// .homepage-landing{
-//     background-color:black;
-//     background-size:cover;
-//     background-position:center;
-//     position:relative;
-//     top:0px;
-//     left:0px;
-//     height:110vh;
-//     width:100vw;
-//     z-index:1;
-//     height: 110vmin;
-//     overflow: hidden;
-// }
-
-// .homepage-landing img{
-//     width: 110vw;
-//     height:110vh;
-//     position: absolute;
-//     left:0;
-//     top:0;
-//     object-fit: cover;
-
-// }
-
-// #blackoverlay{
-//     background: black;
-//     opacity:.5;
-//     position: absolute;
-//     left:0;
-//     top:0;
-//     z-index: -1;
-//     display: table;
-//     width: 110vw;
-//     height:110vh;
-
-// }
-
-
-// %backgroundImg{
-//     background-repeat:no-repeat;
-//     background-size:cover;
-//     background-position:center;
-//     position:relative;
-//     height:50vh;
-//     background-color:$background;   
-// }
-
-
-// @mixin menu-radius($radius){
-//     -webkit-transform: $radius;
-//     -ms-transform: $radius;
-//     transform: $radius;
-// }
-
-//   .for sections later { 
-//       @include menu-radius(rotate(30deg)); 
-//     }
-
-
-// .bg-menu{
-//     background-image:url('../images/group-3.jpg');
-//     @extend %backgroundImg;
-// }
-
-
-// .overlay{
-//     height:50vh;
-//     background-color:$background;
-//     position: absolute;
-//     right:-30%;
-//     top:85%;
-//     display: table;
-//     width:160%;
-//     border-top-left-radius:100%;
-//     border-top-right-radius:100%;
 // }
 
 // .menu-appetizers{

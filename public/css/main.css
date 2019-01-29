@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background-color: black;
 }
 
@@ -11,6 +11,16 @@ body, html {
   font-family: "Julius Sans One", "sans-serif";
   color: black;
   background-color: #faf5ed;
+}
+
+.headers {
+  font-size: 30pt;
+  letter-spacing: 8px;
+  line-height: 3em;
+}
+
+.headers span {
+  font-size: 20pt;
 }
 
 .hd-ft-bar {
@@ -29,6 +39,50 @@ body, html {
   width: 100px;
 }
 
+#loader-nav .nav-link span {
+  font-size: 8pt;
+}
+
+#loader-nav .nav-link {
+  letter-spacing: 8px;
+}
+
+.navbar-nav {
+  margin-left: 15%;
+}
+
+#homepage-header {
+  width: 40%;
+  position: relative;
+  margin: auto;
+  top: 4rem;
+  text-align: center;
+  color: white;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.homepage-headline {
+  font-size: 7vw;
+  font-size: 6.5vh;
+}
+
+.homepageheader-subtext {
+  margin: auto;
+  font-size: 3vw;
+  font-size: 3vh;
+  width: 75%;
+  margin-top: 1em;
+}
+
+.homepageheader-subtext span {
+  color: #eb4a1a;
+}
+
+.homepage-headline span {
+  color: #eb4a1a;
+}
+
 .home {
   background-image: url("../images/group-1.jpg");
 }
@@ -39,16 +93,12 @@ body, html {
   text-align: center;
 }
 
-.home-aboutus h1 {
-  line-height: 3em;
-}
-
 .aboutus-wrapper {
   width: 90%;
   background-color: purple;
   border-top: solid blue 2px;
   border-bottom: solid blue 2px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   float: left;
   margin-left: 5%;
 }
@@ -56,6 +106,10 @@ body, html {
 .aboutus-wrapper img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.panel {
+  text-align: center;
 }
 
 .left-side {
