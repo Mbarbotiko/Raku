@@ -3,6 +3,7 @@ $font-style: 'Julius Sans One', 'sans-serif';
 $primary-color: black;
 $secondary-color:white;
 $background-color:rgb(250, 245, 237);
+$spanColor: rgb(235, 74, 26);
 
 //shared sections
 %backgroundImg{
@@ -21,8 +22,6 @@ body, html{
     color:$primary-color;
     background-color:$background-color;
 }
-
-
 
 .headers{
     font-size:30pt;   
@@ -58,6 +57,14 @@ body, html{
 letter-spacing: 8px;
 }
 
+#loader-nav .hd-ft-bar span{
+    font-size: 8pt; 
+    color:$spanColor;
+    padding-left:10%;
+    padding-right:10%;
+
+}
+
 .navbar-nav{
     margin-left:15%;
 }
@@ -88,11 +95,11 @@ letter-spacing: 8px;
     margin-top:1em;
 }
 .homepageheader-subtext span{
-    color:rgb(235, 74, 26);
+    color:$spanColor;
 }
 
 .homepage-headline span{
-    color:rgb(235, 74, 26);
+    color:$spanColor;
 }
 
 

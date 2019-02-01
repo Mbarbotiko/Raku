@@ -47,6 +47,13 @@ body, html {
   letter-spacing: 8px;
 }
 
+#loader-nav .hd-ft-bar span {
+  font-size: 8pt;
+  color: #eb4a1a;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .navbar-nav {
   margin-left: 15%;
 }
