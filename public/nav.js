@@ -10,7 +10,7 @@ $(function () {
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(responseObj, 'text/html')
             document.getElementById('testing').innerHTML= xmlDoc.getElementById
-            ('loader-nav').innerHTML
+            ('nav-transfer').innerHTML
         }
     }
 
