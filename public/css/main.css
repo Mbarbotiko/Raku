@@ -147,4 +147,15 @@ body, html {
   text-align: center;
 }
 
+#loader-footer {
+  clear: both;
+  text-align: center;
+}
+
+#loader-footer img {
+  width: 75px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 /*# sourceMappingURL=main.css.map */
