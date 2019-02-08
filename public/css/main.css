@@ -144,18 +144,37 @@ body, html {
 
 #loader-footer {
   clear: both;
-  text-align: center;
 }
 
-#loader-footer {
-  clear: both;
-  text-align: center;
+.social-media {
+  width: 30%;
+  float: left;
 }
 
-#loader-footer img {
-  width: 75px;
+.copyright {
+  width: 70%;
+  float: left;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.fab {
   margin-left: 5%;
-  margin-right: 5%;
+  align-content: right;
+  widows: 50px !important;
+  height: 50px;
+  background-color: blue;
+}
+
+.fab a:hover {
+  color: red;
+}
+
+.fab:hover {
+  padding: 5px;
+  color: red;
+  border: solid 1px white;
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
