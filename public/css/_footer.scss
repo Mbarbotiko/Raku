@@ -17,19 +17,33 @@
 .fab{
     margin-left:5%;
     align-content: right;
-    widows: 50px!important;
+    width: 50px!important;
     height:50px;
-    background-color:blue;
 }
 
-.fab a:hover{
-    color:red;
-    
-    }
+// .fab a:hover{
+//     color:red;
+//      padding:5px;
+//     border-bottom:solid red 1px;
+//     }
 
+// .fab:hover{
+//     padding:5px;
+//     color:red;
+//     border-top:solid red 1px;
+//     border-bottom:solid red 1px;
+//     cursor: pointer;
+// }
+
+//change below into a variable other classes can access
 .fab:hover{
     padding:5px;
     color:red;
-    border: solid 1px white;
-    border-radius:100%;
+    border-left:solid red 1px;
+    border-right:solid red 1px;
+    cursor: pointer;
+}
+
+.margarita{
+
 }

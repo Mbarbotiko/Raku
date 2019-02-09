@@ -161,20 +161,16 @@ body, html {
 .fab {
   margin-left: 5%;
   align-content: right;
-  widows: 50px !important;
+  width: 50px !important;
   height: 50px;
-  background-color: blue;
-}
-
-.fab a:hover {
-  color: red;
 }
 
 .fab:hover {
   padding: 5px;
   color: red;
-  border: solid 1px white;
-  border-radius: 100%;
+  border-left: solid red 1px;
+  border-right: solid red 1px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
