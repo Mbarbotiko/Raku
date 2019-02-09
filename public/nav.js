@@ -1,5 +1,5 @@
 $(function () {
-    console.log('nav file linked');
+    console.log('nav.js ran');
     //create new HTTP req
     var xhr = new XMLHttpRequest();
     xhr.onload= function(){

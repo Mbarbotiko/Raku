@@ -176,4 +176,12 @@ body, html {
   width: 50px;
 }
 
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
 /*# sourceMappingURL=main.css.map */
