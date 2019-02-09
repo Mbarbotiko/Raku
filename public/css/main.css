@@ -21,6 +21,14 @@ body, html {
   background-color: #faf5ed;
 }
 
+.navbar {
+  min-height: 50px !important;
+}
+
+.navbar-brand {
+  height: 50px !important;
+}
+
 .headers {
   font-size: 30pt;
   letter-spacing: 8px;
@@ -45,6 +53,8 @@ body, html {
 .navbar img {
   margin-left: 10%;
   width: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 #loader-nav .nav-link span {
