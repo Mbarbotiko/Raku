@@ -9,8 +9,11 @@ $(function () {
             var parser, xmlDoc
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(responseObj, 'text/html')
-            document.getElementById('testing').innerHTML= xmlDoc.getElementById
+            document.getElementsByTagName('header')[0].innerHTML= xmlDoc.getElementById
             ('nav-transfer').innerHTML
+            document.getElementsByTagName('footer')[0].innerHTML=
+            xmlDoc.getElementById
+            ('footer-transfer').innerHTML
         }
     }
 
