@@ -31,12 +31,17 @@ body, html{
 .navbar{
     min-height:50px!important; 
 }
+
+.navbar a:hover{
+    color:$spanColor!important;
+}
+.navbar span{
+    color:gray;
+ }
 .navbar-brand{
     height:50px!important;
 }
-// .navbar-toggle{
-//     margin-top:500px!important;
-// }
+
 .headers{
     font-size:30pt;   
     letter-spacing: 8px;
@@ -111,21 +116,20 @@ letter-spacing: 8px;
 }
 .home-aboutus{
     width:100%;
-    background-color:green;
     text-align: center;
 }
 .aboutus-wrapper{
     width:90%;
-    background-color:purple;
-    border-top:solid blue 2px;
-    border-bottom: solid blue 2px;
-    margin-bottom:5%;
+    border-top:solid gray 1px;
+    border-bottom: solid gray 1px;
+    margin-bottom:10%;
     float: left;
     margin-left:5%;
 }
 .aboutus-wrapper img{
-max-width: 100%;
-max-height: 100%;
+ width:90%;
+ margin-top:1%;
+ margin-bottom:1%;
 }
 .panel{
     text-align: center;
@@ -137,12 +141,10 @@ max-height: 100%;
 }
 .left-side{
     width:25%;
-    background-color:yellow;
     float: left;
 }
 .right-side{
     width:25%;
-    background-color:aqua;
     float: left;
 }
 .middle{
