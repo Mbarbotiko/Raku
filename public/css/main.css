@@ -7,6 +7,14 @@
   background-color: black;
 }
 
+.fab:hover {
+  padding: 5px;
+  color: #eb4a1a;
+  border-top: solid #eb4a1a 1px;
+  border-bottom: solid #eb4a1a 1px;
+  cursor: pointer;
+}
+
 body, html {
   font-family: "Julius Sans One", "sans-serif";
   color: black;
@@ -146,6 +154,10 @@ body, html {
   clear: both;
 }
 
+#loader-footer .hd-ft-bar {
+  padding-bottom: 10px;
+}
+
 .social-media {
   width: 30%;
   float: left;
@@ -161,16 +173,7 @@ body, html {
 .fab {
   margin-left: 5%;
   align-content: right;
-  width: 50px !important;
-  height: 50px;
-}
-
-.fab:hover {
-  padding: 5px;
-  color: red;
-  border-left: solid red 1px;
-  border-right: solid red 1px;
-  cursor: pointer;
+  width: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
