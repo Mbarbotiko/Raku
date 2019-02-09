@@ -16,6 +16,13 @@ $spanColor: rgb(235, 74, 26);
 //second scroll bar issue
 }
 
+%iconHover{
+    padding:5px;
+    color:$spanColor;
+    border-top:solid $spanColor 1px;
+    border-bottom:solid $spanColor 1px;
+    cursor: pointer;
+}
 
 body, html{
     font-family:$font-style;
@@ -159,11 +166,6 @@ max-height: 100%;
 .middle{
     width: 50%;
     float: left;
-}
-
-#loader-footer{
-    clear:both;
-    text-align: center
 }
 
 

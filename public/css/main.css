@@ -7,6 +7,14 @@
   background-color: black;
 }
 
+.fab:hover {
+  padding: 5px;
+  color: #eb4a1a;
+  border-top: solid #eb4a1a 1px;
+  border-bottom: solid #eb4a1a 1px;
+  cursor: pointer;
+}
+
 body, html {
   font-family: "Julius Sans One", "sans-serif";
   color: black;
@@ -144,7 +152,28 @@ body, html {
 
 #loader-footer {
   clear: both;
-  text-align: center;
+}
+
+#loader-footer .hd-ft-bar {
+  padding-bottom: 10px;
+}
+
+.social-media {
+  width: 30%;
+  float: left;
+}
+
+.copyright {
+  width: 70%;
+  float: left;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.fab {
+  margin-left: 5%;
+  align-content: right;
+  width: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
