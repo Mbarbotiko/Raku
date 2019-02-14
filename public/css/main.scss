@@ -16,13 +16,13 @@ $spanColor: rgb(235, 74, 26);
 //second scroll bar issue
 }
 
+
 %iconHover{
     padding:5px;
     color:$spanColor;
-    border-top:solid $spanColor 1px;
-    border-bottom:solid $spanColor 1px;
     cursor: pointer;
 }
+
 body, html{
     font-family:$font-style;
     color:$primary-color;

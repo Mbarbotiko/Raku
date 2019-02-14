@@ -10,8 +10,6 @@
 .fab:hover {
   padding: 5px;
   color: #eb4a1a;
-  border-top: solid #eb4a1a 1px;
-  border-bottom: solid #eb4a1a 1px;
   cursor: pointer;
 }
 
