@@ -1,0 +1,33 @@
+#loader-footer{
+    clear:both;
+}
+
+#loader-footer .hd-ft-bar{
+    padding-bottom:10px;
+}
+
+.social-media{
+    width:30%;
+    float:left;
+}
+
+.copyright{
+    width:70%;
+    float:left;
+    text-align: left;
+    padding-left:3%;
+}
+
+.fab{
+    margin-left:5%;
+    align-content: right;
+    width: 50px;
+}
+
+.fab:hover{
+   @extend %iconHover;
+}
+
+// .margarita{
+//for logo / contact info & git hub ?
+// }

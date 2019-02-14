@@ -1,37 +1,19 @@
 $(function () {
-    console.log('javascript file linked');
+    console.log('index.js ran');
+    headerID = document.getElementById('loader-nav')
+    headerBar= headerID.getElementsByClassName('hd-ft-bar')[0];
+    navBar = headerID.getElementsByClassName('navbar')[0]
 
-    if(window.location.pathname!='/'){
-        console.log('heybuddy')
-    }
-
-    // let locationLink = document.querySelectorAll('[data-value ="location"]')[0];
-
-    // let homeLink = document.querySelectorAll('[data-value ="home"]')[0];
-
-    // let careersLink = document.querySelectorAll('[data-value ="careers"]')[0];
-
-
-    // locationLink.addEventListener('click', function(){
-    //     $('.container').load('./location.html');
-
-    // });
-
-    // homeLink.addEventListener('click', function(){
-    //     $('.container').load('./index.html');
-
-    // });
-
-    // careersLink.addEventListener('click', function(){
-    //     $('.container').load('./careers.html');
-
-    // });
-   
-    //CORS error must be on a server local host or online already.
-
-    // http://api.jquery.com/load/
-
-
- 
+   function headerBarHide(){
+       //function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
+        if(window.scrollY>0){
+            headerBar.style.display ="none"
+            navBar.classList.add('fixed-top')
+        }else{
+            headerBar.style.display ="block"
+            navBar.classList.remove('fixed-top');
+        }
+    };
+   window.addEventListener('scroll', headerBarHide)
 
 });

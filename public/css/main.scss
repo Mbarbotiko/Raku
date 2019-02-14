@@ -16,11 +16,30 @@ $spanColor: rgb(235, 74, 26);
 //second scroll bar issue
 }
 
-
+%iconHover{
+    padding:5px;
+    color:$spanColor;
+    border-top:solid $spanColor 1px;
+    border-bottom:solid $spanColor 1px;
+    cursor: pointer;
+}
 body, html{
     font-family:$font-style;
     color:$primary-color;
     background-color:$background-color;
+}
+.navbar{
+    min-height:50px!important; 
+}
+
+.navbar a:hover{
+    color:$spanColor!important;
+}
+.navbar span{
+    color:gray;
+ }
+.navbar-brand{
+    height:50px!important;
 }
 
 .headers{
@@ -28,11 +47,9 @@ body, html{
     letter-spacing: 8px;
     line-height: 3em;
 }
-
 .headers span{
     font-size:20pt;    
 }
-
 .hd-ft-bar{
     background-color:$primary-color;
     color: $secondary-color;
@@ -43,32 +60,27 @@ body, html{
     overflow: hidden;
     clear:both;
 }
-
 .navbar img{
     margin-left:10%;
     width:100px;
+    position:relative;
+    z-index: 1;
 }
-
 #loader-nav .nav-link span{
     font-size: 8pt; 
 }
-
 #loader-nav .nav-link{
 letter-spacing: 8px;
 }
-
 #loader-nav .hd-ft-bar span{
     font-size: 8pt; 
     color:$spanColor;
     padding-left:10%;
     padding-right:10%;
-
 }
-
 .navbar-nav{
     margin-left:15%;
 }
-
 #homepage-header{
     width: 40%;
     position:relative;
@@ -78,15 +90,11 @@ letter-spacing: 8px;
     color:white;
     height: 80vh;
     overflow: hidden;
- 
 }
-
 .homepage-headline{
     font-size:7vw;
     font-size:6.5vh;
 }
-
-
 .homepageheader-subtext{
     margin:auto;
     font-size:3vw;
@@ -97,94 +105,55 @@ letter-spacing: 8px;
 .homepageheader-subtext span{
     color:$spanColor;
 }
-
 .homepage-headline span{
     color:$spanColor;
 }
-
-
 .landing-image{
     @extend %backgroundImg;
 }
-
 .home{
     background-image:url('../images/group-1.jpg')
-
 }
 .home-aboutus{
     width:100%;
-    background-color:green;
     text-align: center;
-    
 }
-
-
 .aboutus-wrapper{
     width:90%;
-    background-color:purple;
-    border-top:solid blue 2px;
-    border-bottom: solid blue 2px;
-    margin-bottom:5%;
+    border-top:solid gray 1px;
+    border-bottom: solid gray 1px;
+    margin-bottom:10%;
     float: left;
     margin-left:5%;
 }
-
 .aboutus-wrapper img{
-max-width: 100%;
-max-height: 100%;
+ width:90%;
+ margin-top:1%;
+ margin-bottom:1%;
 }
-
 .panel{
     text-align: center;
 }
-
 .panel p{
     margin-top:25%;
     width:70%;
     margin-left:15%;
 }
-
 .left-side{
     width:25%;
-    background-color:yellow;
     float: left;
 }
-
 .right-side{
     width:25%;
-    background-color:aqua;
     float: left;
 }
-
 .middle{
     width: 50%;
     float: left;
 }
 
-#loader-footer{
-    clear:both;
-    text-align: center
-}
-
-
-// .social-media{
-
-// }
-
-// .menu-appetizers{
-//     @extend %section-shared;
-// }
-
-// .menu-entree{
-//     @extend %section-shared;
-// }
-
-// .menu-drinks{
-//     @extend %section-shared;
-// }
-
-//above are examples below is actual code
-
 @import 'footer';
-
+@import 'locations';
+@import 'menu';
+@import 'staff';
 @import 'mediaScreens';
