@@ -152,6 +152,15 @@ letter-spacing: 8px;
     float: left;
 }
 
+.overlay{
+    display:table;
+    position:relative;
+    top:0px;
+    width:200px;
+    color:orange;
+    background-color:red;
+}
+
 @import 'footer';
 @import 'locations';
 @import 'menu';

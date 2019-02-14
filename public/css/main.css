@@ -163,6 +163,15 @@ body, html {
   float: left;
 }
 
+.overlay {
+  display: table;
+  position: relative;
+  top: 0px;
+  width: 200px;
+  color: orange;
+  background-color: red;
+}
+
 #loader-footer {
   clear: both;
 }
