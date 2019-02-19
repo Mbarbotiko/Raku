@@ -132,14 +132,6 @@ body, html {
   margin-left: 5%;
 }
 
-.aboutus-wrapper img {
-  max-width: 90%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  max-height: 350px;
-  min-height: 350px;
-}
-
 .panel {
   text-align: center;
 }
@@ -166,18 +158,35 @@ body, html {
 }
 
 .overlay {
+  background-color: black;
   position: relative;
-  display: table;
-  top: -364px;
-  left: 34px;
   width: 90%;
-  max-height: 350px;
-  min-height: 350px;
+  height: 350px;
   color: orange;
   background-color: red;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: opacity 0.5s;
   transition-duration: 1.5s;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+
+.overlay-text {
+  font-size: 40pt;
+}
+
+.overlay-text span {
+  font-size: 50pt;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.image1 {
+  background-image: url("../images/bar.jpg");
+  background-size: 100% 100%;
 }
 
 #loader-footer {
