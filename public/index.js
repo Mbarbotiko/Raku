@@ -16,4 +16,10 @@ $(function () {
     };
    window.addEventListener('scroll', headerBarHide)
 
+   console.log($('.middle-image').height());
+
+   var a = document.getElementsByClassName('middle-image')[0].clientHeight;
+var b = document.getElementsByClassName('middle-image')[0].offsetHeight;
+var c = document.getElementsByClassName('middle-image')[0].scrollHeight;
+console.log(a,b,c);
 });
