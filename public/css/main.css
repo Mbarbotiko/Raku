@@ -73,7 +73,7 @@ body, html {
   margin-left: 15%;
 }
 
-#homepage-header {
+.landing-header {
   width: 40%;
   position: relative;
   margin: auto;
@@ -84,7 +84,7 @@ body, html {
   overflow: hidden;
 }
 
-.homepage-headline {
+.landing-headline {
   font-size: 7vw;
   font-size: 6.5vh;
 }
@@ -97,11 +97,11 @@ body, html {
   margin-top: 1em;
 }
 
-.homepageheader-subtext span {
+.landing-subtext span {
   color: #eb4a1a;
 }
 
-.homepage-headline span {
+.landing-headline span {
   color: #eb4a1a;
 }
 
@@ -116,15 +116,6 @@ body, html {
   overflow: hidden;
 }
 
-.landing-image img {
-  width: 110vw;
-  height: 110vh;
-  position: absolute;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-}
-
 .landing-image.overlay {
   background: black;
   opacity: 0.5;
@@ -137,31 +128,33 @@ body, html {
   height: 110vh;
 }
 
-@keyframes firstLandingtransition {
+@keyframes indexLandingTransition {
   0% {
     background-image: url("../images/group-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-  20% {
-    background-image: url("../images/group-1.jpg");
-  }
-  40% {
+  33% {
     background-image: url("../images/group-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-  60% {
-    background-image: url("../images/group-2.jpg");
-  }
-  80% {
+  66% {
     background-image: url("../images/group-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   100% {
-    background-image: url("../images/group-3.jpg");
+    background-image: url("../images/group-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
 .landing-image .overlay {
-  animation-name: firstLandingtransition;
+  animation-name: indexLandingTransition;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 20s;
 }
 
 .home-aboutus {
