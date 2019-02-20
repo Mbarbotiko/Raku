@@ -25,9 +25,68 @@
 .homepage-headline span{
     color:$spanColor;
 }
+//shared sections
+%backgroundImg{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    height:90vh;
+    background-color:$primary-color;
+    z-index:1;   
+    overflow: hidden;
+//second scroll bar issue
+}
 .landing-image{
     @extend %backgroundImg;
 }
-.home{
-    background-image:url('../images/group-1.jpg')
+.landing-image img{
+    width: 110vw;
+    height:110vh;
+    position: absolute;
+    left:0;
+    top:0;
+    object-fit: cover;
+}
+
+.landing-image.overlay{
+    background: black;
+    opacity:.5;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    display: table;
+    width: 110vw;
+    height:110vh;
+}
+
+@keyframes firstLandingtransition {
+	0% {
+       
+        opacity:0;
+    }
+    40% {
+        
+        opacity:1;
+    }
+  
+    90% {
+       
+        opacity:0
+    }
+    100% {
+      
+        opacity:.0
+    }
+
+
+}
+
+.landing-image .bottom{
+	animation-name: firstLandingtransition;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    animation-duration: 15s;
+
 }

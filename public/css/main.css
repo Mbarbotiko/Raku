@@ -1,12 +1,3 @@
-.landing-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 90vh;
-  background-color: black;
-}
-
 .fab:hover {
   padding: 5px;
   color: #eb4a1a;
@@ -60,7 +51,7 @@ body, html {
   margin-left: 10%;
   width: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #loader-nav .nav-link span {
@@ -114,8 +105,57 @@ body, html {
   color: #eb4a1a;
 }
 
-.home {
-  background-image: url("../images/group-1.jpg");
+.landing-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  background-color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.landing-image img {
+  width: 110vw;
+  height: 110vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+.landing-image.overlay {
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: table;
+  width: 110vw;
+  height: 110vh;
+}
+
+@keyframes firstLandingtransition {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.landing-image .bottom {
+  animation-name: firstLandingtransition;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
 }
 
 .home-aboutus {
