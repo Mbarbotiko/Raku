@@ -35,6 +35,22 @@ body, html {
   height: 50px !important;
 }
 
+.navbar {
+  min-height: 50px !important;
+}
+
+.navbar a:hover {
+  color: #eb4a1a !important;
+}
+
+.navbar span {
+  color: gray;
+}
+
+.navbar-brand {
+  height: 50px !important;
+}
+
 .headers {
   font-size: 30pt;
   letter-spacing: 8px;
