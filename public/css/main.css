@@ -139,19 +139,25 @@ body, html {
 
 @keyframes firstLandingtransition {
   0% {
-    opacity: 0;
+    background-image: url("../images/group-1.jpg");
+  }
+  20% {
+    background-image: url("../images/group-1.jpg");
   }
   40% {
-    opacity: 1;
+    background-image: url("../images/group-2.jpg");
   }
-  90% {
-    opacity: 0;
+  60% {
+    background-image: url("../images/group-2.jpg");
+  }
+  80% {
+    background-image: url("../images/group-3.jpg");
   }
   100% {
-    opacity: 0;
+    background-image: url("../images/group-3.jpg");
   }
 }
-.landing-image .bottom {
+.landing-image .overlay {
   animation-name: firstLandingtransition;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
