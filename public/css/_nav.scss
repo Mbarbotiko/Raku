@@ -1,0 +1,53 @@
+.navbar{
+    min-height:50px!important; 
+}
+
+.navbar a:hover{
+    color:$spanColor!important;
+}
+.navbar span{
+    color:gray;
+ }
+.navbar-brand{
+    height:50px!important;
+}
+
+.headers{
+    font-size:30pt;   
+    letter-spacing: 8px;
+    line-height: 3em;
+}
+.headers span{
+    font-size:20pt;    
+}
+.hd-ft-bar{
+    background-color:$primary-color;
+    color: $secondary-color;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    overflow: hidden;
+    clear:both;
+}
+.navbar img{
+    margin-left:10%;
+    width:100px;
+    position:relative;
+    z-index: 1;
+}
+#loader-nav .nav-link span{
+    font-size: 8pt; 
+}
+#loader-nav .nav-link{
+letter-spacing: 8px;
+}
+#loader-nav .hd-ft-bar span{
+    font-size: 8pt; 
+    color:$spanColor;
+    padding-left:10%;
+    padding-right:10%;
+}
+.navbar-nav{
+    margin-left:15%;
+}

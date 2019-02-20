@@ -16,11 +16,18 @@ $spanColor: rgb(235, 74, 26);
 //second scroll bar issue
 }
 
+<<<<<<< HEAD
 %iconHover{
     padding:5px;
     color:$spanColor;
     border-top:solid $spanColor 1px;
     border-bottom:solid $spanColor 1px;
+=======
+
+%iconHover{
+    padding:5px;
+    color:$spanColor;
+>>>>>>> 857fabab1a585830b32d7f45516cf9fe08c7b228
     cursor: pointer;
 }
 body, html{
@@ -42,6 +49,7 @@ body, html{
     height:50px!important;
 }
 
+<<<<<<< HEAD
 .headers{
     font-size:30pt;   
     letter-spacing: 8px;
@@ -152,6 +160,12 @@ letter-spacing: 8px;
     float: left;
 }
 
+=======
+
+@import 'nav';
+@import 'index-landing';
+@import 'index-about';
+>>>>>>> 857fabab1a585830b32d7f45516cf9fe08c7b228
 @import 'footer';
 @import 'locations';
 @import 'menu';
