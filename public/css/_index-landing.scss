@@ -1,0 +1,33 @@
+#homepage-header{
+    width: 40%;
+    position:relative;
+    margin:auto;
+    top:4rem;
+    text-align: center;
+    color:white;
+    height: 80vh;
+    overflow: hidden;
+}
+.homepage-headline{
+    font-size:7vw;
+    font-size:6.5vh;
+}
+.homepageheader-subtext{
+    margin:auto;
+    font-size:3vw;
+    font-size:3vh;
+    width:75%;
+    margin-top:1em;
+}
+.homepageheader-subtext span{
+    color:$spanColor;
+}
+.homepage-headline span{
+    color:$spanColor;
+}
+.landing-image{
+    @extend %backgroundImg;
+}
+.home{
+    background-image:url('../images/group-1.jpg')
+}

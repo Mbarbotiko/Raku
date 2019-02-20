@@ -217,6 +217,11 @@ body, html {
   background-size: 100% 100%;
 }
 
+.image4 h2 {
+  font-size: 35pt;
+  letter-spacing: 10pt;
+}
+
 #loader-footer {
   clear: both;
 }
