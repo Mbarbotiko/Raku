@@ -22,4 +22,13 @@ $(function () {
 var b = document.getElementsByClassName('middle-image')[0].offsetHeight;
 var c = document.getElementsByClassName('middle-image')[0].scrollHeight;
 console.log(a,b,c);
+
+//add event listener to remove class and add class in javascript instead: DO NOT TOGGLE THE CLASS
+//left side of about me panel:
+    $('.right-side').click(function(){
+      $('.left-side').toggleClass('left-side-new');
+    });
+
+
+
 });

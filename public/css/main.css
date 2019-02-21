@@ -184,6 +184,14 @@ body, html {
 .left-side {
   width: 25%;
   float: left;
+  opacity: 0.5;
+  transform: translateX(-200%);
+  transition: transform 1.5s ease-in;
+  transition: opacity 2s;
+}
+
+.left-side-new {
+  transform: translateX(0);
 }
 
 .right-side {
