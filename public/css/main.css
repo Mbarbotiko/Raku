@@ -1,12 +1,3 @@
-.landing-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 90vh;
-  background-color: black;
-}
-
 .fab:hover {
   padding: 5px;
   color: #eb4a1a;
@@ -60,7 +51,7 @@ body, html {
   margin-left: 10%;
   width: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #loader-nav .nav-link span {
@@ -82,7 +73,7 @@ body, html {
   margin-left: 15%;
 }
 
-#homepage-header {
+.landing-header {
   width: 40%;
   position: relative;
   margin: auto;
@@ -93,7 +84,7 @@ body, html {
   overflow: hidden;
 }
 
-.homepage-headline {
+.landing-headline {
   font-size: 7vw;
   font-size: 6.5vh;
 }
@@ -106,16 +97,64 @@ body, html {
   margin-top: 1em;
 }
 
-.homepageheader-subtext span {
+.landing-subtext span {
   color: #eb4a1a;
 }
 
-.homepage-headline span {
+.landing-headline span {
   color: #eb4a1a;
 }
 
-.home {
-  background-image: url("../images/group-1.jpg");
+.landing-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  background-color: black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.landing-image.overlay {
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display: table;
+  width: 110vw;
+  height: 110vh;
+}
+
+@keyframes indexLandingTransition {
+  0% {
+    background-image: url("../images/group-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  33% {
+    background-image: url("../images/group-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  66% {
+    background-image: url("../images/group-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url("../images/group-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.landing-image .overlay {
+  animation-name: indexLandingTransition;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
 }
 
 .home-aboutus {
@@ -145,11 +184,23 @@ body, html {
 .left-side {
   width: 25%;
   float: left;
+  transform: translateX(-200%);
+  transition: transform 2s ease-in;
+}
+
+.left-side-new {
+  transform: translateX(0);
 }
 
 .right-side {
   width: 25%;
   float: left;
+  transform: translateX(200%);
+  transition: transform 2s ease-in;
+}
+
+.right-side-new {
+  transform: translateX(0);
 }
 
 .middle {
@@ -161,7 +212,7 @@ body, html {
   width: 90%;
 }
 
-.overlay-about > div {
+.overlay-header {
   position: relative;
   background-color: #eb4a1a;
   width: 100%;
@@ -169,7 +220,7 @@ body, html {
   color: white;
   opacity: 0.7;
   transition: opacity 0.5s;
-  transition-duration: 2.5s;
+  transition-duration: 3.5s;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -184,7 +235,7 @@ body, html {
   font-size: 50pt;
 }
 
-.overlay-about:hover > div {
+.disappear {
   opacity: 0;
 }
 
