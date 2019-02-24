@@ -184,10 +184,8 @@ body, html {
 .left-side {
   width: 25%;
   float: left;
-  opacity: 0.5;
   transform: translateX(-200%);
-  transition: transform 1.5s ease-in;
-  transition: opacity 2s;
+  transition: transform 1.8s ease-in;
 }
 
 .left-side-new {
@@ -197,6 +195,12 @@ body, html {
 .right-side {
   width: 25%;
   float: left;
+  transform: translateX(200%);
+  transition: transform 1.8s ease-in;
+}
+
+.right-side-new {
+  transform: translateX(0);
 }
 
 .middle {

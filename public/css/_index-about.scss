@@ -17,14 +17,13 @@
     margin-top:25%;
     width:70%;
     margin-left:15%;
-
 }
 
 .left-side{
     width:25%;
     float: left;
     transform: translateX(-200%);
-    transition: transform 2s ease-in;
+    transition: transform 1.8s ease-in;
 }
 
 .left-side-new{
@@ -33,6 +32,11 @@
 .right-side{
     width:25%;
     float: left;
+    transform: translateX(200%);
+    transition: transform 1.8s ease-in;
+}
+.right-side-new{
+    transform: translateX(0);
 }
 .middle{
     width: 50%;
