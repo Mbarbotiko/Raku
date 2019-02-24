@@ -27,11 +27,11 @@ $(function () {
             if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-400||aboutUsWrapper[i].offsetTop>window.pageYOffset-400 + window.innerHeight){
                 $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
                 $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').removeClass('testing')
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
             }else{
                  $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
                 $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').addClass('testing')
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
 
             }
         }

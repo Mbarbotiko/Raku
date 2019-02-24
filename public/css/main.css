@@ -185,7 +185,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(-200%);
-  transition: transform 1s ease-in;
+  transition: transform 2s ease-in;
 }
 
 .left-side-new {
@@ -196,7 +196,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(200%);
-  transition: transform 1s ease-in;
+  transition: transform 2s ease-in;
 }
 
 .right-side-new {
@@ -212,7 +212,7 @@ body, html {
   width: 90%;
 }
 
-.overlay-about > div {
+.overlay-header {
   position: relative;
   background-color: #eb4a1a;
   width: 100%;
@@ -220,7 +220,7 @@ body, html {
   color: white;
   opacity: 0.7;
   transition: opacity 0.5s;
-  transition-duration: 2.5s;
+  transition-duration: 3.5s;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -235,10 +235,8 @@ body, html {
   font-size: 50pt;
 }
 
-.testing {
+.disappear {
   opacity: 0;
-  transition: opacity 1s;
-  transition-duration: 2.5s;
 }
 
 .image1 {

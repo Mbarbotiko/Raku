@@ -23,7 +23,7 @@
     width:25%;
     float: left;
     transform: translateX(-200%);
-    transition: transform 1s ease-in;
+    transition: transform 2s ease-in;
 }
 
 .left-side-new{
@@ -33,7 +33,7 @@
     width:25%;
     float: left;
     transform: translateX(200%);
-    transition: transform 1s ease-in;
+    transition: transform 2s ease-in;
 }
 .right-side-new{
     transform: translateX(0);
@@ -45,7 +45,7 @@
 .overlay-about{
     width:90%;
 }
-.overlay-about>div{
+.overlay-header{
     position:relative;
     background-color:$spanColor;
     width:100%;
@@ -53,7 +53,7 @@
     color:white;
     opacity: .7;
     transition: opacity .5s;
-    transition-duration: 2.5s;
+    transition-duration: 3.5s;
     margin-top:1%;
     margin-bottom:1%;
 }
@@ -65,10 +65,9 @@
 .overlay-about span{
     font-size:50pt;
 }
-.testing{
+.disappear{
     opacity:0;
-    transition: opacity 1s;
-    transition-duration: 2.5s;
+
 }
 .image1{
     width:100%;
