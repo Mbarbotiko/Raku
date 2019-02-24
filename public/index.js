@@ -17,33 +17,27 @@ $(function () {
     //Event listener for window on scroll to run headerBarHide();
     window.addEventListener('scroll', headerBarHide);
 
-//Select the element class
-let aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper')[0];
-console.log(aboutUsWrapper);
+    //Select the element class
+    let aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
 
-function aboutusWrapperInView(e){
-    var elinfo = {
-        "top":aboutUsWrapper.offsetTop,
-        "height":aboutUsWrapper.offsetHeight,
-    };
+    function aboutusWrapperInView() {
 
-    if (elinfo.top + elinfo.height < window.pageYOffset || elinfo.top > window.pageYOffset + window.innerHeight) {
-        console.log('I am not in view')
-        $('.overlay-about div').css('opacity', 1);
-        return false;
-    } else {
-        console.log('I am in view')
-        $('.left-side').toggleClass('left-side-new');
-        $('.right-side').toggleClass('right-side-new');
-        $('.overlay-about div').css('opacity', 0);
-        return true;
+        for (var i = 0; i < aboutUsWrapper.length; i++) {
+
+            if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-500||aboutUsWrapper[i].offsetTop>window.pageYOffset-500 + window.innerHeight){
+                $(aboutUsWrapper[i]).css('opacity', 1);
+            }else{
+                 $(aboutUsWrapper[i]).children('.left-side').toggleClass('left-side-new');
+                $(aboutUsWrapper[i]).children('.right-side').toggleClass('right-side-new');
+                $(aboutUsWrapper[i]).css('opacity', .5);
+            }
+        }
     }
-}
 
-//When any element in that class becomes visible in the middle of the screen fade and roll in the text
+    //When any element in that class becomes visible in the middle of the screen fade and roll in the text
 
-window.addEventListener('scroll', aboutusWrapperInView)
-;
-//When it is no longer visible in the middle of the screen/ view port toggle the class back.
+    window.addEventListener('scroll', aboutusWrapperInView)
+        ;
+    //When it is no longer visible in the middle of the screen/ view port toggle the class back.
 
 });
