@@ -25,12 +25,13 @@ $(function () {
         for (var i = 0; i < aboutUsWrapper.length; i++) {
 
             if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-400||aboutUsWrapper[i].offsetTop>window.pageYOffset-400 + window.innerHeight){
-                // $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').toggleClass('overlay-about.after')
+                $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
+                $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').removeClass('testing')
             }else{
-                 $(aboutUsWrapper[i]).children('.left-side').toggleClass('left-side-new');
-                $(aboutUsWrapper[i]).children('.right-side').toggleClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').toggleClass('testing')
-                console.log(  $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about'));
+                 $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
+                $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').addClass('testing')
 
             }
         }

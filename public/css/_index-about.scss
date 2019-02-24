@@ -23,7 +23,7 @@
     width:25%;
     float: left;
     transform: translateX(-200%);
-    transition: transform 1.8s ease-in;
+    transition: transform 1s ease-in;
 }
 
 .left-side-new{
@@ -33,7 +33,7 @@
     width:25%;
     float: left;
     transform: translateX(200%);
-    transition: transform 1.8s ease-in;
+    transition: transform 1s ease-in;
 }
 .right-side-new{
     transform: translateX(0);
@@ -66,7 +66,9 @@
     font-size:50pt;
 }
 .testing{
-   opacity:.1;
+    opacity:0;
+    transition: opacity 1s;
+    transition-duration: 2.5s;
 }
 .image1{
     width:100%;

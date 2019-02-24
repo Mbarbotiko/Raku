@@ -185,7 +185,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(-200%);
-  transition: transform 1.8s ease-in;
+  transition: transform 1s ease-in;
 }
 
 .left-side-new {
@@ -196,7 +196,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(200%);
-  transition: transform 1.8s ease-in;
+  transition: transform 1s ease-in;
 }
 
 .right-side-new {
@@ -236,7 +236,9 @@ body, html {
 }
 
 .testing {
-  opacity: 0.1;
+  opacity: 0;
+  transition: opacity 1s;
+  transition-duration: 2.5s;
 }
 
 .image1 {
