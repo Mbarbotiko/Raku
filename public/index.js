@@ -24,12 +24,13 @@ $(function () {
 
         for (var i = 0; i < aboutUsWrapper.length; i++) {
 
-            if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-500||aboutUsWrapper[i].offsetTop>window.pageYOffset-500 + window.innerHeight){
-                $(aboutUsWrapper[i]).css('opacity', 1);
+            if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-400||aboutUsWrapper[i].offsetTop>window.pageYOffset-400 + window.innerHeight){
+                // $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').toggleClass('overlay-about.after')
             }else{
                  $(aboutUsWrapper[i]).children('.left-side').toggleClass('left-side-new');
                 $(aboutUsWrapper[i]).children('.right-side').toggleClass('right-side-new');
-                $(aboutUsWrapper[i]).css('opacity', .5);
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about div').toggleClass('.after')
+
             }
         }
     }

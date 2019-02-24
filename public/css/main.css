@@ -235,6 +235,10 @@ body, html {
   font-size: 50pt;
 }
 
+.after {
+  opacity: 0;
+}
+
 .image1 {
   width: 100%;
   background-image: url("../images/bar.jpg");
