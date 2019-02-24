@@ -5,6 +5,7 @@ $secondary-color:white;
 $background-color:rgb(250, 245, 237);
 $spanColor: rgb(235, 74, 26);
 
+<<<<<<< HEAD
 //shared sections
 %backgroundImg{
     background-repeat:no-repeat;
@@ -15,6 +16,8 @@ $spanColor: rgb(235, 74, 26);
     background-color:$primary-color;   
 //second scroll bar issue
 }
+=======
+>>>>>>> e5cc4fa7b25800ceef0d81165ca0ee282f6d58bd
 
 %iconHover{
     padding:5px;
@@ -26,6 +29,22 @@ body, html{
     color:$primary-color;
     background-color:$background-color;
 }
+<<<<<<< HEAD
+=======
+.navbar{
+    min-height:50px!important; 
+}
+
+.navbar a:hover{
+    color:$spanColor!important;
+}
+.navbar span{
+    color:gray;
+ }
+.navbar-brand{
+    height:50px!important;
+}
+>>>>>>> e5cc4fa7b25800ceef0d81165ca0ee282f6d58bd
 
 
 @import 'nav';
