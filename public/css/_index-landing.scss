@@ -1,4 +1,4 @@
-#homepage-header{
+.landing-header{
     width: 40%;
     position:relative;
     margin:auto;
@@ -8,7 +8,7 @@
     height: 80vh;
     overflow: hidden;
 }
-.homepage-headline{
+.landing-headline{
     font-size:7vw;
     font-size:6.5vh;
 }
@@ -19,15 +19,65 @@
     width:75%;
     margin-top:1em;
 }
-.homepageheader-subtext span{
+.landing-subtext span{
     color:$spanColor;
 }
-.homepage-headline span{
+.landing-headline span{
     color:$spanColor;
+}
+//shared sections
+%backgroundImg{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    height:90vh;
+    background-color:$primary-color;
+    z-index:1;   
+    overflow: hidden;
+//second scroll bar issue
 }
 .landing-image{
     @extend %backgroundImg;
 }
-.home{
-    background-image:url('../images/group-1.jpg')
+.landing-image.overlay{
+    background: black;
+    opacity:.5;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    display: table;
+    width: 110vw;
+    height:110vh;
 }
+@keyframes indexLandingTransition {
+    0%{
+        background-image: url('../images/group-1.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;   
+    }
+    33%{
+        background-image: url('../images/group-2.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+    }
+    66%{
+        background-image: url('../images/group-3.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+    }
+    100%{
+        background-image: url('../images/group-1.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+    }
+}
+.landing-image .overlay{
+	animation-name: indexLandingTransition;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+
