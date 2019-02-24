@@ -29,7 +29,8 @@ $(function () {
             }else{
                  $(aboutUsWrapper[i]).children('.left-side').toggleClass('left-side-new');
                 $(aboutUsWrapper[i]).children('.right-side').toggleClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about div').toggleClass('.after')
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about').toggleClass('testing')
+                console.log(  $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-about'));
 
             }
         }
