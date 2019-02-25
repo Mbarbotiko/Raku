@@ -89,12 +89,12 @@ body, html {
   font-size: 6.5vh;
 }
 
-.homepageheader-subtext {
+.landing-subtext {
   margin: auto;
   font-size: 3vw;
   font-size: 3vh;
   width: 75%;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .landing-subtext span {
@@ -185,7 +185,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(-200%);
-  transition: transform 2s ease-in;
+  transition: transform 1.5s ease-in;
 }
 
 .left-side-new {
@@ -196,7 +196,7 @@ body, html {
   width: 25%;
   float: left;
   transform: translateX(200%);
-  transition: transform 2s ease-in;
+  transition: transform 1.5s ease-in;
 }
 
 .right-side-new {
@@ -241,13 +241,13 @@ body, html {
 
 .image1 {
   width: 100%;
-  background-image: url("../images/bar.jpg");
+  background-image: url("../images/sushi11.jpg");
   background-size: 100% 100%;
 }
 
 .image2 {
   width: 100%;
-  background-image: url("../images/sushi11.jpg");
+  background-image: url("../images/bar.jpg");
   background-size: 100% 100%;
 }
 
@@ -278,7 +278,7 @@ body, html {
 }
 
 #loader-footer .hd-ft-bar {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .social-media {
@@ -287,7 +287,7 @@ body, html {
 }
 
 .copyright {
-  width: 70%;
+  width: 40%;
   float: left;
   text-align: left;
   padding-left: 3%;
@@ -297,6 +297,24 @@ body, html {
   margin-left: 5%;
   align-content: right;
   width: 50px;
+}
+
+.margarita {
+  text-align: center;
+  width: 30%;
+  float: left;
+}
+
+.margarita img {
+  width: 25px;
+  float: right;
+  margin-right: 45%;
+  margin-top: 5px;
+  transition-duration: 1.5s;
+}
+
+.margarita img:hover {
+  width: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

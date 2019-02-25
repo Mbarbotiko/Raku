@@ -23,7 +23,7 @@
     width:25%;
     float: left;
     transform: translateX(-200%);
-    transition: transform 2s ease-in;
+    transition: transform 1.5s ease-in;
 }
 
 .left-side-new{
@@ -33,7 +33,7 @@
     width:25%;
     float: left;
     transform: translateX(200%);
-    transition: transform 2s ease-in;
+    transition: transform 1.5s ease-in;
 }
 .right-side-new{
     transform: translateX(0);
@@ -71,12 +71,12 @@
 }
 .image1{
     width:100%;
-    background-image:url("../images/bar.jpg");
+    background-image:url("../images/sushi11.jpg");
     background-size:100% 100%;
 }
 .image2{
     width:100%;
-    background-image:url("../images/sushi11.jpg");
+    background-image:url("../images/bar.jpg");
     background-size:100% 100%;
 }
 .image3{
