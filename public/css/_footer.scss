@@ -3,7 +3,7 @@
 }
 
 #loader-footer .hd-ft-bar{
-    padding-bottom:10px;
+    padding-bottom:30px;
 }
 
 .social-media{
@@ -12,7 +12,7 @@
 }
 
 .copyright{
-    width:70%;
+    width:40%;
     float:left;
     text-align: left;
     padding-left:3%;
@@ -28,6 +28,20 @@
    @extend %iconHover;
 }
 
-// .margarita{
-//for logo / contact info & git hub ?
-// }
+.margarita{
+    text-align: center;
+    width:30%;
+    float: left;
+
+}
+.margarita img{
+    width:25px;
+    float: right;
+    margin-right:45%;
+    margin-top:5px;
+    transition-duration: 1.5s;
+}
+
+.margarita img:hover{
+    width:30px;
+}

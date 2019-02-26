@@ -1,0 +1,20 @@
+@media screen and (max-width: 1160px) and (min-width: 992px) {
+    #loader-nav .nav-link{
+    letter-spacing: 6px;
+    }
+    #loader-nav .hd-ft-bar span{
+        padding-left:8%;
+        padding-right:8%;
+    }
+    .navbar-nav{
+        margin-left:0%;
+    }
+    .headers{
+        font-size:25pt;   
+        letter-spacing: 8px;
+        line-height: 3em;
+    }
+    .headers span{
+        font-size:15pt;    
+    }
+}
