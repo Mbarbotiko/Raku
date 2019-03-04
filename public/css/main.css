@@ -61,6 +61,7 @@ body, html {
   line-height: 40px;
   overflow: hidden;
   clear: both;
+  overflow: hidden;
 }
 
 .navbar img {
@@ -126,10 +127,9 @@ body, html {
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 90vh;
+  height: 110vh;
   background-color: black;
   z-index: 1;
-  overflow: hidden;
 }
 
 .landing-image.overlay {
@@ -140,7 +140,7 @@ body, html {
   top: 0;
   z-index: -1;
   display: table;
-  width: 110vw;
+  width: 100vw;
   height: 110vh;
 }
 
@@ -176,6 +176,7 @@ body, html {
 .home-aboutus {
   width: 100%;
   text-align: center;
+  margin-top: 10vh;
 }
 
 .aboutus-wrapper {
@@ -185,6 +186,7 @@ body, html {
   margin-bottom: 10%;
   float: left;
   margin-left: 5%;
+  overflow: hidden;
 }
 
 .panel {
@@ -291,10 +293,6 @@ body, html {
 
 #loader-footer {
   clear: both;
-}
-
-#loader-footer .hd-ft-bar {
-  padding-bottom: 30px;
 }
 
 .social-media {
