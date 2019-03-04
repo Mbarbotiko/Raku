@@ -61,7 +61,6 @@ body, html {
   line-height: 40px;
   overflow: hidden;
   clear: both;
-  overflow: hidden;
 }
 
 .navbar img {
@@ -98,7 +97,6 @@ body, html {
   text-align: center;
   color: white;
   height: 80vh;
-  overflow: hidden;
 }
 
 .landing-headline {
@@ -204,6 +202,7 @@ body, html {
   float: left;
   transform: translateX(-200%);
   transition: transform 1.5s ease-in;
+  background-color: green;
 }
 
 .left-side-new {
@@ -295,6 +294,10 @@ body, html {
   clear: both;
 }
 
+#loader-footer .hd-ft-bar {
+  padding-bottom: 30px;
+}
+
 .social-media {
   width: 30%;
   float: left;
@@ -353,6 +356,27 @@ body, html {
 
   .headers span {
     font-size: 15pt;
+  }
+
+  .left-side-new {
+    display: none;
+  }
+
+  .right-side-new {
+    display: none;
+  }
+
+  .panel p {
+    display: none;
+  }
+
+  .middle {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .overlay-about {
+    width: 100%;
   }
 }
 

@@ -26,6 +26,7 @@
     float: left;
     transform: translateX(-200%);
     transition: transform 1.5s ease-in;
+    background-color:green;
 }
 
 .left-side-new{
@@ -69,7 +70,6 @@
 }
 .disappear{
     opacity:0;
-
 }
 .image1{
     width:100%;

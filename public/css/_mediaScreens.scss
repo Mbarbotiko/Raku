@@ -17,4 +17,25 @@
     .headers span{
         font-size:15pt;    
     }
+
+    .left-side-new{
+      //js file is changing display to none @ 1159 or less pixels
+      display: none;
+    }
+    .right-side-new{
+     //js file is changing display to none @ 1159 or less pixels
+     display: none;
+    }
+    .panel p{
+        display: none;
+    }
+
+    .middle{
+        width:80%;
+        margin-left:10%;
+    }
+
+    .overlay-about{
+        width:100%;
+    }
 }
