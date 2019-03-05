@@ -1,4 +1,4 @@
-@media screen and (max-width: 1160px) and (min-width: 992px) {
+@media screen and (max-width: 1160px) and (min-width: 991px) {
     #loader-nav .nav-link{
     letter-spacing: 6px;
     }
@@ -31,11 +31,48 @@
     }
 
     .middle{
-        width:80%;
-        margin-left:10%;
+        width:70%;
+        margin-left:15%;
     }
 
     .overlay-about{
         width:100%;
     }
+
+    //lower media screens change the bacground image landing to
+}
+@media screen and (max-width: 900px) and (min-width: 450px) {
+    #loader-nav .hd-ft-bar{
+       display: none;
+    }
+        .headers{
+            font-size:25pt;   
+            letter-spacing: 8px;
+            line-height: 3em;
+        }
+        .headers span{
+            font-size:15pt;    
+        }
+    
+        .left-side-new{
+          display: none;
+        }
+        .right-side-new{
+         display: none;
+        }
+        .panel p{
+            display: none;
+        }
+    
+        .middle{
+       width:100%;
+       margin-left:0%;
+       //about us wrapper is causin gthis to have a margin on the left side at 883 screen size
+
+        }
+        .overlay-about{
+            width:100%;
+        }
+        
+   
 }
