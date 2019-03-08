@@ -18,17 +18,6 @@
         font-size:15pt;    
     }
 
-    .left-side-new{
-      //js file is changing display to none @ 1159 or less pixels
-      display: none;
-    }
-    .right-side-new{
-     //js file is changing display to none @ 1159 or less pixels
-     display: none;
-    }
-    .panel p{
-        display: none;
-    }
 
     .middle{
         width:70%;
@@ -37,6 +26,14 @@
 
     .overlay-about{
         width:100%;
+    }
+
+    .overlay-about h2{
+        font-size:4vw;
+    }
+
+    .overlay-about span{
+        font-size:5vw;
     }
 
     //lower media screens change the bacground image landing to
@@ -73,6 +70,27 @@
         .overlay-about{
             width:100%;
         }
+        .overlay-about h2{
+            font-size:5vw;
+        }
+    
+        .overlay-about span{
+            font-size:6vw;
+        }
         
    
+}
+
+@media screen and (max-width: 1160px)and (min-width: 0px){
+    .left-side-new{
+        //js file is changing display to none @ 1159 or less pixels
+        display: none;
+      }
+      .right-side-new{
+       //js file is changing display to none @ 1159 or less pixels
+       display: none;
+      }
+      .panel p{
+          display: none;
+      }
 }

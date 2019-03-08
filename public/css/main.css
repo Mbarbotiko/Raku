@@ -243,13 +243,13 @@ body, html {
 }
 
 .overlay-about h2 {
-  font-size: 40pt;
+  font-size: 3vw;
   line-height: 350px;
   letter-spacing: 10pt;
 }
 
 .overlay-about span {
-  font-size: 50pt;
+  font-size: 4vw;
 }
 
 .disappear {
@@ -334,7 +334,7 @@ body, html {
   width: 30px;
 }
 
-@media screen and (max-width: 1160px) and (min-width: 850px) {
+@media screen and (max-width: 1160px) and (min-width: 991px) {
   #loader-nav .nav-link {
     letter-spacing: 6px;
   }
@@ -358,18 +358,6 @@ body, html {
     font-size: 15pt;
   }
 
-  .left-side-new {
-    display: none;
-  }
-
-  .right-side-new {
-    display: none;
-  }
-
-  .panel p {
-    display: none;
-  }
-
   .middle {
     width: 70%;
     margin-left: 15%;
@@ -377,6 +365,14 @@ body, html {
 
   .overlay-about {
     width: 100%;
+  }
+
+  .overlay-about h2 {
+    font-size: 4vw;
+  }
+
+  .overlay-about span {
+    font-size: 5vw;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 450px) {
@@ -408,11 +404,32 @@ body, html {
 
   .middle {
     width: 100%;
-    margin-right: 10%;
+    margin-left: 0%;
   }
 
   .overlay-about {
     width: 100%;
+  }
+
+  .overlay-about h2 {
+    font-size: 5vw;
+  }
+
+  .overlay-about span {
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width: 1160px) and (min-width: 0px) {
+  .left-side-new {
+    display: none;
+  }
+
+  .right-side-new {
+    display: none;
+  }
+
+  .panel p {
+    display: none;
   }
 }
 
