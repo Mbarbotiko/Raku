@@ -275,8 +275,12 @@ body, html {
 }
 
 .image3 h2 {
-  font-size: 30pt;
+  font-size: 2.5vw;
   letter-spacing: 6pt;
+}
+
+.image3 span {
+  font-size: 3vw;
 }
 
 .image4 {
@@ -286,8 +290,12 @@ body, html {
 }
 
 .image4 h2 {
-  font-size: 35pt;
+  font-size: 2.75vw;
   letter-spacing: 10pt;
+}
+
+.image4 span {
+  font-size: 3.25vw;
 }
 
 #loader-footer {
@@ -334,7 +342,7 @@ body, html {
   width: 30px;
 }
 
-@media screen and (max-width: 1160px) and (min-width: 991px) {
+@media screen and (max-width: 1160px) and (min-width: 901px) {
   #loader-nav .nav-link {
     letter-spacing: 6px;
   }
@@ -374,12 +382,24 @@ body, html {
   .overlay-about span {
     font-size: 5vw;
   }
-}
-@media screen and (max-width: 900px) and (min-width: 450px) {
-  #loader-nav .hd-ft-bar {
-    display: none;
+
+  .image3 h2 {
+    font-size: 3.5vw;
   }
 
+  .image3 span {
+    font-size: 4vw;
+  }
+
+  .image4 h2 {
+    font-size: 3.75vw;
+  }
+
+  .image4 span {
+    font-size: 4.25vw;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 450px) {
   .headers {
     font-size: 25pt;
     letter-spacing: 8px;
@@ -430,6 +450,56 @@ body, html {
 
   .panel p {
     display: none;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 0px) {
+  #loader-nav .hd-ft-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 650px) {
+  .landing-header {
+    width: 60%;
+  }
+
+  .landing-headline {
+    font-size: 5.5vw;
+    padding-top: 1em;
+  }
+
+  .landing-subtext {
+    font-size: 2vw;
+    margin-top: 3em;
+  }
+}
+@media screen and (max-width: 649px) and (min-width: 480px) {
+  .landing-header {
+    width: 70%;
+  }
+
+  .landing-headline {
+    font-size: 24pt;
+    padding-top: 2em;
+  }
+
+  .landing-subtext {
+    font-size: 12pt;
+    margin-top: 6em;
+  }
+}
+@media screen and (max-width: 479px) and (min-width: 0px) {
+  .landing-header {
+    width: 80%;
+  }
+
+  .landing-headline {
+    font-size: 20pt;
+    padding-top: 2em;
+  }
+
+  .landing-subtext {
+    font-size: 12pt;
+    margin-top: 4em;
   }
 }
 

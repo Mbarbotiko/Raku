@@ -1,4 +1,4 @@
-@media screen and (max-width: 1160px) and (min-width: 991px) {
+@media screen and (max-width: 1160px) and (min-width: 901px) {
     #loader-nav .nav-link{
     letter-spacing: 6px;
     }
@@ -17,17 +17,13 @@
     .headers span{
         font-size:15pt;    
     }
-
-
     .middle{
         width:70%;
         margin-left:15%;
     }
-
     .overlay-about{
         width:100%;
     }
-
     .overlay-about h2{
         font-size:4vw;
     }
@@ -35,13 +31,20 @@
     .overlay-about span{
         font-size:5vw;
     }
-
-    //lower media screens change the bacground image landing to
+    .image3 h2{
+        font-size:3.5vw;
+    }
+    .image3 span{
+        font-size:4vw;
+    }
+    .image4 h2{
+        font-size:3.75vw;
+    }
+    .image4 span{
+        font-size:4.25vw;
+    }
 }
 @media screen and (max-width: 900px) and (min-width: 450px) {
-    #loader-nav .hd-ft-bar{
-       display: none;
-    }
         .headers{
             font-size:25pt;   
             letter-spacing: 8px;
@@ -80,7 +83,7 @@
         
    
 }
-
+//stop displaying sliding text at about us section at 1160
 @media screen and (max-width: 1160px)and (min-width: 0px){
     .left-side-new{
         //js file is changing display to none @ 1159 or less pixels
@@ -94,3 +97,60 @@
           display: none;
       }
 }
+
+//restaurant location bar at top stop displaying at 991
+@media screen and (max-width: 991px)and (min-width: 0px){
+    #loader-nav .hd-ft-bar{
+        display: none;
+    }
+
+ }
+//header text on landing
+ @media screen and (max-width: 800px)and (min-width: 650px){
+    .landing-header{
+        width:60%;
+    }
+    .landing-headline{
+        font-size:5.5vw;
+        padding-top:1em;
+    }
+    .landing-subtext{
+        font-size:2vw;
+        margin-top:3em;
+    }
+
+ }
+//header text on landing
+ @media screen and (max-width: 649px)and (min-width: 480px){
+    .landing-header{
+        width:70%;
+
+    }
+    .landing-headline{
+        font-size:24pt;
+        padding-top:2em;
+    }
+    .landing-subtext{
+        font-size:12pt;
+        margin-top:6em;
+    }
+
+ }
+
+ //header text on landing
+ @media screen and (max-width: 479px)and (min-width: 0px){
+    .landing-header{
+        width:80%;
+    }
+    .landing-headline{
+        font-size:20pt;
+        padding-top:2em;
+    }
+    .landing-subtext{
+        font-size:12pt;
+        margin-top:4em;
+    }
+
+ }
+
+ //990- 901
