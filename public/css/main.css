@@ -513,10 +513,11 @@ body, html {
 @media screen and (max-width: 889px) and (min-width: 0px) {
   #loader-footer .hd-ft-bar {
     font-size: 10pt;
+    line-height: 30px;
   }
 
   #loader-footer .hd-ft-bar {
-    padding-bottom: 400px;
+    padding-bottom: 120px;
   }
 
   .social-media {
@@ -541,13 +542,17 @@ body, html {
     text-align: center;
     width: 100%;
     float: left;
+    margin-left: 45%;
+  }
+
+  .margarita p {
+    width: 30%;
   }
 
   .margarita img {
     width: 25px;
-    float: right;
-    margin-top: 5px;
     transition-duration: 1.5s;
+    float: right;
   }
 
   .margarita img:hover {
