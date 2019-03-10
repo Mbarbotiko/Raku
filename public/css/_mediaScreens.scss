@@ -53,7 +53,6 @@
         .headers span{
             font-size:15pt;    
         }
-    
         .left-side-new{
           display: none;
         }
@@ -63,12 +62,9 @@
         .panel p{
             display: none;
         }
-    
         .middle{
-       width:100%;
-       margin-left:0%;
-       //about us wrapper is causin gthis to have a margin on the left side at 883 screen size
-
+            width:100%;
+            margin-left:0%;
         }
         .overlay-about{
             width:100%;
@@ -76,14 +72,11 @@
         .overlay-about h2{
             font-size:5vw;
         }
-    
         .overlay-about span{
             font-size:6vw;
-        }
-        
-   
+        }   
 }
-//stop displaying sliding text at about us section at 1160
+//About us text
 @media screen and (max-width: 1160px)and (min-width: 0px){
     .left-side-new{
         //js file is changing display to none @ 1159 or less pixels
@@ -97,15 +90,14 @@
           display: none;
       }
 }
-
-//restaurant location bar at top stop displaying at 991
+//Restaurant location bar @ Nav
 @media screen and (max-width: 991px)and (min-width: 0px){
     #loader-nav .hd-ft-bar{
         display: none;
     }
 
  }
-//header text on landing
+//Landing Text Index.html
  @media screen and (max-width: 960px)and (min-width: 650px){
     .landing-header{
         width:60%;
@@ -119,13 +111,11 @@
         font-size:2vw;
         margin-top:3em;
     }
-
  }
-//header text on landing
+//Landing Text Index.html
  @media screen and (max-width: 649px)and (min-width: 480px){
     .landing-header{
         width:70%;
-
     }
     .landing-headline{
         font-size:20pt;
@@ -136,10 +126,9 @@
         font-size:12pt;
         margin-top:6em;
     }
-
  }
 
- //header text on landing
+//Landing Text Index.html
  @media screen and (max-width: 479px)and (min-width: 0px){
     .landing-header{
         width:80%;
@@ -153,58 +142,48 @@
         font-size:12pt;
         margin-top:4em;
     }
-
  }
 
- //check landing text VH settings  @ 1142 spilling out of the container until media screen size.
-
- @media screen and (max-width: 1200px)and (min-width: 990px){
+//Footer
+ @media screen and (max-width: 1200px)and (min-width: 725px){
     #loader-footer .hd-ft-bar{
         font-size: 10pt;
+        padding-bottom:40px;
+        }
+        .copyright{
+            line-height:20px;
+        }
+        #created{
+            line-height:20px;
         }
  }
 
- @media screen and (max-width: 889px)and (min-width: 0px){
-    #loader-footer .hd-ft-bar{
-        font-size: 10pt;
-        line-height: 30px;
-        }
-        
+//Footer 
+ @media screen and (max-width: 724px)and (min-width: 0px){
         #loader-footer .hd-ft-bar{
+            font-size: 10pt;
             padding-bottom:120px;
-            
         }
         .social-media{
             width:100%;
             float:left;
         }
         .copyright{
+            line-height:15px;
             width:100%;
-            float:left;
-            text-align: center;
-            padding-left:3%;
         }
         .fab{
-            margin-left:5%;
-            align-content: right;
-            width: 50px;
+            margin-left:0%;
         }
-        .margarita{
-            text-align: center;
-            width:100%;
-            float: left;
-            margin-left:45%;
+        #created{
+            width:55%;
+            line-height:20px;
+            padding-top:10px;
         }
-        .margarita p{
-           width:30%;
-        }
-        .margarita img{
-            width:25px;
-            transition-duration: 1.5s;
-            float: right;
-        }
-        
-        .margarita img:hover{
-            width:30px;
+        #hand-print{
+            width:45%;
+            padding-right:25%;
+            line-height:15px;
         }
  }
+

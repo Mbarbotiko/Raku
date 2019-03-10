@@ -202,7 +202,6 @@ body, html {
   float: left;
   transform: translateX(-200%);
   transition: transform 1.5s ease-in;
-  background-color: green;
 }
 
 .left-side-new {
@@ -300,10 +299,11 @@ body, html {
 
 #loader-footer {
   clear: both;
+  width: 100%;
 }
 
 #loader-footer .hd-ft-bar {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .social-media {
@@ -314,7 +314,7 @@ body, html {
 .copyright {
   width: 40%;
   float: left;
-  text-align: left;
+  text-align: center;
   padding-left: 3%;
 }
 
@@ -322,12 +322,6 @@ body, html {
   margin-left: 5%;
   align-content: right;
   width: 50px;
-}
-
-.margarita {
-  text-align: center;
-  width: 30%;
-  float: left;
 }
 
 .margarita img {
@@ -340,6 +334,19 @@ body, html {
 
 .margarita img:hover {
   width: 30px;
+}
+
+#created {
+  width: 20%;
+  float: left;
+  text-align: right;
+  padding-left: 10%;
+}
+
+#hand-print {
+  width: 10%;
+  float: left;
+  padding-right: 30%;
 }
 
 @media screen and (max-width: 1160px) and (min-width: 901px) {
@@ -505,18 +512,23 @@ body, html {
     margin-top: 4em;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 990px) {
+@media screen and (max-width: 1200px) and (min-width: 725px) {
   #loader-footer .hd-ft-bar {
     font-size: 10pt;
-  }
-}
-@media screen and (max-width: 889px) and (min-width: 0px) {
-  #loader-footer .hd-ft-bar {
-    font-size: 10pt;
-    line-height: 30px;
+    padding-bottom: 40px;
   }
 
+  .copyright {
+    line-height: 20px;
+  }
+
+  #created {
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 724px) and (min-width: 0px) {
   #loader-footer .hd-ft-bar {
+    font-size: 10pt;
     padding-bottom: 120px;
   }
 
@@ -526,37 +538,24 @@ body, html {
   }
 
   .copyright {
+    line-height: 15px;
     width: 100%;
-    float: left;
-    text-align: center;
-    padding-left: 3%;
   }
 
   .fab {
-    margin-left: 5%;
-    align-content: right;
-    width: 50px;
+    margin-left: 0%;
   }
 
-  .margarita {
-    text-align: center;
-    width: 100%;
-    float: left;
-    margin-left: 45%;
+  #created {
+    width: 55%;
+    line-height: 20px;
+    padding-top: 10px;
   }
 
-  .margarita p {
-    width: 30%;
-  }
-
-  .margarita img {
-    width: 25px;
-    transition-duration: 1.5s;
-    float: right;
-  }
-
-  .margarita img:hover {
-    width: 30px;
+  #hand-print {
+    width: 45%;
+    padding-right: 25%;
+    line-height: 15px;
   }
 }
 

@@ -1,9 +1,10 @@
 #loader-footer{
     clear:both;
+    width:100%;
 }
 
 #loader-footer .hd-ft-bar{
-    padding-bottom:30px;
+    padding-bottom:20px;
 }
 
 .social-media{
@@ -14,7 +15,7 @@
 .copyright{
     width:40%;
     float:left;
-    text-align: left;
+    text-align: center;
     padding-left:3%;
 }
 
@@ -28,12 +29,6 @@
    @extend %iconHover;
 }
 
-.margarita{
-    text-align: center;
-    width:30%;
-    float: left;
-
-}
 .margarita img{
     width:25px;
     float: right;
@@ -44,4 +39,15 @@
 
 .margarita img:hover{
     width:30px;
+}
+
+#created{
+    width:10%;
+    float: left;
+    text-align: right;
+}
+
+#hand-print{
+    width:10%;
+    float: left;
 }
