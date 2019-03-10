@@ -457,7 +457,7 @@ body, html {
     display: none;
   }
 }
-@media screen and (max-width: 800px) and (min-width: 650px) {
+@media screen and (max-width: 960px) and (min-width: 650px) {
   .landing-header {
     width: 60%;
   }
@@ -465,6 +465,7 @@ body, html {
   .landing-headline {
     font-size: 5.5vw;
     padding-top: 1em;
+    font-size: 6.5vh;
   }
 
   .landing-subtext {
@@ -478,8 +479,9 @@ body, html {
   }
 
   .landing-headline {
-    font-size: 24pt;
+    font-size: 20pt;
     padding-top: 2em;
+    font-size: 4.5vh;
   }
 
   .landing-subtext {
@@ -495,11 +497,61 @@ body, html {
   .landing-headline {
     font-size: 20pt;
     padding-top: 2em;
+    font-size: 4.5vh;
   }
 
   .landing-subtext {
     font-size: 12pt;
     margin-top: 4em;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  #loader-footer .hd-ft-bar {
+    font-size: 10pt;
+  }
+}
+@media screen and (max-width: 889px) and (min-width: 0px) {
+  #loader-footer .hd-ft-bar {
+    font-size: 10pt;
+  }
+
+  #loader-footer .hd-ft-bar {
+    padding-bottom: 400px;
+  }
+
+  .social-media {
+    width: 100%;
+    float: left;
+  }
+
+  .copyright {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-left: 3%;
+  }
+
+  .fab {
+    margin-left: 5%;
+    align-content: right;
+    width: 50px;
+  }
+
+  .margarita {
+    text-align: center;
+    width: 100%;
+    float: left;
+  }
+
+  .margarita img {
+    width: 25px;
+    float: right;
+    margin-top: 5px;
+    transition-duration: 1.5s;
+  }
+
+  .margarita img:hover {
+    width: 30px;
   }
 }
 
