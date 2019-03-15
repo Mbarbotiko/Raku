@@ -44,7 +44,7 @@
         font-size:4.25vw;
     }
 }
-@media screen and (max-width: 900px) and (min-width: 450px) {
+@media screen and (max-width: 900px) and (min-width: 0px) {
         .headers{
             font-size:25pt;   
             letter-spacing: 8px;
@@ -145,21 +145,14 @@
  }
 
 //Footer
- @media screen and (max-width: 1200px)and (min-width: 725px){
+ @media screen and (max-width: 1200px)and (min-width: 1000px){
     #loader-footer .hd-ft-bar{
         font-size: 10pt;
         padding-bottom:40px;
         }
-        .copyright{
-            line-height:20px;
-        }
-        #created{
-            line-height:20px;
-        }
  }
 
-//Footer 
- @media screen and (max-width: 724px)and (min-width: 0px){
+ @media screen and (max-width: 999px)and (min-width: 550px){
         #loader-footer .hd-ft-bar{
             font-size: 10pt;
             padding-bottom:120px;
@@ -169,21 +162,59 @@
             float:left;
         }
         .copyright{
-            line-height:15px;
+            line-height:0px;
             width:100%;
+            background-color:purple;
         }
         .fab{
             margin-left:0%;
         }
         #created{
             width:55%;
-            line-height:20px;
+            line-height:0px;
             padding-top:10px;
+            background-color:green;
         }
         #hand-print{
             width:45%;
-            padding-right:25%;
-            line-height:15px;
+            padding-right:35%;
+            line-height:0px;
+            background-color:red;
+            position:relative;
+            top:-5px;
         }
  }
 
+ //Footer 
+ @media screen and (max-width: 549px)and (min-width: 0px){
+    #loader-footer .hd-ft-bar{
+        font-size: 10pt;
+        padding-bottom:120px;
+    }
+    .social-media{
+        width:100%;
+        float:left;
+    }
+    .copyright{
+        line-height:20px;
+        width:100%;
+        background-color:purple;
+    }
+    .fab{
+        margin-left:0%;
+    }
+    #created{
+        width:55%;
+        line-height:0px;
+        padding-top:10px;
+        background-color:green;
+    }
+    #hand-print{
+        width:45%;
+        padding-right:25%;
+        line-height:0px;
+        background-color:red;
+        position:relative;
+        top:-5px;
+    }
+}

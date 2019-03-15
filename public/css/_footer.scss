@@ -29,7 +29,7 @@
    @extend %iconHover;
 }
 
-.margarita img{
+#hand-print img{
     width:25px;
     float: right;
     margin-right:45%;
@@ -37,7 +37,7 @@
     transition-duration: 1.5s;
 }
 
-.margarita img:hover{
+#hand-print img:hover{
     width:30px;
 }
 

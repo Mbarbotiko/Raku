@@ -324,7 +324,7 @@ body, html {
   width: 50px;
 }
 
-.margarita img {
+#hand-print img {
   width: 25px;
   float: right;
   margin-right: 45%;
@@ -332,21 +332,19 @@ body, html {
   transition-duration: 1.5s;
 }
 
-.margarita img:hover {
+#hand-print img:hover {
   width: 30px;
 }
 
 #created {
-  width: 20%;
+  width: 10%;
   float: left;
   text-align: right;
-  padding-left: 10%;
 }
 
 #hand-print {
   width: 10%;
   float: left;
-  padding-right: 30%;
 }
 
 @media screen and (max-width: 1160px) and (min-width: 901px) {
@@ -512,21 +510,13 @@ body, html {
     margin-top: 4em;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 725px) {
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
   #loader-footer .hd-ft-bar {
     font-size: 10pt;
     padding-bottom: 40px;
   }
-
-  .copyright {
-    line-height: 20px;
-  }
-
-  #created {
-    line-height: 20px;
-  }
 }
-@media screen and (max-width: 724px) and (min-width: 0px) {
+@media screen and (max-width: 999px) and (min-width: 550px) {
   #loader-footer .hd-ft-bar {
     font-size: 10pt;
     padding-bottom: 120px;
@@ -538,8 +528,9 @@ body, html {
   }
 
   .copyright {
-    line-height: 15px;
+    line-height: 0px;
     width: 100%;
+    background-color: purple;
   }
 
   .fab {
@@ -548,14 +539,55 @@ body, html {
 
   #created {
     width: 55%;
-    line-height: 20px;
+    line-height: 0px;
     padding-top: 10px;
+    background-color: green;
+  }
+
+  #hand-print {
+    width: 45%;
+    padding-right: 35%;
+    line-height: 0px;
+    background-color: red;
+    position: relative;
+    top: -5px;
+  }
+}
+@media screen and (max-width: 549px) and (min-width: 0px) {
+  #loader-footer .hd-ft-bar {
+    font-size: 10pt;
+    padding-bottom: 120px;
+  }
+
+  .social-media {
+    width: 100%;
+    float: left;
+  }
+
+  .copyright {
+    line-height: 10px;
+    width: 100%;
+    background-color: purple;
+  }
+
+  .fab {
+    margin-left: 0%;
+  }
+
+  #created {
+    width: 55%;
+    line-height: 0px;
+    padding-top: 10px;
+    background-color: green;
   }
 
   #hand-print {
     width: 45%;
     padding-right: 25%;
-    line-height: 15px;
+    line-height: 0px;
+    background-color: red;
+    position: relative;
+    top: -5px;
   }
 }
 
