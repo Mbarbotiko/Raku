@@ -14,33 +14,43 @@ $(function () {
             navBar.classList.remove('fixed-top');
         }
     };
-    //Event listener for window on scroll to run headerBarHide();
+    //Event listener for window on scroll for header footer bar
     window.addEventListener('scroll', headerBarHide);
+    //Event listener for window on scroll for about us section
+    window.addEventListener('scroll', aboutusWrapperInView);
 
-    //Select the element class
+    //Select wrapper for about us section
     let aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
-
+    //Function for removing and adding classes on scroll for the wrapper
     function aboutusWrapperInView() {
+        //if window width is equal to or higher than __pixels, run this code:
+        if (window.innerWidth >= 1160) {
+            for (var i = 0; i < aboutUsWrapper.length; i++) {
+                if (aboutUsWrapper[i].offsetTop + aboutUsWrapper[i].offsetHeight < window.pageYOffset - 400 || aboutUsWrapper[i].offsetTop > window.pageYOffset - 400 + window.innerHeight) {
+                    $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
+                    $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
+                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
+                } else {
+                    $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
+                    $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
+                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
 
-        for (var i = 0; i < aboutUsWrapper.length; i++) {
+                }
+            }
+        } if (window.innerWidth < 1159) {
+            $(aboutUsWrapper[i]).children('.left-side').css('display', 'none');
+            $(aboutUsWrapper[i]).children('.right-side').css('display', 'none');
+            for (var i = 0; i < aboutUsWrapper.length; i++) {
+                if (aboutUsWrapper[i].offsetTop + aboutUsWrapper[i].offsetHeight < window.pageYOffset - 400 || aboutUsWrapper[i].offsetTop > window.pageYOffset - 400 + window.innerHeight) {
+                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
+                } else {
+                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
 
-            if(aboutUsWrapper[i].offsetTop+aboutUsWrapper[i].offsetHeight<window.pageYOffset-400||aboutUsWrapper[i].offsetTop>window.pageYOffset-400 + window.innerHeight){
-                $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
-                $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
-            }else{
-                 $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
-                $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
-                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
+                }
 
             }
         }
     }
 
-    //When any element in that class becomes visible in the middle of the screen fade and roll in the text
-
-    window.addEventListener('scroll', aboutusWrapperInView)
-        ;
-    //When it is no longer visible in the middle of the screen/ view port toggle the class back.
 
 });

@@ -1,0 +1,219 @@
+@media screen and (max-width: 1159px) and (min-width: 901px) {
+    #loader-nav .nav-link{
+    letter-spacing: 6px;
+    }
+    #loader-nav .hd-ft-bar span{
+        padding-left:8%;
+        padding-right:8%;
+    }
+    .navbar-nav{
+        margin-left:0%;
+    }
+    .headers{
+        font-size:25pt;   
+        letter-spacing: 8px;
+        line-height: 3em;
+    }
+    .headers span{
+        font-size:15pt;    
+    }
+    .middle{
+        width:70%;
+        margin-left:15%;
+    }
+    .overlay-about{
+        width:100%;
+    }
+    .overlay-about h2{
+        font-size:4vw;
+    }
+
+    .overlay-about span{
+        font-size:5vw;
+    }
+    .image3 h2{
+        font-size:3.5vw;
+    }
+    .image3 span{
+        font-size:4vw;
+    }
+    .image4 h2{
+        font-size:3.75vw;
+    }
+    .image4 span{
+        font-size:4.25vw;
+    }
+    .left-side-new{
+        display: none;
+     }
+    .right-side-new{
+         display: none;
+     }
+     .panel p{
+         display: none;
+         }
+    
+}
+
+@media screen and (max-width: 900px) and (min-width: 0px) {
+     .headers{
+        font-size:25pt;   
+        letter-spacing: 8px;
+        line-height: 3em;
+     }
+    .headers span{
+         font-size:15pt;    
+     }
+
+     .middle{
+         width:100%;
+         margin-left:0%;
+        }
+    .overlay-about{
+        width:100%;
+        }
+       
+    .overlay-about span{
+        font-size:6vw;
+        }   
+ }
+
+//About us text
+@media screen and (max-width: 1160px)and (min-width: 0px){
+    .left-side-new{
+        //js file is changing display to none @ 1159 or less pixels
+        display: none;
+      }
+      .right-side-new{
+       //js file is changing display to none @ 1159 or less pixels
+       display: none;
+      }
+      .panel p{
+          display: none;
+      }
+}
+
+//Restaurant location bar @ Nav
+@media screen and (max-width: 991px)and (min-width: 0px){
+    #loader-nav .hd-ft-bar{
+        display: none;
+    }
+
+ }
+
+//Landing Text Index.html
+ @media screen and (max-width: 960px)and (min-width: 650px){
+    .landing-header{
+        width:60%;
+    }
+    .landing-headline{
+        font-size:5.5vw;
+        padding-top:1em;
+        font-size:6.5vh;
+    }
+    .landing-subtext{
+        font-size:2vw;
+        margin-top:3em;
+    }
+ }
+
+//Landing Text Index.html
+ @media screen and (max-width: 649px)and (min-width: 480px){
+    .landing-header{
+        width:70%;
+    }
+    .landing-headline{
+        font-size:20pt;
+        padding-top:2em;
+        font-size:4.5vh;
+    }
+    .landing-subtext{
+        font-size:12pt;
+        margin-top:6em;
+    }
+ }
+
+//Landing Text Index.html
+ @media screen and (max-width: 479px)and (min-width: 0px){
+    .landing-header{
+        width:80%;
+    }
+    .landing-headline{
+        font-size:20pt;
+        padding-top:2em;
+        font-size:4.5vh;
+    }
+    .landing-subtext{
+        font-size:12pt;
+        margin-top:4em;
+    }
+ }
+
+//Footer
+ @media screen and (max-width: 1200px)and (min-width: 1000px){
+    #loader-footer .hd-ft-bar{
+        font-size: 10pt;
+        padding-bottom:40px;
+        }
+ }
+
+ @media screen and (max-width: 999px)and (min-width: 550px){
+        #loader-footer .hd-ft-bar{
+            font-size: 10pt;
+            padding-bottom:120px;
+        }
+        .social-media{
+            width:100%;
+            float:left;
+        }
+        .copyright{
+            line-height:0px;
+            width:100%;
+        }
+        .fab{
+            margin-left:0%;
+        }
+        #created{
+            width:55%;
+            line-height:0px;
+            padding-top:10px;
+        }
+        #hand-print{
+            width:45%;
+            padding-right:35%;
+            line-height:0px;
+            position:relative;
+            top:-5px;
+        }
+ }
+
+ //Footer 
+ @media screen and (max-width: 549px)and (min-width: 0px){
+    #loader-footer .hd-ft-bar{
+        font-size: 10pt;
+        padding-bottom:150px;
+    }
+    .social-media{
+        width:100%;
+        float:left;
+    }
+    .copyright{
+        line-height:20px;
+        width:100%;
+    }
+    .fab{
+        margin-left:0%;
+    }
+    #created{
+        width:55%;
+        line-height:0px;
+        padding-top:10px;
+    }
+    #hand-print{
+        width:45%;
+        padding-right:25%;
+        line-height:0px;
+        position:relative;
+        top:-5px;
+    }
+}

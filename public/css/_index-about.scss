@@ -1,6 +1,7 @@
 .home-aboutus{
     width:100%;
     text-align: center;
+    margin-top:10vh;
 }
 .aboutus-wrapper{
     width:90%;
@@ -9,6 +10,7 @@
     margin-bottom:10%;
     float: left;
     margin-left:5%;
+    overflow: hidden;
 }
 .panel{
     text-align: center;
@@ -23,7 +25,7 @@
     width:25%;
     float: left;
     transform: translateX(-200%);
-    transition: transform 2s ease-in;
+    transition: transform 1.5s ease-in;
 }
 
 .left-side-new{
@@ -33,7 +35,7 @@
     width:25%;
     float: left;
     transform: translateX(200%);
-    transition: transform 2s ease-in;
+    transition: transform 1.5s ease-in;
 }
 .right-side-new{
     transform: translateX(0);
@@ -58,25 +60,24 @@
     margin-bottom:1%;
 }
 .overlay-about h2{
-    font-size:40pt;
+    font-size:3vw;
     line-height:350px;
     letter-spacing: 10pt;
 }
 .overlay-about span{
-    font-size:50pt;
+    font-size:4vw;
 }
 .disappear{
     opacity:0;
-
 }
 .image1{
     width:100%;
-    background-image:url("../images/bar.jpg");
+    background-image:url("../images/sushi11.jpg");
     background-size:100% 100%;
 }
 .image2{
     width:100%;
-    background-image:url("../images/sushi11.jpg");
+    background-image:url("../images/bar.jpg");
     background-size:100% 100%;
 }
 .image3{
@@ -85,8 +86,12 @@
     background-size:100% 100%;
 }
 .image3 h2{
-    font-size:30pt;
+    font-size:2.5vw;
     letter-spacing: 6pt;
+}
+
+.image3 span{
+    font-size:3vw;
 }
 .image4{
     width:100%;
@@ -94,6 +99,10 @@
     background-size:100% 100%;
 }
 .image4 h2{
-    font-size:35pt;
+    font-size:2.75vw;
     letter-spacing: 10pt;
+}
+
+.image4 span{
+    font-size:3.25vw;
 }
