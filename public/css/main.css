@@ -146,22 +146,26 @@ body, html {
   0% {
     background-image: url("../images/group-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   }
   33% {
     background-image: url("../images/group-2.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   }
   66% {
     background-image: url("../images/group-3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   }
   100% {
     background-image: url("../images/group-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   }
 }
 .landing-image .overlay {
@@ -347,7 +351,7 @@ body, html {
   float: left;
 }
 
-@media screen and (max-width: 1160px) and (min-width: 901px) {
+@media screen and (max-width: 1159px) and (min-width: 901px) {
   #loader-nav .nav-link {
     letter-spacing: 6px;
   }
@@ -403,17 +407,6 @@ body, html {
   .image4 span {
     font-size: 4.25vw;
   }
-}
-@media screen and (max-width: 900px) and (min-width: 450px) {
-  .headers {
-    font-size: 25pt;
-    letter-spacing: 8px;
-    line-height: 3em;
-  }
-
-  .headers span {
-    font-size: 15pt;
-  }
 
   .left-side-new {
     display: none;
@@ -426,6 +419,17 @@ body, html {
   .panel p {
     display: none;
   }
+}
+@media screen and (max-width: 900px) and (min-width: 0px) {
+  .headers {
+    font-size: 25pt;
+    letter-spacing: 8px;
+    line-height: 3em;
+  }
+
+  .headers span {
+    font-size: 15pt;
+  }
 
   .middle {
     width: 100%;
@@ -434,10 +438,6 @@ body, html {
 
   .overlay-about {
     width: 100%;
-  }
-
-  .overlay-about h2 {
-    font-size: 5vw;
   }
 
   .overlay-about span {
@@ -530,7 +530,6 @@ body, html {
   .copyright {
     line-height: 0px;
     width: 100%;
-    background-color: purple;
   }
 
   .fab {
@@ -541,14 +540,12 @@ body, html {
     width: 55%;
     line-height: 0px;
     padding-top: 10px;
-    background-color: green;
   }
 
   #hand-print {
     width: 45%;
     padding-right: 35%;
     line-height: 0px;
-    background-color: red;
     position: relative;
     top: -5px;
   }
@@ -556,7 +553,7 @@ body, html {
 @media screen and (max-width: 549px) and (min-width: 0px) {
   #loader-footer .hd-ft-bar {
     font-size: 10pt;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
   }
 
   .social-media {
@@ -565,9 +562,8 @@ body, html {
   }
 
   .copyright {
-    line-height: 10px;
+    line-height: 20px;
     width: 100%;
-    background-color: purple;
   }
 
   .fab {
@@ -578,14 +574,12 @@ body, html {
     width: 55%;
     line-height: 0px;
     padding-top: 10px;
-    background-color: green;
   }
 
   #hand-print {
     width: 45%;
     padding-right: 25%;
     line-height: 0px;
-    background-color: red;
     position: relative;
     top: -5px;
   }

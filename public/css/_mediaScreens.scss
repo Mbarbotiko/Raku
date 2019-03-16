@@ -1,4 +1,4 @@
-@media screen and (max-width: 1160px) and (min-width: 901px) {
+@media screen and (max-width: 1159px) and (min-width: 901px) {
     #loader-nav .nav-link{
     letter-spacing: 6px;
     }
@@ -43,39 +43,41 @@
     .image4 span{
         font-size:4.25vw;
     }
-}
-@media screen and (max-width: 900px) and (min-width: 0px) {
-        .headers{
-            font-size:25pt;   
-            letter-spacing: 8px;
-            line-height: 3em;
-        }
-        .headers span{
-            font-size:15pt;    
-        }
-        .left-side-new{
-          display: none;
-        }
-        .right-side-new{
+    .left-side-new{
+        display: none;
+     }
+    .right-side-new{
          display: none;
-        }
-        .panel p{
-            display: none;
-        }
-        .middle{
-            width:100%;
-            margin-left:0%;
-        }
-        .overlay-about{
-            width:100%;
-        }
-        .overlay-about h2{
-            font-size:5vw;
-        }
-        .overlay-about span{
-            font-size:6vw;
-        }   
+     }
+     .panel p{
+         display: none;
+         }
+    
 }
+
+@media screen and (max-width: 900px) and (min-width: 0px) {
+     .headers{
+        font-size:25pt;   
+        letter-spacing: 8px;
+        line-height: 3em;
+     }
+    .headers span{
+         font-size:15pt;    
+     }
+
+     .middle{
+         width:100%;
+         margin-left:0%;
+        }
+    .overlay-about{
+        width:100%;
+        }
+       
+    .overlay-about span{
+        font-size:6vw;
+        }   
+ }
+
 //About us text
 @media screen and (max-width: 1160px)and (min-width: 0px){
     .left-side-new{
@@ -90,6 +92,7 @@
           display: none;
       }
 }
+
 //Restaurant location bar @ Nav
 @media screen and (max-width: 991px)and (min-width: 0px){
     #loader-nav .hd-ft-bar{
@@ -97,6 +100,7 @@
     }
 
  }
+
 //Landing Text Index.html
  @media screen and (max-width: 960px)and (min-width: 650px){
     .landing-header{
@@ -112,6 +116,7 @@
         margin-top:3em;
     }
  }
+
 //Landing Text Index.html
  @media screen and (max-width: 649px)and (min-width: 480px){
     .landing-header{
@@ -164,7 +169,6 @@
         .copyright{
             line-height:0px;
             width:100%;
-            background-color:purple;
         }
         .fab{
             margin-left:0%;
@@ -173,13 +177,11 @@
             width:55%;
             line-height:0px;
             padding-top:10px;
-            background-color:green;
         }
         #hand-print{
             width:45%;
             padding-right:35%;
             line-height:0px;
-            background-color:red;
             position:relative;
             top:-5px;
         }
@@ -189,7 +191,7 @@
  @media screen and (max-width: 549px)and (min-width: 0px){
     #loader-footer .hd-ft-bar{
         font-size: 10pt;
-        padding-bottom:120px;
+        padding-bottom:150px;
     }
     .social-media{
         width:100%;
@@ -198,7 +200,6 @@
     .copyright{
         line-height:20px;
         width:100%;
-        background-color:purple;
     }
     .fab{
         margin-left:0%;
@@ -207,13 +208,11 @@
         width:55%;
         line-height:0px;
         padding-top:10px;
-        background-color:green;
     }
     #hand-print{
         width:45%;
         padding-right:25%;
         line-height:0px;
-        background-color:red;
         position:relative;
         top:-5px;
     }

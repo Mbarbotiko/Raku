@@ -52,22 +52,26 @@
     0%{
         background-image: url('../images/group-1.jpg');
         background-repeat: no-repeat;
-        background-size:100% 100%;   
+        background-size:cover;
+        background-position:center;
     }
     33%{
         background-image: url('../images/group-2.jpg');
         background-repeat: no-repeat;
-        background-size:100% 100%;
+        background-size:cover;
+        background-position:center;
     }
     66%{
         background-image: url('../images/group-3.jpg');
         background-repeat: no-repeat;
-        background-size:100% 100%;
+        background-size:cover;
+        background-position:center;
     }
     100%{
         background-image: url('../images/group-1.jpg');
         background-repeat: no-repeat;
-        background-size:100% 100%;
+        background-size:cover;
+        background-position:center;
     }
 }
 .landing-image .overlay{
