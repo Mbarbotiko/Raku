@@ -216,8 +216,8 @@ body, html {
 .left-side {
   width: 25%;
   float: left;
-  transform: translateX(-200%);
-  transition: transform 1.5s ease-in;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in;
 }
 
 .left-side-new {
@@ -227,8 +227,8 @@ body, html {
 .right-side {
   width: 25%;
   float: left;
-  transform: translateX(200%);
-  transition: transform 1.5s ease-in;
+  transform: translateX(100%);
+  transition: transform 1s ease-in;
 }
 
 .right-side-new {
@@ -467,6 +467,74 @@ body, html {
 
   .panel p {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0px) {
+  .overlay-header span {
+    display: none;
+  }
+
+  .overlay-header h2 {
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    line-height: 50px;
+    position: relative;
+    top: 35%;
+    width: 50%;
+    left: 25%;
+    font-size: 18pt;
+    text-align: center;
+  }
+
+  .aboutus-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .overlay-about {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .overlay-header {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .home-aboutus .headers {
+    font-size: 14pt;
+  }
+
+  .home-aboutus .headers span {
+    font-size: 10pt;
+  }
+
+  .image1 {
+    background-image: url("../images/mediasushi1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image2 {
+    background-image: url("../images/mediabar1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image3 {
+    background-image: url("../images/mediasushi2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image4 {
+    background-image: url("../images/mediadinner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 0px) {

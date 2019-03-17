@@ -18,6 +18,12 @@ $(function () {
             //returns bar
         }
 
+        if (window.innerWidth< 991) {
+            headerBar.style.display = 'none';
+            navBar.classList.add('fixed-top');//if this is not present the headerBar wont display because navBar is over it.
+            //returns bar
+        }
+
     };
     //Event listener for window on scroll for header footer bar
     window.addEventListener('scroll', headerBarHide);
