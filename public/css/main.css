@@ -89,6 +89,18 @@ body, html {
   margin-left: 15%;
 }
 
+.hdBarFadeIn {
+  animation: fadeIn 3.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .landing-header {
   width: 40%;
   position: relative;

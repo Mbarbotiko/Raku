@@ -52,3 +52,16 @@ letter-spacing: 8px;
 .navbar-nav{
     margin-left:15%;
 }
+
+.hdBarFadeIn{
+animation:fadeIn 3.5s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
