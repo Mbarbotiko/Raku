@@ -24,8 +24,8 @@
 .left-side{
     width:25%;
     float: left;
-    transform: translateX(-200%);
-    transition: transform 1.5s ease-in;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
 }
 
 .left-side-new{
@@ -34,8 +34,8 @@
 .right-side{
     width:25%;
     float: left;
-    transform: translateX(200%);
-    transition: transform 1.5s ease-in;
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
 }
 .right-side-new{
     transform: translateX(0);
