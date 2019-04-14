@@ -373,6 +373,18 @@ body, html {
   z-index: 1;
 }
 
+.hi-arrow {
+  display: none;
+  width: 50px;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  color: white;
+  background-color: white;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
 .menu-container {
   background-color: red;
 }

@@ -5,6 +5,7 @@ function loadMenus(menuObj, cssName) {
         //console.log(happyHourApps[i].name)
 
     }
+    $('.menu-list').append('<img class=hi-arrow src=./images/down.svg>')
     $('.menu-list').hide();
 }
 
@@ -12,11 +13,23 @@ loadMenus(happyHourApps, '.happy-hour-list')
 loadMenus(happyHourHotApps, '.hot-list')
 
 
+
 $('.down-arrow').on('click', function () {
-    console.log($(this));//
     var menuItemsText = $(this).siblings('.menu-list');
-    console.log(menuItemsText)
    menuItemsText.toggle();
+   var hiArrow = $(this).siblings('.hi-arrow');
+   hiArrow.show();
+
+})
+
+
+
+$('.hi-arrow').on('click', function () {
+    $(this).hide();
+    var hellonurse = $(this).siblings('.menu-list');
+    hellonurse.toggle();
+
+
 })
 
 
