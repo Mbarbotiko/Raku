@@ -363,6 +363,26 @@ body, html {
   float: left;
 }
 
+.down-arrow {
+  width: 50px;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  background-color: white;
+}
+
+.down-arrow path {
+  fill: red;
+}
+
+.menu-container {
+  background-color: red;
+}
+
+.menu-list {
+  display: "block";
+}
+
 @media screen and (max-width: 1159px) and (min-width: 901px) {
   #loader-nav .nav-link {
     letter-spacing: 6px;

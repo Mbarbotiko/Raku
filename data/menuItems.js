@@ -33,3 +33,4 @@ var menuItems = [
 ];
 
 module.exports = menuItems;
+//this is for future use create API route to change menu items for manager

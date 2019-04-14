@@ -1,5 +1,5 @@
 $(function () {
-    console.log('nav.js ran');
+   
     //create new HTTP req
     var xhr = new XMLHttpRequest();
     xhr.onload= function(){
@@ -19,5 +19,6 @@ $(function () {
 
 xhr.open('GET', 'index.html', true);
 xhr.send(null);
+console.log('nav.js ran');
     
 });
