@@ -205,7 +205,7 @@ var happyHourSpRolls = [
     {
         name: 'Manhattan',
         description: 'Shrimp tempura and crab stick inside, topped with spicy tuna, crunch flakes and tobiko.  Served with three kinds of special sauce',
-        price:
+        price:8
     },
     {
         name: 'Number 9',
