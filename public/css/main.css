@@ -380,7 +380,20 @@ body, html {
 }
 
 .menu-list {
-  display: "block";
+  display: "none";
+  background-color: yellow;
+}
+
+.menu-image-headers h1 {
+  font-size: 36pt;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  position: relative;
+  top: -375px;
+  left: 40%;
+  color: white;
+  line-height: 300%;
+  width: 25%;
 }
 
 @media screen and (max-width: 1159px) and (min-width: 901px) {

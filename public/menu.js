@@ -1,13 +1,14 @@
-
-
-for(var i = 0; i<happyHourApps.length;i++){
-    $('.menu-list .happy-hour-list').append('<p>'+happyHourApps[i].name+'</p><p>'+happyHourApps[i].description+'</p><p>'+happyHourApps[i].price+'</p>')
+function loadMenus(menuObj, cssName){
+for(var i = 0; i<menuObj.length;i++){
+    $('.menu-list'+cssName).append('<p>'+menuObj[i].name+'</p><p>'+menuObj[i].description+'</p><p>'+menuObj[i].price+'</p>')
     //console.log(happyHourApps[i].name)
+    
+}
+$('.menu-list').hide();
 }
 
-function hideMenuItems(){
-    $('.menu-list').hide();
-}
+loadMenus(happyHourApps,'.happy-hour-list')
+loadMenus(happyHourHotApps,'.hot-list')
 
 
 $('.down-arrow').on('click', function(){
@@ -15,3 +16,6 @@ $('.down-arrow').on('click', function(){
     console.log(menuItemsText)
     menuItemsText.toggle();
      })
+
+
+    console.log(loadMenus(happyHourHotApps,'.happy-hour-hot-list'));
