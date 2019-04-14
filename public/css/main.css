@@ -368,11 +368,9 @@ body, html {
   position: relative;
   top: -100px;
   left: 50%;
+  color: white;
   background-color: white;
-}
-
-.down-arrow path {
-  fill: red;
+  z-index: 1;
 }
 
 .menu-container {
@@ -380,7 +378,6 @@ body, html {
 }
 
 .menu-list {
-  display: "none";
   background-color: yellow;
 }
 

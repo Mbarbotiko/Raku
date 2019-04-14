@@ -3,18 +3,13 @@
     position:relative;
     top:-100px;
     left:50%;
-    //color:white;
+    color:white;
     background-color:white;
+    z-index: 1;
     //fill:blue;
 //https://github.com/filamentgroup/grunticon/issues/235
 //onclick doesnt work with svg
 }
-
-.down-arrow path{
-    fill:red;
-
-}
-
 
 
 .menu-container{
@@ -22,7 +17,6 @@
 }
 
 .menu-list{
-    display:'none';
     background-color:yellow;
 }
 
