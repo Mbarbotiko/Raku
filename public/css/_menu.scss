@@ -1,26 +1,55 @@
+
+.menu-header-photos{
+    width:100%;
+    height:400px;
+}
+
+.menu-overlay{
+    height:400px;
+    position:relative;
+    width:100%;
+    background-color:black;
+    opacity:.5;
+    display:table;
+}
+
+.menu-subsection{
+    margin-top:-400px;
+}
+.menu-subsection h1{
+    font-size: 32pt;
+    border-top: solid white 2px;
+    border-bottom:solid white 2px;
+    position: relative;
+    top:-375px;
+    left:40%;
+    //use a variable to get the total width divide by width of page to center this as a percentage
+    color:white;
+    line-height: 300%;
+    width:25%;
+}
+
 .down-arrow{
     width:50px;
     position:relative;
     top:-100px;
     left:50%;
-    color:white;
-    background-color:white;
+    color:$secondary-color;
+    background-color:$secondary-color;
     z-index: 1;
     //fill:blue;
 //https://github.com/filamentgroup/grunticon/issues/235
 //onclick doesnt work with svg
 }
 
-
-
-.hi-arrow{
+.up-arrow{
     display:none;
     width:50px;
     position:relative;
     top:-100px;
     left:50%;
-    color:white;
-    background-color:white;
+    color:$secondary-color;
+    background-color:$secondary-color;
     z-index: 1;
     transform: rotate(180deg);
 
@@ -33,15 +62,3 @@
     background-color:yellow;
 }
 
-.menu-image-headers h1{
-    font-size: 36pt;
-    border-top: solid white 2px;
-    border-bottom:solid white 2px;
-    position: relative;
-    top:-375px;
-    left:40%;
-    //use a variable to get the total width divide by width of page to center this as a percentage
-    color:white;
-    line-height: 300%;
-    width:25%;
-}
