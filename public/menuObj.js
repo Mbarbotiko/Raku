@@ -63,10 +63,7 @@ var happyHourApps = [
         name: 'Shrimp Tempura',
         description: '',
         price: 7
-    }
-]
-
-var happyHourHotApps = [
+    },
     {
         name: 'Chicken Lettuce Wrap',
         description: '',

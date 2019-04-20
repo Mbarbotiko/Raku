@@ -30,6 +30,11 @@
     text-align: center;
 }
 
+.menu-subsection h2{
+    font-size: 32pt;
+    line-height: 200%;
+}
+
 .arrow.down{
     padding:7px;
     border:2px solid white;
@@ -76,6 +81,8 @@
 
 .menu-list span{
     color:$spanColor;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .divider{

@@ -1,15 +1,17 @@
 function loadMenus(menuObj, cssName) {
     for (var i = 0; i < menuObj.length; i++) {
         //console.log(menuObj[i]);
-        $('.menu-list' + cssName).append('<p>' + menuObj[i].name + '<span>|</span>'+ menuObj[i].price + '</p><p>'+ menuObj[i].description + '</p>')
+        $(cssName).append('<p>' + menuObj[i].name + '<span>|</span>'+ menuObj[i].price + '</p><p>'+ menuObj[i].description + '</p>')
         //console.log(happyHourApps[i].name)
 
     }
     $('.menu-list').hide();
 }
 
-loadMenus(happyHourApps, '.happy-hour-list')
-loadMenus(happyHourHotApps, '.hot-list')
+loadMenus(happyHourApps, '.appetizer')
+loadMenus(happyHourSushiRaw, '.app-raw')
+loadMenus(happyHourSushiRolls, '.app-rolls')
+loadMenus(happyHourSpRolls, '.app-specialty-rolls')
 
 
 
