@@ -9,17 +9,12 @@
     position:relative;
     width:100%;
     background-color:black;
-    opacity:.3;
+    opacity:.5;
     display:table;
-    z-index: 1;
 }
 
 .menu-subsection{
-    position:relative;
-    top:-400px;
-    border-bottom:solid black 2px;
-    z-index: 0;
-  
+    margin-top:-400px;
 }
 .menu-subsection h1{
     font-size: 32pt;
@@ -32,7 +27,7 @@
     color:white;
     line-height: 300%;
     width:25%;
-    z-index: 1;
+    text-align: center;
 }
 
 .down-arrow{
@@ -40,8 +35,6 @@
     position:relative;
     top:-100px;
     left:50%;
-    color:$secondary-color;
-    background-color:$secondary-color;
     z-index: 1;
     //fill:blue;
 //https://github.com/filamentgroup/grunticon/issues/235

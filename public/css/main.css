@@ -370,16 +370,12 @@ body, html {
   position: relative;
   width: 100%;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.5;
   display: table;
-  z-index: 1;
 }
 
 .menu-subsection {
-  position: relative;
-  top: -400px;
-  border-bottom: solid black 2px;
-  z-index: 0;
+  margin-top: -400px;
 }
 
 .menu-subsection h1 {
@@ -392,7 +388,7 @@ body, html {
   color: white;
   line-height: 300%;
   width: 25%;
-  z-index: 1;
+  text-align: center;
 }
 
 .down-arrow {
@@ -400,8 +396,6 @@ body, html {
   position: relative;
   top: -100px;
   left: 50%;
-  color: white;
-  background-color: white;
   z-index: 1;
 }
 
