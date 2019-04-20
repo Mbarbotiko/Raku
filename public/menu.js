@@ -1,3 +1,5 @@
+$('.menu-list').hide();
+
 function loadMenus(menuObj, cssName) {
     for (var i = 0; i < menuObj.length; i++) {
         //console.log(menuObj[i]);
@@ -5,13 +7,25 @@ function loadMenus(menuObj, cssName) {
         //console.log(happyHourApps[i].name)
 
     }
-    $('.menu-list').hide();
+    
+}
+
+function loadDrinks(menuObj, cssName) {
+    for (var i = 0; i < menuObj.length; i++) {
+        //console.log(menuObj[i]);
+        $(cssName).append('<p>' + menuObj[i].name + '<span>|</span>'+ menuObj[i].price + '</p>')
+        //console.log(happyHourApps[i].name)
+
+    }
+    
 }
 
 loadMenus(happyHourApps, '.appetizer')
 loadMenus(happyHourSushiRaw, '.app-raw')
 loadMenus(happyHourSushiRolls, '.app-rolls')
 loadMenus(happyHourSpRolls, '.app-specialty-rolls')
+loadDrinks(drinkSpecials, '.drink-specials')
+
 
 
 
