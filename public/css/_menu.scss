@@ -9,12 +9,17 @@
     position:relative;
     width:100%;
     background-color:black;
-    opacity:.5;
+    opacity:.3;
     display:table;
+    z-index: 1;
 }
 
 .menu-subsection{
-    margin-top:-400px;
+    position:relative;
+    top:-400px;
+    border-bottom:solid black 2px;
+    z-index: 0;
+  
 }
 .menu-subsection h1{
     font-size: 32pt;
@@ -27,6 +32,7 @@
     color:white;
     line-height: 300%;
     width:25%;
+    z-index: 1;
 }
 
 .down-arrow{
@@ -54,11 +60,10 @@
     transform: rotate(180deg);
 
 }
-.menu-container{
-    background-color:red;
-}
+
 
 .menu-list{
     background-color:yellow;
+    margin-top:-200px;
 }
 

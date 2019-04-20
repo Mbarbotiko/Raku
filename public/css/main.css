@@ -370,12 +370,16 @@ body, html {
   position: relative;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.3;
   display: table;
+  z-index: 1;
 }
 
 .menu-subsection {
-  margin-top: -400px;
+  position: relative;
+  top: -400px;
+  border-bottom: solid black 2px;
+  z-index: 0;
 }
 
 .menu-subsection h1 {
@@ -388,6 +392,7 @@ body, html {
   color: white;
   line-height: 300%;
   width: 25%;
+  z-index: 1;
 }
 
 .down-arrow {
@@ -412,12 +417,9 @@ body, html {
   transform: rotate(180deg);
 }
 
-.menu-container {
-  background-color: red;
-}
-
 .menu-list {
   background-color: yellow;
+  margin-top: -200px;
 }
 
 @media screen and (max-width: 1159px) and (min-width: 901px) {
