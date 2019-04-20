@@ -1,7 +1,7 @@
 function loadMenus(menuObj, cssName) {
     for (var i = 0; i < menuObj.length; i++) {
         //console.log(menuObj[i]);
-        $('.menu-list' + cssName).append('<p>' + menuObj[i].name + '</p><p>' + menuObj[i].description + '</p><p>' + menuObj[i].price + '</p>')
+        $('.menu-list' + cssName).append('<p>' + menuObj[i].name + '<span>|</span>'+ menuObj[i].price + '</p><p>'+ menuObj[i].description + '</p>')
         //console.log(happyHourApps[i].name)
 
     }
