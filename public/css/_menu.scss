@@ -1,11 +1,11 @@
 
 .menu-header-photos{
     width:100%;
-    height:400px;
+    height:65vh;
 }
 
 .menu-overlay{
-    height:400px;
+    height:65vh;
     position:relative;
     width:100%;
     background-color:black;
@@ -14,15 +14,15 @@
 }
 
 .menu-subsection{
-    margin-top:-400px;
+    margin-top:-65vh;
 }
 .menu-subsection h1{
     font-size: 32pt;
     border-top: solid white 2px;
     border-bottom:solid white 2px;
     position: relative;
-    top:-375px;
-    left:40%;
+    top:-50vh;
+    left:38%;
     //use a variable to get the total width divide by width of page to center this as a percentage
     color:white;
     line-height: 300%;
@@ -30,33 +30,56 @@
     text-align: center;
 }
 
-.down-arrow{
-    width:50px;
+.arrow.down{
+    padding:7px;
+    border:2px solid white;
+    border-radius: 15px;
+    width:40px;
     position:relative;
-    top:-100px;
-    left:50%;
+    top:-20vh;
+    left:49%;
     z-index: 1;
     //fill:blue;
 //https://github.com/filamentgroup/grunticon/issues/235
 //onclick doesnt work with svg
 }
 
-.up-arrow{
+.arrow.up{
     display:none;
-    width:50px;
-    position:relative;
-    top:-100px;
-    left:50%;
-    color:$secondary-color;
-    background-color:$secondary-color;
-    z-index: 1;
     transform: rotate(180deg);
+    padding:7px;
+    border:2px solid black;
+    border-radius: 15px;
+    width:40px;
+    position:relative;
+    left:49%;
+    z-index: 1;
 
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow.down:hover{
+    background:white;
+}
+.arrow.up:hover{
+    background:black;
 }
 
 
 .menu-list{
-    background-color:yellow;
-    margin-top:-200px;
+    margin-top:-150px;
+    text-align: center;
+}
+
+.divider{
+    border-top:solid black 1px;
+    height:50px;
+    width:80%;
+    margin-left:10%;
+    // padding-bottom:100px;
+
 }
 

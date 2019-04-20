@@ -13,20 +13,20 @@ loadMenus(happyHourHotApps, '.hot-list')
 
 
 
-$('.down-arrow').on('click', function () {
+$('.arrow.down').on('click', function () {
     var menuItemsText = $(this).siblings('.menu-list');
    menuItemsText.toggle();
-   var hiArrow = $(this).siblings('.hi-arrow');
-   hiArrow.show();
-
+   var upArrow = $(this).siblings('.arrow.up');
+   upArrow.toggle();
+ 
 })
 
 
 
-$('.hi-arrow').on('click', function () {
+$('.arrow.up').on('click', function () {
     $(this).hide();
-    var hellonurse = $(this).siblings('.menu-list');
-    hellonurse.toggle();
+    var menuItemsText = $(this).siblings('.menu-list');
+    menuItemsText.toggle();
 
 
 })
