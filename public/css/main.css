@@ -10,20 +10,17 @@ body, html {
   background-color: #faf5ed;
 }
 
-.navbar {
-  min-height: 50px !important;
+.subpage-headers {
+  text-align: center;
+  font-size: 36pt;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.navbar a:hover {
-  color: #eb4a1a !important;
-}
-
-.navbar span {
-  color: gray;
-}
-
-.navbar-brand {
-  height: 50px !important;
+.subpage-headers span {
+  font-size: 28pt;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .navbar {

@@ -16,18 +16,20 @@ body, html{
     color:$primary-color;
     background-color:$background-color;
 }
-.navbar{
-    min-height:50px!important; 
+
+
+//Menu, Locations etc on all pages except index.js
+.subpage-headers{
+    text-align: center;
+    font-size: 36pt;
+    padding-top:5%;
+    padding-bottom:5%;
 }
 
-.navbar a:hover{
-    color:$spanColor!important;
-}
-.navbar span{
-    color:gray;
- }
-.navbar-brand{
-    height:50px!important;
+.subpage-headers span{
+    font-size:28pt;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 

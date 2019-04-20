@@ -5,7 +5,6 @@ function loadMenus(menuObj, cssName) {
         //console.log(happyHourApps[i].name)
 
     }
-    $('.menu-list').append('<img class=hi-arrow src=./images/down.svg>')
     $('.menu-list').hide();
 }
 
