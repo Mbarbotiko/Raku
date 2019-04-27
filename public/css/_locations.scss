@@ -1,3 +1,7 @@
+
+.location{
+    //margin-top:10%;
+}
 .location-details{
     background-color:#ff0000;
     float: left;
@@ -22,3 +26,36 @@
 #map-EDINA img{
     width:100%;
 }
+
+.location-overlay{
+    height:10vh;
+    position:relative;
+    width:100%;
+    background-color:black;
+    opacity:.5;
+    display:table;
+}
+
+.location-header-photos{
+    height:10vh;
+    width: 100%;
+}
+
+.location-header{
+    height:10vh;
+    margin-top:-10vh;
+}
+.location-header h1{
+    font-size: 32pt;
+    border-top: solid white 2px;
+    border-bottom:solid white 2px;
+    position: relative;
+    top:-50vh;
+    left:38%;
+    //use a variable to get the total width divide by width of page to center this as a percentage
+    color:white;
+    line-height: 300%;
+    width:25%;
+    text-align: center;
+}
+
