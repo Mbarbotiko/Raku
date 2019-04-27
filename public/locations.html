@@ -33,7 +33,29 @@
     </header>
     <section class='content-container'>
         <h1>Locations</h1>
-        <div id="map"></div>
+        <!-- <div id="map-SLP">
+
+                <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=KEYHERE
+                  &q=Raku+Sushi,Saint Louis Park+MN" allowfullscreen>
+              </iframe>
+
+        </div>
+
+        <div id="map-EDINA">
+
+                <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=KEYHERE
+                  &q=Raku+Sushi,Edina+MN" allowfullscreen>
+              </iframe>
+
+        </div> -->
 
     <footer>
               <!--Footer loads here from #footer-transfer @ index.html-->
@@ -44,21 +66,8 @@
         crossorigin="anonymous"></script>
     <script src="./nav.js"></script>
     <script src="./index.js"></script>
-    <script>
-    // Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
+    
+
 </body>
 
 </html>

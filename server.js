@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require("path");
+const {googleMapsKey, port} = require('./config');
 
 const app = express();
 var PORT = process.env.PORT || 3000;
