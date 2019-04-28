@@ -360,17 +360,42 @@ body, html {
   float: left;
 }
 
+.location {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.map-details {
+  height: 50vh;
+}
+
 .location-details {
-  background-color: #ff0000;
   float: left;
-  width: 50%;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
+  width: 45%;
+  text-align: center;
+  height: 100%;
+  background-color: pink;
+}
+
+.map-details div span {
+  width: 1px;
+  border-right: solid green 1px;
+  float: left;
+  padding-right: 2%;
+  padding-top: 15%;
+  margin-top: 5%;
+}
+
+.location-details p {
+  line-height: 200%;
+  padding-top: 2%;
 }
 
 #map-SLP {
-  width: 50%;
+  background-color: blue;
+  width: 49%;
   float: left;
+  height: 100%;
 }
 
 #map-EDINA {
@@ -379,40 +404,28 @@ body, html {
 }
 
 #map-SLP img {
-  width: 100%;
+  width: 90%;
+  height: 80%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 #map-EDINA img {
   width: 100%;
 }
 
-.location-overlay {
-  height: 10vh;
-  position: relative;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  display: table;
-}
-
-.location-header-photos {
-  height: 10vh;
-  width: 100%;
-}
-
 .location-header {
-  height: 10vh;
-  margin-top: -10vh;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .location-header h1 {
   font-size: 32pt;
-  border-top: solid white 2px;
-  border-bottom: solid white 2px;
+  border-top: solid #eb4a1a 2px;
+  border-bottom: solid #eb4a1a 2px;
   position: relative;
-  top: -50vh;
   left: 38%;
-  color: white;
+  color: black;
   line-height: 300%;
   width: 25%;
   text-align: center;
