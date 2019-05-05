@@ -1,8 +1,8 @@
 
 $(function () {
-    headerID = document.getElementById('loader-nav');
-    headerBar = headerID.getElementsByClassName('hd-ft-bar')[0];
-    navBar = headerID.getElementsByClassName('navbar')[0];
+    header = document.getElementsByTagName('header')[0];
+    headerBar = header.getElementsByClassName('hd-ft-bar')[0];
+    navBar = header.getElementsByClassName('navbar')[0];
 
     function headerBarHide() {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
