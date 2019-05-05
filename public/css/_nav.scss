@@ -37,13 +37,13 @@
     position:relative;
     z-index: 2;
 }
-#loader-nav .nav-link span{
+header .nav-link span{
     font-size: 8pt; 
 }
-#loader-nav .nav-link{
+header .nav-link{
 letter-spacing: 8px;
 }
-#loader-nav .hd-ft-bar span{
+header .hd-ft-bar span{
     font-size: 8pt; 
     color:$spanColor;
     padding-left:10%;

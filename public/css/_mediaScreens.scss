@@ -1,8 +1,8 @@
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-    #loader-nav .nav-link{
+    header .nav-link{
     letter-spacing: 6px;
     }
-    #loader-nav .hd-ft-bar span{
+    header .hd-ft-bar span{
         padding-left:8%;
         padding-right:8%;
     }
@@ -172,7 +172,7 @@
 
 //Restaurant location bar @ Nav
 @media screen and (max-width: 991px)and (min-width: 0px){
-    #loader-nav .hd-ft-bar{
+    header .hd-ft-bar{
         display: none;
     }
 
@@ -247,14 +247,14 @@
 
 //Footer
  @media screen and (max-width: 1200px)and (min-width: 1000px){
-    #loader-footer .hd-ft-bar{
+    footer .hd-ft-bar{
         font-size: 10pt;
         padding-bottom:40px;
         }
  }
 
  @media screen and (max-width: 999px)and (min-width: 550px){
-        #loader-footer .hd-ft-bar{
+        footer .hd-ft-bar{
             font-size: 10pt;
             padding-bottom:120px;
         }
@@ -285,7 +285,7 @@
 
  //Footer 
  @media screen and (max-width: 549px)and (min-width: 0px){
-    #loader-footer .hd-ft-bar{
+    footer .hd-ft-bar{
         font-size: 10pt;
         padding-bottom:150px;
     }
