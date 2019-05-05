@@ -3,7 +3,7 @@
 }
 
 .navbar a:hover{
-    color:$spanColor!important;
+    color:$rkuRed!important;
 }
 .navbar span{
     color:gray;
@@ -12,15 +12,9 @@
     height:50px!important;
 }
 
-.home-aboutus h1{
-    font-size:30pt;   
-    letter-spacing: 8px;
-    line-height: 3em;
-}
-
 .hd-ft-bar{
-    background-color:$primary-color;
-    color: $secondary-color;
+    background-color:$bk;
+    color: $wht;
     height:40px;
     text-align: center;
     vertical-align: middle;
@@ -43,7 +37,7 @@ letter-spacing: 8px;
 }
 header .hd-ft-bar span{
     font-size: 8pt; 
-    color:$spanColor;
+    color:$rkuRed;
     padding-left:10%;
     padding-right:10%;
 }

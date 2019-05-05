@@ -39,12 +39,6 @@ body, html {
   height: 50px !important;
 }
 
-.home-aboutus h1 {
-  font-size: 30pt;
-  letter-spacing: 8px;
-  line-height: 3em;
-}
-
 .hd-ft-bar {
   background-color: black;
   color: white;
@@ -184,6 +178,12 @@ header .hd-ft-bar span {
   width: 100%;
   text-align: center;
   margin-top: 10vh;
+}
+
+.home-aboutus h1 {
+  font-size: 30pt;
+  letter-spacing: 8px;
+  line-height: 3em;
 }
 
 .aboutus-wrapper {

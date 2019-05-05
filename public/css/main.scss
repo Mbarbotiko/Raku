@@ -1,20 +1,20 @@
 // sass --watch main.scss main.css
 $font-style: 'Julius Sans One', 'sans-serif';
-$primary-color: black;
-$secondary-color:white;
-$background-color:rgb(250, 245, 237);
-$spanColor: rgb(235, 74, 26);
+$bk: black;
+$wht:white;
+$beige:rgb(250, 245, 237);
+$rkuRed: rgb(235, 74, 26);
 
 
 %iconHover{
     padding:5px;
-    color:$spanColor;
+    color:$rkuRed;
     cursor: pointer;
 }
 body, html{
     font-family:$font-style;
-    color:$primary-color;
-    background-color:$background-color;
+    color:$bk;
+    background-color:$beige;
 }
 
 

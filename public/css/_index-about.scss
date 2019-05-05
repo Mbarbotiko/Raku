@@ -3,6 +3,12 @@
     text-align: center;
     margin-top:10vh;
 }
+
+.home-aboutus h1{
+    font-size:30pt;   
+    letter-spacing: 8px;
+    line-height: 3em;
+}
 .aboutus-wrapper{
     width:90%;
     border-top:solid gray 1px;
@@ -51,7 +57,7 @@
 }
 .overlay-header{
     position:relative;
-    background-color:$spanColor;
+    background-color:$rkuRed;
     width:100%;
     height:350px;
     color:white;
