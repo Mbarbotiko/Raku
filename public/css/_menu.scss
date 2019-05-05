@@ -8,7 +8,7 @@
     height:65vh;
     position:relative;
     width:100%;
-    background-color:black;
+    background-color:$bk;
     opacity:.5;
     display:table;
 }
@@ -24,7 +24,7 @@
     top:-50vh;
     left:38%;
     //use a variable to get the total width divide by width of page to center this as a percentage
-    color:white;
+    color:$wht;
     line-height: 300%;
     width:25%;
     text-align: center;
