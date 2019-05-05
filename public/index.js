@@ -1,14 +1,5 @@
 
 $(function () {
-
-//wait for navigation to load then run test of script (write either a try catch/ load issue in screen to show user what's happening and who to contact)a promise instead or async await
-$.getScript( "./nav.js", function( data, textStatus, jqxhr ) {
-//   console.log( data ); // Data returned
-//   console.log( textStatus ); // Success
-//   console.log( jqxhr.status ); // 200
-
-if(jqxhr.status===200){
-
     headerID = document.getElementById('loader-nav');
     headerBar = headerID.getElementsByClassName('hd-ft-bar')[0];
     navBar = headerID.getElementsByClassName('navbar')[0];
@@ -27,7 +18,7 @@ if(jqxhr.status===200){
             //returns bar
         }
 
-        if (window.innerWidth< 991) {
+        if (window.innerWidth < 991) {
             headerBar.style.display = 'none';
             navBar.classList.add('fixed-top');
         }
@@ -71,7 +62,5 @@ if(jqxhr.status===200){
         }
     }
 
-}
-});
 
 });

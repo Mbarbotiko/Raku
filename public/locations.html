@@ -18,13 +18,52 @@
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
-
 <body>
-    <header>
-        <!--Nav loads here from #nav-transfer @ index.html-->
-    </header>
+        <header>
+                <section id='loader-nav'>
+                    <div class='hd-ft-bar'>
+                        <p> West End | 371 W 16th St, St Louis Park, MN 55416 <span> | </span> Edina | 3939 W. 50th St.
+                            #101 Edina, MN</p>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html"><img src='./images/logo.png'></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="locations.html" tabindex="-1" aria-disabled="true"><span> ●
+                                        </span>Hours
+                                        & Locations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="delivery.html" tabindex="-1" aria-disabled="true"><span> ●
+                                        </span>Delivery</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="staff.html" tabindex="-1" aria-disabled="true"><span> ●
+                                        </span>From
+                                        the Staff</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="https://www.opentable.com/raku-reservations-edina?rid=56044&restref=56044"
+                                        target='_blank' tabindex="-1" aria-disabled="true"><span> ●
+                                        </span>Reservations
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </section>
+        </header>
     <section class='content-container'>
         <section class='location'>
             <section class=location-header>
@@ -75,14 +114,33 @@
 
 
     <footer>
-        <!--Footer loads here from #footer-transfer @ index.html-->
+            <section id='loader-footer'>
+                <div class='hd-ft-bar'>
+                    <div class='margarita'>
+                        <div class='social-media'>
+                            <a href='https://twitter.com/RakuEdina' target='_blank'> <i class="fab fa-twitter"></i></a>
+                            <a href='https://www.facebook.com/Raku-Modern-Japanese-Cuisine-338668754734/'
+                                target='_blank'><i class="fab fa-facebook-f"></i></a>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class='copyright'>
+                            <p> © Copyright 2019 RakuMN.com. All rights reserved</p>
+                        </div>
+                        <div id='created'>
+                            <p>Created by: </p>
+                        </div>
+                        <div id='hand-print'>
+                            <a href='http://margarita.design' target='_blank'><img src='../images/handprint.jpg'></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="./nav.js"></script>
     <script src="./index.js"></script>
     <script src="./iframe.js"></script>
 </body>
