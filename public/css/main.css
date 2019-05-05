@@ -39,14 +39,10 @@ body, html {
   height: 50px !important;
 }
 
-.headers {
+.home-aboutus h1 {
   font-size: 30pt;
   letter-spacing: 8px;
   line-height: 3em;
-}
-
-.headers span {
-  font-size: 20pt;
 }
 
 .hd-ft-bar {
@@ -534,14 +530,10 @@ footer .hd-ft-bar {
     margin-left: 0%;
   }
 
-  .headers {
+  .home-aboutus h1 {
     font-size: 25pt;
     letter-spacing: 8px;
     line-height: 3em;
-  }
-
-  .headers span {
-    font-size: 15pt;
   }
 
   .middle {
@@ -590,14 +582,10 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 900px) and (min-width: 0px) {
-  .headers {
+  .home-aboutus h1 {
     font-size: 25pt;
     letter-spacing: 8px;
     line-height: 3em;
-  }
-
-  .headers span {
-    font-size: 15pt;
   }
 
   .middle {
@@ -658,12 +646,8 @@ footer .hd-ft-bar {
     width: 100vw;
   }
 
-  .home-aboutus .headers {
+  .home-aboutus h1 {
     font-size: 14pt;
-  }
-
-  .home-aboutus .headers span {
-    font-size: 10pt;
   }
 
   .image1 {
