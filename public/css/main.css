@@ -371,14 +371,14 @@ body, html {
 
 .location-details {
   float: left;
-  width: 45%;
+  width: 49%;
   text-align: center;
   height: 100%;
   background-color: pink;
 }
 
 .map-details div span {
-  width: 1px;
+  width: 1%;
   border-right: solid green 1px;
   float: left;
   padding-right: 2%;
