@@ -1,7 +1,7 @@
 
 $(function () {
 
-//wait for navigation to load then run test of script (write either a try catch/ load issue in screen to show user what's happening and who to contact)
+//wait for navigation to load then run test of script (write either a try catch/ load issue in screen to show user what's happening and who to contact)a promise instead or async await
 $.getScript( "./nav.js", function( data, textStatus, jqxhr ) {
 //   console.log( data ); // Data returned
 //   console.log( textStatus ); // Success
