@@ -14,7 +14,33 @@ $rkuRed: rgb(235, 74, 26);
 body, html{
     font-family:$mainFont;
     color:$bk;
-    background-color:$beige;
+    background-color:$beige;  
+    font-size: 12pt;
+}
+
+h1{
+    font-size:3em;
+
+}
+
+h2{
+    font-size:(3em*.9)
+
+}
+
+h3{
+    font-size:(3em*.8)
+
+}
+
+h4{
+    font-size:(3em*.7)
+
+}
+
+h5{
+    font-size:(3em*.6)
+
 }
 
 

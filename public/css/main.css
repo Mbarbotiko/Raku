@@ -8,6 +8,27 @@ body, html {
   font-family: "Julius Sans One", "sans-serif";
   color: black;
   background-color: #faf5ed;
+  font-size: 12pt;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+h5 {
+  font-size: 1.8em;
 }
 
 .subpage-headers {
@@ -180,8 +201,7 @@ header .hd-ft-bar span {
   margin-top: 10vh;
 }
 
-.home-aboutus h1 {
-  font-size: 30pt;
+.home-aboutus h2 {
   letter-spacing: 8px;
   line-height: 3em;
 }
@@ -530,7 +550,7 @@ footer .hd-ft-bar {
     margin-left: 0%;
   }
 
-  .home-aboutus h1 {
+  .home-aboutus h2 {
     font-size: 25pt;
     letter-spacing: 8px;
     line-height: 3em;
@@ -582,7 +602,7 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 900px) and (min-width: 0px) {
-  .home-aboutus h1 {
+  .home-aboutus h2 {
     font-size: 25pt;
     letter-spacing: 8px;
     line-height: 3em;
@@ -646,7 +666,7 @@ footer .hd-ft-bar {
     width: 100vw;
   }
 
-  .home-aboutus h1 {
+  .home-aboutus h2 {
     font-size: 14pt;
   }
 
