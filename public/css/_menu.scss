@@ -17,21 +17,12 @@
     margin-top:-65vh;
 }
 .menu-subsection h1{
-    font-size: 32pt;
-    border-top: solid white 2px;
-    border-bottom:solid white 2px;
-    position: relative;
     top:-50vh;
-    left:38%;
-    //use a variable to get the total width divide by width of page to center this as a percentage
-    color:$wht;
-    line-height: 300%;
-    width:25%;
-    text-align: center;
+    @extend %headerStyle;
+
 }
 
 .menu-subsection h2{
-    font-size: 32pt;
     line-height: 200%;
 }
 

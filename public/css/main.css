@@ -1,3 +1,14 @@
+.menu-subsection h1, .location-header h1 {
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  position: relative;
+  left: 38%;
+  color: white;
+  line-height: 300%;
+  width: 30%;
+  text-align: center;
+}
+
 .fab:hover {
   padding: 5px;
   color: #eb4a1a;
@@ -423,15 +434,9 @@ footer .hd-ft-bar {
 }
 
 .location-header h1 {
-  font-size: 32pt;
   border-top: solid #eb4a1a 2px;
   border-bottom: solid #eb4a1a 2px;
-  position: relative;
-  left: 38%;
   color: black;
-  line-height: 300%;
-  width: 25%;
-  text-align: center;
 }
 
 .menu-header-photos {
@@ -453,20 +458,10 @@ footer .hd-ft-bar {
 }
 
 .menu-subsection h1 {
-  font-size: 32pt;
-  border-top: solid white 2px;
-  border-bottom: solid white 2px;
-  position: relative;
   top: -50vh;
-  left: 38%;
-  color: white;
-  line-height: 300%;
-  width: 25%;
-  text-align: center;
 }
 
 .menu-subsection h2 {
-  font-size: 32pt;
   line-height: 200%;
 }
 
