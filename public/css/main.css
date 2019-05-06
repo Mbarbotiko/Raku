@@ -31,19 +31,6 @@ h5 {
   font-size: 1.8em;
 }
 
-.subpage-headers {
-  text-align: center;
-  font-size: 36pt;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.subpage-headers span {
-  font-size: 28pt;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .navbar {
   min-height: 50px !important;
 }

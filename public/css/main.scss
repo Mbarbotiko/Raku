@@ -44,21 +44,6 @@ h5{
 }
 
 
-//Menu, Locations etc on all pages except index.js
-.subpage-headers{
-    text-align: center;
-    font-size: 36pt;
-    padding-top:5%;
-    padding-bottom:5%;
-}
-
-.subpage-headers span{
-    font-size:28pt;
-    margin-left:5%;
-    margin-right:5%;
-}
-
-
 @import 'nav';
 @import 'index-landing';
 @import 'index-about';
