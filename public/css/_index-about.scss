@@ -54,6 +54,11 @@
 .overlay-about{
     width:90%;
 }
+
+.overlay-header span{
+    display:none;
+}
+
 .overlay-header{
     position:relative;
     background-color:$rkuRed;
@@ -66,14 +71,20 @@
     margin-top:1%;
     margin-bottom:1%;
 }
-.overlay-about h2{
-    font-size:3vw;
-    line-height:350px;
-    letter-spacing: 10pt;
+
+.overlay-header h3{
+    border-top:solid $wht 1px;
+    border-bottom: solid $wht 1px;
+    line-height:150px;
+    position:relative;
+    top:30%;
+    width:60%;
+    left:20%;
+    text-align: center;
+    letter-spacing:6pt;
+
 }
-.overlay-about span{
-    font-size:4vw;
-}
+
 .disappear{
     opacity:0;
 }
@@ -92,24 +103,12 @@
     background-image:url("../images/sushi7.jpg");
     background-size:100% 100%;
 }
-.image3 h2{
-    font-size:2.5vw;
-    letter-spacing: 6pt;
+.image3 h3{
+    letter-spacing: 2pt;
 }
 
-.image3 span{
-    font-size:3vw;
-}
 .image4{
     width:100%;
     background-image:url("../images/dinner2.jpg");
     background-size:100% 100%;
-}
-.image4 h2{
-    font-size:2.75vw;
-    letter-spacing: 10pt;
-}
-
-.image4 span{
-    font-size:3.25vw;
 }
