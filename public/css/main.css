@@ -609,20 +609,16 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 480px) and (min-width: 0px) {
-  .overlay-header span {
-    display: none;
-  }
-
-  .overlay-header h2 {
+  .overlay-header h3 {
     border-top: solid white 1px;
     border-bottom: solid white 1px;
-    line-height: 50px;
+    line-height: 150px;
     position: relative;
-    top: 35%;
-    width: 50%;
-    left: 25%;
-    font-size: 18pt;
+    top: 30%;
+    width: 60%;
+    left: 20%;
     text-align: center;
+    letter-spacing: 6pt;
   }
 
   .aboutus-wrapper {
@@ -638,10 +634,6 @@ footer .hd-ft-bar {
   .overlay-header {
     height: 100vh;
     width: 100vw;
-  }
-
-  .home-aboutus h2 {
-    font-size: 14pt;
   }
 
   .image1 {
