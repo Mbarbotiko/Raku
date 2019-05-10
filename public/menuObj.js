@@ -202,7 +202,7 @@ var happyHourSpRolls = [
     {
         name: 'Manhattan',
         description: 'Shrimp tempura and crab stick inside, topped with spicy tuna, crunch flakes and tobiko.  Served with three kinds of special sauce',
-        price:8
+        price: 8
     },
     {
         name: 'Number 9',
@@ -251,5 +251,121 @@ var drinkSpecials = [
     {
         name: 'House White and Red Wine',
         price: '$5 off'
+    }
+]
+
+var lunchMenuEntree = [
+    {
+        name: 'Fresh Scallop wth Eggplant',
+        description: 'Pan seared scallop with eggplant in Yuzu Miso sauce'
+    },
+    {
+        name: 'Organic Chicken Teriyaki',
+        description: 'Grilled chicken breast & vegetable with Teriyaki sauce'
+    },
+    {
+        name: 'Yuzu Seabass',
+        description: 'Grilled Chilean seabass with yuzu sauce'
+    },
+    {
+        name: 'Hibachi Style Filet Mignon',
+        description: 'Slightly grilled filet mignon with vegetables in butter soy garlic sauce'
+    },
+    {
+        name: 'Rock Shrimp Tempura',
+        description: 'Rock shrimp & vegetable in a light tempura batter, deep-fried with ginger dipping sauce'
+    },
+    {
+        name: 'Sauteed or Steamed Vegetable & Tofu',
+        description: ''
+    },
+    {
+        name: 'Sesame Chicken',
+        description: 'Crispy fried chicken with special sesame sauce'
+    }
+
+]
+
+var lunchSpecialRolls = [
+    {
+        name: 'California'
+    },
+    {
+        name: 'Avocado'
+    },
+    {
+        name: 'Tuna'
+    },
+    {
+        name: 'Yellow Tail'
+    },
+    {
+        name: 'Salmon'
+    },
+    {
+        name: 'Salmon Avocado'
+    },
+    {
+        name: 'Spicy Crunchy Salmon'
+    },
+    {
+        name: 'Vegetable'
+    },
+
+    {
+        name: 'Philadelphia'
+    },
+
+    {
+        name: 'Eel Avocado'
+    },
+
+    {
+        name: 'Cucumber'
+    },
+    {
+        name: 'Boston'
+    },
+    {
+        name: 'AAC'
+    },
+    {
+        name: 'Cucumber'
+    },
+    {
+        name: 'Shrimp Avocado'
+    },
+    {
+        name: 'Spicy Tuna'
+    }
+]
+
+var lunchBox = [
+    {
+        name: 'Beef Teriyaki'
+    },
+    {
+        name: 'Chicken Teriyaki',
+
+    },
+    {
+        name: 'Shrimp Teriyaki',
+
+    },
+    {
+        name: 'Vegetable Tempura',
+
+    },
+    {
+        name: 'Chicken Katsu',
+
+    }
+
+]
+
+var dinnerMenu = [
+    {
+        name: '',
+        description: ''
     }
 ]
