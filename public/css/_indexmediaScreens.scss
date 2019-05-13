@@ -1,21 +1,18 @@
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-    #loader-nav .nav-link{
+    header .nav-link{
     letter-spacing: 6px;
     }
-    #loader-nav .hd-ft-bar span{
+    header .hd-ft-bar span{
         padding-left:8%;
         padding-right:8%;
     }
     .navbar-nav{
         margin-left:0%;
     }
-    .headers{
+    .home-aboutus h2{
         font-size:25pt;   
         letter-spacing: 8px;
         line-height: 3em;
-    }
-    .headers span{
-        font-size:15pt;    
     }
     .middle{
         width:70%;
@@ -56,13 +53,10 @@
 }
 
 @media screen and (max-width: 900px) and (min-width: 0px) {
-     .headers{
+     .home-aboutus h2{
         font-size:25pt;   
         letter-spacing: 8px;
         line-height: 3em;
-     }
-    .headers span{
-         font-size:15pt;    
      }
 
      .middle{
@@ -95,20 +89,16 @@
 
 //About us 480px Cell 
 @media screen and (max-width: 480px)and (min-width: 0px){
-    .overlay-header span{
-        display:none;
-    }
-
-    .overlay-header h2{
-        border-top:solid white 1px;
-        border-bottom: solid white 1px;
-        line-height:50px;
+    .overlay-header h3{
+        border-top:solid $wht 1px;
+        border-bottom: solid $wht 1px;
+        line-height:150px;
         position:relative;
-        top:35%;
-        width:50%;
-        left:25%;
-        font-size:18pt;
+        top:30%;
+        width:60%;
+        left:20%;
         text-align: center;
+        letter-spacing:6pt;
     }
 
  
@@ -123,14 +113,6 @@
     .overlay-header{
         height:100vh;
         width:100vw;
-    }
-
- 
-    .home-aboutus .headers{
-        font-size:14pt;
-    }
-    .home-aboutus .headers span{
-        font-size:10pt;
     }
 
     .image1{
@@ -172,7 +154,7 @@
 
 //Restaurant location bar @ Nav
 @media screen and (max-width: 991px)and (min-width: 0px){
-    #loader-nav .hd-ft-bar{
+    header .hd-ft-bar{
         display: none;
     }
 
@@ -247,14 +229,14 @@
 
 //Footer
  @media screen and (max-width: 1200px)and (min-width: 1000px){
-    #loader-footer .hd-ft-bar{
+    footer .hd-ft-bar{
         font-size: 10pt;
         padding-bottom:40px;
         }
  }
 
  @media screen and (max-width: 999px)and (min-width: 550px){
-        #loader-footer .hd-ft-bar{
+        footer .hd-ft-bar{
             font-size: 10pt;
             padding-bottom:120px;
         }
@@ -285,7 +267,7 @@
 
  //Footer 
  @media screen and (max-width: 549px)and (min-width: 0px){
-    #loader-footer .hd-ft-bar{
+    footer .hd-ft-bar{
         font-size: 10pt;
         padding-bottom:150px;
     }

@@ -1,10 +1,11 @@
+
 .landing-header{
     width: 40%;
     position:relative;
     margin:auto;
-    top:4rem;
+    top:5%;
     text-align: center;
-    color:white;
+    color:$wht;
     height: 80vh;
 }
 .landing-headline{
@@ -19,10 +20,10 @@
     margin-top:2em;
 }
 .landing-subtext span{
-    color:$spanColor;
+    color:$rkuRed;
 }
 .landing-headline span{
-    color:$spanColor;
+    color:$rkuRed;
 }
 //shared sections
 %backgroundImg{
@@ -31,7 +32,7 @@
     background-position:center;
     position:relative;
     height:110vh;
-    background-color:$primary-color;
+    background-color:$bk;
     z-index:1;   
 }
 .landing-image{

@@ -1,35 +1,57 @@
 // sass --watch main.scss main.css
-$font-style: 'Julius Sans One', 'sans-serif';
-$primary-color: black;
-$secondary-color:white;
-$background-color:rgb(250, 245, 237);
-$spanColor: rgb(235, 74, 26);
+$mainFont: 'Julius Sans One', 'sans-serif';
+$bk: black;
+$wht:white;
+$beige:rgb(250, 245, 237);
+$rkuRed: rgb(235, 74, 26);
+
+%headerStyle{
+    border-top: solid white 2px;
+    border-bottom:solid white 2px;
+    position: relative;
+    left:38%;
+    color:$wht;
+    line-height: 300%;
+    width:30%;
+    text-align: center;
+}
 
 
 %iconHover{
     padding:5px;
-    color:$spanColor;
+    color:$rkuRed;
     cursor: pointer;
 }
 body, html{
-    font-family:$font-style;
-    color:$primary-color;
-    background-color:$background-color;
+    font-family:$mainFont;
+    color:$bk;
+    background-color:$beige;  
+    font-size: 12pt;
 }
 
+h1{
+    font-size:3em;
 
-//Menu, Locations etc on all pages except index.js
-.subpage-headers{
-    text-align: center;
-    font-size: 36pt;
-    padding-top:5%;
-    padding-bottom:5%;
 }
 
-.subpage-headers span{
-    font-size:28pt;
-    margin-left:5%;
-    margin-right:5%;
+h2{
+    font-size:(3em*.9)
+
+}
+
+h3{
+    font-size:(3em*.8)
+
+}
+
+h4{
+    font-size:(3em*.7)
+
+}
+
+h5{
+    font-size:(3em*.6)
+
 }
 
 

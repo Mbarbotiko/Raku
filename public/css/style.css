@@ -10,7 +10,7 @@ body, html{
 }
 
 .homepage-landing{
-    background-color:black;
+    background-color:$bk;
     background-size:cover;
     background-position:center;
     position:relative;
@@ -92,7 +92,7 @@ body, html{
     margin:auto;
     top:18rem;
     text-align: center;
-    color:white;
+    color:$wht;
     height: 80vh;
     overflow: hidden;
  
@@ -121,7 +121,7 @@ body, html{
 
 
 .nav-item span{
-    color:white;
+    color:$wht;
     
 }
 
@@ -176,16 +176,16 @@ body, html{
 }
 
 .feature.left{
-    background-color:white;
-    color:black;
+    background-color:$wht;
+    color:$bk;
     width:50%;
     float:left;
 
 }
 
 .feature.right{
-    background-color:black;
-    color:white;
+    background-color:$bk;
+    color:$wht;
     width:50%;
     float:left;    
 }
@@ -339,7 +339,7 @@ body, html{
 #dishes .dish:nth-child(8n+5)>div,
 #dishes .dish:nth-child(8n+7)>div{
     background: white;
-    color:black;
+    color:$bk;
     border: black solid 1.5px;
 }
 
@@ -388,7 +388,7 @@ body, html{
 
 .location{
     padding-top:25px;
-    color:white;
+    color:$wht;
     text-align: center;
     padding-bottom:25px;
     clear: both;

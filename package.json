@@ -27,6 +27,8 @@
   "homepage": "https://github.com/Mbarbotiko/Raku#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "sass": "^1.16.1"
   }

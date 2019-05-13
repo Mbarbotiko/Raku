@@ -3,7 +3,7 @@
 }
 
 .navbar a:hover{
-    color:$spanColor!important;
+    color:$rkuRed!important;
 }
 .navbar span{
     color:gray;
@@ -12,17 +12,9 @@
     height:50px!important;
 }
 
-.headers{
-    font-size:30pt;   
-    letter-spacing: 8px;
-    line-height: 3em;
-}
-.headers span{
-    font-size:20pt;    
-}
 .hd-ft-bar{
-    background-color:$primary-color;
-    color: $secondary-color;
+    background-color:$bk;
+    color: $wht;
     height:40px;
     text-align: center;
     vertical-align: middle;
@@ -37,15 +29,15 @@
     position:relative;
     z-index: 2;
 }
-#loader-nav .nav-link span{
+header .nav-link span{
     font-size: 8pt; 
 }
-#loader-nav .nav-link{
+header .nav-link{
 letter-spacing: 8px;
 }
-#loader-nav .hd-ft-bar span{
+header .hd-ft-bar span{
     font-size: 8pt; 
-    color:$spanColor;
+    color:$rkuRed;
     padding-left:10%;
     padding-right:10%;
 }
