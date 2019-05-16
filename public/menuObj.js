@@ -2,7 +2,7 @@ var happyHourApps = [
     {
         name: 'Green Salad',
         description: '',
-        price: 'hehehehhe'
+        price: 3
     },
     {
         name: 'Seaweed Salad',
