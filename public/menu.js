@@ -35,12 +35,13 @@ $('.menu-list').hide();
             } catch (error) {
                 console.log(error);
                 //create small modal here to try again or view PDF version
+                //or text because its a show/hide function on the page to retry the load o report it/PDF view
 
             }
         }
     }
 
-    //maybe consolidate this later add headers using jscript instead.
+    //maybe consolidate this later add headers using jscript instead so this function is only called per section instead of per header in each section
     loadItems(happyHourApps, '.appetizer')
     loadItems(happyHourSushiRaw, '.app-raw')
     loadItems(happyHourSushiRolls, '.app-rolls')
