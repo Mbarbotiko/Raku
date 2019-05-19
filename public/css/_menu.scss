@@ -26,44 +26,34 @@
     line-height: 200%;
 }
 
-.arrow.down{
+.menu-subsection h5{
+    text-align: center;
+    position: relative;
+    top:-45vh;
+    color:$wht;
+}
+
+.arrow{
     padding:7px;
-    border:2px solid white;
-    border-radius: 15px;
-    width:40px;
+    width:3%;
     position:relative;
-    top:-20vh;
-    left:49%;
     z-index: 1;
-    //fill:blue;
-//https://github.com/filamentgroup/grunticon/issues/235
-//onclick doesnt work with svg
+    left:(100%-3%)/2;
+}
+
+.arrow.down{
+    top:0vh;
+
 }
 
 .arrow.up{
     display:none;
     transform: rotate(180deg);
-    padding:7px;
-    border:2px solid black;
-    border-radius: 15px;
-    width:40px;
-    position:relative;
-    left:49%;
-    z-index: 1;
-
 }
 
 .arrow:hover{
     cursor: pointer;
 }
-
-.arrow.down:hover{
-    background:white;
-}
-.arrow.up:hover{
-    background:black;
-}
-
 
 .menu-list{
     margin-top:-150px;

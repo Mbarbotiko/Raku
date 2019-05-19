@@ -2,7 +2,7 @@
   border-top: solid white 2px;
   border-bottom: solid white 2px;
   position: relative;
-  left: 38%;
+  left: 35%;
   color: white;
   line-height: 300%;
   width: 30%;
@@ -31,15 +31,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4em;
-}
-
-h4 {
   font-size: 2.1em;
 }
 
-h5 {
+h4 {
   font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.2em;
 }
 
 .navbar {
@@ -371,42 +371,52 @@ footer .hd-ft-bar {
   margin-bottom: 2%;
 }
 
+.location span {
+  color: #eb4a1a;
+}
+
+.location li {
+  display: inline;
+}
+
+.location ul :nth-child(2n+2) {
+  color: #eb4a1a;
+}
+
+.location ul {
+  text-align: center;
+  border-bottom: solid #eb4a1a 2px;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: -50px;
+  padding-bottom: 3%;
+}
+
 .map-details {
   height: 50vh;
+  margin-bottom: 10%;
 }
 
 .location-details {
   float: left;
-  width: 49%;
+  width: 20%;
   text-align: center;
   height: 100%;
-  background-color: pink;
-}
-
-.map-details div span {
-  width: 1%;
-  border-right: solid green 1px;
-  float: left;
-  padding-right: 2%;
-  padding-top: 15%;
-  margin-top: 5%;
-}
-
-.location-details p {
-  line-height: 200%;
-  padding-top: 2%;
+  background-color: yellow;
 }
 
 #map-SLP {
-  background-color: blue;
-  width: 49%;
+  width: 90%;
   float: left;
   height: 100%;
+  margin-left: 5%;
 }
 
 #map-EDINA {
-  width: 50%;
+  width: 90%;
   float: left;
+  height: 100%;
+  margin-left: 5%;
 }
 
 #map-SLP img {
@@ -427,7 +437,7 @@ footer .hd-ft-bar {
 
 .location-header h1 {
   border-top: solid #eb4a1a 2px;
-  border-bottom: solid #eb4a1a 2px;
+  border-bottom: solid #eb4a1a 0px;
   color: black;
 }
 
@@ -457,39 +467,32 @@ footer .hd-ft-bar {
   line-height: 200%;
 }
 
-.arrow.down {
-  padding: 7px;
-  border: 2px solid white;
-  border-radius: 15px;
-  width: 40px;
+.menu-subsection h5 {
+  text-align: center;
   position: relative;
-  top: -20vh;
-  left: 49%;
+  top: -45vh;
+  color: white;
+}
+
+.arrow {
+  padding: 7px;
+  width: 3%;
+  position: relative;
   z-index: 1;
+  left: 48.5%;
+}
+
+.arrow.down {
+  top: 0vh;
 }
 
 .arrow.up {
   display: none;
   transform: rotate(180deg);
-  padding: 7px;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: 40px;
-  position: relative;
-  left: 49%;
-  z-index: 1;
 }
 
 .arrow:hover {
   cursor: pointer;
-}
-
-.arrow.down:hover {
-  background: white;
-}
-
-.arrow.up:hover {
-  background: black;
 }
 
 .menu-list {
