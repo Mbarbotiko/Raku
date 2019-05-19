@@ -2,7 +2,7 @@
   border-top: solid white 2px;
   border-bottom: solid white 2px;
   position: relative;
-  left: 38%;
+  left: 35%;
   color: white;
   line-height: 300%;
   width: 30%;
@@ -31,15 +31,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4em;
-}
-
-h4 {
   font-size: 2.1em;
 }
 
-h5 {
+h4 {
   font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.2em;
 }
 
 .navbar {
@@ -457,39 +457,32 @@ footer .hd-ft-bar {
   line-height: 200%;
 }
 
-.arrow.down {
-  padding: 7px;
-  border: 2px solid white;
-  border-radius: 15px;
-  width: 40px;
+.menu-subsection h5 {
+  text-align: center;
   position: relative;
-  top: -20vh;
-  left: 49%;
+  top: -45vh;
+  color: white;
+}
+
+.arrow {
+  padding: 7px;
+  width: 3%;
+  position: relative;
   z-index: 1;
+  left: 48.5%;
+}
+
+.arrow.down {
+  top: 0vh;
 }
 
 .arrow.up {
   display: none;
   transform: rotate(180deg);
-  padding: 7px;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: 40px;
-  position: relative;
-  left: 49%;
-  z-index: 1;
 }
 
 .arrow:hover {
   cursor: pointer;
-}
-
-.arrow.down:hover {
-  background: white;
-}
-
-.arrow.up:hover {
-  background: black;
 }
 
 .menu-list {
