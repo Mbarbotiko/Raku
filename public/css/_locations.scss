@@ -1,15 +1,17 @@
 .location{
     margin-top:2%;
     margin-bottom:2%;
-}.map-details{
-    height:50vh;
+}
+.map-details{
+height:50vh;
+   margin-left:10%;
 }
 .location-details{
     float: left;
-    width:49%;
+    width:20%;
     text-align: center;
     height:100%;
-   background-color:pink;
+   background-color:yellow;
 }
 
 .map-details div span{
@@ -20,16 +22,13 @@
     padding-top:15%;
     margin-top:5%;
 }
-.location-details p{
-    line-height: 200%;
-    padding-top:2%;
-}
-#map-SLP{
-    background-color:blue;
-    width:49%;
-    float: left;
 
+#map-SLP{
+    // background-color:blue;
+    width:70%;
+    float: left;
     height:100%;
+
 
 }
 #map-EDINA{

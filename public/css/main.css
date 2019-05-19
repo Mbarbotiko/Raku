@@ -373,14 +373,15 @@ footer .hd-ft-bar {
 
 .map-details {
   height: 50vh;
+  margin-left: 10%;
 }
 
 .location-details {
   float: left;
-  width: 49%;
+  width: 20%;
   text-align: center;
   height: 100%;
-  background-color: pink;
+  background-color: yellow;
 }
 
 .map-details div span {
@@ -392,14 +393,8 @@ footer .hd-ft-bar {
   margin-top: 5%;
 }
 
-.location-details p {
-  line-height: 200%;
-  padding-top: 2%;
-}
-
 #map-SLP {
-  background-color: blue;
-  width: 49%;
+  width: 70%;
   float: left;
   height: 100%;
 }
