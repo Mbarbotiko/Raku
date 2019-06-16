@@ -1,0 +1,77 @@
+
+.menu-header-photos{
+    width:100%;
+    height:65vh;
+}
+
+.menu-overlay{
+    height:65vh;
+    position:relative;
+    width:100%;
+    background-color:$bk;
+    opacity:.5;
+    display:table;
+}
+
+.menu-subsection{
+    margin-top:-65vh;
+}
+.menu-subsection h1{
+    top:-50vh;
+    @extend %headerStyle;
+
+}
+
+.menu-subsection h2{
+    line-height: 200%;
+}
+
+.menu-subsection h5{
+    text-align: center;
+    position: relative;
+    top:-45vh;
+    color:$wht;
+}
+
+.arrow{
+    padding:7px;
+    width:3%;
+    position:relative;
+    z-index: 1;
+    left:(100%-3%)/2;
+}
+
+.arrow.down{
+    top:0vh;
+
+}
+
+.arrow.up{
+    display:none;
+    transform: rotate(180deg);
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.menu-list{
+    margin-top:-150px;
+    text-align: center;
+}
+
+.menu-list span{
+    color:$rkuRed;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.divider{
+    border-top:solid black 1px;
+    height:50px;
+    width:80%;
+    margin-left:10%;
+    // padding-bottom:100px;
+
+}
+
