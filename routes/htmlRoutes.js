@@ -28,8 +28,13 @@ app.get("/", function(req, res) {
   // });
 
 
-  // app.set('views', path.join(__dirname, 'views'));
-  // app.set('view engine', 'ejs')
+  app.set('views', path.join(__dirname, 'views'));
+  app.set('view engine', 'ejs')
+  app.get('/test-route', function(req, res){
+    res.render('index');
+  })
+
+
   // app.get('/iframe', function(req, res){
   //   res.render('index',{
   //     mapsKeyforEJS : googleMapsKey
