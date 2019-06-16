@@ -1,4 +1,4 @@
-// sass --watch main.scss main.css
+// sass --watch master-stylesheet.scss master-stylesheet.css
 $mainFont: 'Julius Sans One', 'sans-serif';
 $bk: black;
 $wht:white;
@@ -62,6 +62,11 @@ h5{
 @import 'footer';
 @import 'locations';
 @import 'menu';
-@import 'staff';
-@import 'mediaScreens';
-@import 'menuMediaScreens'
+//@import 'staff';
+@import 'nav-MS';
+@import 'index-landing-MS';
+@import 'index-about-MS';
+@import 'footer-MS';
+@import 'locations-MS';
+@import 'menu-MS';
+//@import 'staff-MS';
