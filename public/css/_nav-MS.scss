@@ -1,0 +1,39 @@
+@media screen and (max-width: 1159px) and (min-width: 901px) {
+    header .nav-link{
+    letter-spacing: 6px;
+    }
+
+    header .hd-ft-bar span{
+        padding-left:8%;
+        padding-right:8%;
+    }
+    .navbar-nav{
+        margin-left:0%;
+    }
+
+}
+
+
+//Restaurant location bar @ Nav
+@media screen and (max-width: 991px)and (min-width: 0px){
+    header .hd-ft-bar{
+        display: none;
+    }
+
+    #navbarTogglerDemo02{
+        height:100vh;
+        margin-top:10%;  
+    }
+
+    .nav-link span{
+        display:none;
+    }
+
+    .nav-link{
+        text-align: center;
+        margin-right:15%;
+        line-height:300%;        
+    }
+
+ 
+ }

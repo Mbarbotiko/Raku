@@ -1,14 +1,15 @@
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-    header .nav-link{
-    letter-spacing: 6px;
-    }
-    header .hd-ft-bar span{
-        padding-left:8%;
-        padding-right:8%;
-    }
-    .navbar-nav{
-        margin-left:0%;
-    }
+    //whatever is commented out has been moved to a separate style sheet example nav-MS
+    // header .nav-link{
+    // letter-spacing: 6px;
+    // }
+    // header .hd-ft-bar span{
+    //     padding-left:8%;
+    //     padding-right:8%;
+    // }
+    // .navbar-nav{
+    //     margin-left:0%;
+    // }
     .home-aboutus h2{
         font-size:25pt;   
         letter-spacing: 8px;
@@ -152,32 +153,32 @@
 }
 
 
-//Restaurant location bar @ Nav
-@media screen and (max-width: 991px)and (min-width: 0px){
-    header .hd-ft-bar{
-        display: none;
-    }
+// //Restaurant location bar @ Nav
+// @media screen and (max-width: 991px)and (min-width: 0px){
+//     header .hd-ft-bar{
+//         display: none;
+//     }
 
-    #navbarTogglerDemo02{
-        height:100vh;
-        margin-top:10%;
+//     #navbarTogglerDemo02{
+//         height:100vh;
+//         margin-top:10%;
         
         
-    }
+//     }
 
-    .nav-link span{
-        display:none;
-    }
+//     .nav-link span{
+//         display:none;
+//     }
 
-    .nav-link{
-        text-align: center;
-        margin-right:15%;
-        line-height:300%;
+//     .nav-link{
+//         text-align: center;
+//         margin-right:15%;
+//         line-height:300%;
         
-    }
+//     }
 
   
- }
+//  }
 
 //Landing Text Index.html
  @media screen and (max-width: 960px)and (min-width: 650px){

@@ -1,0 +1,68 @@
+//Footer
+@media screen and (max-width: 1200px)and (min-width: 1000px){
+    footer .hd-ft-bar{
+        font-size: 10pt;
+        padding-bottom:40px;
+        }
+ }
+
+ @media screen and (max-width: 999px)and (min-width: 550px){
+        footer .hd-ft-bar{
+            font-size: 10pt;
+            padding-bottom:120px;
+        }
+        .social-media{
+            width:100%;
+            float:left;
+        }
+        .copyright{
+            line-height:0px;
+            width:100%;
+        }
+        .fab{
+            margin-left:0%;
+        }
+        #created{
+            width:55%;
+            line-height:0px;
+            padding-top:10px;
+        }
+        #hand-print{
+            width:45%;
+            padding-right:35%;
+            line-height:0px;
+            position:relative;
+            top:-5px;
+        }
+ }
+
+ //Footer 
+ @media screen and (max-width: 549px)and (min-width: 0px){
+    footer .hd-ft-bar{
+        font-size: 10pt;
+        padding-bottom:150px;
+    }
+    .social-media{
+        width:100%;
+        float:left;
+    }
+    .copyright{
+        line-height:20px;
+        width:100%;
+    }
+    .fab{
+        margin-left:0%;
+    }
+    #created{
+        width:55%;
+        line-height:0px;
+        padding-top:10px;
+    }
+    #hand-print{
+        width:45%;
+        padding-right:25%;
+        line-height:0px;
+        position:relative;
+        top:-5px;
+    }
+}
