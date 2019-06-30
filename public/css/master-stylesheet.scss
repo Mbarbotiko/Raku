@@ -26,7 +26,7 @@ $headerWidth:30%;
 body, html{
     font-family:$mainFont;
     color:$bk;
-    background-color:$beige;  
+    background-color:$beige;
     font-size: 12pt;
 }
 
@@ -60,15 +60,15 @@ h5{
 @import 'index-landing';
 @import 'index-about';
 @import 'footer';
+@import 'nav-MS';
+@import 'index-landing-MS';
+@import 'index-about-MS';
+@import 'footer-MS';
 @import 'subpage-banner';
 @import 'locations';
 @import 'menu';
 @import 'shell-file';
 //@import 'staff';
-@import 'nav-MS';
-@import 'index-landing-MS';
-@import 'index-about-MS';
-@import 'footer-MS';
 @import 'subpage-banner-MS';
 @import 'locations-MS';
 @import 'menu-MS';
