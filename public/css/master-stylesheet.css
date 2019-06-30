@@ -1,4 +1,4 @@
-.menu-subsection h1, .location-header h1, .subpage-content h1, .home-aboutus h2 {
+.location-header h1, .subpage-content h1, .home-aboutus h2 {
   border-top: solid white 2px;
   border-bottom: solid white 2px;
   position: relative;
@@ -785,76 +785,35 @@ footer .hd-ft-bar {
   color: black;
 }
 
-.menu-header-photos {
-  width: 100%;
-  height: 65vh;
-}
-
-.menu-overlay {
-  height: 65vh;
+.menu-buttons {
   position: relative;
   width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  display: table;
+  top: -150px;
 }
 
-.menu-subsection {
-  margin-top: -65vh;
+.menu-buttons :first-child {
+  margin-left: 3%;
 }
 
-.menu-subsection h1 {
-  top: -50vh;
-}
-
-.menu-subsection h2 {
-  line-height: 200%;
-}
-
-.menu-subsection h5 {
-  text-align: center;
-  position: relative;
-  top: -45vh;
-  color: white;
-}
-
-.arrow {
-  padding: 7px;
-  width: 3%;
-  position: relative;
-  z-index: 1;
-  left: 48.5%;
-}
-
-.arrow.down {
-  top: 0vh;
-}
-
-.arrow.up {
-  display: none;
-  transform: rotate(180deg);
-}
-
-.arrow:hover {
-  cursor: pointer;
-}
-
-.menu-list {
-  margin-top: -150px;
+.menu-buttons div {
+  width: 30%;
+  float: left;
+  margin: 1%;
   text-align: center;
 }
 
-.menu-list span {
+.menu-buttons div h3 {
+  line-height: 2em;
+}
+
+#happy-hour {
+  border-right: solid 1px #eb4a1a;
+  border-left: solid 1px #eb4a1a;
+}
+
+.menu-buttons div h3:hover {
   color: #eb4a1a;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.divider {
-  border-top: solid black 1px;
-  height: 50px;
-  width: 80%;
-  margin-left: 10%;
+  cursor: pointer;
 }
 
 .subpage-content img:first-child {
