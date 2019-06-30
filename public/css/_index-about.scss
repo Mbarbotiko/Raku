@@ -5,10 +5,13 @@
 }
 
 .home-aboutus h2{  
-    letter-spacing: 8px;
-    line-height: 3em;
+    @extend %headerStyle;
+    color:black;
+    border-color:$rkuRed;
+    border-width:1px;
 }
 .aboutus-wrapper{
+    margin-top:5%;
     width:90%;
     border-top:solid gray 1px;
     border-bottom: solid gray 1px;
