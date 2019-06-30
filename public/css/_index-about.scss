@@ -71,16 +71,16 @@
     margin-bottom:1%;
 }
 
-.test{
-    border:solid 1px white;
-    width:90%;
-    height:80%;
+.overlay-border{
+    border:solid 1.5px white;
+    width:80%;
+    height:75%;
     position: relative;
     margin: auto;
-    top:10%;
+    top:12.5%;
 }
 
-.test2{
+.overlay-hidden-border{
     border:solid 10px $rkuRed;
     border-radius: 85px;
     width:102%;
