@@ -18,7 +18,7 @@ text-align: center;
 .menu-buttons div h3{
     line-height: 2em;
     }
-#happy-hour{
+#happy-hour-button{
     border-right:solid 1px $rkuRed;
     border-left:solid 1px $rkuRed;
 }
@@ -26,5 +26,13 @@ text-align: center;
 .menu-buttons div h3:hover{
    color:$rkuRed;
    cursor: pointer;
-   
 }
+
+.menu-items{
+    text-align: center;
+}
+.menu-items span{
+    color:$rkuRed;
+   margin:10px;
+}
+

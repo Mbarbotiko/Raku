@@ -806,7 +806,7 @@ footer .hd-ft-bar {
   line-height: 2em;
 }
 
-#happy-hour {
+#happy-hour-button {
   border-right: solid 1px #eb4a1a;
   border-left: solid 1px #eb4a1a;
 }
@@ -814,6 +814,15 @@ footer .hd-ft-bar {
 .menu-buttons div h3:hover {
   color: #eb4a1a;
   cursor: pointer;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+.menu-items span {
+  color: #eb4a1a;
+  margin: 10px;
 }
 
 .subpage-content img:first-child {
