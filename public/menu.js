@@ -32,11 +32,16 @@ $('#dinner').hide();
     var p = '<p>';
     var sc = '</span>'
     var pc = '</p>'
+    var h = '<h4>'
+    var hc= '</h4>'
     function loadItems(obj, cssName) {
 
         for (var i = 0; i < obj.length; i++) {
             var buildItem = '';
             try {
+                if(obj[i].header){
+                    buildItem += h + obj[i].header + hc
+                }
 
                 if (obj[i].name) {
                     buildItem += p + obj[i].name
@@ -78,12 +83,13 @@ $('#dinner').hide();
     // loadItems(lunchBox, '.lunch-boxes');
     // loadItems(dinnerEntree, '.dinner-entrees')
     // loadItems(dinnerRolls, '.dinner-specialty-rolls')
-    loadItems(happyHourApps, '#happyhour');
-    loadItems(lunchMenuEntree, '#lunch');
-    loadItems(dinnerEntree, '#dinner');
+    loadItems(happyHour, '#happyhour');
+    loadItems(lunchMenu, '#lunch');
+    loadItems(dinnerMenu, '#dinner');
 
 
 }());
+//fix event listener to scroll to the top of the DIV when it is shown
 
 var menuNav = document.getElementsByClassName('menu-buttons')[0]
 //add event click event listener to the parent of the menu types selection

@@ -1,4 +1,7 @@
-var happyHourApps = [
+var happyHour = [
+    {
+        header: 'Appetizers'
+    },
     {
         name: 'Green Salad',
         description: '',
@@ -88,10 +91,11 @@ var happyHourApps = [
         name: 'Chicken Satay',
         description: 'Served with peanut satay dipping sauce',
         price: 6
-    }
-]
+    },
+    {
+        header: 'Raw'
+    },
 
-var happyHourSushiRaw = [
     {
         name: 'Chefs Choice Nigiri',
         description: '5 pieces of sashimi over rice',
@@ -101,10 +105,10 @@ var happyHourSushiRaw = [
         name: 'Chefs Choice Sashimi',
         description: '7 pieces of sashimi (no rice)',
         price: 12
-    }
-]
-
-var happyHourSushiRolls = [
+    },
+    {
+        header: 'Sushi Rolls'
+    },
     {
         name: 'Avacado',
         description: '',
@@ -184,11 +188,11 @@ var happyHourSushiRolls = [
         name: 'Shrimp Tempura',
         description: '',
         price: 6
-    }
-]
+    },
+    {
 
-
-var happyHourSpRolls = [
+        header: 'Specialty Rolls'
+    },
     {
         name: 'Sassy Lady',
         description: 'Spicy tuna, spicy yellowtail, spicy salmon, avocado inside with tabiko',
@@ -223,11 +227,11 @@ var happyHourSpRolls = [
         name: 'Godzilla',
         description: 'Chefs choice sashimi, cream cheese & avocado deep fried & topped with scallion, spicy mayo, eel sauce & masago',
         price: 8
-    }
+    },
+    {
 
-]
-
-var drinkSpecials = [
+        header: 'Drink Specials'
+    },
     {
         name: 'Tap Beers',
         price: '$2 off'
@@ -254,7 +258,10 @@ var drinkSpecials = [
     }
 ]
 
-var lunchMenuEntree = [
+var lunchMenu = [
+    {
+        header:'Entrees'
+    },
     {
         name: 'Fresh Scallop wth Eggplant',
         description: 'Pan seared scallop with eggplant in Yuzu Miso sauce'
@@ -282,11 +289,10 @@ var lunchMenuEntree = [
     {
         name: 'Sesame Chicken',
         description: 'Crispy fried chicken with special sesame sauce'
-    }
-
-]
-
-var lunchSpecialRolls = [
+    },
+    {
+        header:'Special Rolls'
+    },
     {
         name: 'California'
     },
@@ -337,10 +343,10 @@ var lunchSpecialRolls = [
     },
     {
         name: 'Spicy Tuna'
-    }
-]
-
-var lunchBox = [
+    },
+    {
+        header:'Boxes'
+    },
     {
         name: 'Beef Teriyaki'
     },
@@ -363,7 +369,10 @@ var lunchBox = [
 
 ]
 
-var dinnerEntree = [
+var dinnerMenu = [
+    {
+        header:'Entrees'
+    },
     {
         name: 'Crispy Dried Beef',
         description: 'Shredded beef, deep-fried, glazed in brown spicy sauce with celery & carrots'
@@ -399,81 +408,81 @@ var dinnerEntree = [
     {
         name: 'Tilapia',
         description: 'Broiled tilapia with a hot touch of ginger & scallion flavored olive oil, server with sauteed Asian vegetables'
-    }
-]
-
-var dinnerRolls = [
-    {
-        name:'Art of Maki',
-        description:'Very thinly slices tuna wrapped with spicy crab meat, avocado & sprouts'
     },
     {
-        name:'Black Pearl',
-        description:'Shrimp tempura, lobster salad topped with eel & black caviar brown sweet sauce'
+        header:'Specialty Rolls'
     },
     {
-        name:'Captain Crunch',
-        description:'Shrimp tempura, crab, avocado & cucumber with crispy tempura flakes outside'
+        name: 'Art of Maki',
+        description: 'Very thinly slices tuna wrapped with spicy crab meat, avocado & sprouts'
     },
     {
-        name:'Green Dragon',
-        description:'Broiled eel, cucumber topped ith avocado & caviar'
+        name: 'Black Pearl',
+        description: 'Shrimp tempura, lobster salad topped with eel & black caviar brown sweet sauce'
     },
     {
-        name:'Hurricane',
-        description:'Spicy salmon, spicy tuna & avocado, whole roll deep fried, topped with caviar, served with spicy mayo an eel sauce'
+        name: 'Captain Crunch',
+        description: 'Shrimp tempura, crab, avocado & cucumber with crispy tempura flakes outside'
     },
     {
-        name:'Lotus',
-        description:'Spicy tuna, yamagoba inside, topped with fresh tuna an avocado server with spicy mayo sauce'
+        name: 'Green Dragon',
+        description: 'Broiled eel, cucumber topped ith avocado & caviar'
     },
     {
-        name:'Manhattan',
-        description:'Shrimp tempura & crab stick inside, topped with spicy tuna, crunch flakes & caviar, served with 3 kinds of special sauces'
+        name: 'Hurricane',
+        description: 'Spicy salmon, spicy tuna & avocado, whole roll deep fried, topped with caviar, served with spicy mayo an eel sauce'
     },
     {
-        name:'Megu Sashimi(no rice)',
-        description:'Spicy tuna, asparagus, yellow tail inside, wrapped with soybean paper, topped wth salmon, eel, avocado, caviar & crunch, server with special spicy sauce'
+        name: 'Lotus',
+        description: 'Spicy tuna, yamagoba inside, topped with fresh tuna an avocado server with spicy mayo sauce'
     },
     {
-        name:'Naruto(no rice)',
-        description:'Tuna, salmon, yellow rail, crab stick, avocado & caviar wrapped with fresh cucumber'
+        name: 'Manhattan',
+        description: 'Shrimp tempura & crab stick inside, topped with spicy tuna, crunch flakes & caviar, served with 3 kinds of special sauces'
     },
     {
-        name:'No.9',
-        description:'Shrimp tempura & cucumber inside, topped with fresh salmon, avocado, eel sauce & spicy mayo sauce'
+        name: 'Megu Sashimi(no rice)',
+        description: 'Spicy tuna, asparagus, yellow tail inside, wrapped with soybean paper, topped wth salmon, eel, avocado, caviar & crunch, server with special spicy sauce'
     },
     {
-        name:'Playboy',
-        description:'Shrimp tempura, asparagus, spicy tuna inside, topped with sushi shrimp in a flaming aluminum wrap'
+        name: 'Naruto(no rice)',
+        description: 'Tuna, salmon, yellow rail, crab stick, avocado & caviar wrapped with fresh cucumber'
     },
     {
-        name:'Raku-roll-ah',
-        description:'Deep fried spicy tuna, fresh cra bmeat inside, topped ith fresh tuna, rich avocado, masago, scallion, served with a hint of wasabi & tinges of sweetness sauce'
+        name: 'No.9',
+        description: 'Shrimp tempura & cucumber inside, topped with fresh salmon, avocado, eel sauce & spicy mayo sauce'
     },
     {
-        name:'Sassy Lady',
-        description:'Spicy tuna, spicy salmon, spicy yellow tail & avocado inside, topped with caviar'
+        name: 'Playboy',
+        description: 'Shrimp tempura, asparagus, spicy tuna inside, topped with sushi shrimp in a flaming aluminum wrap'
     },
     {
-        name:'Snow Thrill',
-        description:'Tuna, salmon, yellow tail & avocado inside, topped with crunch flakes, served with spicy mayo & eel sauce'
+        name: 'Raku-roll-ah',
+        description: 'Deep fried spicy tuna, fresh cra bmeat inside, topped ith fresh tuna, rich avocado, masago, scallion, served with a hint of wasabi & tinges of sweetness sauce'
     },
     {
-        name:'Sweetheart',
-        description:'Crab stick & shrimp tempura wrapped with fresh tuna in a heart shape'
+        name: 'Sassy Lady',
+        description: 'Spicy tuna, spicy salmon, spicy yellow tail & avocado inside, topped with caviar'
     },
     {
-        name:'Sun Kiss',
-        description:'Broiled eel, shrimp tempura & avocado inside, topped with mango & crunch flakes'
+        name: 'Snow Thrill',
+        description: 'Tuna, salmon, yellow tail & avocado inside, topped with crunch flakes, served with spicy mayo & eel sauce'
     },
     {
-        name:'Three of a Kind',
-        description:'Tuna, salmon, yellow tail, cucumber & kaiware inside, wrapped with white seaweed'
+        name: 'Sweetheart',
+        description: 'Crab stick & shrimp tempura wrapped with fresh tuna in a heart shape'
     },
     {
-        name:'White Russian',
-        description:'Fresh crab meat, sweet potato tempura, avocado, cucumber inside, topped with torched white tuna, black caviar & creamy wasabi mayo sauce'
+        name: 'Sun Kiss',
+        description: 'Broiled eel, shrimp tempura & avocado inside, topped with mango & crunch flakes'
+    },
+    {
+        name: 'Three of a Kind',
+        description: 'Tuna, salmon, yellow tail, cucumber & kaiware inside, wrapped with white seaweed'
+    },
+    {
+        name: 'White Russian',
+        description: 'Fresh crab meat, sweet potato tempura, avocado, cucumber inside, topped with torched white tuna, black caviar & creamy wasabi mayo sauce'
     },
 
 ]
