@@ -1,3 +1,27 @@
+//check for screen size here
+// if screen size is mobile append divs under the button divs
+//if desk top append divs to menu items section
+//need to add event listener to window that checks for divs in dom, on specific window size (if div exists under this parent then remove it, and add it to this other parent) if this happens then the element click event needs to be added again as well.
+// window.addEventListener('resize', function(){
+//    console.log(window.innerWidth);
+//if the window size is <768 and the div lives under this parent then to this
+//if the window size is is any thing else check for the element under the other parent if its not there destory then reappend along with click function
+
+// })
+rearrange();
+
+function rearrange() {
+    if (window.innerWidth < 768) {
+        $('#lunch-button').append(`<div id='lunch'></div>`)
+        $('#happy-hour-button').append(`<div id='happyhour'></div>`)
+        $('#dinner-button').append(`<div id='dinner'></div>`)
+    } else {
+        $('.menu-items').append(`<div id='lunch'></div>
+    <div id='happyhour'></div>
+    <div id='dinner'></div>`)
+    }
+}
+
 $('#happyhour').hide();
 $('#lunch').hide();
 $('#dinner').hide();
@@ -59,8 +83,6 @@ $('#dinner').hide();
     loadItems(dinnerEntree, '#dinner');
 
 
-
-
 }());
 
 var menuNav = document.getElementsByClassName('menu-buttons')[0]
@@ -72,22 +94,22 @@ menuNav.addEventListener('click', function (e) {
     var mySiblings = ($(navSelection).parent().siblings());
     var siblingOne = mySiblings[0].getElementsByTagName('h3')[0].getAttribute('data-is');
     var siblingTwo = mySiblings[1].getElementsByTagName('h3')[0].getAttribute('data-is');
-    function hideSiblings(){
-        $('#'+siblingOne).hide();
-        $('#'+siblingTwo).hide();
+    function hideSiblings() {
+        $('#' + siblingOne).hide();
+        $('#' + siblingTwo).hide();
     }
     switch (menuType) {
-        case 'lunch': 
-        $('#'+menuType).show()
-        hideSiblings()
+        case 'lunch':
+            $('#' + menuType).show()
+            hideSiblings()
             break;
-        case 'happyhour': 
-        $('#'+menuType).show()
-        hideSiblings()
+        case 'happyhour':
+            $('#' + menuType).show()
+            hideSiblings()
             break;
-        case 'dinner': 
-        $('#'+menuType).show()
-        hideSiblings()
+        case 'dinner':
+            $('#' + menuType).show()
+            hideSiblings()
             break;
         default: console.log('ohboy')
     }
