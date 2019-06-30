@@ -257,10 +257,6 @@ header .hd-ft-bar span {
   width: 90%;
 }
 
-.overlay-header span {
-  display: none;
-}
-
 .overlay-header {
   position: relative;
   background-color: #eb4a1a;
@@ -274,16 +270,31 @@ header .hd-ft-bar span {
   margin-bottom: 1%;
 }
 
-.overlay-header h3 {
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
-  line-height: 150px;
+.test {
+  border: solid 1px white;
+  width: 90%;
+  height: 80%;
   position: relative;
-  top: 30%;
-  width: 60%;
-  left: 20%;
+  margin: auto;
+  top: 10%;
+}
+
+.test2 {
+  border: solid 10px #eb4a1a;
+  border-radius: 85px;
+  width: 102%;
+  height: 104%;
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  left: -5px;
+}
+
+.overlay-header h3 {
   text-align: center;
   letter-spacing: 6pt;
+  position: relative;
+  top: 50%;
 }
 
 .disappear {
