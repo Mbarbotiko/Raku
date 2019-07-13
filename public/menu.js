@@ -112,23 +112,15 @@ menuNav.addEventListener('click', function (e) {
     var addressBar = document.getElementsByClassName('hd-ft-bar')[0].style.display;
     console.log(addressBar)
     if (addressBar === 'none'||addressBar ===null) {
-        document.getElementById(menuType).scrollIntoView({
-            behavior: 'smooth',
-            alignToTop: true,
-            block:'start'
-        });
+        $('html, body').animate({
+            scrollTop: $('#'+menuType).offset().top
+        }, 1000);
     }
     if (addressBar === 'block') {
-       // document.getElementById(menuType).scrollTop-=500;
-       //this needs an offset because the address bar disappears leaving 50 px offset >:| 
-       
-        document.getElementById(menuType).scrollIntoView({
-            behavior: 'smooth',
-            alignToTop: true
-        });
-   
+        $('html, body').animate({
+            scrollTop: $('#'+menuType).offset().top-100
+        }, 1000);
     }
-
 })
 
 //if this class has a display property of block "hd-ft-bar" display="block" introduce an offset of the size of that element
