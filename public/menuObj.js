@@ -394,7 +394,7 @@ var dinnerMenu = [
         description: 'Jumbo lump crab meat crusted salmon finished with wasabi dressing, sake & soy reduction, with tomato, avocado & jalapeno salsa'
     },
     {
-        name: 'Scallop Driver',
+        name: 'Scallop Diver',
         description: 'Pan seared scallop with wild mushrooms in a sweet sake sauce'
     },
     {
@@ -414,7 +414,7 @@ var dinnerMenu = [
     },
     {
         name: 'Art of Maki',
-        description: 'Very thinly slices tuna wrapped with spicy crab meat, avocado & sprouts'
+        description: 'Very thinly sliced tuna wrapped with spicy crab meat, avocado & sprouts'
     },
     {
         name: 'Black Pearl',
