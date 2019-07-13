@@ -825,6 +825,14 @@ footer .hd-ft-bar {
   margin: 10px;
 }
 
+.menu-items h4 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-bottom: solid 0.25px #eb4a1a;
+  line-height: 80%;
+  display: inline-block;
+}
+
 .subpage-content img:first-child {
   width: 100%;
   height: 65vh;
