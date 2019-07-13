@@ -110,19 +110,25 @@ menuNav.addEventListener('click', function (e) {
         default: console.log('Menu button failing to show menu items, see menu.js');
     }
     var addressBar = document.getElementsByClassName('hd-ft-bar')[0].style.display;
-    console.log(addressBar)
-    if (addressBar === 'none'||addressBar ===null) {
+    //if the address bar isnt displayed do not run with a top offset
+    if (addressBar === 'none' && window.innerWidth >= 769 || addressBar === null && window.innerWidth >= 769) {
         $('html, body').animate({
-            scrollTop: $('#'+menuType).offset().top
+            scrollTop: $('#' + menuType).offset().top
         }, 1000);
     }
-    if (addressBar === 'block') {
+    if (addressBar === 'block' && window.innerWidth >= 769) {
+        //if it is, offset by 100 so menu header is in view
         $('html, body').animate({
-            scrollTop: $('#'+menuType).offset().top-100
+            scrollTop: $('#' + menuType).offset().top - 100
         }, 1000);
     }
-})
 
-//if this class has a display property of block "hd-ft-bar" display="block" introduce an offset of the size of that element
-
+    //for mediascreen sizes break point 768, because the address bar shouldnt exist at this screen size onload and at break 
+    if (window.innerWidth <= 768) {
+            $('html, body').animate({
+                scrollTop: $('#' + menuType).offset().top - 200
+            }, 0);
+        }
+        //create a fade affect here later
+});
 
