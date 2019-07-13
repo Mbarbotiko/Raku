@@ -33,13 +33,13 @@ $('#dinner').hide();
     var sc = '</span>'
     var pc = '</p>'
     var h = '<h4>'
-    var hc= '</h4>'
+    var hc = '</h4>'
     function loadItems(obj, cssName) {
 
         for (var i = 0; i < obj.length; i++) {
             var buildItem = '';
             try {
-                if(obj[i].header){
+                if (obj[i].header) {
                     buildItem += h + obj[i].header + hc
                 }
 
@@ -71,18 +71,7 @@ $('#dinner').hide();
             }
         }
     }
-
-    //maybe consolidate this later add headers using jscript instead so this function is only called per section instead of per header in each section
-    // loadItems(happyHourApps, '#happyhour')
-    // loadItems(happyHourSushiRaw, '.app-raw')
-    // loadItems(happyHourSushiRolls, '.app-rolls')
-    // loadItems(happyHourSpRolls, '.app-specialty-rolls')
-    // loadItems(drinkSpecials, '.drink-specials')
-    // loadItems(lunchMenuEntree, '.lunch-entrees')
-    // loadItems(lunchSpecialRolls, '.lunch-specialty-rolls')
-    // loadItems(lunchBox, '.lunch-boxes');
-    // loadItems(dinnerEntree, '.dinner-entrees')
-    // loadItems(dinnerRolls, '.dinner-specialty-rolls')
+    //load items in specific divs
     loadItems(happyHour, '#happyhour');
     loadItems(lunchMenu, '#lunch');
     loadItems(dinnerMenu, '#dinner');
@@ -100,25 +89,48 @@ menuNav.addEventListener('click', function (e) {
     var mySiblings = ($(navSelection).parent().siblings());
     var siblingOne = mySiblings[0].getElementsByTagName('h3')[0].getAttribute('data-is');
     var siblingTwo = mySiblings[1].getElementsByTagName('h3')[0].getAttribute('data-is');
+
     function hideSiblings() {
         $('#' + siblingOne).hide();
         $('#' + siblingTwo).hide();
     }
     switch (menuType) {
         case 'lunch':
-            $('#' + menuType).show()
-            hideSiblings()
+            $('#' + menuType).show();
+            hideSiblings();
             break;
         case 'happyhour':
             $('#' + menuType).show()
-            hideSiblings()
+            hideSiblings();
             break;
         case 'dinner':
-            $('#' + menuType).show()
-            hideSiblings()
+            $('#' + menuType).show();
+            hideSiblings();
             break;
-        default: console.log('ohboy')
+        default: console.log('Menu button failing to show menu items, see menu.js');
     }
+    var addressBar = document.getElementsByClassName('hd-ft-bar')[0].style.display;
+    console.log(addressBar)
+    if (addressBar === 'none'||addressBar ===null) {
+        document.getElementById(menuType).scrollIntoView({
+            behavior: 'smooth',
+            alignToTop: true,
+            block:'start'
+        });
+    }
+    if (addressBar === 'block') {
+       // document.getElementById(menuType).scrollTop-=500;
+       //this needs an offset because the address bar disappears leaving 50 px offset >:| 
+       
+        document.getElementById(menuType).scrollIntoView({
+            behavior: 'smooth',
+            alignToTop: true
+        });
+   
+    }
+
 })
+
+//if this class has a display property of block "hd-ft-bar" display="block" introduce an offset of the size of that element
 
 
