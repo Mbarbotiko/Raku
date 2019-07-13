@@ -866,6 +866,32 @@ footer .hd-ft-bar {
   color: white;
 }
 
+.delivery-services {
+  text-align: center;
+}
+
+.delivery-services img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 2%;
+  min-height: 250px;
+}
+
+.delivery-services > div {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.delivery-services h4 {
+  padding: 2%;
+}
+
+.delivery-services h4:hover {
+  color: #eb4a1a;
+}
+
 @media screen and (max-width: 768px) and (min-width: 0px) {
   .menu-buttons div {
     width: 100%;
