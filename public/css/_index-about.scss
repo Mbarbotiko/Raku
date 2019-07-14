@@ -73,17 +73,17 @@
 }
 
 .overlay-border{
-    border:solid 1.5px white;
-    width:80%;
-    height:75%;
+    border:solid .5px white;
+    width:90%;
+    height:80%;
     position: relative;
     margin: auto;
-    top:12.5%;
+    top:10%;
 }
 
 .overlay-hidden-border{
-    border:solid 10px $rkuRed;
-    border-radius: 85px;
+    border:solid 25px $rkuRed;
+    border-radius: 50px;
     width:102%;
     height:104%;
     position: absolute;
@@ -92,13 +92,11 @@
     left:-5px;
 }
 
-.overlay-header h3{
+.overlay-header h5{
     text-align: center;
     letter-spacing:6pt;
     position:relative;
     top:50%;
-  
-    
 }
 
 .disappear{
@@ -119,7 +117,7 @@
     background-image:url("../images/sushi7.jpg");
     background-size:100% 100%;
 }
-.image3 h3{
+.image3 h5{
     letter-spacing: 2pt;
 }
 
