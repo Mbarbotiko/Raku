@@ -6,20 +6,31 @@
     display:block;
     margin-left: auto;
     margin-right: auto;
-    width:50%;
+    width:100%;
     padding:2%;
-    min-height:250px;
+    min-height:200px;
 }
 
 .delivery-services>div{
 margin-top:5%;
 margin-bottom:5%;
+border-top: solid white 2px;
+   // border-bottom:solid white 2px;
+    width: 40%;
+    margin: auto;
 }
 
-.delivery-services h4{
+.delivery-services>div:first-child{
+border-top:none;
+}
+
+.delivery-services a h4{
+
     padding:2%;
  }
 
  .delivery-services h4:hover{
    color:$rkuRed;
  }
+
+
