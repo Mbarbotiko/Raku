@@ -83,7 +83,7 @@ $('#dinner').hide();
     loadItems(happyHour, '#happyhour');
     loadItems(lunchMenu, '#lunch');
     loadItems(dinnerMenu, '#dinner');
-    var closeButton = `<button role = 'close'>[   Collapse   ]</button>`;
+    var closeButton = `<h5 role = 'close'><span>[</span>   Collapse   <span>]</span></h5>`;
 
     if (window.innerWidth >= desktopView) {
         //appending buttons that will close the DIV only for desktop view
