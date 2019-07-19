@@ -6,19 +6,27 @@
 //    console.log(window.innerWidth);
 //if the window size is <768 and the div lives under this parent then to this
 //if the window size is is any thing else check for the element under the other parent if its not there destory then reappend along with click function
+var desktopView = 769;
+var mobileView = 768;
 
 // })
 rearrange();
+//creates DIV's dynamically based on screen size because they will be arranged differently on mobile versus desktop with different functionality
 
 function rearrange() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= mobileView) {
         $('#lunch-button').append(`<div id='lunch'></div>`)
         $('#happy-hour-button').append(`<div id='happyhour'></div>`)
         $('#dinner-button').append(`<div id='dinner'></div>`)
+        $('#lunch-button').append(`<div id='lunch'></div>`)
     } else {
         $('.menu-items').append(`<div id='lunch'></div>
     <div id='happyhour'></div>
-    <div id='dinner'></div>`)
+    <div id='dinner'></div>`
+        )
+
+
+
     }
 }
 
@@ -75,6 +83,19 @@ $('#dinner').hide();
     loadItems(happyHour, '#happyhour');
     loadItems(lunchMenu, '#lunch');
     loadItems(dinnerMenu, '#dinner');
+    var closeButton = `<button role = 'close'>[   Collapse   ]</button>`;
+
+    if (window.innerWidth >= desktopView) {
+        //appending buttons that will close the DIV only for desktop view
+        $('#lunch').append(closeButton)
+        $('#happyhour').append(closeButton)
+        $('#dinner').append(closeButton)
+        $('[role="close"]').on('click', function(){
+            $(this).parent().hide();
+            //add event listened to close this parent, and scroll back to top where the top menubar isnt showing, scrollX = 10 from that position
+            $(window).scrollTop(10);
+        })
+    }
 
 
 }());
@@ -125,10 +146,10 @@ menuNav.addEventListener('click', function (e) {
 
     //for mediascreen sizes break point 768, because the address bar shouldnt exist at this screen size onload and at break 
     if (window.innerWidth <= 768) {
-            $('html, body').animate({
-                scrollTop: $('#' + menuType).offset().top - 200
-            }, 0);
-        }
-        //create a fade affect here later
+        $('html, body').animate({
+            scrollTop: $('#' + menuType).offset().top - 200
+        }, 0);
+    }
+    //create a fade affect here later
 });
 
