@@ -1,6 +1,6 @@
 
 .landing-header{
-    width: 40%;
+    width: 50%;
     position:relative;
     margin:auto;
     top:5%;
@@ -27,6 +27,7 @@
 }
 //shared sections
 %backgroundImg{
+    margin-top:0;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;

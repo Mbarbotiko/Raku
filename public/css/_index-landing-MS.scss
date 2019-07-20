@@ -1,93 +1,101 @@
 
 @media (orientation: portrait) {
     //Landing Text Index.html
-@media screen and (max-width: 1480px)and (min-width: 1200px){
-    %backgroundImg,.landing-image.overlay,.landing-image.home {
-        height:95vh;
+
+    @media screen and (max-width: 1600px)and (min-width: 1479px){
+        .landing-header{
+            width:60%;
+            
+        }
+
     }
+@media screen and (max-width: 1480px)and (min-width: 1200px){
     .landing-header{
-        width:55%;
+        width:70%;
+        
     }
     
     .landing-headline{
-       padding-top:.5em;
-       font-size:40pt;
-       height:40vh;
+        position: relative;
+        top:2em;
+        font-size:5em;
+        height: 40vh;
     }
     
     .landing-subtext{
-        margin-top:1.75em;
-        font-size:20pt;
-        height:20vh;
+        position: relative;
+        top:5em;
+        font-size:2.5em;
+        height: 20vh;
     }
+
 
 }
 
 
 
 @media screen and (max-width: 1199px)and (min-width: 990px){
-    %backgroundImg,.landing-image.overlay {
-        height:95vh;
-    }
     .landing-header{
-        width:60%;
+        width:75%;
+        
     }
     
     .landing-headline{
-       padding-top:2em;
-       font-size:40pt;
-       height:40vh;
+        position: relative;
+        top:2.5em;
+        font-size:5em;
+        height: 40vh;
     }
     
     .landing-subtext{
-        margin-top:3em;
-        font-size:20pt;
-        height:20vh;
+        position: relative;
+        top:6em;
+        font-size:2.25em;
+        height: 20vh;
     }
 }
 
 @media screen and (max-width: 989px)and (min-width: 650px){
-    %backgroundImg,.landing-image.overlay {
-        height:95vh;
-    }
     .landing-header{
-        width:60%;
+        width:70%;
+        
     }
     
     .landing-headline{
-       padding-top:2em;
-       font-size:32pt;
-       height:40vh;
+        position: relative;
+        top:2.5em;
+        font-size:3.5em;
+        height: 40vh;
     }
     
     .landing-subtext{
-        margin-top:2.5em;
-        font-size:16pt;
-        height:20vh;
-    } 
+        position: relative;
+        top:5em;
+        font-size:2em;
+        height: 20vh;
+    }
 }
 
 
 @media screen and (max-width: 649px)and (min-width: 450px){
-    %backgroundImg,.landing-image.overlay {
-        height:95vh;
-    }
     .landing-header{
-        width:80%;
+        width:70%;
+        
     }
     
     .landing-headline{
-       padding-top:1.5em;
-        font-size:32pt;
-        height:40vh;
+        position: relative;
+        top:2em;
+        font-size:3em;
+        height: 40vh;
     }
     
     .landing-subtext{
-        margin-top:3.5em;
-        font-size:16pt;
-        height:20vh;
-        
-    } 
+        position: relative;
+        top:5em;
+        font-size:1.5em;
+        height: 20vh;
+    }
 }
 
 
@@ -95,18 +103,21 @@
     
     .landing-header{
         width:80%;
+        
     }
     
     .landing-headline{
         position: relative;
-        top:3em;
-        font-size:26pt;
+        top:3.5em;
+        font-size:2em;
+        height: 40vh;
     }
     
     .landing-subtext{
         position: relative;
-        top:3.5em;
-        font-size:16pt;
+        top:5em;
+        font-size:1em;
+        height: 20vh;
     }  
 }
 
@@ -114,20 +125,20 @@
 
     .landing-header{
         width:90%;
-        height:100vh;
-        color:green;
     }
     
     .landing-headline{
         position: relative;
-        top:4em;
-        font-size:20pt;
+        top:3em;
+        font-size:1.75em;
+        height: 40vh;
     }
     
     .landing-subtext{
         position: relative;
-        top:7em;
-        font-size:12pt;
+        top:4em;
+        font-size:1em;
+        height: 20vh;
     } 
 }
 
