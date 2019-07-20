@@ -1,48 +1,97 @@
 
 //Landing Text Index.html
-@media screen and (max-width: 960px)and (min-width: 650px){
-    .landing-header{
-        width:60%;
-    }
-    .landing-headline{
-        font-size:5.5vw;
-        padding-top:1em;
-        font-size:6.5vh;
-    }
-    .landing-subtext{
-        font-size:2vw;
-        margin-top:3em;
-    }
- }
+@media screen and (max-width: 1480px)and (min-width: 1200px){
+.landing-header{
+    width:50%;
+}
 
-//Landing Text Index.html
- @media screen and (max-width: 649px)and (min-width: 480px){
+.landing-subtext{
+    padding-top:3.5em;
+}
+
+}
+
+@media screen and (max-width: 1199px)and (min-width: 990px){
     .landing-header{
         width:70%;
     }
+    
     .landing-headline{
-        font-size:20pt;
-        padding-top:2em;
-        font-size:4.5vh;
+       padding-top:2.5em;
+       font-size:48pt;
     }
+    
     .landing-subtext{
-        font-size:12pt;
-        margin-top:6em;
+        padding-top:3.5em;
+        font-size:28pt;
     }
- }
+}
 
-//Landing Text Index.html
- @media screen and (max-width: 479px)and (min-width: 0px){
+@media screen and (max-width: 989px)and (min-width: 650px){
+    .landing-header{
+        width:70%;
+    }
+    
+    .landing-headline{
+       padding-top:2.5em;
+       font-size:36pt;
+    }
+    
+    .landing-subtext{
+        padding-top:3.5em;
+        font-size:18pt;
+    } 
+}
+
+
+@media screen and (max-width: 649px)and (min-width: 450px){
     .landing-header{
         width:80%;
     }
+    
     .landing-headline{
-        font-size:20pt;
-        padding-top:2em;
-        font-size:4.5vh;
+       padding-top:1.5em;
+        font-size:32pt;
     }
+    
     .landing-subtext{
-        font-size:12pt;
-        margin-top:4em;
+        padding-top:3.5em;
+        font-size:16pt;
+        
+    } 
+}
+
+
+@media screen and (max-width: 449px)and (min-width: 321px){
+    .landing-header{
+        width:80%;
     }
- }
+    
+    .landing-headline{
+       padding-top:1em;
+        font-size:24pt;
+    }
+    
+    .landing-subtext{
+        padding-top:2em;
+        font-size:14pt;
+        
+    } 
+}
+
+@media screen and (max-width: 320px)and (min-width: 0px){
+    .landing-header{
+        width:90%;
+    }
+    
+    .landing-headline{
+       padding-top:1em;
+        font-size:22pt;
+    }
+    
+    .landing-subtext{
+        padding-top:1em;
+        font-size:12pt;
+        
+    } 
+}

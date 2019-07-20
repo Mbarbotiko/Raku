@@ -17,7 +17,7 @@
     font-size:3vw;
     font-size:3vh;
     width:75%;
-    margin-top:2em;
+    padding-top:2em;
 }
 .landing-subtext span{
     color:$rkuRed;
@@ -31,7 +31,7 @@
     background-size:cover;
     background-position:center;
     position:relative;
-    height:110vh;
+    height:95vh;
     background-color:$bk;
     z-index:1;   
 }
@@ -47,7 +47,7 @@
     z-index: -1;
     display: table;
     width: 100vw;
-    height:110vh;
+    height:95vh;
 }
 @keyframes indexLandingTransition {
     0%{
