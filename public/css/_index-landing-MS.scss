@@ -92,47 +92,42 @@
 
 
 @media screen and (max-width: 449px)and (min-width: 321px){
-    %backgroundImg,.landing-image.overlay {
-        height:95vh;
-    }
+    
     .landing-header{
         width:80%;
     }
     
     .landing-headline{
-       padding-top:1em;
-        font-size:24pt;
-        height:40vh;
+        position: relative;
+        top:3em;
+        font-size:26pt;
     }
     
     .landing-subtext{
-        margin-top:2em;
-        font-size:14pt;
-        height:20vh;
-        
-    } 
+        position: relative;
+        top:3.5em;
+        font-size:16pt;
+    }  
 }
 
 @media screen and (max-width: 320px)and (min-width: 0px){
-    %backgroundImg,.landing-image.overlay {
-        height:95vh;
-    }
+
     .landing-header{
         width:90%;
+        height:100vh;
+        color:green;
     }
     
     .landing-headline{
-       padding-top:2em;
+        position: relative;
+        top:4em;
         font-size:20pt;
-        height:30vh;
     }
     
     .landing-subtext{
-        //padding-top:1em;
-        margin-top:4em;
+        position: relative;
+        top:7em;
         font-size:12pt;
-        height:15vh;
-        
     } 
 }
 
