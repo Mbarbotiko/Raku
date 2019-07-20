@@ -421,45 +421,67 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 1480px) and (min-width: 1200px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
-    width: 50%;
+    width: 55%;
+  }
+
+  .landing-headline {
+    padding-top: 0.5em;
+    font-size: 40pt;
   }
 
   .landing-subtext {
-    padding-top: 3.5em;
+    padding-top: 1.75em;
+    font-size: 20pt;
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 990px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
-    width: 70%;
+    width: 60%;
   }
 
   .landing-headline {
-    padding-top: 2.5em;
-    font-size: 48pt;
+    padding-top: 2em;
+    font-size: 40pt;
   }
 
   .landing-subtext {
-    padding-top: 3.5em;
-    font-size: 28pt;
+    padding-top: 3em;
+    font-size: 20pt;
   }
 }
 @media screen and (max-width: 989px) and (min-width: 650px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
-    width: 70%;
+    width: 60%;
   }
 
   .landing-headline {
-    padding-top: 2.5em;
-    font-size: 36pt;
+    padding-top: 2em;
+    font-size: 32pt;
   }
 
   .landing-subtext {
-    padding-top: 3.5em;
-    font-size: 18pt;
+    padding-top: 2.5em;
+    font-size: 16pt;
   }
 }
 @media screen and (max-width: 649px) and (min-width: 450px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
     width: 80%;
   }
@@ -475,6 +497,10 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 449px) and (min-width: 321px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
     width: 80%;
   }
@@ -490,6 +516,10 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 320px) and (min-width: 0px) {
+  .landing-image, .landing-image.overlay {
+    height: 95vh;
+  }
+
   .landing-header {
     width: 90%;
   }
