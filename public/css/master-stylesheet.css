@@ -405,6 +405,13 @@ footer .hd-ft-bar {
     display: none;
   }
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+  }
+
   #navbarTogglerDemo02 {
     height: 100vh;
     margin-top: 10%;
@@ -420,8 +427,8 @@ footer .hd-ft-bar {
     line-height: 300%;
   }
 }
-@media screen and (max-width: 1480px) and (min-width: 1200px) {
-  .landing-image, .landing-image.overlay {
+@media screen and (orientation: portrait) and (max-width: 1480px) and (min-width: 1200px) {
+  .landing-image, .landing-image.overlay, .landing-image.home {
     height: 95vh;
   }
 
@@ -432,14 +439,16 @@ footer .hd-ft-bar {
   .landing-headline {
     padding-top: 0.5em;
     font-size: 40pt;
+    height: 40vh;
   }
 
   .landing-subtext {
-    padding-top: 1.75em;
+    margin-top: 1.75em;
     font-size: 20pt;
+    height: 20vh;
   }
 }
-@media screen and (max-width: 1199px) and (min-width: 990px) {
+@media screen and (orientation: portrait) and (max-width: 1199px) and (min-width: 990px) {
   .landing-image, .landing-image.overlay {
     height: 95vh;
   }
@@ -451,14 +460,16 @@ footer .hd-ft-bar {
   .landing-headline {
     padding-top: 2em;
     font-size: 40pt;
+    height: 40vh;
   }
 
   .landing-subtext {
-    padding-top: 3em;
+    margin-top: 3em;
     font-size: 20pt;
+    height: 20vh;
   }
 }
-@media screen and (max-width: 989px) and (min-width: 650px) {
+@media screen and (orientation: portrait) and (max-width: 989px) and (min-width: 650px) {
   .landing-image, .landing-image.overlay {
     height: 95vh;
   }
@@ -470,14 +481,16 @@ footer .hd-ft-bar {
   .landing-headline {
     padding-top: 2em;
     font-size: 32pt;
+    height: 40vh;
   }
 
   .landing-subtext {
-    padding-top: 2.5em;
+    margin-top: 2.5em;
     font-size: 16pt;
+    height: 20vh;
   }
 }
-@media screen and (max-width: 649px) and (min-width: 450px) {
+@media screen and (orientation: portrait) and (max-width: 649px) and (min-width: 450px) {
   .landing-image, .landing-image.overlay {
     height: 95vh;
   }
@@ -489,14 +502,16 @@ footer .hd-ft-bar {
   .landing-headline {
     padding-top: 1.5em;
     font-size: 32pt;
+    height: 40vh;
   }
 
   .landing-subtext {
-    padding-top: 3.5em;
+    margin-top: 3.5em;
     font-size: 16pt;
+    height: 20vh;
   }
 }
-@media screen and (max-width: 449px) and (min-width: 321px) {
+@media screen and (orientation: portrait) and (max-width: 449px) and (min-width: 321px) {
   .landing-image, .landing-image.overlay {
     height: 95vh;
   }
@@ -508,14 +523,16 @@ footer .hd-ft-bar {
   .landing-headline {
     padding-top: 1em;
     font-size: 24pt;
+    height: 40vh;
   }
 
   .landing-subtext {
-    padding-top: 2em;
+    margin-top: 2em;
     font-size: 14pt;
+    height: 20vh;
   }
 }
-@media screen and (max-width: 320px) and (min-width: 0px) {
+@media screen and (orientation: portrait) and (max-width: 320px) and (min-width: 0px) {
   .landing-image, .landing-image.overlay {
     height: 95vh;
   }
@@ -525,13 +542,15 @@ footer .hd-ft-bar {
   }
 
   .landing-headline {
-    padding-top: 1em;
-    font-size: 22pt;
+    padding-top: 2em;
+    font-size: 20pt;
+    height: 30vh;
   }
 
   .landing-subtext {
-    padding-top: 1em;
+    margin-top: 4em;
     font-size: 12pt;
+    height: 15vh;
   }
 }
 @media screen and (max-width: 1159px) and (min-width: 901px) {
