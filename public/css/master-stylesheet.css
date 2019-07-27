@@ -546,6 +546,20 @@ footer .hd-ft-bar {
     padding-top: 10%;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
+  .landing-header {
+    top: 40%;
+    width: 90%;
+  }
+
+  .landing-headline {
+    font-size: 1.5em;
+  }
+
+  .landing-subtext {
+    font-size: 0.75em;
+  }
+}
 @media screen and (max-width: 1159px) and (min-width: 901px) {
   .home-aboutus h2 {
     font-size: 25pt;
