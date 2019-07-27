@@ -428,14 +428,47 @@ footer .hd-ft-bar {
     line-height: 300%;
   }
 }
-@media screen and (max-width: 1600px) and (orientation: portrait) {
+@media screen and (max-width: 1600px) {
   .landing-header {
-    width: 60%;
+    top: 15%;
+    width: 70%;
+  }
+
+  .landing-headline {
+    font-size: 3.5vw;
+  }
+
+  .landing-subtext {
+    font-size: 2vw;
+    padding-top: 10%;
   }
 }
-@media screen and (max-width: 1200px) and (orientation: portrait) {
+@media screen and (max-width: 1400px) {
+  .landing-headline {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .landing-headline {
+    font-size: 4.5vw;
+  }
+
+  .landing-subtext {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 1025px) {
   .landing-header {
-    width: 75%;
+    top: 20%;
+  }
+
+  .landing-headline {
+    font-size: 5vw;
+  }
+
+  .landing-subtext {
+    font-size: 2.25vw;
+    padding-top: 5%;
   }
 }
 @media screen and (max-width: 800px) and (orientation: portrait) {
@@ -455,16 +488,16 @@ footer .hd-ft-bar {
 }
 @media screen and (max-width: 650px) and (orientation: portrait) {
   .landing-header {
-    top: 25%;
+    top: 20%;
     width: 80%;
   }
 
   .landing-headline {
-    font-size: 2.5em;
+    font-size: 2.23em;
   }
 
   .landing-subtext {
-    font-size: 1.25em;
+    font-size: 1em;
     padding-top: 10%;
   }
 }
