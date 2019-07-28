@@ -5,22 +5,43 @@
 }
 
 .home-aboutus h2{  
-    @extend %headerStyle;
-    color:black;
-    border-color:$rkuRed;
-    border-width:1px;
+    letter-spacing: 10pt;
 }
+
+.home-aboutus span{
+    display: inline-block;
+    position: relative;  
+
+}
+.home-aboutus span:before,
+.home-aboutus span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: solid $rkuRed 1px;
+  top: 50%;
+  width: 50%;
+}
+.home-aboutus span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .home-aboutus span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
 .aboutus-wrapper{
     margin-top:5%;
     width:90%;
-    border-top:solid gray 1px;
-    border-bottom: solid gray 1px;
+    border-bottom: solid rgb(228, 222, 222) 1px;
+    border-top: solid rgb(228, 222, 222) 1px;
     margin-bottom:10%;
     float: left;
     margin-left:5%;
     overflow: hidden;
-}
 
+}
 
 .panel{
     text-align: center;
@@ -73,7 +94,7 @@
 }
 
 .overlay-border{
-    border:solid .5px white;
+    border:solid .5px rgb(228, 222, 222);
     width:90%;
     height:80%;
     position: relative;

@@ -1,4 +1,4 @@
-.subpage-content h1, .home-aboutus h2 {
+.subpage-content h1 {
   border-top: solid white 2px;
   border-bottom: solid white 2px;
   position: relative;
@@ -207,16 +207,39 @@ header .hd-ft-bar span {
 }
 
 .home-aboutus h2 {
-  color: black;
-  border-color: #eb4a1a;
-  border-width: 1px;
+  letter-spacing: 10pt;
+}
+
+.home-aboutus span {
+  display: inline-block;
+  position: relative;
+}
+
+.home-aboutus span:before,
+.home-aboutus span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: solid #eb4a1a 1px;
+  top: 50%;
+  width: 50%;
+}
+
+.home-aboutus span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.home-aboutus span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 .aboutus-wrapper {
   margin-top: 5%;
   width: 90%;
-  border-top: solid gray 1px;
-  border-bottom: solid gray 1px;
+  border-bottom: solid #e4dede 1px;
+  border-top: solid #e4dede 1px;
   margin-bottom: 10%;
   float: left;
   margin-left: 5%;
@@ -279,7 +302,7 @@ header .hd-ft-bar span {
 }
 
 .overlay-border {
-  border: solid 0.5px white;
+  border: solid 0.5px #e4dede;
   width: 90%;
   height: 80%;
   position: relative;
@@ -560,16 +583,39 @@ footer .hd-ft-bar {
     font-size: 0.75em;
   }
 }
-@media screen and (max-width: 1159px) and (min-width: 901px) {
+@media screen and (max-width: 1400px) {
   .home-aboutus h2 {
-    font-size: 25pt;
-    letter-spacing: 8px;
-    line-height: 3em;
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-aboutus h2 {
+    font-size: 1.75em;
+    line-height: 200%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-aboutus h2 {
+    font-size: 1.75em;
+    line-height: 200%;
   }
 
+  .home-aboutus span:before,
+.home-aboutus span:after {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-aboutus h2 {
+    font-size: 1.5em;
+    line-height: 300%;
+    letter-spacing: 6pt;
+  }
+}
+@media screen and (max-width: 1400px) {
   .middle {
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 20%;
   }
 
   .overlay-about {
@@ -601,24 +647,21 @@ footer .hd-ft-bar {
   }
 
   .left-side-new {
-    display: none;
+    width: 10%;
+    background-color: red;
   }
 
   .right-side-new {
-    display: none;
+    width: 10%;
+    background-color: red;
   }
 
   .panel p {
-    display: none;
+    margin-left: 0%;
+    font-size: 8pt;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 0px) {
-  .home-aboutus h2 {
-    font-size: 25pt;
-    letter-spacing: 8px;
-    line-height: 3em;
-  }
-
   .middle {
     width: 100%;
     margin-left: 0%;
@@ -645,7 +688,7 @@ footer .hd-ft-bar {
     display: none;
   }
 }
-@media screen and (max-width: 480px) and (min-width: 0px) {
+@media screen and (max-width: 500px) {
   .overlay-header h3 {
     border-top: solid white 1px;
     border-bottom: solid white 1px;
