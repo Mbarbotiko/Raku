@@ -614,8 +614,7 @@ footer .hd-ft-bar {
 }
 @media screen and (max-width: 1400px) {
   .middle {
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
   }
 
   .overlay-about {
@@ -646,33 +645,55 @@ footer .hd-ft-bar {
     font-size: 4.25vw;
   }
 
-  .left-side-new {
-    width: 10%;
-    background-color: red;
+  .left-side {
+    width: 15%;
   }
 
-  .right-side-new {
-    width: 10%;
-    background-color: red;
+  .right-side {
+    width: 15%;
   }
 
   .panel p {
-    margin-left: 0%;
-    font-size: 8pt;
+    margin-left: 15%;
+    font-size: 10pt;
   }
 }
-@media screen and (max-width: 900px) and (min-width: 0px) {
+@media screen and (max-width: 1250px) {
   .middle {
-    width: 100%;
-    margin-left: 0%;
+    margin-left: 15%;
+    width: 70%;
   }
 
   .overlay-about {
     width: 100%;
   }
 
+  .overlay-about h2 {
+    font-size: 4vw;
+  }
+
   .overlay-about span {
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+
+  .image3 h2 {
+    font-size: 3.5vw;
+  }
+
+  .image3 span {
+    font-size: 4vw;
+  }
+
+  .image4 h2 {
+    font-size: 3.75vw;
+  }
+
+  .image4 span {
+    font-size: 4.25vw;
+  }
+
+  .panel p {
+    display: none;
   }
 }
 @media screen and (max-width: 1160px) and (min-width: 0px) {

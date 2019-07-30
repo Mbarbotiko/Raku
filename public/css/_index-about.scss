@@ -1,9 +1,11 @@
+//about us section container
 .home-aboutus{
     width:100%;
     text-align: center;
     margin-top:10vh;
 }
 
+//header "about us"
 .home-aboutus h2{  
     letter-spacing: 10pt;
 }
@@ -13,6 +15,7 @@
     position: relative;  
 
 }
+//line on sides of header "about us"
 .home-aboutus span:before,
 .home-aboutus span:after {
   content: "";
@@ -31,6 +34,7 @@
     margin-left: 15px;
   }
 
+  //section that wraps the two panels and center content
 .aboutus-wrapper{
     margin-top:5%;
     width:90%;

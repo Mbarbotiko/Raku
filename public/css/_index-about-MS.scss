@@ -43,8 +43,7 @@
 
     @media screen and (max-width: 1400px){
     .middle{
-        width:60%;
-        margin-left:20%;
+        width:70%;
     }
     .overlay-about{
         width:100%;
@@ -68,52 +67,39 @@
     .image4 span{
         font-size:4.25vw;
     }
-    .left-side-new{
-       // display: none;
-       width:10%;
-       background-color:red;
-     }
-    .right-side-new{
-         //display: none;
-         width:10%;
-         background-color:red;
-     }
+    .left-side{
+        width:15%;
+
+    }
+    .right-side{
+        width:15%;
+
+    }
+
      .panel p{
-        margin-left:0%;
-        font-size: 8pt;
-        // display: none;
+        margin-left:15%;
+        font-size: 10pt;
          }
     
 }
 
-@media screen and (max-width: 900px) and (min-width: 0px) {
-
+@media screen and (max-width: 1250px){
     .middle{
-        width:100%;
-        margin-left:0%;
-       }
-   .overlay-about{
-       width:100%;
-       }
-      
-   .overlay-about span{
-       font-size:6vw;
-       }   
+        margin-left:10%;
+        width:80%;
+    }
+   
+     .panel p{
+         display:none;
+         }  
 }
 
-//About us text
-@media screen and (max-width: 1160px)and (min-width: 0px){
-   .left-side-new{
-       //js file is changing display to none @ 1159 or less pixels
-       display: none;
-     }
-     .right-side-new{
-      //js file is changing display to none @ 1159 or less pixels
-      display: none;
-     }
-     .panel p{
-         display: none;
-     }
+@media screen and (max-width: 1000px){
+    .middle{
+        margin-left:5%;
+        width:90%;
+    }
+ 
 }
 
 //About us 480px Cell 
