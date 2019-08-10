@@ -11,7 +11,6 @@
     .home-aboutus h2{
         font-size:1.75em;   
         line-height: 200%;
-
     }
 }
 
@@ -19,7 +18,6 @@
     .home-aboutus h2{
         font-size:1.75em;   
         line-height: 200%;
-
     }
     
     .home-aboutus span:before,
@@ -28,19 +26,15 @@
     }   
 }
 
-
 @media screen and (max-width: 400px){
     .home-aboutus h2{
         font-size:1.5em;   
         line-height: 300%;
         letter-spacing: 6pt;
-
-    }
-    
+    }  
 }
 
 //about us overlay
-
     @media screen and (max-width: 1400px){
     .middle{
         width:70%;
@@ -51,7 +45,6 @@
     .overlay-about h2{
         font-size:4vw;
     }
-
     .overlay-about span{
         font-size:5vw;
     }
@@ -69,18 +62,14 @@
     }
     .left-side{
         width:15%;
-
     }
     .right-side{
         width:15%;
-
     }
-
      .panel p{
         margin-left:15%;
         font-size: 10pt;
          }
-    
 }
 
 @media screen and (max-width: 1250px){
@@ -88,38 +77,35 @@
         margin-left:10%;
         width:80%;
     }
-   
-     .panel p{
-         display:none;
-         }  
+    .panel p{
+    display:none;
+    }  
 }
 
 @media screen and (max-width: 1000px){
     .middle{
-        margin-left:5%;
+       // margin-left:5%;
         width:90%;
     }
- 
 }
 
-//About us 480px Cell 
-@media screen and (max-width: 500px){
-   .overlay-header h3{
-       border-top:solid $wht 1px;
-       border-bottom: solid $wht 1px;
-       line-height:150px;
-       position:relative;
-       top:30%;
-       width:60%;
-       left:20%;
-       text-align: center;
-       letter-spacing:6pt;
-   }
+@media screen and (max-width: 768px)and (orientation: portrait){
+    .aboutus-wrapper{
+        width:100%;
+    }
+    .middle{
+      //  margin-left:-5%;
+        width:100%;
+    } 
+}
 
-
+//about us overlay cell sizes 
+@media screen and (max-width: 580px)and (orientation: portrait){
    .aboutus-wrapper{
-       width:100%;
-       margin-left:0;
+    margin-left:0;
+   }
+   .middle{
+    margin-left:0%;
    }
    .overlay-about{
        height:100vh;
@@ -129,21 +115,39 @@
        height:100vh;
        width:100vw;
    }
+   .overlay-header h5{
+    font-size: 18pt;
+    top:33vh;
+    letter-spacing: 14pt;
+    }
+    .aboutus-wrapper:nth-of-type(3) h5{
+    top:28vh;
+    }
+   .overlay-header span{
+    display:block;
+    padding-top:3em;
+     padding-top:3em;
+     margin:0;
+    }
+    .overlay-border, .overlay-hidden-border{
+    border:none;
+    }
+    .overlay-hidden-border{
+    top:0;
+    left:0;
+    }
 
    .image1{
        background-image:url("../images/mediasushi1.jpg");
        background-repeat:no-repeat;
        background-size:cover;
        background-position:center;
-    
    }
-   
    .image2{
        background-image:url("../images/mediabar1.jpg");
        background-repeat:no-repeat;
        background-size:cover;
        background-position:center;
-    
    }
    
    .image3{
@@ -151,7 +155,6 @@
        background-repeat:no-repeat;
        background-size:cover;
        background-position:center;
-    
    }
    
    .image4{
@@ -159,9 +162,5 @@
        background-repeat:no-repeat;
        background-size:cover;
        background-position:center;
-    
    }
-
-
-
 }
