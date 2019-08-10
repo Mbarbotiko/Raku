@@ -243,6 +243,7 @@ header .hd-ft-bar span {
   margin-bottom: 10%;
   float: left;
   margin-left: 5%;
+  overflow: hidden;
 }
 
 .panel {
@@ -668,16 +669,24 @@ footer .hd-ft-bar {
   }
 }
 @media screen and (max-width: 1000px) {
-  .middle {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
   .aboutus-wrapper {
     width: 100%;
+    margin-left: 0%;
   }
 
   .middle {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .aboutus-wrapper {
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .middle {
+    margin-left: 0%;
     width: 100%;
   }
 }
@@ -714,10 +723,16 @@ footer .hd-ft-bar {
     display: block;
     padding-top: 3em;
     padding-top: 3em;
+    margin: 0;
   }
 
   .overlay-border, .overlay-hidden-border {
     border: none;
+  }
+
+  .overlay-hidden-border {
+    top: 0;
+    left: 0;
   }
 
   .image1 {

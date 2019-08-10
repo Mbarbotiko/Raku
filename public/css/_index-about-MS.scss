@@ -83,20 +83,27 @@
 }
 
 @media screen and (max-width: 1000px){
+    .aboutus-wrapper{
+        width:100%;
+        margin-left:0%;
+    }
     .middle{
-       // margin-left:5%;
+        margin-left:5%;
         width:90%;
     }
 }
 
-@media screen and (max-width: 768px)and (orientation: portrait){
+@media screen and (max-width: 768px){
     .aboutus-wrapper{
-        width:100%;
+        border-bottom: none;
+        border-top: none;
     }
     .middle{
-      //  margin-left:-5%;
+        margin-left:0%;
         width:100%;
     } 
+
+   
 }
 
 //about us overlay cell sizes 
