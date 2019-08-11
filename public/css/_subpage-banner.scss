@@ -1,4 +1,4 @@
-
+//banner for all pages excluding main landing page, image and header content:
 .subpage-banner{
         margin-top:0;
         // background-image: url('../images/group-1.jpg'); this is being dynamically set by javascript file subpage.js based on the URL
@@ -20,11 +20,26 @@
 .subpage-content{
    position:relative;
    top:65vh;
+   width:30%;
+   margin: auto;
 }
 .subpage-content h1{
     @extend %headerStyle;
 }
-.subpage-content h5{
-    text-align: center;
-    position: relative;
+// .subpage-content h5{
+// }
+
+#banner{
+    margin-bottom: 24vh;
 }
+
+.subpage-content h5{
+    color:yellow;
+    letter-spacing: 10em;
+    transition: all 3s ease-in;
+}
+.subpage-content h5{
+    letter-spacing: 1em;
+
+}
+
