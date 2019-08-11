@@ -862,12 +862,7 @@ footer .hd-ft-bar {
   margin: auto;
 }
 
-#banner {
-  margin-bottom: 24vh;
-}
-
 .subpage-content h5 {
-  width: 100%;
   margin: auto;
   animation-duration: 3s;
   animation-name: shrink;
@@ -875,16 +870,13 @@ footer .hd-ft-bar {
 
 @keyframes shrink {
   from {
-    width: 100%;
     letter-spacing: 0.05em;
   }
   to {
-    width: 100%;
     letter-spacing: 0em;
   }
 }
 .subpage-content h5 {
-  width: 100%;
   letter-spacing: 0em;
 }
 
@@ -941,12 +933,6 @@ footer .hd-ft-bar {
 
 .edina {
   margin-top: -100px;
-}
-
-.menu-buttons {
-  position: relative;
-  width: 100%;
-  top: -150px;
 }
 
 .menu-buttons :first-child {
@@ -1081,9 +1067,13 @@ h5[role=close]:hover {
     width: 40%;
   }
 }
-@media screen and (max-width: 990px) and (orientation: portrait) {
+@media screen and (max-width: 990px) {
+  .subpage-content h1 {
+    color: yellow;
+  }
+
   .subpage-content {
-    width: 50%;
+    width: 55%;
     top: 70vh;
   }
 
@@ -1095,9 +1085,95 @@ h5[role=close]:hover {
     height: 70vh;
   }
 }
+@media screen and (max-width: 700px) {
+  .subpage-content h1 {
+    color: yellow;
+  }
+
+  .subpage-content {
+    width: 60%;
+    top: 70vh;
+  }
+
+  .subpage-banner {
+    height: 70vh;
+  }
+
+  .subpage-overlay {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subpage-content h1 {
+    color: yellow;
+  }
+
+  .subpage-content {
+    width: 80%;
+    top: 45vh;
+  }
+
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subpage-content h1 {
+    color: yellow;
+    font-size: 2em;
+  }
+
+  .subpage-content h5 {
+    font-size: 1em;
+  }
+
+  .subpage-content {
+    width: 80%;
+    top: 50vh;
+  }
+
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .subpage-content h1 {
+    color: yellow;
+    font-size: 2em;
+  }
+
+  .subpage-content h5 {
+    font-size: 0.75em;
+  }
+
+  .subpage-content {
+    width: 80%;
+    top: 50vh;
+  }
+
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+}
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .subpage-content {
     width: 65%;
+  }
+
+  .subpage-content h1 {
+    color: green;
   }
 }
 @media screen and (max-width: 600px) and (orientation: portrait) {
@@ -1111,7 +1187,7 @@ h5[role=close]:hover {
   }
 
   .subpage-content h1 {
-    font-size: 1em;
+    font-size: 5em;
   }
 
   .subpage-content h5 {

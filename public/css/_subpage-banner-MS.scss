@@ -11,9 +11,14 @@
      }
 }
 
-@media screen and (max-width: 990px)and(orientation: portrait){
+@media screen and (max-width: 990px)
+
+{
+    .subpage-content h1{
+        color:yellow;
+    }
     .subpage-content{
-        width:50%;
+        width:55%;
         top:70vh;
      }
      .subpage-banner{
@@ -24,11 +29,101 @@
      }
 }
 
+@media screen and (max-width: 700px)
+
+{
+    .subpage-content h1{
+        color:yellow;
+    }
+    .subpage-content{
+      
+        width:60%;
+        top:70vh;
+     }
+     .subpage-banner{
+        height:70vh;
+     }
+     .subpage-overlay{
+        height:70vh;
+     }
+}
+
+@media screen and (max-width: 600px)
+
+{
+    .subpage-content h1{
+        color:yellow;
+    }
+    .subpage-content{
+      
+        width:80%;
+        top:45vh;
+     }
+     .subpage-banner{
+        height:100vh;
+     }
+     .subpage-overlay{
+        height:100vh;
+     }
+}
+
+@media screen and (max-width: 500px)
+
+{
+    .subpage-content h1{
+        color:yellow;
+        font-size:2em;
+    }
+
+    .subpage-content h5{
+        font-size:1em;
+    }
+    .subpage-content{
+      
+        width:80%;
+        top:50vh;
+     }
+     .subpage-banner{
+        height:100vh;
+     }
+     .subpage-overlay{
+        height:100vh;
+     }
+}
+@media screen and (max-width: 400px)
+
+{
+    .subpage-content h1{
+        color:yellow;
+        font-size:2em;
+    }
+
+    .subpage-content h5{
+        font-size:.75em;
+    }
+    .subpage-content{
+      
+        width:80%;
+        top:50vh;
+     }
+     .subpage-banner{
+        height:100vh;
+     }
+     .subpage-overlay{
+        height:100vh;
+     }
+}
+
 @media screen and (max-width: 768px)and(orientation: portrait){
     .subpage-content{
         width:65%;
+       
      }
+     .subpage-content h1{
+        color:green;
+    }
 }
+
 
 @media screen and (max-width: 600px)and(orientation: portrait){
     .subpage-content{

@@ -27,14 +27,15 @@
     @extend %headerStyle;
 }
 
-#banner{
-    margin-bottom: 24vh;
-}
+// #banner{
+//     margin-bottom: 15%;
+// }
 
 .subpage-content h5{
     margin:auto;
     animation-duration: 3s;
     animation-name: shrink;
+
 
 }
 
