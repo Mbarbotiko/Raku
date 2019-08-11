@@ -26,20 +26,28 @@
 .subpage-content h1{
     @extend %headerStyle;
 }
-// .subpage-content h5{
-// }
 
 #banner{
     margin-bottom: 24vh;
 }
 
 .subpage-content h5{
-    color:yellow;
-    letter-spacing: 10em;
-    transition: all 3s ease-in;
-}
-.subpage-content h5{
-    letter-spacing: 1em;
+    margin:auto;
+    animation-duration: 3s;
+    animation-name: shrink;
 
 }
 
+@keyframes shrink {
+    from {
+     letter-spacing:.05em;
+    }
+  
+    to {
+        letter-spacing:0em;
+    }
+  }
+
+  .subpage-content h5{
+    letter-spacing:0em;
+}

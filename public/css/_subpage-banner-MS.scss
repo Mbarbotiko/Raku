@@ -1,0 +1,54 @@
+// subpage banner content
+@media screen and (max-width: 1400px){
+    .subpage-content{
+        width:35%;
+     }
+}
+
+@media screen and (max-width: 1200px){
+    .subpage-content{
+        width:40%;
+     }
+}
+
+@media screen and (max-width: 990px)and(orientation: portrait){
+    .subpage-content{
+        width:50%;
+        top:70vh;
+     }
+     .subpage-banner{
+        height:70vh;
+     }
+     .subpage-overlay{
+        height:70vh;
+     }
+}
+
+@media screen and (max-width: 768px)and(orientation: portrait){
+    .subpage-content{
+        width:65%;
+     }
+}
+
+@media screen and (max-width: 600px)and(orientation: portrait){
+    .subpage-content{
+        width:75%;
+     }
+}
+
+@media screen and (max-width: 500px)and(orientation: portrait){
+
+    .subpage-content{
+        width:80%;
+     }
+
+     .subpage-content h1{
+         font-size:5em;
+
+     }
+
+     .subpage-content h5{
+        font-size:1em;
+     }
+
+}

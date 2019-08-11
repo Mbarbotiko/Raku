@@ -423,7 +423,7 @@ footer .hd-ft-bar {
     margin-left: 0%;
   }
 }
-@media screen and (max-width: 991px) and (min-width: 0px) {
+@media screen and (max-width: 990px) and (min-width: 0px) {
   header .hd-ft-bar {
     display: none;
   }
@@ -867,13 +867,25 @@ footer .hd-ft-bar {
 }
 
 .subpage-content h5 {
-  color: yellow;
-  letter-spacing: 10em;
-  transition: all 3s ease-in;
+  width: 100%;
+  margin: auto;
+  animation-duration: 3s;
+  animation-name: shrink;
 }
 
+@keyframes shrink {
+  from {
+    width: 100%;
+    letter-spacing: 0.05em;
+  }
+  to {
+    width: 100%;
+    letter-spacing: 0em;
+  }
+}
 .subpage-content h5 {
-  letter-spacing: 1em;
+  width: 100%;
+  letter-spacing: 0em;
 }
 
 .location {
@@ -1059,6 +1071,53 @@ h5[role=close]:hover {
   color: #eb4a1a;
 }
 
+@media screen and (max-width: 1400px) {
+  .subpage-content {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .subpage-content {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 990px) and (orientation: portrait) {
+  .subpage-content {
+    width: 50%;
+    top: 70vh;
+  }
+
+  .subpage-banner {
+    height: 70vh;
+  }
+
+  .subpage-overlay {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .subpage-content {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .subpage-content {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .subpage-content {
+    width: 80%;
+  }
+
+  .subpage-content h1 {
+    font-size: 1em;
+  }
+
+  .subpage-content h5 {
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 768px) and (min-width: 0px) {
   .menu-buttons div {
     width: 100%;
