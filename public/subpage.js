@@ -1,3 +1,4 @@
+//set the page header information and images
 const subpageHeaders =
 {
     menu:{
@@ -22,6 +23,7 @@ const subpageHeaders =
     }
 }
 
+//check against the path, set variables image, heading and subheading in the switch based on what page the user is on
 var currentPage = location.pathname;
 var image, heading, subheading;
 
@@ -48,15 +50,19 @@ switch (currentPage) {
     break;
 }
 
-
+//create the section on the page and dynamically set heading and subheading
 const subpageBanner = `<section class='subpage-banner'>
 <div class=subpage-overlay>
 </div>
 <div class='subpage-content'>
-    <img src=${image}>
     <h1>${heading}</h1>
     <h5>${subheading}</h5>
 </div>
 </section>`
+//once the section has been appended to the page, add attribute to the current style for a background image and dynamically show the image
 document.getElementById('banner').innerHTML = subpageBanner;
+var bannerNoStyle = document.getElementsByClassName('subpage-banner')[0];
+bannerNoStyle.setAttribute("style", "background-image:url("+image+")");
+
+
 

@@ -837,8 +837,13 @@ footer .hd-ft-bar {
     top: -5px;
   }
 }
-.subpage-content img:first-child {
-  width: 100%;
+.subpage-banner {
+  margin-top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
   height: 65vh;
 }
 
@@ -852,22 +857,13 @@ footer .hd-ft-bar {
 }
 
 .subpage-content {
-  margin-top: -65vh;
-}
-
-.subpage-content h1 {
-  top: -50vh;
-}
-
-.subpage-content h2 {
-  line-height: 200%;
+  position: relative;
+  top: 65vh;
 }
 
 .subpage-content h5 {
   text-align: center;
   position: relative;
-  top: -45vh;
-  color: white;
 }
 
 .location {
