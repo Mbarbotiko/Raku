@@ -1,15 +1,48 @@
-@media screen and (max-width: 1159px) and (min-width: 901px) {
- //starter file
-    }
-
- @media screen and (max-width: 768px) and (min-width: 0px) {
-   
-  
+//menu buttons
+@media screen and (max-width: 990px){
+   .menu-buttons div{
+      top:8vh;
+   }
+}
+@media screen and (max-width: 865px){
+   .menu-buttons div{
+      top:4vh;
+   }
+   .menu-buttons :first-child{
+      margin-left:0%;
+  }
    .menu-buttons div{
       width:100%;
-      float:none;
-      margin:none;
-      
+     // background-color:rgb(85, 84, 84);;
+      margin-left:0%;
+      margin-right:0%;
+      margin-bottom:1%;
+      margin-top:0%;
+      //color:white;
+   }
+   #happy-hour-button{
+      border-right:none;
+      border-left:none;
+  }
+}
+@media screen and (max-width: 768px)and(orientation: portrait){
+   .menu-buttons h3{
+      font-size:1.5em;
+      background-color:gray;
+      color:white;  
+   }
+   .menu-buttons div h3{
+      line-height: 3em;
       }
+}
+@media screen and (max-width: 500px)and(orientation: portrait){
+   .menu-buttons h3{
+      font-size:1em;
+    
+   }
+   .menu-buttons div h3{
+      line-height: 2em;
+      }
+}
 
-    }
+//food menu lists:
