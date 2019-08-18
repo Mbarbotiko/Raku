@@ -130,26 +130,35 @@ menuNav.addEventListener('click', function (e) {
             break;
         default: console.log('Menu button failing to show menu items, see menu.js');
     }
-    var addressBar = document.getElementsByClassName('hd-ft-bar')[0].style.display;
-    //if the address bar isnt displayed do not run with a top offset
-    if (addressBar === 'none' && window.innerWidth >= 769 || addressBar === null && window.innerWidth >= 769) {
-        $('html, body').animate({
-            scrollTop: $('#' + menuType).offset().top
-        }, 1000);
-    }
-    if (addressBar === 'block' && window.innerWidth >= 769) {
-        //if it is, offset by 100 so menu header is in view
-        $('html, body').animate({
-            scrollTop: $('#' + menuType).offset().top - 100
-        }, 1000);
-    }
 
-    //for mediascreen sizes break point 768, because the address bar shouldnt exist at this screen size onload and at break 
-    if (window.innerWidth <= 768) {
-        $('html, body').animate({
-            scrollTop: $('#' + menuType).offset().top - 200
-        }, 0);
-    }
-    //create a fade affect here later
+    $('html, body').animate({
+        scrollTop: $('#' + menuType).offset().top - 200
+    }, 1000);
+
+
+//commenting code below out not needed any longer will delete later, css added height to container so different offsets are no longer needed based on screen width
+
+
+    // var addressBar = document.getElementsByClassName('hd-ft-bar')[0].style.display;
+    // //if the address bar isnt displayed do not run with a top offset
+    // if (addressBar === 'none' && window.innerWidth >= 769 || addressBar === null && window.innerWidth >= 769) {
+    //     $('html, body').animate({
+    //         scrollTop: $('#' + menuType).offset().top
+    //     }, 1000);
+    // }
+    // if (addressBar === 'block' && window.innerWidth >= 769) {
+    //     //if it is, offset by 100 so menu header is in view
+    //     $('html, body').animate({
+    //         scrollTop: $('#' + menuType).offset().top - 200
+    //     }, 1000);
+    // }
+
+    // //for mediascreen sizes break point 768, because the address bar shouldnt exist at this screen size onload and at break 
+    // if (window.innerWidth <= 768) {
+    //     $('html, body').animate({
+    //         scrollTop: $('#' + menuType).offset().top - 200
+    //     }, 0);
+    // }
+    // //create a fade affect here later
 });
 
