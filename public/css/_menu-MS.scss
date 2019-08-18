@@ -46,3 +46,41 @@
 }
 
 //food menu lists:
+
+@media screen and (max-width: 865px){
+//    .menu-items{
+//       margin-top:20%;
+//   }
+
+      .menu-items h4{
+         margin-top:10%;
+      }
+      .menu-items div{
+         width:80%;
+         margin:auto;
+
+      }
+}
+
+@media screen and (max-width: 768px)and(orientation: portrait){
+   .menu-items h4{
+      margin-top:10%;
+      background-color:orange;
+   }
+   .menu-items div{
+      width:95%;
+      margin:auto;
+      font-size:1.5em;
+
+   }
+}
+
+@media screen and (max-width: 500px)and(orientation: portrait){
+   .menu-items h4{
+      margin-top:10%;
+      background-color:orange;
+   }
+   .menu-items div{
+      font-size:.9em;
+   }
+}
