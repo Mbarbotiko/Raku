@@ -5,6 +5,9 @@
    }
 }
 @media screen and (max-width: 865px){
+   #m-lunch, #m-dinner, #m-happyhour{
+      margin-bottom:5%;
+   }
    .menu-buttons div{
       top:4vh;
    }
@@ -26,6 +29,9 @@
   }
 }
 @media screen and (max-width: 768px)and(orientation: portrait){
+   #m-lunch, #m-dinner, #m-happyhour{
+      margin-bottom:10%;
+   }
    .menu-buttons h3{
       font-size:1.5em;
       background-color:gray;
@@ -33,6 +39,9 @@
    }
    .menu-buttons div h3{
       line-height: 3em;
+      }
+      .menu-buttons{
+         margin-bottom:10%;
       }
 }
 @media screen and (max-width: 500px)and(orientation: portrait){

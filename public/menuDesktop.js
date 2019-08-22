@@ -113,7 +113,7 @@ if (windowSize >= desktopView) {
 }
 
 
-
+//MEDIA SCREEN CLICK SHOW HIDE LOAD MENU
 
 if (windowSize <= mobileView) {
     loadItems(happyHour, '#m-happyhour');
@@ -132,32 +132,32 @@ if (windowSize <= mobileView) {
         var siblingOne = mySiblings[0].getElementsByTagName('h3')[0].getAttribute('data-is');
         var siblingTwo = mySiblings[1].getElementsByTagName('h3')[0].getAttribute('data-is');
 
-        function hideSiblings() {
-            $('#dt-' + siblingOne).hide();
-            $('#dt-' + siblingTwo).hide();
-        }
+        // function hideSiblings() {
+        //     $('#m-' + siblingOne).hide();
+        //     $('#m-' + siblingTwo).hide();
+        // }
         switch (menuType) {
             case 'lunch':
-                $('#dt-' + menuType).show();
-                hideSiblings();
+                $('#m-' + menuType).toggle();
+              //  hideSiblings();
                 break;
             case 'happyhour':
-                $('#dt-' + menuType).show()
-                hideSiblings();
+                $('#m-' + menuType).toggle()
+               // hideSiblings();
                 break;
             case 'dinner':
-                $('#dt-' + menuType).show();
-                hideSiblings();
+                $('#m-' + menuType).toggle()
+               // hideSiblings();
                 break;
             default: console.log('Menu button failing to show menu items, see menu.js');
         }
-        if ($('#dt-' + menuType)) {
-            $('html, body').animate({
+        // if ($('#m-' + menuType)) {
+        //     $('html, body').animate({
 
-                scrollTop: $('#dt-' + menuType).offset().top - 200
-            }, 1000);
+        //         scrollTop: $('#-' + menuType).offset().top - 200
+        //     }, 1000);
 
-        }
+        // }
 
 
     });
