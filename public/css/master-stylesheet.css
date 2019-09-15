@@ -935,11 +935,17 @@ footer .hd-ft-bar {
   margin-top: -100px;
 }
 
+.menu-buttons {
+  height: 35vh;
+}
+
 .menu-buttons :first-child {
   margin-left: 3%;
 }
 
 .menu-buttons div {
+  position: relative;
+  top: 5vh;
   width: 30%;
   float: left;
   margin: 1%;
