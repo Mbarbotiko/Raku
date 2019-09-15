@@ -107,12 +107,7 @@ menuNav.addEventListener('click', function (e) {
 
 var menuNav = document.getElementsByClassName('media-menu-buttons')[0]
 menuNav.addEventListener('click', function (e) {
-    console.log('sanity')
-    var navSelection = e.target;
     var menuType = e.target.getAttribute('data-is');
-    console.log(menuType)
-    var mySiblings = ($(navSelection).parent().siblings());
-    console.log(mySiblings)
     switch (menuType) {
         case 'lunch':
             $('#m-' + menuType).toggle();

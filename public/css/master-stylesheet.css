@@ -962,21 +962,21 @@ footer .hd-ft-bar {
   border-left: solid 1px #eb4a1a;
 }
 
-.menu-buttons div h3:hover {
+.menu-buttons div h3:hover, .media-menu-buttons div h3:hover {
   color: #eb4a1a;
   cursor: pointer;
 }
 
-.menu-items {
+.menu-items, .media-menu-buttons {
   text-align: center;
 }
 
-.menu-items span {
+.menu-items span, .media-menu-buttons span {
   color: #eb4a1a;
   margin: 10px;
 }
 
-.menu-items h4 {
+.menu-items h4, .media-menu-buttons h4 {
   margin-top: 2%;
   margin-bottom: 2%;
   border-bottom: solid 0.25px #eb4a1a;
@@ -1066,7 +1066,6 @@ footer .hd-ft-bar {
 
   .media-menu-buttons {
     display: block;
-    color: blue;
   }
 
   #m-lunch, #m-dinner, #m-happyhour {

@@ -22,20 +22,20 @@
     border-left:solid 1px $rkuRed;
 }
 
-.menu-buttons div h3:hover{
+.menu-buttons div h3:hover, .media-menu-buttons div h3:hover{
    color:$rkuRed;
    cursor: pointer;
 }
 
-.menu-items{
+.menu-items, .media-menu-buttons{
     text-align: center;
 }
-.menu-items span{
+.menu-items span, .media-menu-buttons span{
     color:$rkuRed;
     margin:10px;
 }
 
-.menu-items h4{
+.menu-items h4, .media-menu-buttons h4{
    margin-top:2%;
    margin-bottom:2%;
    border-bottom:solid .25px $rkuRed;
