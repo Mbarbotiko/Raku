@@ -43,17 +43,7 @@
    display:inline-block; 
 }
 
-//close button
-h5[role=close]{
-    margin-top:50px;
-    margin-bottom:50px;
-}
-h5[role=close] span{
-    color :$rkuRed;
-
+.media-menu-buttons{
+    display:none;
 }
 
-h5[role=close]:hover{
-    cursor: pointer;
-    color:$rkuRed;
-}

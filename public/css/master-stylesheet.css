@@ -984,18 +984,8 @@ footer .hd-ft-bar {
   display: inline-block;
 }
 
-h5[role=close] {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-h5[role=close] span {
-  color: #eb4a1a;
-}
-
-h5[role=close]:hover {
-  cursor: pointer;
-  color: #eb4a1a;
+.media-menu-buttons {
+  display: none;
 }
 
 .subpage-content img:first-child {
@@ -1070,19 +1060,28 @@ h5[role=close]:hover {
   }
 }
 @media screen and (max-width: 865px) {
+  .menu-buttons {
+    display: none;
+  }
+
+  .media-menu-buttons {
+    display: block;
+    color: blue;
+  }
+
   #m-lunch, #m-dinner, #m-happyhour {
     margin-bottom: 5%;
   }
 
-  .menu-buttons div {
+  .media-menu-buttons div {
     top: 4vh;
   }
 
-  .menu-buttons :first-child {
+  .media-menu-buttons :first-child {
     margin-left: 0%;
   }
 
-  .menu-buttons div {
+  .media-menu-buttons div {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
@@ -1090,7 +1089,7 @@ h5[role=close]:hover {
     margin-top: 0%;
   }
 
-  #happy-hour-button {
+  #m-happy-hour-button {
     border-right: none;
     border-left: none;
   }
@@ -1100,26 +1099,26 @@ h5[role=close]:hover {
     margin-bottom: 10%;
   }
 
-  .menu-buttons h3 {
+  .media-menu-buttons h3 {
     font-size: 1.5em;
     background-color: gray;
     color: white;
   }
 
-  .menu-buttons div h3 {
+  .media-menu-buttons div h3 {
     line-height: 3em;
   }
 
-  .menu-buttons {
+  .media-menu-buttons {
     margin-bottom: 10%;
   }
 }
 @media screen and (max-width: 500px) and (orientation: portrait) {
-  .menu-buttons h3 {
+  .media-menu-buttons h3 {
     font-size: 1em;
   }
 
-  .menu-buttons div h3 {
+  .media-menu-buttons div h3 {
     line-height: 2em;
   }
 }

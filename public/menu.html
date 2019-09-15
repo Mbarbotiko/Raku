@@ -62,29 +62,42 @@
             </div>
         </nav>
     </header>
-        <!-- Render JS file subpage.js for dynamic content -->
-        <div id="banner"></div>
-        <section class='menu-buttons'>
-            <div id='lunch-button'>
-                <h3 data-is ='lunch'>Lunch</h3>
-                <div id='m-lunch'></div>
-            </div>
-            <div id='happy-hour-button'>
-                <h3 data-is='happyhour'>Happy Hour</h3>
-                <div id='m-happyhour'></div>
-            </div>
-            <div id='dinner-button'>
-                <h3 data-is='dinner'>Dinner</h3>
-                <div id='m-dinner'></div>
-            </div>
-        </section>
-        <div class='content-container'>
-        <section class = 'menu-items'>
+    <!-- Render JS file subpage.js for dynamic content -->
+    <div id="banner"></div>
+    <section class='menu-buttons'>
+        <div id='lunch-button'>
+            <h3 data-is='lunch'>Lunch</h3>
+        </div>
+        <div id='happy-hour-button'>
+            <h3 data-is='happyhour'>Happy Hour</h3>
+        </div>
+        <div id='dinner-button'>
+            <h3 data-is='dinner'>Dinner</h3>
+        </div>
+    </section>
+    <section class='media-menu-buttons'>
+        <div id='m-lunch-button'>
+            <h3 data-is='lunch'>Lunch</h3>
+            <div id='m-lunch'></div>
+        </div>
+        <div id='m-happy-hour-button'>
+            <h3 data-is='happyhour'>Happy Hour</h3>
+            <div id='m-happyhour'></div>
+        </div>
+        <div id='m-dinner-button'>
+            <h3 data-is='dinner'>Dinner</h3>
+          
+        </div>
+    </section>
+    <div id='m-dinner'></div>
+    <div class='content-container'>
+        <section class='menu-items'>
             <!--Desktop-->
             <div id='dt-lunch'></div>
             <div id='dt-happyhour'></div>
             <div id='dt-dinner'></div>
         </section>
+        <div><a href='#banner'><button>Scroll to top</button></a></div>
     </div>
     <footer>
         <div class='hd-ft-bar'>

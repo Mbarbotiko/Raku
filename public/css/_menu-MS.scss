@@ -5,16 +5,23 @@
    }
 }
 @media screen and (max-width: 865px){
+   .menu-buttons{
+      display:none;
+   }
+   .media-menu-buttons{
+      display:block;
+      color:blue;
+   }
    #m-lunch, #m-dinner, #m-happyhour{
       margin-bottom:5%;
    }
-   .menu-buttons div{
+   .media-menu-buttons div{
       top:4vh;
    }
-   .menu-buttons :first-child{
+   .media-menu-buttons :first-child{
       margin-left:0%;
   }
-   .menu-buttons div{
+   .media-menu-buttons div{
       width:100%;
      // background-color:rgb(85, 84, 84);;
       margin-left:0%;
@@ -23,7 +30,7 @@
       margin-top:0%;
       //color:white;
    }
-   #happy-hour-button{
+   #m-happy-hour-button{
       border-right:none;
       border-left:none;
   }
@@ -32,24 +39,24 @@
    #m-lunch, #m-dinner, #m-happyhour{
       margin-bottom:10%;
    }
-   .menu-buttons h3{
+   .media-menu-buttons h3{
       font-size:1.5em;
       background-color:gray;
       color:white;  
    }
-   .menu-buttons div h3{
+   .media-menu-buttons div h3{
       line-height: 3em;
       }
-      .menu-buttons{
+      .media-menu-buttons{
          margin-bottom:10%;
       }
 }
 @media screen and (max-width: 500px)and(orientation: portrait){
-   .menu-buttons h3{
+   .media-menu-buttons h3{
       font-size:1em;
     
    }
-   .menu-buttons div h3{
+   .media-menu-buttons div h3{
       line-height: 2em;
       }
 }
