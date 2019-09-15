@@ -860,6 +860,7 @@ footer .hd-ft-bar {
   top: 65vh;
   width: 30%;
   margin: auto;
+  height: 0px;
 }
 
 .subpage-content h5 {
@@ -1063,98 +1064,95 @@ h5[role=close]:hover {
   color: #eb4a1a;
 }
 
-@media screen and (max-width: 1400px) {
-  .subpage-content {
-    width: 35%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .subpage-content {
-    width: 40%;
-  }
-}
 @media screen and (max-width: 990px) {
-  .subpage-content {
-    width: 55%;
-    top: 70vh;
-  }
-
-  .subpage-banner {
-    height: 70vh;
-  }
-
-  .subpage-overlay {
-    height: 70vh;
+  .menu-buttons div {
+    top: 8vh;
   }
 }
-@media screen and (max-width: 700px) {
-  .subpage-content {
-    width: 60%;
-    top: 70vh;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 850px) and (orientation: landscape) {
-  .subpage-content {
-    width: 80%;
-    top: 45vh;
+@media screen and (max-width: 865px) {
+  #m-lunch, #m-dinner, #m-happyhour {
+    margin-bottom: 5%;
   }
 
-  .subpage-banner {
-    height: 100vh;
+  .menu-buttons div {
+    top: 4vh;
   }
 
-  .subpage-overlay {
-    height: 100vh;
+  .menu-buttons :first-child {
+    margin-left: 0%;
+  }
+
+  .menu-buttons div {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+  }
+
+  #happy-hour-button {
+    border-right: none;
+    border-left: none;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  .subpage-content {
-    width: 65%;
-    top: 100%;
+  #m-lunch, #m-dinner, #m-happyhour {
+    margin-bottom: 10%;
+  }
+
+  .menu-buttons h3 {
+    font-size: 1.5em;
+    background-color: gray;
+    color: white;
+  }
+
+  .menu-buttons div h3 {
+    line-height: 3em;
+  }
+
+  .menu-buttons {
+    margin-bottom: 10%;
   }
 }
-@media screen and (max-width: 568px) and (orientation: portrait) {
-  .subpage-banner {
-    height: 100vh;
-  }
-
-  .subpage-overlay {
-    height: 100vh;
-  }
-
-  .subpage-content {
-    top: 50%;
-    width: 75%;
-  }
-
-  .subpage-content h1 {
-    font-size: 2.5em;
-    line-height: 400%;
-  }
-
-  .subpage-content h5 {
-    padding-top: 25%;
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .menu-buttons h3 {
     font-size: 1em;
   }
+
+  .menu-buttons div h3 {
+    line-height: 2em;
+  }
 }
-@media screen and (max-width: 400px) and (orientation: portrait) {
-  .subpage-content {
+@media screen and (max-width: 865px) {
+  .menu-items h4 {
+    margin-top: 10%;
+  }
+
+  .menu-items div {
     width: 80%;
-  }
-
-  .subpage-content h1 {
-    font-size: 2.25em;
-  }
-
-  .subpage-content h5 {
-    font-size: 0.75em;
+    margin: auto;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 0px) {
-  .menu-buttons div {
-    width: 100%;
-    float: none;
-    margin: none;
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .menu-items h4 {
+    margin-top: 10%;
+    background-color: orange;
+  }
+
+  .menu-items div {
+    width: 95%;
+    margin: auto;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .menu-items h4 {
+    margin-top: 10%;
+    background-color: orange;
+  }
+
+  .menu-items div {
+    font-size: 0.9em;
   }
 }
 

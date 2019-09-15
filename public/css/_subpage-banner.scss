@@ -22,21 +22,17 @@
    top:65vh;
    width:30%;
    margin: auto;
+   height:0px;
+   //was pushing content over, adjusted height no longer overflowing 
 }
 .subpage-content h1{
     @extend %headerStyle;
 }
 
-// #banner{
-//     margin-bottom: 15%;
-// }
-
 .subpage-content h5{
     margin:auto;
     animation-duration: 3s;
     animation-name: shrink;
-
-
 }
 
 @keyframes shrink {
@@ -48,7 +44,6 @@
         letter-spacing:0em;
     }
   }
-
   .subpage-content h5{
     letter-spacing:0em;
 }
