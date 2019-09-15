@@ -111,7 +111,6 @@ menuNav.addEventListener('click', function (e) {
     switch (menuType) {
         case 'lunch':
             $('#m-' + menuType).toggle();
-            console.log('toggled')
             break;
         case 'happyhour':
             $('#m-' + menuType).toggle()
