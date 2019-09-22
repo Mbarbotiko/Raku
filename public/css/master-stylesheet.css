@@ -1064,6 +1064,138 @@ h5[role=close]:hover {
   color: #eb4a1a;
 }
 
+@media screen and (max-width: 1400px) {
+  .subpage-content {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .subpage-content {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .subpage-content {
+    width: 55%;
+    top: 70vh;
+  }
+
+  .subpage-banner {
+    height: 70vh;
+  }
+
+  .subpage-overlay {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .subpage-content {
+    width: 60%;
+    top: 70vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subpage-content {
+    width: 80%;
+    top: 45vh;
+  }
+
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subpage-content h1 {
+    font-size: 2em;
+  }
+
+  .subpage-content h5 {
+    font-size: 1em;
+  }
+
+  .subpage-content {
+    top: 50vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .subpage-content h1 {
+    font-size: 1.75em;
+  }
+
+  .subpage-content h5 {
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 300px) {
+  .subpage-content h1 {
+    font-size: 1.75em;
+  }
+
+  .subpage-content h5 {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 850px) and (orientation: landscape) {
+  .subpage-content {
+    width: 80%;
+    top: 45vh;
+  }
+
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .subpage-content {
+    width: 65%;
+    top: 100%;
+  }
+}
+@media screen and (max-width: 568px) and (orientation: portrait) {
+  .subpage-banner {
+    height: 100vh;
+  }
+
+  .subpage-overlay {
+    height: 100vh;
+  }
+
+  .subpage-content {
+    top: 50%;
+    width: 75%;
+  }
+
+  .subpage-content h1 {
+    font-size: 2.5em;
+    line-height: 400%;
+  }
+
+  .subpage-content h5 {
+    padding-top: 25%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 400px) and (orientation: portrait) {
+  .subpage-content {
+    width: 80%;
+  }
+
+  .subpage-content h1 {
+    font-size: 2.25em;
+  }
+
+  .subpage-content h5 {
+    font-size: 0.75em;
+  }
+}
 @media screen and (max-width: 990px) {
   .menu-buttons div {
     top: 8vh;
