@@ -3,20 +3,17 @@
     #map-slp, #map-edina{
         margin-left:0;
         width:100%;
-        background-color: yellow;
     }
  }
  //location header
  @media screen and (max-width: 650px){
     .location-header h3{
         width:100%;
-        background-color:purple;
     }
 
     .location-header ul{
         margin-left:0;
         width:100%;
-        background-color:orange;
     }
  }
 //maps and headers phone/tablet portrait
@@ -26,6 +23,7 @@
     }
     .location{
         height:100vh;
+        
     }
     .location-header h3{
         font-size: 1.5em;
@@ -48,6 +46,10 @@
     }
     #map-slp, #map-edina{
         height:75vh;
+    }
+    .location-header ul{
+        margin-left:0;
+        width:100%;
     }
 
 
