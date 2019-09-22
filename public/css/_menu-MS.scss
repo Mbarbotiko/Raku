@@ -8,8 +8,9 @@
    #m-lunch, #m-dinner, #m-happyhour{
       margin-bottom:5%;
    }
-   .menu-buttons{
-      color:purple!important;
+   #m-dinner{
+      margin-bottom:500px;
+      //check this later because margin isnt working/ compiler isnt responding
    }
    .menu-buttons :first-child{
       margin-left:0%;
@@ -17,12 +18,12 @@
    .menu-buttons div{
       top:4vh;
       width:100%;
-     // background-color:rgb(85, 84, 84);;
+     background-color:rgb(85, 84, 84);
       margin-left:0%;
       margin-right:0%;
       margin-bottom:1%;
       margin-top:0%;
-      //color:white;
+      color:white;
    }
    #happy-hour-button{
       border-right:none;
@@ -90,6 +91,7 @@
 
 //phones and tablets landscape:
 @media only screen 
+//add other max widths here and change button sizing, letters too big etc
   and (min-width: 320px) 
   and (max-width: 812px) 
   and (orientation: landscape) { 

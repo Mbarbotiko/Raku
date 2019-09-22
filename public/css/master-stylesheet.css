@@ -1074,8 +1074,8 @@ h5[role=close]:hover {
     margin-bottom: 5%;
   }
 
-  .menu-buttons {
-    color: purple !important;
+  #m-dinner {
+    margin-bottom: 500px;
   }
 
   .menu-buttons :first-child {
@@ -1085,10 +1085,12 @@ h5[role=close]:hover {
   .menu-buttons div {
     top: 4vh;
     width: 100%;
+    background-color: #555454;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 1%;
     margin-top: 0%;
+    color: white;
   }
 
   #happy-hour-button {
