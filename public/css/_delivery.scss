@@ -105,3 +105,39 @@ border-top: solid white 2px;
 }
 
 
+//modal
+.modal{
+    background: rgba(187, 87, 21, 0.18);
+}
+
+.modal-dialog{
+    max-width: 900px;
+    height:700px;
+    min-height:700px;
+    max-height:700px!important;
+}
+.modal-dialog,
+.modal-content {
+    /* 80% of window height */
+    height: 80%;
+}
+.modal-slp, 
+.modal-edina{
+    text-align: center;
+    height:100px;
+    float: left;
+    width:50%;
+}
+
+
+.modal-slp p, .modal-edina p{
+    width:50%;
+    margin: auto 0;
+    border-bottom:solid 1px $rkuRed;
+}
+
+
+.modal img{
+    height:100%;
+    width:100%;
+}
