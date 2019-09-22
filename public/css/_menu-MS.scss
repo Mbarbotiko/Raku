@@ -8,13 +8,14 @@
    #m-lunch, #m-dinner, #m-happyhour{
       margin-bottom:5%;
    }
-   .menu-buttons div{
-      top:4vh;
+   .menu-buttons{
+      color:purple!important;
    }
    .menu-buttons :first-child{
       margin-left:0%;
   }
    .menu-buttons div{
+      top:4vh;
       width:100%;
      // background-color:rgb(85, 84, 84);;
       margin-left:0%;
@@ -26,8 +27,16 @@
    #happy-hour-button{
       border-right:none;
       border-left:none;
-  }
+   }
+    .menu-items h4{
+      margin-top:10%;
+   }
+    .menu-items div{
+      width:80%;
+      margin:auto;
+   }
 }
+
 @media screen and (max-width: 768px)and(orientation: portrait){
    #m-lunch, #m-dinner, #m-happyhour{
       margin-bottom:10%;
@@ -39,11 +48,12 @@
    }
    .menu-buttons div h3{
       line-height: 3em;
-      }
-      .menu-buttons{
-         margin-bottom:10%;
-      }
+   }
+   .menu-buttons{
+      margin-bottom:10%;
+    }
 }
+
 @media screen and (max-width: 500px)and(orientation: portrait){
    .menu-buttons h3{
       font-size:1em;
@@ -54,22 +64,6 @@
       }
 }
 
-//food menu lists:
-
-@media screen and (max-width: 865px){
-//    .menu-items{
-//       margin-top:20%;
-//   }
-
-      .menu-items h4{
-         margin-top:10%;
-      }
-      .menu-items div{
-         width:80%;
-         margin:auto;
-
-      }
-}
 
 @media screen and (max-width: 768px)and(orientation: portrait){
    .menu-items h4{
@@ -80,7 +74,6 @@
       width:95%;
       margin:auto;
       font-size:1.5em;
-
    }
 }
 
@@ -93,3 +86,25 @@
       font-size:.9em;
    }
 }
+
+
+//phones and tablets landscape:
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 812px) 
+  and (orientation: landscape) { 
+   #m-lunch, #m-dinner, #m-happyhour{
+      margin-bottom:10%;
+   }
+   .menu-buttons h3{
+      font-size:1.5em;
+      background-color:gray;
+      color:white;  
+   }
+   .menu-buttons div h3{
+      line-height: 3em;
+   }
+   .menu-buttons{
+      margin-bottom:10%;
+    }
+  }

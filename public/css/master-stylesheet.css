@@ -1074,8 +1074,8 @@ h5[role=close]:hover {
     margin-bottom: 5%;
   }
 
-  .menu-buttons div {
-    top: 4vh;
+  .menu-buttons {
+    color: purple !important;
   }
 
   .menu-buttons :first-child {
@@ -1083,6 +1083,7 @@ h5[role=close]:hover {
   }
 
   .menu-buttons div {
+    top: 4vh;
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
@@ -1093,6 +1094,15 @@ h5[role=close]:hover {
   #happy-hour-button {
     border-right: none;
     border-left: none;
+  }
+
+  .menu-items h4 {
+    margin-top: 10%;
+  }
+
+  .menu-items div {
+    width: 80%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
@@ -1123,16 +1133,6 @@ h5[role=close]:hover {
     line-height: 2em;
   }
 }
-@media screen and (max-width: 865px) {
-  .menu-items h4 {
-    margin-top: 10%;
-  }
-
-  .menu-items div {
-    width: 80%;
-    margin: auto;
-  }
-}
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .menu-items h4 {
     margin-top: 10%;
@@ -1153,6 +1153,25 @@ h5[role=close]:hover {
 
   .menu-items div {
     font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+  #m-lunch, #m-dinner, #m-happyhour {
+    margin-bottom: 10%;
+  }
+
+  .menu-buttons h3 {
+    font-size: 1.5em;
+    background-color: gray;
+    color: white;
+  }
+
+  .menu-buttons div h3 {
+    line-height: 3em;
+  }
+
+  .menu-buttons {
+    margin-bottom: 10%;
   }
 }
 
