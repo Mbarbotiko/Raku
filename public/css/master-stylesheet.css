@@ -1196,6 +1196,38 @@ h5[role=close]:hover {
     font-size: 0.75em;
   }
 }
+@media screen and (max-width: 1200px) {
+  #map-slp, #map-edina {
+    margin-left: 0;
+    width: 100%;
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 650px) {
+  .location-header h3 {
+    width: 100%;
+    background-color: purple;
+  }
+
+  .location-header ul {
+    margin-left: 0;
+    width: 100%;
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  #map-slp, #map-edina {
+    height: 80vh;
+  }
+
+  .location {
+    height: 100vh;
+  }
+
+  .location-header h3 {
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 990px) {
   .menu-buttons div {
     top: 8vh;
