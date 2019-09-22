@@ -843,11 +843,11 @@ footer .hd-ft-bar {
   background-position: center;
   position: relative;
   display: block;
-  height: 65vh;
+  height: 90vh;
 }
 
 .subpage-overlay {
-  height: 65vh;
+  height: 90vh;
   position: relative;
   width: 100%;
   background-color: black;
@@ -857,7 +857,7 @@ footer .hd-ft-bar {
 
 .subpage-content {
   position: relative;
-  top: 65vh;
+  top: 90vh;
   width: 30%;
   margin: auto;
   height: 0px;
@@ -1039,29 +1039,96 @@ h5[role=close]:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 50%;
   padding: 2%;
-  min-height: 200px;
+  min-height: 150px;
+  z-index: 2;
+  position: relative;
+  top: -300px;
 }
 
 .delivery-services > div {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   border-top: solid white 2px;
-  width: 40%;
+  width: 100%;
   margin: auto;
 }
 
-.delivery-services > div:first-child {
-  border-top: none;
+#bs {
+  background-image: url("../images/menu-banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
 
-.delivery-services a h4 {
-  padding: 2%;
+#pm {
+  background-image: url("../images/possiblebanner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
 
-.delivery-services h4:hover {
-  color: #eb4a1a;
+#ue {
+  background-image: url("../images/scrollthru5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+#dd {
+  background-image: url("../images/scrollthru4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+#bs .delivery-overlay {
+  background: black;
+  opacity: 0.5;
+  height: 298px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  display: table;
+  width: 100%;
+}
+
+#pm .delivery-overlay {
+  background: white;
+  opacity: 0.5;
+  height: 298px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  display: table;
+  width: 100%;
+}
+
+#dd .delivery-overlay {
+  background: black;
+  opacity: 0.5;
+  height: 298px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  display: table;
+  width: 100%;
+}
+
+#ue .delivery-overlay {
+  background: white;
+  opacity: 0.5;
+  height: 298px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  z-index: 1;
+  display: table;
+  width: 100%;
 }
 
 @media screen and (max-width: 1400px) {
