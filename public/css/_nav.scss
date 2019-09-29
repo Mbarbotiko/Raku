@@ -1,12 +1,18 @@
+
 .navbar{
     min-height:50px!important; 
+    background:transparent!important;
+    top:40px;
+    z-index:2;
+    color:white!important;
+    
 }
 
 .navbar a:hover{
     color:$rkuRed!important;
 }
 .navbar span{
-    color:gray;
+    color:white;
  }
 .navbar-brand{
     height:50px!important;
@@ -43,6 +49,10 @@ header .hd-ft-bar span{
 }
 .navbar-nav{
     margin-left:15%;
+}
+
+.nav-link{
+    color:white!important;
 }
 
 .hdBarFadeIn{

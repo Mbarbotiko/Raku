@@ -8,19 +8,22 @@ $(function () {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
             headerBar.style.display = 'none';
-            navBar.classList.add('fixed-top');
+            $(navBar).attr('style', 'background: black !important');
+            $(navBar).css({top:'0px'});
             //hides bar
         }
         if (window.scrollY < 3 && window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
-            navBar.classList.remove('fixed-top');//if this is not present the headerBar wont display because navBar is over it.
+            $(navBar).attr('style', 'background: transparent !important');
+           $(navBar).css({top:'40px'})
+           
             //returns bar
+           
         }
 
         if (window.innerWidth < 991) {
             headerBar.style.display = 'none';
-            navBar.classList.add('fixed-top');
         }
 
     };

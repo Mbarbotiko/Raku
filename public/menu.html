@@ -26,16 +26,19 @@
             <p> West End | 371 W 16th St, St Louis Park, MN 55416 <span> | </span> Edina | 3939 W. 50th St.
                 #101 Edina, MN</p>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html"><img src='./images/logo.png'></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <button class="navbar-toggler"
+                type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html"><span> ●
+                            </span>Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="locations.html" tabindex="-1" aria-disabled="true"><span> ●
@@ -62,24 +65,24 @@
             </div>
         </nav>
     </header>
-        <!-- Render JS file subpage.js for dynamic content -->
-        <div id="banner"></div>
-        <section class='menu-buttons'>
-            <div id='lunch-button'>
-                <h3 data-is ='lunch'>Lunch</h3>
-                <div id='m-lunch'></div>
-            </div>
-            <div id='happy-hour-button'>
-                <h3 data-is='happyhour'>Happy Hour</h3>
-                <div id='m-happyhour'></div>
-            </div>
-            <div id='dinner-button'>
-                <h3 data-is='dinner'>Dinner</h3>
-                <div id='m-dinner'></div>
-            </div>
-        </section>
-        <div class='content-container'>
-        <section class = 'menu-items'>
+    <!-- Render JS file subpage.js for dynamic content -->
+    <div id="banner"></div>
+    <section class='menu-buttons'>
+        <div id='lunch-button'>
+            <h3 data-is='lunch'>Lunch</h3>
+            <div id='m-lunch'></div>
+        </div>
+        <div id='happy-hour-button'>
+            <h3 data-is='happyhour'>Happy Hour</h3>
+            <div id='m-happyhour'></div>
+        </div>
+        <div id='dinner-button'>
+            <h3 data-is='dinner'>Dinner</h3>
+            <div id='m-dinner'></div>
+        </div>
+    </section>
+    <div class='content-container'>
+        <section class='menu-items'>
             <!--Desktop-->
             <div id='dt-lunch'></div>
             <div id='dt-happyhour'></div>
