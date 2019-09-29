@@ -806,11 +806,11 @@ footer .hd-ft-bar {
   background-position: center;
   position: relative;
   display: block;
-  height: 90vh;
+  height: 100vh;
 }
 
 .subpage-overlay {
-  height: 90vh !important;
+  height: 100vh !important;
   position: relative;
   width: 100%;
   background-color: black;
@@ -824,6 +824,10 @@ footer .hd-ft-bar {
   width: 30%;
   margin: auto;
   height: 0px;
+}
+
+.subpage-content h1 {
+  font-family: "Rock Salt", cursive;
 }
 
 .subpage-content h5 {
@@ -871,9 +875,9 @@ footer .hd-ft-bar {
   float: left;
   height: 100%;
   margin-left: 10%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  background-color: #4d4a4a;
+  padding-bottom: 1px;
+  padding-top: 0.5%;
+  background-color: #eb4a1a;
 }
 
 #map-edina {
@@ -881,9 +885,9 @@ footer .hd-ft-bar {
   float: left;
   height: 100%;
   margin-left: 10%;
-  padding-bottom: 2%;
-  padding-top: 2%;
-  background-color: #4d4a4a;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  background-color: #eb4a1a;
 }
 
 .location-header h3 {

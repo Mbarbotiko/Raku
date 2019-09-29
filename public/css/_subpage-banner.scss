@@ -7,10 +7,10 @@
         background-position:center;
         position:relative;
         display: block;
-        height:90vh;
+        height:100vh;
 }
 .subpage-overlay{
-    height:90vh!important;
+    height:100vh!important;
     position:relative;
     width:100%;
     background-color:$bk;
@@ -27,6 +27,7 @@
 }
 .subpage-content h1{
     @extend %headerStyle;
+    font-family: 'Rock Salt', cursive;
 }
 
 .subpage-content h5{
