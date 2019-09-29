@@ -12,7 +12,7 @@ var linkHrefs = {
 
     postMates: { slp: 'https://postmates.com/merchant/raku-sushi-lounge-saint-louis-park', edina: 'https://postmates.com/merchant/raku-modern-japanese-cuisine-edina' },
 
-    doorDash: { slp: '', edina: 'https://www.doordash.com/store/raku-sushi-lounge-minneapolis-12423/' },
+    doorDash: { slp: 'none', edina: 'https://www.doordash.com/store/raku-sushi-lounge-minneapolis-12423/' },
 
     uberEats: { slp: 'https://www.ubereats.com/en-US/minneapolis/food-delivery/raku-sushi-and-lounge/X4Y5n8PXRqG6OZavUF_3Lw/', edina: 'https://www.ubereats.com/en-US/minneapolis/food-delivery/raku-japanese-restaurant/HAAwDe6KTAyAks3mDFjkDQ/' }
 }
@@ -39,21 +39,25 @@ for (var i = 0; i < deliveryImages.length; i++) {
             case 'bitesquad':
                 slpModalImage.setAttribute('href', linkHrefs.biteSquad.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.biteSquad.edina);
+                $('.unavailable').hide();
                 break;
             case 'postmates':
                 slpModalImage.setAttribute('href', linkHrefs.postMates.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.postMates.edina);
+                $('.unavailable').hide();
                 break;
             case 'doordash':
                 slpModalImage.setAttribute('href', linkHrefs.doorDash.slp);
                 //set to a not available class later
                 edinaModalImage.setAttribute('href', linkHrefs.doorDash.edina);
+                $('.unavailable').show();
                 break;
             case 'ubereats':
                 slpModalImage.setAttribute('href', linkHrefs.uberEats.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.uberEats.edina);
+                $('.unavailable').hide();
                 break;
-            default: console.log('href not found')
+            default: console.log('href not found')//add text with error code and contact information here
 
         }
     })

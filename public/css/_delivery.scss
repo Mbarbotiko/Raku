@@ -9,13 +9,13 @@
     width:50%;
     padding:2%;
     min-height:150px;
-    z-index: 2;
+    z-index: 1;
     position: relative;
     top:-300px;
 }
-// .delivery-services img:hover{
-// cursor: pointer;
-// }
+.delivery-services img:hover{
+    cursor: pointer;
+}
 
 .delivery-services>div{
 margin-top:10%;
@@ -25,10 +25,6 @@ border-top: solid white 2px;
     width: 100%;
     margin: auto;
 }
-
-// .delivery-services>div:first-child{
-// margin-top:10%;
-// }
 
 #bs{
     background-image:url('../images/menu-banner2.jpg');
@@ -118,9 +114,6 @@ border-top: solid white 2px;
 .modal-dialog{
     max-width: 60%;
     height:700px;
-    //min-height:700px;
-  //  max-height:700px!important;
- 
 }
 .modal-dialog,
 .modal-content {
@@ -137,15 +130,34 @@ border-top: solid white 2px;
     width:50%;
 }
 
-
+//center this later
+.modal-title h5{
+    width:100%;
+    text-align: center;
+  
+}
 .modal-slp p, .modal-edina p{
     width:50%;
-    margin: auto 0;
+    margin-left:25%;
     border-bottom:solid 1px $rkuRed;
 }
 
 
 .modal img{
     height:100%;
-    width:100%;
+    min-width:50%;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+a[href$='none']{
+    opacity:.2;
+    pointer-events: none;
+}
+
+.unavailable{
+   display: none;
+position: absolute;
+top:50%;
+width:100%;
 }

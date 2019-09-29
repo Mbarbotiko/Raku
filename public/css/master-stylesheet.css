@@ -1042,9 +1042,13 @@ h5[role=close]:hover {
   width: 50%;
   padding: 2%;
   min-height: 150px;
-  z-index: 2;
+  z-index: 1;
   position: relative;
   top: -300px;
+}
+
+.delivery-services img:hover {
+  cursor: pointer;
 }
 
 .delivery-services > div {
@@ -1154,14 +1158,33 @@ h5[role=close]:hover {
   width: 50%;
 }
 
+.modal-title h5 {
+  width: 100%;
+  text-align: center;
+}
+
 .modal-slp p, .modal-edina p {
   width: 50%;
-  margin: auto 0;
+  margin-left: 25%;
   border-bottom: solid 1px #eb4a1a;
 }
 
 .modal img {
   height: 100%;
+  min-width: 50%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+a[href$=none] {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.unavailable {
+  display: none;
+  position: absolute;
+  top: 50%;
   width: 100%;
 }
 
