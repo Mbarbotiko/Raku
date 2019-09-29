@@ -13,12 +13,15 @@
     position: relative;
     top:-300px;
 }
+// .delivery-services img:hover{
+// cursor: pointer;
+// }
 
 .delivery-services>div{
 margin-top:10%;
 margin-bottom:10%;
 border-top: solid white 2px;
-   // border-bottom:solid white 2px;
+   // border-bottom:solid whit`e 2px;
     width: 100%;
     margin: auto;
 }
@@ -108,18 +111,23 @@ border-top: solid white 2px;
 //modal
 .modal{
     background: rgba(187, 87, 21, 0.18);
+
+   
 }
 
 .modal-dialog{
-    max-width: 900px;
+    max-width: 60%;
     height:700px;
-    min-height:700px;
-    max-height:700px!important;
+    //min-height:700px;
+  //  max-height:700px!important;
+ 
 }
 .modal-dialog,
 .modal-content {
+ 
+    
     /* 80% of window height */
-    height: 80%;
+    height: 40%;
 }
 .modal-slp, 
 .modal-edina{

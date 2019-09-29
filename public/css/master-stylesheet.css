@@ -1136,16 +1136,14 @@ h5[role=close]:hover {
 }
 
 .modal-dialog {
-  max-width: 900px;
+  max-width: 60%;
   height: 700px;
-  min-height: 700px;
-  max-height: 700px !important;
 }
 
 .modal-dialog,
 .modal-content {
   /* 80% of window height */
-  height: 80%;
+  height: 40%;
 }
 
 .modal-slp,

@@ -71,7 +71,7 @@
 
             <div id='bs'>
                 <div class='delivery-overlay'></div>
-                <img src="images/bitesquad.png">
+                <img src="images/bitesquad.png" data-is='bitesquad'>
                 <!-- <a href="https://www.bitesquad.com/food/raku-edina/199" target="_blank">
                 <h4>Edina</h4>
             </a>
@@ -81,7 +81,7 @@
             </div>
             <div id='pm'>
                 <div class='delivery-overlay'></div>
-                <img src="images/postmates.gif">
+                <img src="images/postmates.gif" data-is='postmates'>
                 <!-- <a href="https://postmates.com/merchant/raku-modern-japanese-cuisine-edina" target="_blank">
                 <h4>Edina</h4>
             </a>
@@ -93,7 +93,7 @@
 
             <div id='dd'>
                 <div class='delivery-overlay'></div>
-                <img src="images/doordash.gif">
+                <img src="images/doordash.gif" data-is='doordash'>
                 <!-- <a href="https://www.doordash.com/store/raku-sushi-lounge-minneapolis-12423/" s
                 <h4>Edina Location</h4>
             </a> -->
@@ -101,7 +101,7 @@
 
             <div id='ue'>
                 <div class='delivery-overlay'></div>
-                <img src="images/ubereats.gif">
+                <img src="images/ubereats.gif" data-is=ubereats>
                 <!-- <a href="https://www.ubereats.com/en-US/minneapolis/food-delivery/raku-japanese-restaurant/HAAwDe6KTAyAks3mDFjkDQ/"
                     target="_blank">
                     <h4>Edina</h4>
@@ -135,11 +135,11 @@ https://postmates.com/merchant/raku-modern-japanese-cuisine-edina
     </div>
 
     <!--modal for location selection-->
-    <div class="modal" tabindex="-1" role="dialog" style='display:block'>
+    <div class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Choose Your Location</h5>
+                    <h5 class="modal-title">Which Location?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -147,12 +147,14 @@ https://postmates.com/merchant/raku-modern-japanese-cuisine-edina
                 <div class="modal-body">
                     <div class='modal-slp'>
                         <p>Saint Louis Park</p>
-                        <img src='./images/westend2.jpg'>
+                        <a><img src='./images/westend2.jpg'>
+                        </a>
                     </div>
 
                     <div class='modal-edina'>
                         <p>Edina</p>
-                        <img src='./images/edina2.jpg'>
+                        <a> <img src='./images/edina2.jpg'>
+                        </a>
                     </div>
 
                 </div>
