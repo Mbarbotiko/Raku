@@ -3,7 +3,8 @@
 $mainFont: 'Julius Sans One', 'sans-serif';
 $bk: black;
 $wht:white;
-$beige:rgb(250, 245, 237);
+//$beige:rgb(250, 245, 237);
+$beige:rgb(63, 61, 61);
 $rkuRed: rgb(235, 74, 26);
 
 %headerStyle{
@@ -23,7 +24,8 @@ $rkuRed: rgb(235, 74, 26);
 }
 body, html{
     font-family:$mainFont;
-    color:$bk;
+    //color:$bk;
+    color:$wht;
     background-color:$beige;
     font-size: 12pt;
 }

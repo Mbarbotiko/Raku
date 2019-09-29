@@ -16,8 +16,8 @@
 
 body, html {
   font-family: "Julius Sans One", "sans-serif";
-  color: black;
-  background-color: #faf5ed;
+  color: white;
+  background-color: #3f3d3d;
   font-size: 12pt;
 }
 
@@ -132,25 +132,22 @@ header .hd-ft-bar span {
 
 .landing-headline {
   font-family: "Rock Salt", cursive;
-  font-size: 12vw;
-  font-size: 12.5vh;
+  font-size: 100pt !important;
   letter-spacing: 0.25em;
 }
 
 .landing-subtext {
-  margin: auto;
   font-size: 3vw;
   font-size: 3vh;
-  width: 75%;
-  padding-top: 2em;
-}
-
-.landing-subtext span {
-  color: #eb4a1a;
-}
-
-.landing-headline span {
-  color: #eb4a1a;
+  width: 40%;
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 100px;
 }
 
 .landing-image {
@@ -217,6 +214,7 @@ header .hd-ft-bar span {
 
 .home-aboutus h2 {
   letter-spacing: 10pt;
+  font-family: "Rock Salt", cursive;
 }
 
 .home-aboutus span {

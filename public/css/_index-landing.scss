@@ -20,20 +20,29 @@
 }
 .landing-headline{
     font-family: 'Rock Salt', cursive;
-    font-size:12vw;
-    font-size:12.5vh;
+    // font-size:20vw;
+    // font-size:20.5vh;
+    font-size:100pt!important;
     letter-spacing: .25em;
 }
 .landing-subtext{
-    margin:auto;
     font-size:3vw;
     font-size:3vh;
-    width:75%;
-    padding-top:2em;
+    width:40%;
+    border-top: solid white 1px;
+    border-bottom:solid white 1px;
+    position: relative;
+    color:$wht;
+    text-align: center;
+    // padding-top:50px;
+    // padding-bottom:50px;
+    line-height:100px;
+    left:20%;
+    top:10%;
 }
-.landing-subtext span{
-    color:$rkuRed;
-}
+// .landing-subtext span{
+//     color:$rkuRed;
+// }
 .landing-headline span{
     color:$rkuRed;
 }
