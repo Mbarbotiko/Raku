@@ -1,44 +1,24 @@
-// font-family: 'Kristi', cursive;
-// font-family: 'Permanent Marker', cursive;
-// font-family: 'Neucha', cursive;
-// font-family: 'Architects Daughter', cursive;
-// font-family: 'Rock Salt', cursive;
-// font-family: 'Nanum Brush Script', cursive;
-// font-family: 'Knewave', cursive;
-// font-family: 'Freckle Face', cursive;
-// font-family: 'IM Fell English SC', serif;
-
-
 .landing-header{
     width: 50%;
     position:relative;
     margin:auto;
-    top:20%;
     text-align: center;
-    color:$wht;
     height: 80vh;
+    top:25%;
 }
 .landing-headline{
+    position:relative;
     font-family: 'Rock Salt', cursive;
-    // font-size:20vw;
-    // font-size:20.5vh;
-    font-size:100pt!important;
+    font-size:10em;
     letter-spacing: .25em;
 }
 .landing-subtext{
-    font-size:3vw;
-    font-size:3vh;
-    width:40%;
-    border-top: solid white 1px;
-    border-bottom:solid white 1px;
-    position: relative;
-    color:$wht;
-    text-align: center;
-    // padding-top:50px;
-    // padding-bottom:50px;
-    line-height:100px;
-    left:20%;
-    top:10%;
+    font-size:2em;
+    border-top: solid $rkuRed 1px;
+    border-bottom:solid $rkuRed 1px;
+    line-height:300%;
+    margin-top:15%;
+
 }
 // .landing-subtext span{
 //     color:$rkuRed;

@@ -124,30 +124,28 @@ header .hd-ft-bar span {
   width: 50%;
   position: relative;
   margin: auto;
-  top: 20%;
   text-align: center;
-  color: white;
   height: 80vh;
+  top: 25%;
 }
 
 .landing-headline {
+  position: relative;
   font-family: "Rock Salt", cursive;
-  font-size: 100pt !important;
+  font-size: 10em;
   letter-spacing: 0.25em;
 }
 
 .landing-subtext {
-  font-size: 3vw;
-  font-size: 3vh;
-  width: 40%;
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
-  position: relative;
-  color: white;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  line-height: 100px;
+  font-size: 2em;
+  border-top: solid #eb4a1a 1px;
+  border-bottom: solid #eb4a1a 1px;
+  line-height: 300%;
+  margin-top: 15%;
+}
+
+.landing-headline span {
+  color: #eb4a1a;
 }
 
 .landing-image {
@@ -456,49 +454,6 @@ footer .hd-ft-bar {
     text-align: center;
     margin-right: 15%;
     line-height: 300%;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .landing-header {
-    top: 15%;
-    width: 70%;
-  }
-
-  .landing-headline {
-    font-size: 3.5vw;
-  }
-
-  .landing-subtext {
-    font-size: 2vw;
-    padding-top: 10%;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .landing-headline {
-    font-size: 4.5vw;
-  }
-}
-@media screen and (max-width: 1225px) {
-  .landing-headline {
-    font-size: 4.5vw;
-  }
-
-  .landing-subtext {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 1025px) {
-  .landing-header {
-    top: 20%;
-  }
-
-  .landing-headline {
-    font-size: 5vw;
-  }
-
-  .landing-subtext {
-    font-size: 2.25vw;
-    padding-top: 5%;
   }
 }
 @media screen and (max-width: 800px) and (orientation: portrait) {
