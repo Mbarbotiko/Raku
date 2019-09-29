@@ -131,8 +131,10 @@ header .hd-ft-bar span {
 }
 
 .landing-headline {
-  font-size: 7vw;
-  font-size: 6.5vh;
+  font-family: "Rock Salt", cursive;
+  font-size: 12vw;
+  font-size: 12.5vh;
+  letter-spacing: 0.25em;
 }
 
 .landing-subtext {
