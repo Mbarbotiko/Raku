@@ -1,42 +1,51 @@
 .location{
     text-align: center
 }
+.location-header{
+    margin-top:2%;
+}
 
 .location li{
     display: inline;
 }
+.slp{
+    width:50%;
+    float: left;
+    background-color:white;
+    color:black;
+}
+
 .location ul :nth-child(2n+2){
     color:$rkuRed
 }
 
 .location ul{
-    width:30%;
-    margin-left:35%;
+    width:60%;
+    margin-left:20%;
+    min-height: 100px;
 }
 .map-details{
     height:60vh;
     margin-bottom:10%;
 }
 
-#map-slp{
-    width:80%;
+
+
+#map-slp, #map-edina{
+    width:98%;
     float: left;
     height:100%;
-    margin-left:10%;
-    padding-bottom:1px;
-    padding-top:1px;
-    background-color:$rkuRed;
+    margin-left:1%;
+    border:solid 2px black;
+}
+.edina{
+    width:50%;
+    float:left;
+    background-color:$beige;
+    
 }
 
-#map-edina{
-    width:80%;
-    float: left;
-    height:100%;
-    margin-left: 10%;
-    padding-bottom:1px;
-    padding-top:1px;
-    background-color:$rkuRed;
-}
+
 
 .location-header h3{
     width:45%;
@@ -47,9 +56,4 @@
     line-height:200%;
 
 }
-
-.edina{
-    margin-top:-100px;
-}
-
 
