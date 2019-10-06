@@ -43,17 +43,11 @@
    display:inline-block; 
 }
 
-//close button
-h5[role=close]{
-    margin-top:50px;
-    margin-bottom:50px;
-}
-h5[role=close] span{
-    color :$rkuRed;
-
+.pdf{
+    text-align: center;
+    margin-bottom: 5%;
 }
 
-h5[role=close]:hover{
-    cursor: pointer;
+.pdf:hover{
     color:$rkuRed;
 }

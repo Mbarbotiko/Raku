@@ -31,6 +31,7 @@ function loadItems(obj, cssName) {
     var pc = '</p>'
     var h = '<h4>'
     var hc = '</h4>'
+    var ns = '-'
     for (var i = 0; i < obj.length; i++) {
         var buildItem = '';
         try {
@@ -40,6 +41,9 @@ function loadItems(obj, cssName) {
 
             if (obj[i].name) {
                 buildItem += p + obj[i].name
+            }
+            if (obj[i].nameSpan) {
+                buildItem += p +s + ns + sc + obj[i].nameSpan + s + ns + sc
             }
             if (obj[i].price) {
                 buildItem += s + '|' + sc + obj[i].price + pc

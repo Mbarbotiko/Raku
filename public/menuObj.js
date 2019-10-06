@@ -263,31 +263,31 @@ var lunchMenu = [
         header:'Entrees'
     },
     {
-        name: 'Fresh Scallop wth Eggplant',
+        nameSpan: 'Fresh Scallop wth Eggplant',
         description: 'Pan seared scallop with eggplant in Yuzu Miso sauce'
     },
     {
-        name: 'Organic Chicken Teriyaki',
+        nameSpan: 'Organic Chicken Teriyaki',
         description: 'Grilled chicken breast & vegetable with Teriyaki sauce'
     },
     {
-        name: 'Yuzu Seabass',
+        nameSpan: 'Yuzu Seabass',
         description: 'Grilled Chilean seabass with yuzu sauce'
     },
     {
-        name: 'Hibachi Style Filet Mignon',
+        nameSpan: 'Hibachi Style Filet Mignon',
         description: 'Slightly grilled filet mignon with vegetables in butter soy garlic sauce'
     },
     {
-        name: 'Rock Shrimp Tempura',
+        nameSpan: 'Rock Shrimp Tempura',
         description: 'Rock shrimp & vegetable in a light tempura batter, deep-fried with ginger dipping sauce'
     },
     {
-        name: 'Sauteed or Steamed Vegetable & Tofu',
+        nameSpan: 'Sauteed or Steamed Vegetable & Tofu',
         description: ''
     },
     {
-        name: 'Sesame Chicken',
+        nameSpan: 'Sesame Chicken',
         description: 'Crispy fried chicken with special sesame sauce'
     },
     {
@@ -374,114 +374,114 @@ var dinnerMenu = [
         header:'Entrees'
     },
     {
-        name: 'Crispy Dried Beef',
+        nameSpan: 'Crispy Dried Beef',
         description: 'Shredded beef, deep-fried, glazed in brown spicy sauce with celery & carrots'
     },
     {
-        name: 'Chilean Sea Bass Yuzu Miso',
+        nameSpan: 'Chilean Sea Bass Yuzu Miso',
         description: 'Grilled Chilean sea bass marinated with yuzu miso served with udon noodles in bonito broth'
     },
     {
-        name: 'Filet Mignon Toban Yaki',
+        nameSpan: 'Filet Mignon Toban Yaki',
         description: 'Filet mignon, white mushroom with toban sauce & sake, served on a sizzling hot plate'
     },
     {
-        name: 'Peppercorn Chicken',
+        nameSpan: 'Peppercorn Chicken',
         description: 'Shredded white mea chicken, slightly battered, deep-fiend in a brown sweet spicy sauce with bell peppers'
     },
     {
-        name: 'Salmon Salmon',
+        nameSpan: 'Salmon Salmon',
         description: 'Jumbo lump crab meat crusted salmon finished with wasabi dressing, sake & soy reduction, with tomato, avocado & jalapeno salsa'
     },
     {
-        name: 'Scallop Diver',
+        nameSpan: 'Scallop Diver',
         description: 'Pan seared scallop with wild mushrooms in a sweet sake sauce'
     },
     {
-        name: 'Sesame Shrimp',
+        nameSpan: 'Sesame Shrimp',
         description: 'Fried crispy rock shrimp & Asian vegetables with special sesame sauce'
     },
     {
-        name: 'Surf & Turf',
+        nameSpan: 'Surf & Turf',
         description: 'Hibachi style Filet mignon, lobster tail with creamy lobster sauce & Asian Vegetables'
     },
     {
-        name: 'Tilapia',
+        nameSpan: 'Tilapia',
         description: 'Broiled tilapia with a hot touch of ginger & scallion flavored olive oil, server with sauteed Asian vegetables'
     },
     {
         header:'Specialty Rolls'
     },
     {
-        name: 'Art of Maki',
+        nameSpan: 'Art of Maki',
         description: 'Very thinly sliced tuna wrapped with spicy crab meat, avocado & sprouts'
     },
     {
-        name: 'Black Pearl',
+        nameSpan: 'Black Pearl',
         description: 'Shrimp tempura, lobster salad topped with eel & black caviar brown sweet sauce'
     },
     {
-        name: 'Captain Crunch',
+        nameSpan: 'Captain Crunch',
         description: 'Shrimp tempura, crab, avocado & cucumber with crispy tempura flakes outside'
     },
     {
-        name: 'Green Dragon',
+        nameSpan: 'Green Dragon',
         description: 'Broiled eel, cucumber topped ith avocado & caviar'
     },
     {
-        name: 'Hurricane',
+        nameSpan: 'Hurricane',
         description: 'Spicy salmon, spicy tuna & avocado, whole roll deep fried, topped with caviar, served with spicy mayo an eel sauce'
     },
     {
-        name: 'Lotus',
+        nameSpan: 'Lotus',
         description: 'Spicy tuna, yamagoba inside, topped with fresh tuna an avocado server with spicy mayo sauce'
     },
     {
-        name: 'Manhattan',
+        nameSpan: 'Manhattan',
         description: 'Shrimp tempura & crab stick inside, topped with spicy tuna, crunch flakes & caviar, served with 3 kinds of special sauces'
     },
     {
-        name: 'Megu Sashimi(no rice)',
+        nameSpan: 'Megu Sashimi(no rice)',
         description: 'Spicy tuna, asparagus, yellow tail inside, wrapped with soybean paper, topped wth salmon, eel, avocado, caviar & crunch, server with special spicy sauce'
     },
     {
-        name: 'Naruto(no rice)',
+        nameSpan: 'Naruto(no rice)',
         description: 'Tuna, salmon, yellow rail, crab stick, avocado & caviar wrapped with fresh cucumber'
     },
     {
-        name: 'No.9',
+        nameSpan: 'No.9',
         description: 'Shrimp tempura & cucumber inside, topped with fresh salmon, avocado, eel sauce & spicy mayo sauce'
     },
     {
-        name: 'Playboy',
+        nameSpan: 'Playboy',
         description: 'Shrimp tempura, asparagus, spicy tuna inside, topped with sushi shrimp in a flaming aluminum wrap'
     },
     {
-        name: 'Raku-roll-ah',
+        nameSpan: 'Raku-roll-ah',
         description: 'Deep fried spicy tuna, fresh cra bmeat inside, topped ith fresh tuna, rich avocado, masago, scallion, served with a hint of wasabi & tinges of sweetness sauce'
     },
     {
-        name: 'Sassy Lady',
+        nameSpan: 'Sassy Lady',
         description: 'Spicy tuna, spicy salmon, spicy yellow tail & avocado inside, topped with caviar'
     },
     {
-        name: 'Snow Thrill',
+        nameSpan: 'Snow Thrill',
         description: 'Tuna, salmon, yellow tail & avocado inside, topped with crunch flakes, served with spicy mayo & eel sauce'
     },
     {
-        name: 'Sweetheart',
+        nameSpan: 'Sweetheart',
         description: 'Crab stick & shrimp tempura wrapped with fresh tuna in a heart shape'
     },
     {
-        name: 'Sun Kiss',
+        nameSpan: 'Sun Kiss',
         description: 'Broiled eel, shrimp tempura & avocado inside, topped with mango & crunch flakes'
     },
     {
-        name: 'Three of a Kind',
+        nameSpan: 'Three of a Kind',
         description: 'Tuna, salmon, yellow tail, cucumber & kaiware inside, wrapped with white seaweed'
     },
     {
-        name: 'White Russian',
+        nameSpan: 'White Russian',
         description: 'Fresh crab meat, sweet potato tempura, avocado, cucumber inside, topped with torched white tuna, black caviar & creamy wasabi mayo sauce'
     },
 
