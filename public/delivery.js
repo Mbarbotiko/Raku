@@ -24,7 +24,7 @@ $(deliveryImages).on('click', function () {
 
 })
 
-$('.close').on('click', function () {
+$('.closeButton').on('click', function () {
     $('.modal').toggle()
 
 })
