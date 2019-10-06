@@ -4,24 +4,21 @@
 
 .delivery-services img{
     display:block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:25%;
     width:50%;
     padding:2%;
     min-height:150px;
     z-index: 1;
     position: relative;
-    top:-300px;
+    top:-255px;
 }
 .delivery-services img:hover{
     cursor: pointer;
 }
 
 .delivery-services>div{
-margin-top:10%;
-margin-bottom:10%;
-border-top: solid white 2px;
-   // border-bottom:solid whit`e 2px;
+    min-height: 300px;
+    border-top: solid white 2px;
     width: 100%;
     margin: auto;
 }
@@ -55,7 +52,7 @@ border-top: solid white 2px;
     height:300px;
 }
 
-#bs .delivery-overlay{
+#bs .delivery-overlay, #dd .delivery-overlay{
     background:black;
     opacity:.5;
     height:298px;
@@ -67,7 +64,7 @@ border-top: solid white 2px;
     width:100%;
 }
 
-#pm .delivery-overlay{
+#pm .delivery-overlay, #ue .delivery-overlay{
     background:white;
     opacity:.5;
     height:298px;
@@ -79,29 +76,6 @@ border-top: solid white 2px;
     width:100%;
 }
 
-#dd .delivery-overlay{
-    background:black;
-    opacity:.5;
-    height:298px;
-    position: relative;
-    left:0;
-    top:0px;
-    z-index: 1;
-    display: table;
-    width:100%;
-}
-
-#ue .delivery-overlay{
-    background:white;
-    opacity:.5;
-    height:298px;
-    position: relative;
-    left:0;
-    top:0px;
-    z-index: 1;
-    display: table;
-    width:100%;
-}
 
 
 //modal

@@ -1023,14 +1023,13 @@ footer .hd-ft-bar {
 
 .delivery-services img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 25%;
   width: 50%;
   padding: 2%;
   min-height: 150px;
   z-index: 1;
   position: relative;
-  top: -300px;
+  top: -255px;
 }
 
 .delivery-services img:hover {
@@ -1038,8 +1037,7 @@ footer .hd-ft-bar {
 }
 
 .delivery-services > div {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  min-height: 300px;
   border-top: solid white 2px;
   width: 100%;
   margin: auto;
@@ -1073,7 +1071,7 @@ footer .hd-ft-bar {
   height: 300px;
 }
 
-#bs .delivery-overlay {
+#bs .delivery-overlay, #dd .delivery-overlay {
   background: black;
   opacity: 0.5;
   height: 298px;
@@ -1085,31 +1083,7 @@ footer .hd-ft-bar {
   width: 100%;
 }
 
-#pm .delivery-overlay {
-  background: white;
-  opacity: 0.5;
-  height: 298px;
-  position: relative;
-  left: 0;
-  top: 0px;
-  z-index: 1;
-  display: table;
-  width: 100%;
-}
-
-#dd .delivery-overlay {
-  background: black;
-  opacity: 0.5;
-  height: 298px;
-  position: relative;
-  left: 0;
-  top: 0px;
-  z-index: 1;
-  display: table;
-  width: 100%;
-}
-
-#ue .delivery-overlay {
+#pm .delivery-overlay, #ue .delivery-overlay {
   background: white;
   opacity: 0.5;
   height: 298px;
