@@ -48,11 +48,16 @@ h5 {
 }
 
 .navbar {
-  min-height: 50px !important;
+  min-height: 40px !important;
   background: transparent !important;
   top: 40px;
   z-index: 2;
   color: white !important;
+}
+
+.navbar-collapse {
+  padding: 0px !important;
+  line-height: 0px;
 }
 
 .navbar a:hover {
@@ -61,10 +66,6 @@ h5 {
 
 .navbar span {
   color: white;
-}
-
-.navbar-brand {
-  height: 50px !important;
 }
 
 .hd-ft-bar {
@@ -876,7 +877,7 @@ footer .hd-ft-bar {
   height: 100%;
   margin-left: 10%;
   padding-bottom: 1px;
-  padding-top: 0.5%;
+  padding-top: 1px;
   background-color: #eb4a1a;
 }
 
@@ -885,8 +886,8 @@ footer .hd-ft-bar {
   float: left;
   height: 100%;
   margin-left: 10%;
-  padding-bottom: 0.5%;
-  padding-top: 0.5%;
+  padding-bottom: 1px;
+  padding-top: 1px;
   background-color: #eb4a1a;
 }
 

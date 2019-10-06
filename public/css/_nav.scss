@@ -1,11 +1,16 @@
 
 .navbar{
-    min-height:50px!important; 
+    min-height:40px!important; 
     background:transparent!important;
     top:40px;
     z-index:2;
-    color:white!important;
-    
+    color:white!important;  
+}
+
+.navbar-collapse{
+    padding:0px!important;
+    line-height: 0px;
+
 }
 
 .navbar a:hover{
@@ -14,9 +19,7 @@
 .navbar span{
     color:white;
  }
-.navbar-brand{
-    height:50px!important;
-}
+
 
 .hd-ft-bar{
     background-color:$bk;

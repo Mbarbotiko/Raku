@@ -8,7 +8,7 @@ $(function () {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
             headerBar.style.display = 'none';
-            $(navBar).attr('style', 'background: black !important');
+            $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
             $(navBar).css({top:'0px'});
             //hides bar
         }
