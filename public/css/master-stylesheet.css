@@ -1096,7 +1096,7 @@ footer .hd-ft-bar {
 }
 
 .modal {
-  background: rgba(187, 87, 21, 0.18);
+  background: rgba(60, 60, 60, 0.75);
 }
 
 .modal-dialog {
@@ -1146,6 +1146,19 @@ a[href$=none] {
   position: absolute;
   top: 50%;
   width: 100%;
+}
+
+.icon-background6 {
+  color: #eb4a1a;
+}
+
+.letters {
+  font-family: "Rock Salt", cursive;
+}
+
+.letters h3 {
+  position: relative;
+  top: 0px;
 }
 
 @media screen and (max-width: 1400px) {

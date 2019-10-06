@@ -80,7 +80,7 @@
 
 //modal
 .modal{
-    background: rgba(187, 87, 21, 0.18);
+    background: rgba(60, 60, 60, 0.75);
 
    
 }
@@ -134,4 +134,18 @@ a[href$='none']{
 position: absolute;
 top:50%;
 width:100%;
+}
+
+.icon-background6 {
+    color: $rkuRed;
+}
+
+
+.letters{
+    font-family: 'Rock Salt', cursive;
+}
+
+.letters h3{
+    position:relative;
+    top:0px;
 }
