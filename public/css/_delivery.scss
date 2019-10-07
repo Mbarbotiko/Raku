@@ -1,3 +1,5 @@
+
+
 .delivery-services{
     text-align: center;
 }
@@ -10,7 +12,7 @@
     min-height:150px;
     z-index: 1;
     position: relative;
-    top:-255px;
+    top:-275px;
 }
 .delivery-services img:hover{
     cursor: pointer;
@@ -23,60 +25,41 @@
     margin: auto;
 }
 
+#bs, #pm, #ue, #dd{
+    background-size:cover;
+    background-position: center;
+    height:300px;
+}
+
 #bs{
     background-image:url('../images/menu-banner2.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
-
 }
-
 #pm{
     background-image:url('../images/possiblebanner.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
 }
-
 #ue{
     background-image:url('../images/scrollthru5.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
 }
-
 #dd{
     background-image:url('../images/scrollthru4.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
 }
 
+#pm .delivery-overlay, #ue .delivery-overlay, #bs .delivery-overlay, #dd .delivery-overlay{
+    opacity:.5;
+    height:298px;
+    position: relative;
+    left:0;
+    top:0px;
+    z-index: 1;
+    display: table;
+    width:100%;
+}
 #bs .delivery-overlay, #dd .delivery-overlay{
     background:black;
-    opacity:.5;
-    height:298px;
-    position: relative;
-    left:0;
-    top:0px;
-    z-index: 1;
-    display: table;
-    width:100%;
 }
-
 #pm .delivery-overlay, #ue .delivery-overlay{
     background:white;
-    opacity:.5;
-    height:298px;
-    position: relative;
-    left:0;
-    top:0px;
-    z-index: 1;
-    display: table;
-    width:100%;
 }
-
-
 
 //modal
 .modal{
