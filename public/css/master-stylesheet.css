@@ -1096,15 +1096,12 @@ footer .hd-ft-bar {
 }
 
 .modal {
-  background: rgba(2, 2, 2, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
-.modal-footer {
-  border: none !important;
-}
-
-.modal-header {
-  border: none !important;
+.modal-body {
+  display: flex;
+  justify-content: center;
 }
 
 .modal-dialog {
@@ -1114,10 +1111,11 @@ footer .hd-ft-bar {
 
 .modal-dialog,
 .modal-content {
-  margin-left: 20%;
   color: white;
   background-color: transparent !important;
   height: 40%;
+  padding: 0px !important;
+  border: none !important;
 }
 
 .modal-slp,
@@ -1126,11 +1124,6 @@ footer .hd-ft-bar {
   height: 150px;
   float: left;
   width: 35%;
-}
-
-.modal-title h5 {
-  width: 100%;
-  text-align: center;
 }
 
 .modal-slp p, .modal-edina p {
@@ -1148,8 +1141,7 @@ a[href$=none] {
 .unavailable {
   display: none;
   position: absolute;
-  top: 50%;
-  width: 100%;
+  top: 10px;
 }
 
 .icon-background6 {
@@ -1175,13 +1167,13 @@ a[href$=none] {
 
 .closeButton {
   font-family: "Julius Sans One", "sans-serif";
-  color: #eb4a1a;
   width: 100%;
   text-align: center;
 }
 
 .closeButton:hover {
   cursor: pointer;
+  color: #eb4a1a;
 }
 
 @media screen and (max-width: 1400px) {
