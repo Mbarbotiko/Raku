@@ -5,6 +5,7 @@
     text-align: center;
     height: 80vh;
     top:25%;
+    z-index: 2;
 }
 .landing-headline{
     position:relative;
@@ -47,63 +48,59 @@
 
 //shared sections
 %backgroundImg{
-    margin-top:0;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-    height:95vh;
-    background-color:$bk;
-    z-index:1;   
+width:100%; 
+z-index: 0;
+position: absolute;
+top:40px;
+left:0;
+height:95vh;
+opacity:100%;
 }
-.landing-image{
-    @extend %backgroundImg;
+.landing-image img{
+   @extend %backgroundImg;
 }
-//IE and Edge because no keyFrame support
-// .landing-image{
-//     background-image: url('../images/group-1.jpg');
-//   }
-.landing-image.overlay{
+
+.landing-overlay{
+    opacity: 50%;
     background:$bk;
-    opacity:.6;
     position: absolute;
     left:0;
-    top:0;
-    z-index: -1;
+    top:40px;
+    z-index: 1;
     display: table;
     width: 100vw;
     height:95vh;
 }
 
-@keyframes indexLandingTransition {
-    0%{
-        background-image: url('../images/group-1.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
-    66%{
-        background-image: url('../images/group-2.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
-    100%{
-        background-image: url('../images/group-3.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:center;
-    }
+// @keyframes indexLandingTransition {
+//     0%{
+//         background-image: url('../images/group-1.jpg');
+//         background-repeat: no-repeat;
+//         background-size:cover;
+//         background-position:center;
+//     }
+//     66%{
+//         background-image: url('../images/group-2.jpg');
+//         background-repeat: no-repeat;
+//         background-size:cover;
+//         background-position:center;
+//     }
+//     100%{
+//         background-image: url('../images/group-3.jpg');
+//         background-repeat: no-repeat;
+//         background-size:cover;
+//         background-position:center;
+//     }
 
-}
+// }
 
-  .landing-image.overlay {
-    animation-name: indexLandingTransition;
-    animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-    animation-duration: 20s;
-   animation-fill-mode: both;
-   animation-direction: alternate;
+//   .landing-image.overlay {
+//     animation-name: indexLandingTransition;
+//     animation-timing-function: ease-in-out;
+//    animation-iteration-count: infinite;
+//     animation-duration: 20s;
+//    animation-fill-mode: both;
+//    animation-direction: alternate;
 
-  }
+//   }
 
