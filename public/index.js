@@ -10,11 +10,20 @@ $(function () {
     function headerBarHide() {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
+            //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
-            $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
+            if (msie < 0 && trident < 0 && edge < 0) {
+                $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
+            } else {
+                $(navBar).attr('style', 'background:black !important');
+            }
             $(navBar).css({ top: '0px' });
-            //hides bar
         }
+
+
+
+
+
         if (window.scrollY < 3 && window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
@@ -81,7 +90,7 @@ $(function () {
     }
     //for subpage header.js
     checkForIE($('.subpage-content h5'), 'animation-name', 'shrink')
-    //for landing page index.js header
+    //for landing page index.js
     checkForIE($('.landing-subtext'), 'animation-name', 'shrink')
 
 });
