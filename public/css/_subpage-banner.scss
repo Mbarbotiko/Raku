@@ -33,7 +33,7 @@
 .subpage-content h5{
     margin:auto;
     animation-duration: 3s;
-    animation-name: shrink;
+    //animation-name: shrink; this is added in index.js file
 }
 
 @keyframes shrink {
@@ -44,7 +44,5 @@
     to {
         letter-spacing:0em;
     }
-  }
-  .subpage-content h5{
-    letter-spacing:0em;
+  
 }

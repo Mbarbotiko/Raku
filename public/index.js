@@ -1,25 +1,28 @@
-
 $(function () {
-    header = document.getElementsByTagName('header')[0];
-    headerBar = header.getElementsByClassName('hd-ft-bar')[0];
-    navBar = header.getElementsByClassName('navbar')[0];
+    const ua = window.navigator.userAgent;
+    const msie = ua.indexOf('MSIE ');
+    const trident = ua.indexOf('Trident/');
+    const edge = ua.indexOf('Edge/');
+    var header = document.getElementsByTagName('header')[0];
+    var headerBar = header.getElementsByClassName('hd-ft-bar')[0];
+    var navBar = header.getElementsByClassName('navbar')[0];
 
     function headerBarHide() {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
             headerBar.style.display = 'none';
             $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
-            $(navBar).css({top:'0px'});
+            $(navBar).css({ top: '0px' });
             //hides bar
         }
         if (window.scrollY < 3 && window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
             $(navBar).attr('style', 'background: transparent !important');
-           $(navBar).css({top:'40px'})
-           
+            $(navBar).css({ top: '40px' })
+
             //returns bar
-           
+
         }
 
         if (window.innerWidth < 991) {
@@ -64,6 +67,18 @@ $(function () {
             }
         }
     }
+
+    (function () {
+        //keep function out of global scope:
+        //if this is not an internet exploror or edge browser add this animation to subpage content
+        if (msie < 0 && trident < 0 && edge < 0) {
+            var shrinkContent = $('.subpage-content h5');
+            if (shrinkContent.length !== 0) {
+                //if element exists on the page
+                shrinkContent.css('animation-name', 'shrink');
+            }
+        }
+    })();
 
 
 });
