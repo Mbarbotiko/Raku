@@ -182,7 +182,7 @@ header .hd-ft-bar span {
 
 .landing-image.overlay {
   background: black;
-  opacity: 0.5;
+  opacity: 0.6;
   position: absolute;
   left: 0;
   top: 0;
@@ -199,30 +199,26 @@ header .hd-ft-bar span {
     background-size: cover;
     background-position: center;
   }
-  33% {
+  66% {
     background-image: url("../images/group-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  66% {
+  100% {
     background-image: url("../images/group-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  100% {
-    background-image: url("../images/group-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
 }
-.landing-image .overlay {
+.landing-image.overlay {
   animation-name: indexLandingTransition;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
 }
 
 .home-aboutus {
