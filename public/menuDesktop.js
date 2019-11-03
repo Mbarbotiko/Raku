@@ -69,7 +69,6 @@ function loadItems(obj, cssName) {
 
 
 var menuNav = document.getElementsByClassName('menu-buttons')[0]
-console.log(menuNav)
 //add event click event listener to the parent of the menu types selection
 
 menuNav.addEventListener('click', test)

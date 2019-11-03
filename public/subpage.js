@@ -64,7 +64,4 @@ document.getElementById('banner').innerHTML = subpageBanner;
 var bannerNoStyle = document.getElementsByClassName('subpage-banner')[0];
 bannerNoStyle.setAttribute("style", "background-image:url("+image+")");
 
-console.log('this exists', trident)
-
-
 

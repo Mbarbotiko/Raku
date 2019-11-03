@@ -154,7 +154,6 @@ header .hd-ft-bar span {
 .landing-subtext {
   margin: auto;
   animation-duration: 3s;
-  animation-name: shrink;
 }
 
 .landing-image {

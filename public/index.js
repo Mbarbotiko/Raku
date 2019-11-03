@@ -68,17 +68,20 @@ $(function () {
         }
     }
 
-    (function () {
-        //keep function out of global scope:
-        //if this is not an internet exploror or edge browser add this animation to subpage content
+
+    function checkForIE(selector, cssProp, cssVal) {
+        //create a reusable function, accepts css selector, property and value for that property
         if (msie < 0 && trident < 0 && edge < 0) {
-            var shrinkContent = $('.subpage-content h5');
-            if (shrinkContent.length !== 0) {
-                //if element exists on the page
-                shrinkContent.css('animation-name', 'shrink');
+            //check for IE type browser and Edge
+            if (selector.length !== 0) {
+                //if element exists on the page and its NOT an IE or Edge browser add property and value to this dom element
+                selector.css(cssProp, cssVal);
             }
         }
-    })();
-
+    }
+    //for subpage header.js
+    checkForIE($('.subpage-content h5'), 'animation-name', 'shrink')
+    //for landing page index.js header
+    checkForIE($('.landing-subtext'), 'animation-name', 'shrink')
 
 });
