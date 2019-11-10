@@ -146,10 +146,7 @@ a[href$='none']{
     margin-top:50px;
 }
 .closeButton{
-    font-family: $mainFont;
-
-    width: 100%;
-    text-align: center;
+    @extend %buttons;
 }
 .closeButton:hover{
     cursor: pointer;

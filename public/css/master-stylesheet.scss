@@ -26,6 +26,14 @@ $rkuRed: rgb(235, 74, 26);
     color:$rkuRed;
     cursor: pointer;
 }
+
+%buttons{
+    text-align: center;
+    border-bottom:solid $rkuRed 1px;
+    letter-spacing: .35em;
+    width:20%;
+    margin-left:40%;
+}
 body, html{
     font-family:$mainFont;
     //color:$bk;

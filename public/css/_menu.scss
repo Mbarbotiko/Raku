@@ -45,7 +45,8 @@
 }
 
 .pdf{
-    text-align: center;
+    @extend %buttons;
+   // text-align: center;
     margin-bottom: 5%;
 }
 
