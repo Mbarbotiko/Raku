@@ -1,5 +1,6 @@
 // sass --watch master-stylesheet.scss master-stylesheet.css
 //sass --watch .
+// browser-sync start --proxy "http://localhost:3000/" --files "public/css/master-stylesheet.css" 
 $mainFont: 'Julius Sans One', 'sans-serif';
 $bk: black;
 $wht:white;
