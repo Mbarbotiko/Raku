@@ -8,33 +8,37 @@ $(function () {
     var navBar = header.getElementsByClassName('navbar')[0];
 
     function headerBarHide() {
+        //IE doesn't understand what window.scrollY is, so set a background for without scroll position
+        if(trident>-1){
+            $(navBar).attr('style', 'background:black !important');
+            $(navBar).css({ top: '0px' });//change position of the nav bar 
+        }
+
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
+            
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
             if (msie < 0 && trident < 0 && edge < 0) {
+                //if all of these return false:
                 $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
             } else {
                 $(navBar).attr('style', 'background:black !important');
+                
             }
-            $(navBar).css({ top: '0px' });
+            $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
         }
-
-
-
-
 
         if (window.scrollY < 3 && window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
             $(navBar).attr('style', 'background: transparent !important');
             $(navBar).css({ top: '40px' })
-
             //returns bar
-
         }
 
         if (window.innerWidth < 991) {
+            //hides bar on window size of less than 991
             headerBar.style.display = 'none';
         }
 
@@ -88,9 +92,9 @@ $(function () {
             }
         }
     }
-    //for subpage header.js
+    //for subpage header.js (all pages except index page)
     checkForIE($('.subpage-content h5'), 'animation-name', 'shrink')
-    //for landing page index.js
+    //for landing page index.js (only index page)
     checkForIE($('.landing-subtext'), 'animation-name', 'shrink')
 
 });
