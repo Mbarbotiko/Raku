@@ -91,13 +91,6 @@ h5 {
   clear: both;
 }
 
-.navbar img {
-  margin-left: 10%;
-  width: 100px;
-  position: relative;
-  z-index: 2;
-}
-
 header .nav-link span {
   font-size: 8pt;
 }

@@ -1,4 +1,8 @@
-
+// #navbarTogglerDemo02{
+//     margin:auto 0;
+//     width:50%!important;
+//     //margin-left:15%!important;
+// }
 .navbar{
     min-height:40px!important; 
     background:transparent!important;
@@ -32,12 +36,7 @@
     clear:both;
     
 }
-.navbar img{
-    margin-left:10%;
-    width:100px;
-    position:relative;
-    z-index: 2;
-}
+
 header .nav-link span{
     font-size: 8pt; 
 }
