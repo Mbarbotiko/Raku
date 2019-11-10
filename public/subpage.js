@@ -51,14 +51,8 @@ switch (currentPage) {
 }
 
 //create the section on the page and dynamically set heading and subheading
-const subpageBanner = `<section class='subpage-banner'>
-<div class=subpage-overlay>
-</div>
-<div class='subpage-content'>
-    <h1>${heading}</h1>
-    <h5>${subheading}</h5>
-</div>
-</section>`
+//removed template literal because IE doesnt support.
+const subpageBanner = "<section class='subpage-banner'><div class=subpage-overlay></div><div class='subpage-content'><h1>"+heading+"</h1><h5>"+subheading+"</h5></div></section>"
 //once the section has been appended to the page, add attribute to the current style for a background image and dynamically show the image
 document.getElementById('banner').innerHTML = subpageBanner;
 var bannerNoStyle = document.getElementsByClassName('subpage-banner')[0];
