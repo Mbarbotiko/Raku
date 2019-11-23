@@ -4,7 +4,6 @@
 .location-header{
     margin-top:2%;
 }
-
 .location li{
     display: inline;
 }
@@ -22,18 +21,14 @@
 .slp{
     color:black;
     }
-
 .location ul :nth-child(2n+2){
     color:$rkuRed
 }
-
 .location ul{
     width:60%;
     margin-left:20%;
     min-height: 100px;
 }
-
-
 #map-slp, #map-edina{
     width:80%;
     height:40vh;
@@ -41,10 +36,8 @@
 }
 #map-slp{
     border-top:solid $rkuGray 1px;
-    border-bottom:solid $rkuGray 1px;
-    
+    border-bottom:solid $rkuGray 1px;   
 }
-
 #map-edina{
     border-top:solid white 1px;
     border-bottom:solid white 1px;
@@ -52,7 +45,6 @@
 .edina, .slp{
     width:80%;  
     margin-left:10%;
-
 }
 iframe{
     padding-top:20px;

@@ -4,13 +4,8 @@
 $mainFont: 'Julius Sans One', 'sans-serif';
 $bk: black;
 $wht:white;
-//$rkuGray:rgb(250, 245, 237);
 $rkuGray:rgb(60, 60, 60);
 $rkuRed: rgb(235, 74, 26);
-
-.testing{
-    background:black;
-}
 %headerStyle{
     border-top: solid white 1px;
     border-bottom:solid white 1px;
@@ -20,13 +15,11 @@ $rkuRed: rgb(235, 74, 26);
     line-height: 300%;
     text-align: center;
 }
-
 %iconHover{
     padding:5px;
     color:$rkuRed;
     cursor: pointer;
 }
-
 %buttons{
     text-align: center;
     border-bottom:solid $rkuRed 1px;
@@ -41,30 +34,20 @@ body, html{
     background-color:$rkuGray;
     font-size: 12pt;
 }
-
 h1{
     font-size:3em;
-
 }
-
 h2{
-    font-size:(3em*.9)
-
+    font-size:(3em*.9);
 }
-
 h3{
-    font-size:(3em*.7)
-
+    font-size:(3em*.7);
 }
-
 h4{
     font-size:(3em*.6)
-
 }
-
 h5{
     font-size:(3em*.4)
-
 }
 
 .content-container{

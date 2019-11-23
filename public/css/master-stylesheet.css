@@ -1,7 +1,3 @@
-.testing {
-  background: black;
-}
-
 .subpage-content h1 {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -107,7 +103,7 @@ header .hd-ft-bar span {
 }
 
 .navbar-nav {
-  margin-left: 15%;
+  margin: auto;
 }
 
 .nav-link {
