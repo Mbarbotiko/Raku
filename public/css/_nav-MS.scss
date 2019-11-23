@@ -1,45 +1,33 @@
+//header footer bar displaying the addresses
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-    header .nav-link{
-    letter-spacing: 6px;
-    }
-
     header .hd-ft-bar span{
         padding-left:8%;
         padding-right:8%;
     }
-    .navbar-nav{
-        margin-left:0%;
+}
+ @media screen and (max-width: 990px)and (min-width: 0px){
+     //do not display this bar on screen sized less than 990
+    header .hd-ft-bar{
+       display: none;
+    }
+}
+//navigation (to change this on resize need to add more to index.js file to mimix this css:
+@media screen and (max-width: 990px) and (min-width: 0px) {
+.navbar{
+    background:rgb(0,0,0,.85)!important;
+    top:0px;
+}
+}
+@media screen and (max-width: 1159px) and (min-width: 900px) {
+    header .nav-link{
+    letter-spacing: 5px;
     }
 
 }
 
-
-//Restaurant location bar @ Nav
-@media screen and (max-width: 990px)and (min-width: 0px){
-    header .hd-ft-bar{
-       display: none;
-    }
-    .navbar{
-        position: fixed;
-        top:0;
-        z-index: 2;
-        width:100%;
+@media screen and (max-width: 900px) and (min-width: 0px) {
+    header .nav-link{
+    letter-spacing: 2px;
     }
 
-    #navbarTogglerDemo02{
-        height:100vh;
-        margin-top:10%;  
-    }
-
-    .nav-link span{
-        display:none;
-    }
-
-    .nav-link{
-        text-align: center;
-        margin-right:15%;
-        line-height:300%;        
-    }
-
- 
- }
+}

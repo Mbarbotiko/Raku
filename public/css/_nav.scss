@@ -61,3 +61,23 @@ animation:fadeIn 3.5s;
         opacity:1;
     }
 }
+
+//hamberger menu 
+.navbar-toggler:focus{
+    outline: none;
+
+}
+.navbar-toggler{
+   border-color:white!important;
+}
+
+.navbar-collapse.collapse {
+    transition: height 0.5s;
+}
+.navbar-collapse.collapsing {
+    height: 0 !important;
+}
+.navbar-collapse.collapse.show {
+    max-height: none;
+    height: 100vh;
+}

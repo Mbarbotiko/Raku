@@ -122,6 +122,27 @@ header .hd-ft-bar span {
     opacity: 1;
   }
 }
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-collapse.collapse {
+  transition: height 0.5s;
+}
+
+.navbar-collapse.collapsing {
+  height: 0 !important;
+}
+
+.navbar-collapse.collapse.show {
+  max-height: none;
+  height: 100vh;
+}
+
 .landing-header {
   width: 50%;
   position: relative;
@@ -393,44 +414,30 @@ footer .hd-ft-bar {
 }
 
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-  header .nav-link {
-    letter-spacing: 6px;
-  }
-
   header .hd-ft-bar span {
     padding-left: 8%;
     padding-right: 8%;
-  }
-
-  .navbar-nav {
-    margin-left: 0%;
   }
 }
 @media screen and (max-width: 990px) and (min-width: 0px) {
   header .hd-ft-bar {
     display: none;
   }
-
+}
+@media screen and (max-width: 990px) and (min-width: 0px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.85) !important;
+    top: 0px;
   }
-
-  #navbarTogglerDemo02 {
-    height: 100vh;
-    margin-top: 10%;
+}
+@media screen and (max-width: 1159px) and (min-width: 900px) {
+  header .nav-link {
+    letter-spacing: 5px;
   }
-
-  .nav-link span {
-    display: none;
-  }
-
-  .nav-link {
-    text-align: center;
-    margin-right: 15%;
-    line-height: 300%;
+}
+@media screen and (max-width: 900px) and (min-width: 0px) {
+  header .nav-link {
+    letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 800px) and (orientation: portrait) {
