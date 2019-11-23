@@ -836,10 +836,21 @@ footer .hd-ft-bar {
   display: inline;
 }
 
-.slp {
-  width: 50%;
-  float: left;
+.location-wrapper:nth-child(odd) {
   background-color: white;
+}
+
+.location-wrapper:nth-child(even) {
+  background-color: #3c3c3c;
+}
+
+.location-wrapper {
+  width: 100%;
+  padding-top: 50px;
+  height: 90vh;
+}
+
+.slp {
   color: black;
 }
 
@@ -853,23 +864,30 @@ footer .hd-ft-bar {
   min-height: 100px;
 }
 
-.map-details {
-  height: 60vh;
-  margin-bottom: 10%;
-}
-
 #map-slp, #map-edina {
-  width: 98%;
-  float: left;
-  height: 100%;
-  margin-left: 1%;
-  border: solid 2px black;
+  width: 80%;
+  height: 40vh;
+  margin-left: 10%;
 }
 
-.edina {
-  width: 50%;
-  float: left;
-  background-color: #3c3c3c;
+#map-slp {
+  border-top: solid #3c3c3c 1px;
+  border-bottom: solid #3c3c3c 1px;
+}
+
+#map-edina {
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+}
+
+.edina, .slp {
+  width: 80%;
+  margin-left: 10%;
+}
+
+iframe {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .location-header h3 {
