@@ -9,14 +9,14 @@ $(function () {
 
     function headerBarHide() {
         //IE doesn't understand what window.scrollY is, so set a background for without scroll position
-        if(trident>-1){
+        if (trident > -1) {
             $(navBar).attr('style', 'background:black !important');
             $(navBar).css({ top: '0px' });//change position of the nav bar 
         }
 
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
-            
+
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
             if (msie < 0 && trident < 0 && edge < 0) {
@@ -24,7 +24,7 @@ $(function () {
                 $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
             } else {
                 $(navBar).attr('style', 'background:black !important');
-                
+
             }
             $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
         }
@@ -95,6 +95,31 @@ $(function () {
     //for subpage header.js (all pages except index page)
     checkForIE($('.subpage-content h5'), 'animation-name', 'shrink')
     //for landing page index.js (only index page)
-    checkForIE($('.landing-subtext'), 'animation-name', 'shrink')
+    checkForIE($('.landing-subtext'), 'animation-name', 'shrink');
 
+
+    //event listener to change the background color of the navigation only when berger is opening and closing, once closed go back to transparent
+    function addBlack() {
+
+        if (msie < 0 && trident < 0 && edge < 0) {
+            var isOpen = $(this).attr('aria-expanded');
+            if (isOpen === 'false') {
+                $(navBar).attr('style', 'background:rgb(0,0,0,.85)!important');
+            }
+            if (isOpen === 'true') {
+                setTimeout(function () {
+                    $(navBar).attr('style', 'background:transparent !important');
+                }, 250);
+            }
+        } else {
+            var isOpen = $(this).attr('aria-expanded');
+            if (isOpen === 'false') {
+                $(navBar).attr('style', 'background:black !important');
+            }
+          
+        }
+
+    }
+
+    $('.navbar-toggler').on('click', addBlack);
 });

@@ -31,3 +31,29 @@
     }
 
 }
+
+//hamberger
+@media screen and (max-width: 767px) and (min-width: 0px) {
+    .navbar-toggler{
+        display:block;
+      position:fixed;
+      z-index: 3;
+    }
+    
+    .navbar{
+        background:transparent!important;
+    }
+    ul.navbar-nav{
+        margin-top:25vh;
+        text-align: center;
+        line-height: 3em;
+        height:100vh;
+    }
+    li.nav-item span{
+        display:none;
+    }
+ 
+
+
+}
+

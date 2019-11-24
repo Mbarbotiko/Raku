@@ -127,20 +127,7 @@ header .hd-ft-bar span {
 }
 
 .navbar-toggler {
-  border-color: white !important;
-}
-
-.navbar-collapse.collapse {
-  transition: height 0.5s;
-}
-
-.navbar-collapse.collapsing {
-  height: 0 !important;
-}
-
-.navbar-collapse.collapse.show {
-  max-height: none;
-  height: 100vh;
+  display: none;
 }
 
 .landing-header {
@@ -438,6 +425,28 @@ footer .hd-ft-bar {
 @media screen and (max-width: 900px) and (min-width: 0px) {
   header .nav-link {
     letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .navbar-toggler {
+    display: block;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .navbar {
+    background: transparent !important;
+  }
+
+  ul.navbar-nav {
+    margin-top: 25vh;
+    text-align: center;
+    line-height: 3em;
+    height: 100vh;
+  }
+
+  li.nav-item span {
+    display: none;
   }
 }
 @media screen and (max-width: 800px) and (orientation: portrait) {
