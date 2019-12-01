@@ -453,6 +453,12 @@ footer .hd-ft-bar {
     display: none;
   }
 }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  ul.navbar-nav {
+    margin-top: 10vh;
+    line-height: 2.5em;
+  }
+}
 @media screen and (max-width: 800px) and (orientation: portrait) {
   .landing-header {
     top: 25%;

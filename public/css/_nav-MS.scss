@@ -35,7 +35,7 @@
 //hamberger
 @media screen and (max-width: 767px) and (min-width: 0px) {
     .navbar-toggler{
-        display:block;
+      display:block;
       position:fixed;
       z-index: 3;
     }
@@ -54,6 +54,15 @@
     }
  
 
+
+}
+
+@media screen and (max-width: 767px)and (orientation: landscape){
+
+      ul.navbar-nav{
+          margin-top:10vh;
+          line-height: 2.5em;
+      }
 
 }
 
