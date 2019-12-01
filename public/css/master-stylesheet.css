@@ -405,7 +405,7 @@ footer .hd-ft-bar {
 }
 
 @media screen and (max-width: 1159px) and (min-width: 901px) {
-  header .hd-ft-bar span {
+  header .hd-ft-divider {
     padding-left: 8%;
     padding-right: 8%;
   }
