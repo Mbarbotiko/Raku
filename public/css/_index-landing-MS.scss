@@ -1,10 +1,20 @@
+//landing image
+@media screen and (max-width: 990px){
+    .landing-image{
+        height:100vh;
+    }
+    .landing-image.overlay{
+        height:100vh;
+    }
+    
+}
+
 //index header text
 @media screen and (max-width: 1600px){
     .landing-headline{
         font-size:9em;
     }
 }
-
 @media screen and (max-width: 880px){
     .landing-headline{
         top:20%;
@@ -15,24 +25,19 @@
     .landing-headline{
         top:25%;
         font-size:6.5em;
-      
     }
 }
-
 @media screen and (max-width: 475px){
     .landing-headline{
-        font-size:20vw;
-       
+        font-size:20vw;  
     }
 }
-
 @media screen and (max-width: 880px) and (orientation:landscape){
     .landing-headline{
         top:15%;
         font-size:5em;
     }
 }
-
 //index landing subtext
 @media screen and (max-width: 1200px){
     .landing-subtext{
@@ -47,6 +52,12 @@
     }
 }
 
+@media screen and (max-width: 750px){
+    .landing-subtext{
+        margin-top:30%;
+        
+    }
+}
 @media screen and (max-width: 650px){
     .landing-subtext{
         border-top: none;
@@ -54,13 +65,11 @@
         line-height: 10%;
         font-size:1.5em;
         margin-top:45%;
-        width:60%;
     }
 }
-
 @media screen and (max-width: 600px){
     .landing-subtext{
-        width:75%;
+        width:80%;
         margin-top:50%;
     }
 }
@@ -78,14 +87,11 @@
         margin-top:25vh;
     }
 }
-
 @media screen and (max-width: 300px){
     .landing-subtext{
         font-size:.75em;
     }
 }
-
-
 @media screen and (max-width: 880px) and (orientation:landscape){
     .landing-subtext{
         font-size:1.25em;
@@ -93,6 +99,5 @@
         border-top: none;
         padding-bottom:12px;
         line-height: 10%;
-        //border-bottom: none;
     }
 }
