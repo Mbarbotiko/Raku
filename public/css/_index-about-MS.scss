@@ -72,10 +72,23 @@
          }
 }
 
+//image and panels
+@media screen and (max-width: 1650px){
+    .middle{
+        width: 50%;
+    }
+    .right-side{
+        width:25%;
+    }
+    .left-side{
+        width:25%;
+    }
+}
+
 @media screen and (max-width: 1250px){
     .middle{
-        margin-left:10%;
-        width:80%;
+        margin-left:15%;
+        width:70%;
     }
     .panel p{
     display:none;
@@ -88,8 +101,8 @@
         margin-left:0%;
     }
     .middle{
-        margin-left:5%;
-        width:90%;
+        margin-left:10%;
+        width:80%;
     }
 }
 
@@ -102,8 +115,40 @@
         margin-left:0%;
         width:100%;
     } 
-
    
+}
+//about us container
+
+@media screen and (max-width: 768px){
+    .home-aboutus{
+        margin-top:0vh;
+    }
+
+    .aboutus-wrapper{
+        margin-top:-8px;
+        width:100%;
+        //border-bottom: solid rgb(114, 112, 112) 1px;
+       // border-top: solid rgb(114, 112, 112) 1px;
+        margin-bottom:-8px;
+       // float: left;
+        margin-left:0%;
+       // overflow: hidden;
+    
+    }
+    .overlay-header{
+        margin-top:8px;
+        margin-bottom:8px;
+        //height:334px;
+    }
+    .overlay-hidden-border{
+        border:none;
+    }
+    .overlay-border{
+        border:none;
+    }
+//maybe here add nth child, every other overlay black
+    
+
 }
 
 //about us overlay cell sizes 

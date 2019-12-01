@@ -62,7 +62,7 @@
 }
 
 .left-side{
-    width:25%;
+    width:30%;
     float: left;
     transform: translateX(-100%);
     transition: transform 1s ease-in;
@@ -72,7 +72,7 @@
     transform: translateX(0);
 }
 .right-side{
-    width:25%;
+    width:30%;
     float: left;
     transform: translateX(100%);
     transition: transform 1s ease-in;
@@ -81,8 +81,10 @@
     transform: translateX(0);
 }
 .middle{
-    width: 50%;
+    width: 40%;
     float: left;
+    margin-left:auto;
+    margin-right:auto;
 }
 .overlay-about{
     width:90%;

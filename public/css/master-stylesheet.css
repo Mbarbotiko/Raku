@@ -251,7 +251,7 @@ header .hd-ft-divider {
 }
 
 .left-side {
-  width: 25%;
+  width: 30%;
   float: left;
   transform: translateX(-100%);
   transition: transform 1s ease-in;
@@ -262,7 +262,7 @@ header .hd-ft-divider {
 }
 
 .right-side {
-  width: 25%;
+  width: 30%;
   float: left;
   transform: translateX(100%);
   transition: transform 1s ease-in;
@@ -273,8 +273,10 @@ header .hd-ft-divider {
 }
 
 .middle {
-  width: 50%;
+  width: 40%;
   float: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay-about {
@@ -630,10 +632,23 @@ footer .hd-ft-bar {
     font-size: 10pt;
   }
 }
+@media screen and (max-width: 1650px) {
+  .middle {
+    width: 50%;
+  }
+
+  .right-side {
+    width: 25%;
+  }
+
+  .left-side {
+    width: 25%;
+  }
+}
 @media screen and (max-width: 1250px) {
   .middle {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 15%;
+    width: 70%;
   }
 
   .panel p {
@@ -647,8 +662,8 @@ footer .hd-ft-bar {
   }
 
   .middle {
-    margin-left: 5%;
-    width: 90%;
+    margin-left: 10%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -660,6 +675,31 @@ footer .hd-ft-bar {
   .middle {
     margin-left: 0%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-aboutus {
+    margin-top: 0vh;
+  }
+
+  .aboutus-wrapper {
+    margin-top: -8px;
+    width: 100%;
+    margin-bottom: -8px;
+    margin-left: 0%;
+  }
+
+  .overlay-header {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .overlay-hidden-border {
+    border: none;
+  }
+
+  .overlay-border {
+    border: none;
   }
 }
 @media screen and (max-width: 580px) and (orientation: portrait) {
