@@ -1,9 +1,10 @@
 .landing-header{
-    width: 50%;
+    //background-color:yellow;
+    width: 80%;
     position:relative;
     margin:auto;
     text-align: center;
-    height: 80vh;
+    height: 60vh;
     top:25%;
 }
 .landing-headline{
@@ -11,27 +12,24 @@
     font-family: 'Rock Salt', cursive;
     font-size:10em;
     letter-spacing: .25em;
+    margin-left:auto;
+    margin-right:auto;
 }
 .landing-subtext{
     font-size:2em;
     border-top: solid $rkuRed 1px;
     border-bottom:solid $rkuRed 1px;
     line-height:350%;
-    margin-top:15%!important;
-    margin-left:20%;
-    width:60%;
-    
-
+    margin-top:15%;
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    animation-duration: 3s;
 }
 .landing-headline span{
     color:$rkuRed;
 }
 
-.landing-subtext{
-    margin:auto;
-    animation-duration: 3s;
-    //animation-name: shrink;
-}
 
 //shared sections
 %backgroundImg{
@@ -60,7 +58,7 @@
     width: 100vw;
     height:95vh;
 }
-
+//fix later transition background images
 // @keyframes indexLandingTransition {
 //     0%{
 //         background-image: url('../images/group-1.jpg');
