@@ -87,6 +87,10 @@ h5 {
   clear: both;
 }
 
+.hd-bar-loc:hover > .hd-word-loc {
+  color: #eb4a1a;
+}
+
 header .nav-link span {
   font-size: 8pt;
 }
@@ -95,7 +99,7 @@ header .nav-link {
   letter-spacing: 8px;
 }
 
-header .hd-ft-bar span {
+header .hd-ft-divider {
   font-size: 8pt;
   color: #eb4a1a;
   padding-left: 10%;
