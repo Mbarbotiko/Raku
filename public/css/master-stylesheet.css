@@ -480,6 +480,12 @@ footer .hd-ft-bar {
     font-size: 20vw;
   }
 }
+@media screen and (max-width: 880px) and (orientation: landscape) {
+  .landing-headline {
+    top: 15%;
+    font-size: 5em;
+  }
+}
 @media screen and (max-width: 1200px) {
   .landing-subtext {
     width: 55%;
@@ -489,7 +495,7 @@ footer .hd-ft-bar {
   .landing-subtext {
     font-size: 1.75em;
     width: 70%;
-    margin-top: 20%;
+    margin-top: 25%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -525,6 +531,15 @@ footer .hd-ft-bar {
 @media screen and (max-width: 300px) {
   .landing-subtext {
     font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 880px) and (orientation: landscape) {
+  .landing-subtext {
+    font-size: 1.25em;
+    margin-top: 15%;
+    border-top: none;
+    padding-bottom: 12px;
+    line-height: 10%;
   }
 }
 @media screen and (max-width: 1400px) {
