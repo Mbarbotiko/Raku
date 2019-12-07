@@ -486,7 +486,7 @@ footer .hd-ft-bar {
     font-size: 6.5em;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
   .landing-headline {
     top: 5vh;
     font-size: 14vw;
@@ -500,10 +500,15 @@ footer .hd-ft-bar {
     height: 70vh;
   }
 }
-@media screen and (max-width: 880px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
   .landing-headline {
-    top: 15%;
-    font-size: 5em;
+    top: 5vw;
+    font-size: 9vw;
+  }
+}
+@media screen and (max-width: 1025px) and (orientation: portrait) {
+  .landing-headline {
+    top: 8vh;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -515,7 +520,6 @@ footer .hd-ft-bar {
   .landing-subtext {
     font-size: 1.75em;
     width: 70%;
-    margin-top: 25%;
   }
 }
 @media screen and (max-width: 750px) {
@@ -529,29 +533,29 @@ footer .hd-ft-bar {
     padding-bottom: 12px;
     line-height: 10%;
     font-size: 1.5em;
-    margin-top: 45%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .landing-subtext {
     width: 80%;
-    margin-top: 50%;
+    margin-top: 20vh !important;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
   .landing-subtext {
     font-size: 4vw;
     width: 80%;
     margin-top: 15vh;
   }
 }
-@media screen and (max-width: 880px) and (orientation: landscape) {
+@media screen and (max-width: 900px) and (orientation: landscape) {
   .landing-subtext {
-    font-size: 1.25em;
-    margin-top: 15%;
+    font-size: 2.5vw;
+    margin-top: 12vw;
     border-top: none;
     padding-bottom: 12px;
     line-height: 10%;
+  }
+}
+@media screen and (max-width: 1025px) and (orientation: portrait) {
+  .landing-subtext {
+    margin-top: 14vh;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -699,7 +703,7 @@ footer .hd-ft-bar {
     border: none;
   }
 }
-@media screen and (max-width: 580px) and (orientation: portrait) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
   .aboutus-wrapper {
     margin-left: 0;
   }
@@ -709,23 +713,20 @@ footer .hd-ft-bar {
   }
 
   .overlay-about {
-    height: 100vh;
-    width: 100vw;
+    margin-left: 1vw;
+    height: 70vh;
+    width: 98vw;
   }
 
   .overlay-header {
-    height: 100vh;
-    width: 100vw;
+    height: 70vh;
+    width: 98vw;
   }
 
   .overlay-header h5 {
-    font-size: 18pt;
-    top: 33vh;
-    letter-spacing: 14pt;
-  }
-
-  .aboutus-wrapper:nth-of-type(3) h5 {
-    top: 28vh;
+    font-size: 5vw;
+    top: 20vh;
+    letter-spacing: 3vw;
   }
 
   .overlay-header span {

@@ -152,7 +152,7 @@
 }
 
 //about us overlay cell sizes 
-@media screen and (max-width: 580px)and (orientation: portrait){
+@media screen and (max-width: 480px)and (orientation: portrait){
    .aboutus-wrapper{
     margin-left:0;
    }
@@ -160,20 +160,18 @@
     margin-left:0%;
    }
    .overlay-about{
-       height:100vh;
-       width:100vw;
+       margin-left:1vw;
+       height:70vh;
+       width:98vw;
    }
    .overlay-header{
-       height:100vh;
-       width:100vw;
+       height:70vh;
+       width:98vw;
    }
    .overlay-header h5{
-    font-size: 18pt;
-    top:33vh;
-    letter-spacing: 14pt;
-    }
-    .aboutus-wrapper:nth-of-type(3) h5{
-    top:28vh;
+    font-size:5vw;
+    top:20vh;
+    letter-spacing:3vw;;
     }
    .overlay-header span{
     display:block;
