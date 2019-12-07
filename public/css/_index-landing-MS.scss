@@ -29,8 +29,16 @@
 }
 @media screen and (max-width: 475px){
     .landing-headline{
-        font-size:20vw;  
+        top:5vh;
+        font-size:14vw;  
     }
+    .landing-image{
+        height:70vh;
+    }
+    .landing-image.overlay{
+        height:70vh;
+    }
+
 }
 @media screen and (max-width: 880px) and (orientation:landscape){
     .landing-headline{
@@ -73,25 +81,15 @@
         margin-top:50%;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 475px){
     .landing-subtext{
-        font-size:1.25em;
-        width:85%;
-        margin-top:55%;
+        font-size:4vw; 
+        width:80%;
+        margin-top:15vh;
     }
 }
-@media screen and (max-width: 400px){
-    .landing-subtext{
-        font-size:1.25em;
-        width:100%;
-        margin-top:25vh;
-    }
-}
-@media screen and (max-width: 300px){
-    .landing-subtext{
-        font-size:.75em;
-    }
-}
+
+
 @media screen and (max-width: 880px) and (orientation:landscape){
     .landing-subtext{
         font-size:1.25em;
