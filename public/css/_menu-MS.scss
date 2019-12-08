@@ -1,12 +1,30 @@
+//section container
+@media screen and (max-width: 1500px){
+   .menu-items{
+      padding-top:15vw;
+  }
+}
+@media screen and (max-width: 1000px){
+   .menu-items{
+      padding-top:20vw;
+  }
+}
+@media screen and (max-width: 900px){
+   .menu-items{
+      padding-top:25vw;
+  }
+}
 //menu buttons
 @media screen and (max-width: 990px){
    .menu-buttons div{
       top:8vh;
    }
 }
+
+//switch to hendheld sizes for menu buttons
 @media screen and (max-width: 865px){
    #m-lunch, #m-dinner, #m-happyhour{
-      margin-bottom:5%;
+      margin-bottom:5vw;
    }
    #m-dinner{
       margin-bottom:500px;
@@ -18,12 +36,17 @@
    .menu-buttons div{
       top:4vh;
       width:100%;
-     background-color:rgb(85, 84, 84);
       margin-left:0%;
       margin-right:0%;
       margin-bottom:1%;
       margin-top:0%;
       color:white;
+   }
+   .menu-buttons h3{
+      width:60vw;
+      border:solid 1px white;
+      margin-left:20vw!important;
+     
    }
    #happy-hour-button{
       border-right:none;
@@ -39,74 +62,62 @@
 }
 
 @media screen and (max-width: 768px)and(orientation: portrait){
-   #m-lunch, #m-dinner, #m-happyhour{
-      margin-bottom:10%;
+   .menu-buttons h4{
+      font-size:5vw;
+      margin-top:8%;
+      margin-bottom:8%;
+      border-bottom:solid .25px $rkuRed;
+      width:30vw;
+      margin-left:35vw!important;  
    }
    .menu-buttons h3{
-      font-size:1.5em;
-      background-color:gray;
-      color:white;  
+      width:90vw;
+      margin-left:5vw!important;
    }
-   .menu-buttons div h3{
-      line-height: 3em;
-   }
-   .menu-buttons{
-      margin-bottom:10%;
-    }
-}
-
-@media screen and (max-width: 500px)and(orientation: portrait){
-   .menu-buttons h3{
-      font-size:1em;
-    
-   }
-   .menu-buttons div h3{
-      line-height: 2em;
-      }
-}
-
-
-@media screen and (max-width: 768px)and(orientation: portrait){
-   .menu-items h4{
-      margin-top:10%;
-      background-color:orange;
-   }
-   .menu-items div{
-      width:95%;
-      margin:auto;
-      font-size:1.5em;
-   }
-}
-
-@media screen and (max-width: 500px)and(orientation: portrait){
-   .menu-items h4{
-      margin-top:10%;
-      background-color:orange;
-   }
-   .menu-items div{
-      font-size:.9em;
-   }
-}
-
-
-//phones and tablets landscape:
-@media only screen 
-//add other max widths here and change button sizing, letters too big etc
-  and (min-width: 320px) 
-  and (max-width: 812px) 
-  and (orientation: landscape) { 
-   #m-lunch, #m-dinner, #m-happyhour{
-      margin-bottom:10%;
-   }
-   .menu-buttons h3{
-      font-size:1.5em;
-      background-color:gray;
-      color:white;  
-   }
-   .menu-buttons div h3{
-      line-height: 3em;
-   }
-   .menu-buttons{
-      margin-bottom:10%;
-    }
+   .menu-buttons span{
+      color:$rkuRed;
+      padding:5px;
   }
+}
+
+//menu items headers
+
+@media screen and (max-width: 480px)and(orientation: portrait){
+
+   .menu-buttons p{
+      font-size:.85em;
+   }
+   .menu-buttons h3{
+      font-size:5vw;
+   }
+
+}
+
+//view PDF button
+
+@media screen and (max-width: 1200px){
+   .pdf{
+      width:30vw;
+      margin-left:35vw;
+  }
+}
+
+@media screen and (max-width: 865px){
+   .pdf{
+      width:50vw;
+      margin-left:25vw;
+      padding-top:15vw;
+  }
+}
+@media screen and (max-width: 650px){
+   .pdf{
+      padding-top:25vw;
+  }
+}
+@media screen and (max-width: 550px){
+   .pdf{
+      width:90vw;
+      margin-left:5vw;
+      padding-top:35vw;
+  }
+}

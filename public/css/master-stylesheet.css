@@ -980,10 +980,6 @@ iframe {
   line-height: 200%;
 }
 
-.menu-buttons {
-  height: 35vh;
-}
-
 .menu-buttons :first-child {
   margin-left: 3%;
 }
@@ -1012,6 +1008,7 @@ iframe {
 }
 
 .menu-items {
+  padding-top: 10vw;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -1258,6 +1255,21 @@ a[href$=none] {
     font-size: 10vw;
   }
 }
+@media screen and (max-width: 1500px) {
+  .menu-items {
+    padding-top: 15vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu-items {
+    padding-top: 20vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu-items {
+    padding-top: 25vw;
+  }
+}
 @media screen and (max-width: 990px) {
   .menu-buttons div {
     top: 8vh;
@@ -1265,7 +1277,7 @@ a[href$=none] {
 }
 @media screen and (max-width: 865px) {
   #m-lunch, #m-dinner, #m-happyhour {
-    margin-bottom: 5%;
+    margin-bottom: 5vw;
   }
 
   #m-dinner {
@@ -1279,12 +1291,17 @@ a[href$=none] {
   .menu-buttons div {
     top: 4vh;
     width: 100%;
-    background-color: #555454;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 1%;
     margin-top: 0%;
     color: white;
+  }
+
+  .menu-buttons h3 {
+    width: 60vw;
+    border: solid 1px white;
+    margin-left: 20vw !important;
   }
 
   #happy-hour-button {
@@ -1302,72 +1319,57 @@ a[href$=none] {
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  #m-lunch, #m-dinner, #m-happyhour {
-    margin-bottom: 10%;
+  .menu-buttons h4 {
+    font-size: 5vw;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-bottom: solid 0.25px #eb4a1a;
+    width: 30vw;
+    margin-left: 35vw !important;
   }
 
   .menu-buttons h3 {
-    font-size: 1.5em;
-    background-color: gray;
-    color: white;
+    width: 90vw;
+    margin-left: 5vw !important;
   }
 
-  .menu-buttons div h3 {
-    line-height: 3em;
-  }
-
-  .menu-buttons {
-    margin-bottom: 10%;
+  .menu-buttons span {
+    color: #eb4a1a;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 500px) and (orientation: portrait) {
-  .menu-buttons h3 {
-    font-size: 1em;
-  }
-
-  .menu-buttons div h3 {
-    line-height: 2em;
-  }
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  .menu-items h4 {
-    margin-top: 10%;
-    background-color: orange;
-  }
-
-  .menu-items div {
-    width: 95%;
-    margin: auto;
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 500px) and (orientation: portrait) {
-  .menu-items h4 {
-    margin-top: 10%;
-    background-color: orange;
-  }
-
-  .menu-items div {
-    font-size: 0.9em;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
-  #m-lunch, #m-dinner, #m-happyhour {
-    margin-bottom: 10%;
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .menu-buttons p {
+    font-size: 0.85em;
   }
 
   .menu-buttons h3 {
-    font-size: 1.5em;
-    background-color: gray;
-    color: white;
+    font-size: 5vw;
   }
-
-  .menu-buttons div h3 {
-    line-height: 3em;
+}
+@media screen and (max-width: 1200px) {
+  .pdf {
+    width: 30vw;
+    margin-left: 35vw;
   }
-
-  .menu-buttons {
-    margin-bottom: 10%;
+}
+@media screen and (max-width: 865px) {
+  .pdf {
+    width: 50vw;
+    margin-left: 25vw;
+    padding-top: 15vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .pdf {
+    padding-top: 25vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pdf {
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 35vw;
   }
 }
 
