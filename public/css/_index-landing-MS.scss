@@ -25,12 +25,14 @@
     .landing-headline{
         top:25%;
         font-size:6.5em;
+        margin-left:4vw; 
     }
 }
 @media screen and (max-width: 480px){
     .landing-headline{
         top:5vh;
-        font-size:14vw;  
+        font-size:20vw;
+        
     }
     .landing-image{
         height:100vh;
@@ -81,7 +83,7 @@
         line-height: 10%;
         font-size:1.5em;
         width:80%;
-        margin-top:20vh!important;
+        margin-top:25vh!important;
     }
 }
 
@@ -89,7 +91,7 @@
     .landing-subtext{
         font-size:4vw; 
         width:80%;
-        margin-top:15vh;
+        margin-top:20vh;
     }
 }
 

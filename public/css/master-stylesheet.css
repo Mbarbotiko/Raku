@@ -195,7 +195,6 @@ header .hd-ft-divider {
 .home-aboutus {
   width: 100%;
   text-align: center;
-  margin-top: 10vh;
 }
 
 .home-aboutus h2 {
@@ -484,12 +483,13 @@ footer .hd-ft-bar {
   .landing-headline {
     top: 25%;
     font-size: 6.5em;
+    margin-left: 4vw;
   }
 }
 @media screen and (max-width: 480px) {
   .landing-headline {
     top: 5vh;
-    font-size: 14vw;
+    font-size: 20vw;
   }
 
   .landing-image {
@@ -534,14 +534,14 @@ footer .hd-ft-bar {
     line-height: 10%;
     font-size: 1.5em;
     width: 80%;
-    margin-top: 20vh !important;
+    margin-top: 25vh !important;
   }
 }
 @media screen and (max-width: 480px) {
   .landing-subtext {
     font-size: 4vw;
     width: 80%;
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 }
 @media screen and (max-width: 900px) and (orientation: landscape) {
@@ -669,8 +669,16 @@ footer .hd-ft-bar {
 }
 @media screen and (max-width: 768px) {
   .aboutus-wrapper {
-    border-bottom: none;
     border-top: none;
+  }
+
+  .aboutus-wrapper:nth-of-type(4) {
+    border-bottom: none;
+    margin-bottom: -8px;
+  }
+
+  .aboutus-wrapper:nth-of-type(1) {
+    margin-top: -8px;
   }
 
   .middle {
@@ -684,10 +692,11 @@ footer .hd-ft-bar {
   }
 
   .aboutus-wrapper {
-    margin-top: -8px;
+    margin-top: 0;
     width: 100%;
-    margin-bottom: -8px;
-    margin-left: 0%;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-bottom: none;
   }
 
   .overlay-header {
@@ -706,6 +715,11 @@ footer .hd-ft-bar {
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .aboutus-wrapper {
     margin-left: 0;
+    padding-top: 5vw;
+  }
+
+  .aboutus-wrapper:nth-of-type(4) {
+    margin-bottom: 5vw;
   }
 
   .middle {
@@ -713,26 +727,26 @@ footer .hd-ft-bar {
   }
 
   .overlay-about {
-    margin-left: 1vw;
-    height: 70vh;
-    width: 98vw;
+    margin-left: 5vw;
+    height: 65vh;
+    width: 90vw;
   }
 
   .overlay-header {
-    height: 70vh;
-    width: 98vw;
+    height: 65vh;
+    width: 90vw;
   }
 
   .overlay-header h5 {
     font-size: 5vw;
     top: 20vh;
-    letter-spacing: 3vw;
+    letter-spacing: 2vw;
   }
 
   .overlay-header span {
     display: block;
-    padding-top: 3em;
-    padding-top: 3em;
+    padding-top: 1.25em;
+    padding-top: 1.25em;
     margin: 0;
   }
 

@@ -108,9 +108,15 @@
 
 @media screen and (max-width: 768px){
     .aboutus-wrapper{
-        border-bottom: none;
         border-top: none;
     }
+    .aboutus-wrapper:nth-of-type(4){
+        border-bottom: none;
+        margin-bottom:-8px;
+     }
+     .aboutus-wrapper:nth-of-type(1){
+        margin-top:-8px;
+     }
     .middle{
         margin-left:0%;
         width:100%;
@@ -125,20 +131,15 @@
     }
 
     .aboutus-wrapper{
-        margin-top:-8px;
+        margin-top:0;
         width:100%;
-        //border-bottom: solid rgb(114, 112, 112) 1px;
-       // border-top: solid rgb(114, 112, 112) 1px;
-        margin-bottom:-8px;
-       // float: left;
-        margin-left:0%;
-       // overflow: hidden;
-    
+        margin-bottom:0;
+        margin-left:0;  
+        border-bottom: none;
     }
     .overlay-header{
         margin-top:8px;
         margin-bottom:8px;
-        //height:334px;
     }
     .overlay-hidden-border{
         border:none;
@@ -155,28 +156,33 @@
 @media screen and (max-width: 480px)and (orientation: portrait){
    .aboutus-wrapper{
     margin-left:0;
+    padding-top:5vw;;
    }
+   .aboutus-wrapper:nth-of-type(4){
+    margin-bottom:5vw;
+ }
    .middle{
     margin-left:0%;
    }
    .overlay-about{
-       margin-left:1vw;
-       height:70vh;
-       width:98vw;
+       margin-left:5vw;
+       height:65vh;
+       width:90vw;
    }
    .overlay-header{
-       height:70vh;
-       width:98vw;
+       height:65vh;
+       width:90vw;
    }
    .overlay-header h5{
     font-size:5vw;
     top:20vh;
-    letter-spacing:3vw;;
+    letter-spacing:2vw;;
     }
+    //span added to create space between words so they are pushed onto a new line and separated
    .overlay-header span{
-    display:block;
-    padding-top:3em;
-     padding-top:3em;
+     display:block;
+     padding-top:1.25em;
+     padding-top:1.25em;
      margin:0;
     }
     .overlay-border, .overlay-hidden-border{
