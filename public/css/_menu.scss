@@ -1,4 +1,3 @@
-
 .menu-buttons :first-child{
     margin-left:3%;
 }
@@ -10,20 +9,17 @@
     margin:1%;
     text-align: center;
 }
-
 .menu-buttons div h3{
     line-height: 2em;
-    }
+}
 #happy-hour-button{
     border-right:solid 1px $rkuRed;
     border-left:solid 1px $rkuRed;
 }
-
 .menu-buttons div h3:hover{
    color:$rkuRed;
    cursor: pointer;
 }
-
 .menu-items{
     padding-top:10vw;
     text-align: center;
@@ -33,7 +29,6 @@
     color:$rkuRed;
     margin:10px;
 }
-
 .menu-items h4{
    margin-top:2%;
    margin-bottom:2%;
@@ -41,13 +36,11 @@
    line-height: 80%;
    display:inline-block; 
 }
-
 .pdf{
     @extend %buttons;
-   // text-align: center;
     margin-bottom: 5%;
 }
-
 .pdf:hover{
     color:$rkuRed;
 }
+

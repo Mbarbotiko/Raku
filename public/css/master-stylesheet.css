@@ -1242,7 +1242,7 @@ a[href$=none] {
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .subpage-content {
-    top: 60vh;
+    top: 50vh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1277,15 +1277,19 @@ a[href$=none] {
 }
 @media screen and (max-width: 865px) {
   #m-lunch, #m-dinner, #m-happyhour {
-    margin-bottom: 5vw;
+    padding-bottom: 10vw;
   }
 
   #m-dinner {
-    margin-bottom: 500px;
+    margin-bottom: 10vw;
   }
 
   .menu-buttons :first-child {
     margin-left: 0%;
+  }
+
+  #dinner-button {
+    margin-bottom: 20vw;
   }
 
   .menu-buttons div {
@@ -1340,7 +1344,7 @@ a[href$=none] {
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .menu-buttons p {
-    font-size: 0.85em;
+    font-size: 4vw;
   }
 
   .menu-buttons h3 {
@@ -1357,19 +1361,20 @@ a[href$=none] {
   .pdf {
     width: 50vw;
     margin-left: 25vw;
-    padding-top: 15vw;
+    margin-top: 20vw;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .pdf {
-    padding-top: 25vw;
+    margin-top: 30vw;
   }
 }
 @media screen and (max-width: 550px) {
   .pdf {
-    width: 90vw;
-    margin-left: 5vw;
-    padding-top: 35vw;
+    width: 70vw;
+    margin-left: 15vw;
+    font-size: 3.5vw;
+    margin-top: 40vw;
   }
 }
 
