@@ -59,25 +59,29 @@
       width:80%;
       margin:auto;
    }
-
-}
-@media screen and (max-width: 768px)and(orientation: portrait){
    .menu-buttons h4{
-      font-size:5vw;
-      margin-top:8%;
-      margin-bottom:8%;
       border-bottom:solid .25px $rkuRed;
       width:30vw;
-      margin-left:35vw!important;  
-   }
-   .menu-buttons h3{
-      width:90vw;
-      margin-left:5vw!important;
+      margin-left:35vw!important; 
+      margin-top:8%;
+      margin-bottom:8%; 
    }
    .menu-buttons span{
       color:$rkuRed;
       padding:5px;
   }
+
+}
+@media screen and (max-width: 768px)and(orientation: portrait){
+   .menu-buttons h4{
+      font-size:5vw;
+ 
+   }
+   .menu-buttons h3{
+      width:90vw;
+      margin-left:5vw!important;
+   }
+
 }
 //menu items headers
 @media screen and (max-width: 480px)and(orientation: portrait){
