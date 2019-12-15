@@ -980,6 +980,12 @@ iframe {
   line-height: 200%;
 }
 
+.mapimage {
+  height: 100%;
+  width: 100%;
+  background: url("../images/slpmap.jpg");
+}
+
 .menu-buttons :first-child {
   margin-left: 3%;
 }
