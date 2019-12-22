@@ -909,33 +909,16 @@ footer .hd-ft-bar {
   text-align: center;
 }
 
-.location-header {
-  margin-top: 2%;
-}
-
 .location li {
   display: inline;
-}
-
-.location-wrapper:nth-child(odd) {
-  background-color: white;
-}
-
-.location-wrapper:nth-child(even) {
-  background-color: #3c3c3c;
 }
 
 .location-wrapper {
   width: 100%;
   padding-top: 50px;
-  height: 90vh;
 }
 
-.slp {
-  color: black;
-}
-
-.location ul :nth-child(2n+2) {
+.location ul:first-of-type :nth-child(2n+2) {
   color: #eb4a1a;
 }
 
@@ -947,28 +930,14 @@ footer .hd-ft-bar {
 
 #map-slp, #map-edina {
   width: 80%;
-  height: 40vh;
+  height: 50vh;
   margin-left: 10%;
-}
-
-#map-slp {
-  border-top: solid #3c3c3c 1px;
-  border-bottom: solid #3c3c3c 1px;
-}
-
-#map-edina {
-  border-top: solid white 1px;
-  border-bottom: solid white 1px;
+  margin-bottom: 3vw;
 }
 
 .edina, .slp {
   width: 80%;
   margin-left: 10%;
-}
-
-iframe {
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .location-header h3 {
@@ -982,8 +951,22 @@ iframe {
 
 .mapimage {
   height: 100%;
-  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.mapimage:hover {
+  cursor: pointer;
+}
+
+#map-slp .mapimage {
   background: url("../images/slpmap.jpg");
+  background-position-x: 35%;
+  background-position-y: 50%;
+}
+
+#map-edina .mapimage {
+  background: url("../images/edinamap.jpg");
+  background-position: center;
 }
 
 .menu-buttons :first-child {
