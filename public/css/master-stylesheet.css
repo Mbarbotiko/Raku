@@ -918,20 +918,26 @@ footer .hd-ft-bar {
   padding-top: 50px;
 }
 
+.location ul {
+  width: 50%;
+  margin-left: 25%;
+  min-height: 100px;
+  letter-spacing: 0.45em;
+  line-height: 2.5em;
+}
+
 .location ul:first-of-type :nth-child(2n+2) {
   color: #eb4a1a;
 }
 
-.location ul {
-  width: 60%;
-  margin-left: 20%;
-  min-height: 100px;
+.location ul:nth-of-type(2) {
+  padding-top: 5%;
 }
 
 #map-slp, #map-edina {
-  width: 80%;
-  height: 50vh;
-  margin-left: 10%;
+  width: 70%;
+  height: 45vh;
+  margin-left: 15%;
   margin-bottom: 3vw;
 }
 
@@ -940,13 +946,18 @@ footer .hd-ft-bar {
   margin-left: 10%;
 }
 
+.edina {
+  border-top: solid 1px #eb4a1a;
+  padding-top: 100px;
+}
+
 .location-header h3 {
   width: 45%;
-  border-bottom: solid 1px #eb4a1a;
   margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
   line-height: 200%;
+  letter-spacing: 0.55em;
 }
 
 .mapimage {
