@@ -2,27 +2,20 @@
 @media screen and (max-width: 1200px){
     .delivery-services img{
         width:70vw;
-
     }
 }
 @media screen and (max-width: 900px){
     .delivery-services img{
         width:90vw;
-
     }
 }
-
 @media screen and (max-width: 768px)and(orientation: portrait)
 {
-
     #bs, #pm, #ue, #dd{
         height:50vh;
-
     }
     #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
-
         height:49.75vh;
-
     }
     [data-is=ubereats]{
         content: url('../images/test.gif');
@@ -36,66 +29,62 @@
      [data-is=doordash]{
         content: url('../images/test.gif');
      }
-
-     
     .delivery-services img{
-        //background-color:red;
         width:40vw;
         height:50vw;
         top:-55vw;
-
     }
-
 }
 @media screen and (max-width: 650px)and(orientation: portrait)
 {
-     
     .delivery-services img{
-        //background-color:red;
         width:45vw;
         height:60vw;
         top:-65vw;
-
     }
 }
 
 @media screen and (max-width: 550px)and(orientation: portrait)
 {
-     
     .delivery-services img{
-        //background-color:red;
         width:45vw;
         height:60vw;
         top:-75vw;
-
     }
 }
 @media screen and (max-width: 450px)and(orientation: portrait)
 {
-     
     .delivery-services img{
-        //background-color:red;
         width:45vw;
         height:60vw;
         top:-80vw;
-
     }
 }
 @media screen and (max-width: 319px)and(orientation: portrait)
 {
-     
     .delivery-services img{
-        //background-color:red;
         width:45vw;
         height:60vw;
         top:-100vw;
-
     }
 }
-
-
 @media screen and (max-width: 900px)and(orientation: landscape){
     .delivery-services img{
         padding:8%
+    }
+}
+//Modal
+@media screen and (max-width: 768px)and(orientation: portrait)
+{
+    .closeButton{
+        margin-top:10vw;
+        font-size:3vw;
+    }
+}
+@media screen and (max-width: 900px)and(orientation: landscape)
+{
+    .closeButton{
+        margin-top:0;
+        font-size:2vw;
     }
 }

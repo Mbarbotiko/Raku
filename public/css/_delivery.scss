@@ -1,7 +1,6 @@
 .delivery-services{
     text-align: center;
 }
-
 .delivery-services img{
     margin-left:auto;
     margin-right:auto;
@@ -15,19 +14,15 @@
 .delivery-services img:hover{
     cursor: pointer;
 }
-
 #bs{
     background-image:url('../images/menu-banner2.jpg');
 }
-
 #pm{
     background-image:url('../images/possiblebanner.jpg');
 }
-
 #ue{
     background-image:url('../images/scrollthru5.jpg');
 }
-
 #dd{
     background-image:url('../images/scrollthru4.jpg');
 }
@@ -45,17 +40,14 @@
     top:0;
     display: table;
     width:100%;
-
 }
 
 #pm .delivery-overlay, #ue .delivery-overlay{
     background:white;
-
 }
 
 #bs .delivery-overlay, #dd .delivery-overlay{
     background:black;
-
 }
 
 //modal
@@ -65,28 +57,22 @@
 .modal-body{
     display: flex;
     justify-content: center;
-    background-color: red;
 }
 
 .modal-dialog,
 .modal-content {
     color:white;
     background-color: transparent!important;
-
- 
 }
 .modal-slp, 
 .modal-edina{
     text-align: center;
     float: left;
     width:50%;
-    background-color:yellow;
 }
-
 .modal-slp p, .modal-edina p{
     position: relative;
     top:-55px;
-    background-color:green;
     letter-spacing:.5em;
     font-size:.75em;
 }
@@ -95,15 +81,15 @@ a[href$=none]{
     pointer-events: none;
 }
 .unavailable{
-   display: none;
+    display: none;
     position: absolute;
     top:10px;
+    letter-spacing:none!important;
 }
 
 .icon-background6 {
     color: $rkuRed;
 }
-
 .modal h3{
     font-family: 'Rock Salt', cursive;
     position:relative;
@@ -117,6 +103,7 @@ a[href$=none]{
 }
 .closeButton{
     @extend %buttons;
+    margin-top:10vw;
 }
 .closeButton:hover{
     cursor: pointer;

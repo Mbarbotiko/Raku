@@ -1128,7 +1128,6 @@ footer .hd-ft-bar {
 .modal-body {
   display: flex;
   justify-content: center;
-  background-color: red;
 }
 
 .modal-dialog,
@@ -1142,13 +1141,11 @@ footer .hd-ft-bar {
   text-align: center;
   float: left;
   width: 50%;
-  background-color: yellow;
 }
 
 .modal-slp p, .modal-edina p {
   position: relative;
   top: -55px;
-  background-color: green;
   letter-spacing: 0.5em;
   font-size: 0.75em;
 }
@@ -1162,6 +1159,7 @@ a[href$=none] {
   display: none;
   position: absolute;
   top: 10px;
+  letter-spacing: none !important;
 }
 
 .icon-background6 {
@@ -1179,6 +1177,10 @@ a[href$=none] {
   font-family: "Rock Salt", cursive;
   float: left;
   margin-top: 50px;
+}
+
+.closeButton {
+  margin-top: 10vw;
 }
 
 .closeButton:hover {
@@ -1506,6 +1508,18 @@ a[href$=none] {
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .delivery-services img {
     padding: 8%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .closeButton {
+    margin-top: 10vw;
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .closeButton {
+    margin-top: 0;
+    font-size: 2vw;
   }
 }
 
