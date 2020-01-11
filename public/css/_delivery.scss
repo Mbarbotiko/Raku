@@ -1,6 +1,3 @@
-.content-container{
-    background-color:yellow;
-}
 .delivery-services{
     text-align: center;
 }
@@ -8,10 +5,9 @@
 .delivery-services img{
     margin-left:auto;
     margin-right:auto;
-    margin-top:auto;
-    width:50%;
+    width:50vw;
     padding:2%;
-    height:250px;
+    height:100%;
     position: relative;
     top:-250px;
     display:block;

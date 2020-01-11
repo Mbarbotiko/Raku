@@ -1061,10 +1061,6 @@ footer .hd-ft-bar {
   color: white;
 }
 
-.content-container {
-  background-color: yellow;
-}
-
 .delivery-services {
   text-align: center;
 }
@@ -1072,10 +1068,9 @@ footer .hd-ft-bar {
 .delivery-services img {
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  width: 50%;
+  width: 50vw;
   padding: 2%;
-  height: 250px;
+  height: 100%;
   position: relative;
   top: -250px;
   display: block;
@@ -1447,6 +1442,80 @@ a[href$=none] {
     margin-left: 15vw;
     font-size: 3.5vw;
     margin-top: 40vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .delivery-services img {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .delivery-services img {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  #bs, #pm, #ue, #dd {
+    height: 50vh;
+  }
+
+  #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
+    height: 49.75vh;
+  }
+
+  [data-is=ubereats] {
+    content: url("../images/test.gif");
+  }
+
+  [data-is=bitesquad] {
+    content: url("../images/test.gif");
+  }
+
+  [data-is=postmates] {
+    content: url("../images/test.gif");
+  }
+
+  [data-is=doordash] {
+    content: url("../images/test.gif");
+  }
+
+  .delivery-services img {
+    width: 40vw;
+    height: 50vw;
+    top: -55vw;
+  }
+}
+@media screen and (max-width: 650px) and (orientation: portrait) {
+  .delivery-services img {
+    width: 45vw;
+    height: 60vw;
+    top: -65vw;
+  }
+}
+@media screen and (max-width: 550px) and (orientation: portrait) {
+  .delivery-services img {
+    width: 45vw;
+    height: 60vw;
+    top: -75vw;
+  }
+}
+@media screen and (max-width: 450px) and (orientation: portrait) {
+  .delivery-services img {
+    width: 45vw;
+    height: 60vw;
+    top: -80vw;
+  }
+}
+@media screen and (max-width: 319px) and (orientation: portrait) {
+  .delivery-services img {
+    width: 45vw;
+    height: 60vw;
+    top: -100vw;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .delivery-services img {
+    padding: 8%;
   }
 }
 
