@@ -58,48 +58,39 @@
 
 }
 
-
-
-
 //modal
 .modal{
     background: rgba(0, 0, 0, 0.9); 
 }
-
 .modal-body{
     display: flex;
     justify-content: center;
-
+    background-color: red;
 }
 
-.modal-dialog{
-    max-width: 60%;
-    height:700px;
-}
 .modal-dialog,
 .modal-content {
     color:white;
     background-color: transparent!important;
-    height: 40%;
-    padding:0px!important;
-    border:none!important;
+
  
 }
 .modal-slp, 
 .modal-edina{
     text-align: center;
-    height:150px;
     float: left;
-    width:35%;
+    width:50%;
+    background-color:yellow;
 }
 
 .modal-slp p, .modal-edina p{
-    width:50%;
-    margin-left:25%;
     position: relative;
     top:-55px;
+    background-color:green;
+    letter-spacing:.5em;
+    font-size:.75em;
 }
-a[href$='none']{
+a[href$=none]{
     opacity:.2;
     pointer-events: none;
 }
@@ -110,7 +101,6 @@ a[href$='none']{
 }
 
 .icon-background6 {
-    width:100px;
     color: $rkuRed;
 }
 
@@ -122,10 +112,7 @@ a[href$='none']{
 }
 .mid-modal{
     font-family: 'Rock Salt', cursive;
-    width:10%;
     float: left;
-    text-align: center;
-    height:150px;
     margin-top:50px;
 }
 .closeButton{

@@ -1128,35 +1128,29 @@ footer .hd-ft-bar {
 .modal-body {
   display: flex;
   justify-content: center;
-}
-
-.modal-dialog {
-  max-width: 60%;
-  height: 700px;
+  background-color: red;
 }
 
 .modal-dialog,
 .modal-content {
   color: white;
   background-color: transparent !important;
-  height: 40%;
-  padding: 0px !important;
-  border: none !important;
 }
 
 .modal-slp,
 .modal-edina {
   text-align: center;
-  height: 150px;
   float: left;
-  width: 35%;
+  width: 50%;
+  background-color: yellow;
 }
 
 .modal-slp p, .modal-edina p {
-  width: 50%;
-  margin-left: 25%;
   position: relative;
   top: -55px;
+  background-color: green;
+  letter-spacing: 0.5em;
+  font-size: 0.75em;
 }
 
 a[href$=none] {
@@ -1171,7 +1165,6 @@ a[href$=none] {
 }
 
 .icon-background6 {
-  width: 100px;
   color: #eb4a1a;
 }
 
@@ -1184,10 +1177,7 @@ a[href$=none] {
 
 .mid-modal {
   font-family: "Rock Salt", cursive;
-  width: 10%;
   float: left;
-  text-align: center;
-  height: 150px;
   margin-top: 50px;
 }
 
