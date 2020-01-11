@@ -3,18 +3,16 @@
     .location-wrapper{
         width:99%;
         margin-left:auto;
-    margin-right:auto;
+        margin-right:auto;
     }
 }
-
 @media screen and (max-width: 900px)and(orientation: portrait){
     .location-wrapper{
         width:99%;
         margin-left:auto;
-    margin-right:auto;
+        margin-right:auto;
     }
-    }
-
+}
 //Map header
 @media screen and (max-width: 768px){
     .location-wrapper h3{
@@ -26,67 +24,54 @@
         font-size:5vw;
     }
 }
-
 @media screen and (max-width: 900px)and(orientation: landscape){
     .location-wrapper h3{
         font-size:4vw;
     }
 }
-
 //Map wrapper
 @media screen and (max-width: 1450px){
     #map-slp, #map-edina{
         width:90%;
     }
 }
-
 @media screen and (max-width: 1150px){
     #map-slp, #map-edina{
         width:98%;
         height:45vh;
     }
 }
-
 @media screen and (max-width: 1150px)and(orientation:portrait){
     #map-slp, #map-edina{
         width:70%;
         height:65vh;
     }
 }
-
 @media screen and (max-width: 900px)and(orientation:portrait){
     #map-slp, #map-edina{
         width:90%;
         height:65vh;
     }
-
     #map-slp .mapimage{
         background-position-x: 43%; 
         background-position-y: 35%; 
     }
-
 }
-
 @media screen and (max-width: 900px)and(orientation: landscape){
     #map-slp, #map-edina{
         width:98%;
         height:85vh;
     }
-
     #map-slp .mapimage{
         background-position-x: 44%; 
         background-position-y: 45%; 
     }
-
  }
-
 //Location hours
 @media screen and (max-width: 768px){
     .location ul{
         font-size:2vw;
-    }
-
-    
+    }   
 }
 @media screen and (max-width: 568px){
     .location ul{
@@ -98,10 +83,8 @@
         font-size:3vw;
     }
 }
-
 @media screen and (max-width: 900px)and(orientation: landscape){
     .location ul{
         font-size:2vw;
     }
-
 }
