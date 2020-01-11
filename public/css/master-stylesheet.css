@@ -915,7 +915,6 @@ footer .hd-ft-bar {
 
 .location-wrapper {
   padding-top: 50px;
-  background-color: orange;
 }
 
 #map-slp, #map-edina {
@@ -924,16 +923,6 @@ footer .hd-ft-bar {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3vw;
-  background-color: blue;
-}
-
-.edina, .slp {
-  background-color: purple;
-}
-
-.edina {
-  border-top: solid 1px #eb4a1a;
-  padding-top: 100px;
 }
 
 .location-wrapper h3 {
@@ -942,7 +931,6 @@ footer .hd-ft-bar {
   margin-right: auto;
   line-height: 200%;
   letter-spacing: 0.55em;
-  background-color: red;
 }
 
 .mapimage {
@@ -969,7 +957,6 @@ footer .hd-ft-bar {
   min-height: 100px;
   letter-spacing: 0.45em;
   line-height: 2.5em;
-  background-color: green;
 }
 
 .location ul:first-of-type :nth-child(2n+2) {
@@ -978,6 +965,13 @@ footer .hd-ft-bar {
 
 .location ul:nth-of-type(2) {
   padding-top: 5%;
+}
+
+.line-break {
+  width: 90%;
+  border-bottom: #eb4a1a solid 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-buttons :first-child {
@@ -1255,6 +1249,20 @@ a[href$=none] {
     font-size: 10vw;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .location-wrapper {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .location-wrapper {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .location-wrapper h3 {
     font-size: 4vw;
@@ -1263,6 +1271,11 @@ a[href$=none] {
 @media screen and (max-width: 568px) {
   .location-wrapper h3 {
     font-size: 5vw;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .location-wrapper h3 {
+    font-size: 4vw;
   }
 }
 @media screen and (max-width: 1450px) {
@@ -1281,10 +1294,6 @@ a[href$=none] {
     width: 70%;
     height: 65vh;
   }
-
-  .edina, .slp {
-    background-color: yellow;
-  }
 }
 @media screen and (max-width: 900px) and (orientation: portrait) {
   #map-slp, #map-edina {
@@ -1295,6 +1304,37 @@ a[href$=none] {
   #map-slp .mapimage {
     background-position-x: 43%;
     background-position-y: 35%;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  #map-slp, #map-edina {
+    width: 98%;
+    height: 85vh;
+  }
+
+  #map-slp .mapimage {
+    background-position-x: 44%;
+    background-position-y: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location ul {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 568px) {
+  .location ul {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .location ul {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .location ul {
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 1500px) {
