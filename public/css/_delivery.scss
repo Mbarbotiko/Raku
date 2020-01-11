@@ -1,80 +1,67 @@
+.content-container{
+    background-color:yellow;
+}
 .delivery-services{
     text-align: center;
 }
 
 .delivery-services img{
-    display:block;
-    margin-left:25%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
     width:50%;
     padding:2%;
-    min-height:150px;
-    z-index: 1;
+    height:250px;
     position: relative;
-    top:-255px;
+    top:-250px;
+    display:block;
 }
 .delivery-services img:hover{
     cursor: pointer;
 }
 
-.delivery-services>div{
-    min-height: 300px;
-    border-top: solid white 2px;
-    width: 100%;
-    margin: auto;
-}
-
 #bs{
     background-image:url('../images/menu-banner2.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
-
 }
 
 #pm{
     background-image:url('../images/possiblebanner.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
 }
 
 #ue{
     background-image:url('../images/scrollthru5.jpg');
-    background-size:cover;
-    background-position: center;
-    height:300px;
 }
 
 #dd{
     background-image:url('../images/scrollthru4.jpg');
+}
+#bs, #pm, #ue, #dd{
     background-size:cover;
     background-position: center;
-    height:300px;
+    height:250px;
+    border-top: solid white 5px;
 }
-
-#bs .delivery-overlay, #dd .delivery-overlay{
-    background:black;
+#bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
     opacity:.5;
-    height:298px;
+    height:245px;
     position: relative;
     left:0;
-    top:0px;
-    z-index: 1;
+    top:0;
     display: table;
     width:100%;
+
 }
 
 #pm .delivery-overlay, #ue .delivery-overlay{
     background:white;
-    opacity:.5;
-    height:298px;
-    position: relative;
-    left:0;
-    top:0px;
-    z-index: 1;
-    display: table;
-    width:100%;
+
 }
+
+#bs .delivery-overlay, #dd .delivery-overlay{
+    background:black;
+
+}
+
 
 
 
