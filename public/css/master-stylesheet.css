@@ -1255,6 +1255,16 @@ a[href$=none] {
     font-size: 10vw;
   }
 }
+@media screen and (max-width: 768px) {
+  .location-wrapper h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 568px) {
+  .location-wrapper h3 {
+    font-size: 5vw;
+  }
+}
 @media screen and (max-width: 1450px) {
   #map-slp, #map-edina {
     width: 90%;
@@ -1263,6 +1273,28 @@ a[href$=none] {
 @media screen and (max-width: 1150px) {
   #map-slp, #map-edina {
     width: 98%;
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 1150px) and (orientation: portrait) {
+  #map-slp, #map-edina {
+    width: 70%;
+    height: 65vh;
+  }
+
+  .edina, .slp {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  #map-slp, #map-edina {
+    width: 90%;
+    height: 65vh;
+  }
+
+  #map-slp .mapimage {
+    background-position-x: 43%;
+    background-position-y: 35%;
   }
 }
 @media screen and (max-width: 1500px) {
