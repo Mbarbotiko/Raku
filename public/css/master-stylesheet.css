@@ -1061,11 +1061,17 @@ footer .hd-ft-bar {
   color: white;
 }
 
+.content-container {
+  max-width: none;
+}
+
 .delivery-services {
   text-align: center;
+  width: 100%;
 }
 
 .delivery-services img {
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   width: 50vw;
@@ -1151,7 +1157,7 @@ footer .hd-ft-bar {
 }
 
 a[href$=none] {
-  opacity: 0.2;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -1174,18 +1180,23 @@ a[href$=none] {
 }
 
 .mid-modal {
-  font-family: "Rock Salt", cursive;
   float: left;
   margin-top: 50px;
+  font-size: 0.5em;
+  text-align: center;
 }
 
 .closeButton {
-  margin-top: 10vw;
+  margin-top: 25px;
 }
 
 .closeButton:hover {
   cursor: pointer;
   color: #eb4a1a;
+}
+
+.modal-slp p:first-of-type {
+  letter-spacing: 1.25em;
 }
 
 @media screen and (max-width: 1400px) {

@@ -81,6 +81,10 @@
         font-size:3vw;
     }
 }
+@media screen and (max-width: 320px)and(orientation: portrait)
+{
+    //adjust text and size of icons to fit on screen 
+}
 @media screen and (max-width: 900px)and(orientation: landscape)
 {
     .closeButton{
