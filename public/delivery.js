@@ -1,7 +1,7 @@
 var deliveryData;
 //select anchors from modal images
-var slpModalImage = document.getElementsByClassName('modal-slp')[0].getElementsByTagName('a')[0];
-var edinaModalImage = document.getElementsByClassName('modal-edina')[0].getElementsByTagName('a')[0];
+var slpModalImage = document.getElementsByClassName('modal-body')[0].getElementsByTagName('a')[0];
+var edinaModalImage = document.getElementsByClassName('modal-body')[0].getElementsByTagName('a')[1];
 
 var deliveryContainer = document.getElementsByClassName('delivery-services');
 var deliveryImages = deliveryContainer[0].getElementsByTagName('img');
@@ -24,7 +24,7 @@ $(deliveryImages).on('click', function () {
 
 })
 
-$('.closeButton').on('click', function () {
+$('.close-button').on('click', function () {
     $('.modal').toggle()
 
 })

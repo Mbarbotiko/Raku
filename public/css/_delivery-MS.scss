@@ -76,7 +76,7 @@
 //Modal
 @media screen and (max-width: 768px)and(orientation: portrait)
 {
-    .closeButton{
+    .close-button{
         margin-top:10vw;
         font-size:3vw;
     }
@@ -87,7 +87,7 @@
 }
 @media screen and (max-width: 900px)and(orientation: landscape)
 {
-    .closeButton{
+    .close-button{
         margin-top:0;
         font-size:2vw;
     }

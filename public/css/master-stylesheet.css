@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.closeButton, .pdf {
+.pdf {
   text-align: center;
   border-bottom: solid #eb4a1a 1px;
   letter-spacing: 0.35em;
@@ -1151,6 +1151,11 @@ footer .hd-ft-bar {
   background-color: #3c3c3c;
 }
 
+.modal-slp p:first-of-type {
+  letter-spacing: 1.25em;
+  color: black;
+}
+
 .modal-slp,
 .modal-edina {
   text-align: center;
@@ -1161,9 +1166,17 @@ footer .hd-ft-bar {
 
 .modal-slp p, .modal-edina p {
   letter-spacing: 0.5em;
-  font-size: 1em;
   margin-top: 5%;
+}
+
+.modal-slp p:first-of-type:hover {
   color: #eb4a1a;
+  cursor: pointer;
+}
+
+.modal-edina:hover {
+  color: #eb4a1a;
+  cursor: pointer;
 }
 
 a[href$=none] {
@@ -1178,19 +1191,17 @@ a[href$=none] {
   letter-spacing: none !important;
 }
 
-.icon-background6 {
-  color: #eb4a1a;
-}
-
 .modal h3 {
+  text-align: left;
   font-family: "Rock Salt", cursive;
   position: relative;
-  top: -80px;
-  left: 0px;
+  left: 25px;
+  top: 15px;
+  width: 10%;
 }
 
 .mid-modal {
-  height: 200px;
+  height: 235px;
   background-color: #1f1e1e;
   float: left;
   font-size: 0.5em;
@@ -1200,29 +1211,15 @@ a[href$=none] {
   border-top-left-radius: 10px;
 }
 
-.mid-modal h4 {
+.mid-modal h1 {
   margin-top: 10%;
-  font-size: 20pt !important;
   letter-spacing: 1em;
   line-height: 2em;
 }
 
-.closeButton {
-  display: none;
-  margin-top: 25px;
-}
-
-.closeButton:hover {
+.close-button:hover {
   cursor: pointer;
   color: #eb4a1a;
-}
-
-.modal-slp p:first-of-type {
-  letter-spacing: 1.25em;
-}
-
-.fa-circle {
-  display: none !important;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1548,13 +1545,13 @@ a[href$=none] {
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  .closeButton {
+  .close-button {
     margin-top: 10vw;
     font-size: 3vw;
   }
 }
 @media screen and (max-width: 900px) and (orientation: landscape) {
-  .closeButton {
+  .close-button {
     margin-top: 0;
     font-size: 2vw;
   }
