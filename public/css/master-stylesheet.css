@@ -1174,43 +1174,26 @@ footer .hd-ft-bar {
   cursor: pointer;
 }
 
-.modal-edina:hover {
-  color: #eb4a1a;
-  cursor: pointer;
-}
-
 a[href=none] {
   pointer-events: none;
 }
 
 .unavailable {
-  background-color: #eb4a1a;
   display: none;
+  background-color: #eb4a1a;
   position: relative;
   top: -17px;
   letter-spacing: none !important;
   font-size: 0.7em;
-  text-align: center;
   width: 100%;
   border-bottom-left-radius: 5px;
-}
-
-.modal h3 {
-  text-align: left;
-  font-family: "Rock Salt", cursive;
-  position: relative;
-  left: 25px;
-  top: 15px;
-  width: 10%;
 }
 
 .mid-modal {
   height: 235px;
   background-color: #1f1e1e;
-  float: left;
   font-size: 0.5em;
   text-align: center;
-  width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
@@ -1221,7 +1204,16 @@ a[href=none] {
   line-height: 2em;
 }
 
-.close-button:hover {
+.close-button {
+  text-align: left;
+  font-family: "Rock Salt", cursive;
+  position: relative;
+  left: 25px;
+  top: 15px;
+  width: 10%;
+}
+
+.close-button:hover, .modal-edina:hover {
   cursor: pointer;
   color: #eb4a1a;
 }

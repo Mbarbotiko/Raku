@@ -1,8 +1,6 @@
 .content-container{
  max-width:none;
-
 }
-
 .delivery-services{
     text-align: center;
     width:100%;
@@ -48,14 +46,12 @@
     display: table;
     width:100%;
 }
-
 #pm .delivery-overlay, #ue .delivery-overlay{
     background:white;
 }
 #bs .delivery-overlay, #dd .delivery-overlay{
     background:black;
 }
-
 .modal-body{
     padding:0px;
 }
@@ -63,7 +59,6 @@
 .modal{
     background: rgba(0, 0, 0, 0.9); 
 }
-
 .modal-dialog,
 .modal-content {
     color:white;
@@ -73,7 +68,6 @@
 background-color:white!important;
 border-bottom-left-radius: 5px;
 }
-
 .modal-edina{
     border-bottom-right-radius: 5px;
     background-color:$rkuGray;
@@ -82,7 +76,6 @@ border-bottom-left-radius: 5px;
     letter-spacing:1.25em;
     color:black;
 }
-
 .modal-slp, 
 .modal-edina{
     text-align: center;
@@ -98,48 +91,26 @@ border-bottom-left-radius: 5px;
     color:$rkuRed;
     cursor: pointer;
 }
-
-.modal-edina:hover{
-color:$rkuRed;
-cursor: pointer;
-
-}
-
 a[href=none]{
     pointer-events: none;
 }
 .unavailable{
-    background-color:$rkuRed;
     display: none;
+    background-color:$rkuRed;
     position: relative;
     top:-17px;
     letter-spacing:none!important;
     font-size: .7em;
-    text-align: center;
     width:100%;
-    border-bottom-left-radius: 5px;
-    
-}
-
-.modal h3{
-    text-align: left;
-    font-family: 'Rock Salt', cursive;
-    position:relative;
-    left:25px;
-    top:15px;
-    width:10%;
-
+    border-bottom-left-radius: 5px;  
 }
 .mid-modal{
     height:235px;
     background-color:rgb(31, 30, 30);
-    float: left;
     font-size:.5em;
     text-align:center;
-    width:100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-
 }
 .mid-modal h1{
     margin-top:10%;
@@ -147,9 +118,14 @@ a[href=none]{
     line-height:2em;
 }
 .close-button{
-
+    text-align: left;
+    font-family: 'Rock Salt', cursive;
+    position:relative;
+    left:25px;
+    top:15px;
+    width:10%;
 }
-.close-button:hover{
+.close-button:hover, .modal-edina:hover{
     cursor: pointer;
     color:$rkuRed;
 }
