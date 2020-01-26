@@ -47,8 +47,7 @@ $(function () {
 
     function headerBarResize() {
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
-        if (window.innerWidth < 991) {
-
+        if (window.innerWidth < 991 && window.innerWidth >767) {
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
             if (msie < 0 && trident < 0 && edge < 0) {
@@ -59,10 +58,14 @@ $(function () {
             }
             $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
         }
-
         if (window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
+            $(navBar).attr('style', 'background: transparent !important');
+            $(navBar).css({ top: '40px' })
+            //returns bar
+        }
+        if (window.innerWidth < 768) {
             $(navBar).attr('style', 'background: transparent !important');
             $(navBar).css({ top: '40px' })
             //returns bar
