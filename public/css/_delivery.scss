@@ -111,12 +111,12 @@ a[href=none]{
 .unavailable{
     background-color:$rkuRed;
     display: none;
-    position: absolute;
-    top:245px;
+    position: relative;
+    top:-17px;
     letter-spacing:none!important;
     font-size: .7em;
     text-align: center;
-    width:50%;
+    width:100%;
     border-bottom-left-radius: 5px;
     
 }
