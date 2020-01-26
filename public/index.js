@@ -8,6 +8,7 @@ $(function () {
     var navBar = header.getElementsByClassName('navbar')[0];
 
     function headerBarHide() {
+
         //IE doesn't understand what window.scrollY is, so set a background for without scroll position
         if (trident > -1) {
             $(navBar).attr('style', 'background:black !important');
@@ -43,8 +44,34 @@ $(function () {
         }
 
     };
+
+    function headerBarResize() {
+        //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
+        if (window.innerWidth < 991) {
+
+            //hide address bar, add black background to nav bar
+            headerBar.style.display = 'none';
+            if (msie < 0 && trident < 0 && edge < 0) {
+                //if all of these return false:
+                $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
+            } else {
+                $(navBar).attr('style', 'background:black !important');
+            }
+            $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
+        }
+
+        if (window.innerWidth > 991) {
+            headerBar.style.display = 'block';
+            headerBar.classList.add('hdBarFadeIn');
+            $(navBar).attr('style', 'background: transparent !important');
+            $(navBar).css({ top: '40px' })
+            //returns bar
+        }
+
+    };
     //Event listener for window on scroll for header footer bar
-    window.addEventListener('scroll', headerBarHide);
+   window.addEventListener('scroll', headerBarHide);
+   window.addEventListener('resize', headerBarResize)
     //Event listener for window on scroll for about us section
     window.addEventListener('scroll', aboutusWrapperInView);
 
@@ -116,7 +143,7 @@ $(function () {
             if (isOpen === 'false') {
                 $(navBar).attr('style', 'background:black !important');
             }
-          
+
         }
 
     }

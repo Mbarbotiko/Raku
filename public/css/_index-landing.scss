@@ -1,3 +1,17 @@
+// font-family: 'Gloria Hallelujah', cursive;
+// font-family: 'Kaushan Script', cursive;
+// font-family: 'Permanent Marker', cursive;
+// font-family: 'Architects Daughter', cursive;
+// font-family: 'Nothing You Could Do', cursive;
+// font-family: 'Molle', cursive;
+// font-family: 'Shojumaru', cursive;
+// font-family: 'Sedgwick Ave Display', cursive;
+// font-family: 'Ruslan Display', cursive;
+// font-family: 'Mansalva', cursive;
+// font-family: 'Oregano', cursive;
+// font-family: 'Julee', cursive;
+
+
 .landing-header{
     //background-color:yellow;
     width: 80%;
@@ -11,20 +25,23 @@
     position:relative;
     font-family: 'Rock Salt', cursive;
     font-size:10em;
-    letter-spacing: .25em;
+    letter-spacing: .1em;
     margin-left:auto;
     margin-right:auto;
 }
 .landing-subtext{
     font-size:2em;
-    border-top: solid $rkuRed 1px;
-    border-bottom:solid $rkuRed 1px;
     line-height:350%;
     margin-top:10%;
     width:45%;
     margin-left:auto;
     margin-right:auto;
     animation-duration: 3s;
+}
+
+.landing-subtext span{
+    font-family: 'Rock Salt', cursive;
+    color:$rkuRed;
 }
 .landing-headline span{
     color:$rkuRed;
