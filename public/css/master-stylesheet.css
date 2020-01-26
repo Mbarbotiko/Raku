@@ -946,13 +946,13 @@ footer .hd-ft-bar {
 }
 
 #map-slp .mapimage {
-  background: url("../images/slpmap.jpg");
+  background: url("../images/locations/slpmap.jpg");
   background-position-x: 35%;
   background-position-y: 50%;
 }
 
 #map-edina .mapimage {
-  background: url("../images/edinamap.jpg");
+  background: url("../images/locations/edinamap.jpg");
   background-position: center;
 }
 
