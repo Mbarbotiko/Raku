@@ -1486,19 +1486,19 @@ a[href=none] {
   }
 
   [data-is=ubereats] {
-    content: url("../images/test.gif");
+    content: url("../images/delivery/ms-ubereats.png");
   }
 
   [data-is=bitesquad] {
-    content: url("../images/test.gif");
+    content: url("../images/delivery/ms-bitesquad.png");
   }
 
   [data-is=postmates] {
-    content: url("../images/test.gif");
+    content: url("../images/delivery/ms-postmates.png");
   }
 
   [data-is=doordash] {
-    content: url("../images/test.gif");
+    content: url("../images/delivery/ms-doordash.png");
   }
 
   .delivery-services img {
