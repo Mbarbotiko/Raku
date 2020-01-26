@@ -1,77 +1,30 @@
-//section container
-@media screen and (max-width: 1500px){
-   .menu-items{
-      padding-top:15vw;
-  }
-}
-@media screen and (max-width: 1000px){
-   .menu-items{
-      padding-top:20vw;
-  }
-}
-@media screen and (max-width: 900px){
-   .menu-items{
-      padding-top:25vw;
-  }
-}
-//menu buttons
-@media screen and (max-width: 990px){
-   .menu-buttons div{
-      top:8vh;
-   }
-}
-//switch to hendheld sizes for menu buttons
-@media screen and (max-width: 865px){
-   #m-lunch, #m-dinner, #m-happyhour{
-    padding-bottom:10vw;
-   }
-   #m-dinner{
-      margin-bottom:10vw;
-   }
-   .menu-buttons :first-child{
-      margin-left:0%;
-   } 
-  #dinner-button{
-     margin-bottom:20vw;
-   }
-   .menu-buttons div{
-      top:4vh;
-      width:100%;
-      margin-left:0%;
-      margin-right:0%;
-      margin-bottom:1%;
-      margin-top:0%;
-      color:white;
-   }
-   .menu-buttons h3{
-      width:60vw;
-      border:solid 1px white;
-      margin-left:20vw!important; 
-   }
-   #happy-hour-button{
-      border-right:none;
-      border-left:none;
-   }
-    .menu-items h4{
-      margin-top:10%;
-   }
-    .menu-items div{
-      width:80%;
-      margin:auto;
-   }
-   .menu-buttons h4{
-      border-bottom:solid .25px $rkuRed;
-      width:30vw;
-      margin-left:35vw!important; 
-      margin-top:8%;
-      margin-bottom:8%; 
-   }
-   .menu-buttons span{
-      color:$rkuRed;
-      padding:5px;
-  }
+// //section container
+// @media screen and (max-width: 1500px){
+//    .menu-items{
+//       padding-top:15vw;
+//   }
+// }
+// @media screen and (max-width: 1000px){
+//    .menu-items{
+//       padding-top:20vw;
+//   }
+// }
+// @media screen and (max-width: 900px){
+//    .menu-items{
+//       padding-top:25vw;
+//   }
+// }
+// //menu buttons
+// @media screen and (max-width: 990px){
+//    .menu-buttons div{
+//       top:8vh;
+//    }
+// }
+// //switch to hendheld sizes for menu buttons
+// @media screen and (max-width: 865px){
 
-}
+
+
 @media screen and (max-width: 768px)and(orientation: portrait){
    .menu-buttons h4{
       font-size:5vw;

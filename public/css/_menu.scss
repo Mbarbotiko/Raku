@@ -20,22 +20,71 @@
    color:$rkuRed;
    cursor: pointer;
 }
-.menu-items{
-    padding-top:10vw;
-    text-align: center;
-    margin-bottom:5%;
-}
-.menu-items span{
-    color:$rkuRed;
-    margin:10px;
-}
-.menu-items h4{
-   margin-top:2%;
-   margin-bottom:2%;
-   border-bottom:solid .25px $rkuRed;
-   line-height: 80%;
-   display:inline-block; 
-}
+// .menu-items{
+//     padding-top:10vw;
+//     text-align: center;
+//     margin-bottom:5%;
+// }
+// .menu-items span{
+//     color:$rkuRed;
+//     margin:10px;
+// }
+// .menu-items h4{
+//    margin-top:2%;
+//    margin-bottom:2%;
+//    border-bottom:solid .25px $rkuRed;
+//    line-height: 80%;
+//    display:inline-block; 
+// }
+
+#m-lunch, #m-dinner, #m-happyhour{
+    padding-bottom:10vw;
+   }
+   #m-dinner{
+      margin-bottom:10vw;
+   }
+   .menu-buttons :first-child{
+      margin-left:0%;
+   } 
+  #dinner-button{
+     margin-bottom:20vw;
+   }
+   .menu-buttons div{
+      top:4vh;
+      width:100%;
+      margin-left:0%;
+      margin-right:0%;
+      margin-bottom:1%;
+      margin-top:0%;
+      color:white;
+   }
+   .menu-buttons h3{
+      width:60vw;
+      border:solid 1px white;
+      margin-left:20vw!important; 
+   }
+   #happy-hour-button{
+      border-right:none;
+      border-left:none;
+   }
+    .menu-items h4{
+      margin-top:10%;
+   }
+    .menu-items div{
+      width:80%;
+      margin:auto;
+   }
+   .menu-buttons h4{
+      border-bottom:solid .25px $rkuRed;
+      width:30vw;
+      margin-left:35vw!important; 
+      margin-top:8%;
+      margin-bottom:8%; 
+   }
+   .menu-buttons span{
+      color:$rkuRed;
+      padding:5px;
+  }
 .pdf{
     @extend %buttons;
     margin-bottom: 5%;
