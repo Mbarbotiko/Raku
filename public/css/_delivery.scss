@@ -70,12 +70,12 @@
     background-color: transparent!important;
 }
 .modal-slp{
-background-color:white;
-border-bottom-left-radius: 10px;
+background-color:white!important;
+border-bottom-left-radius: 5px;
 }
 
 .modal-edina{
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 5px;
     background-color:$rkuGray;
 }
 .modal-slp p:first-of-type{
@@ -105,15 +105,20 @@ cursor: pointer;
 
 }
 
-a[href$=none]{
-    opacity:.0;
+a[href=none]{
     pointer-events: none;
 }
 .unavailable{
+    background-color:$rkuRed;
     display: none;
     position: absolute;
-    top:10px;
+    top:245px;
     letter-spacing:none!important;
+    font-size: .7em;
+    text-align: center;
+    width:50%;
+    border-bottom-left-radius: 5px;
+    
 }
 
 .modal h3{
@@ -132,8 +137,8 @@ a[href$=none]{
     font-size:.5em;
     text-align:center;
     width:100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 
 }
 .mid-modal h1{

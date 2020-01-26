@@ -1142,12 +1142,12 @@ footer .hd-ft-bar {
 }
 
 .modal-slp {
-  background-color: white;
-  border-bottom-left-radius: 10px;
+  background-color: white !important;
+  border-bottom-left-radius: 5px;
 }
 
 .modal-edina {
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 5px;
   background-color: #3c3c3c;
 }
 
@@ -1179,16 +1179,20 @@ footer .hd-ft-bar {
   cursor: pointer;
 }
 
-a[href$=none] {
-  opacity: 0;
+a[href=none] {
   pointer-events: none;
 }
 
 .unavailable {
+  background-color: #eb4a1a;
   display: none;
   position: absolute;
-  top: 10px;
+  top: 245px;
   letter-spacing: none !important;
+  font-size: 0.7em;
+  text-align: center;
+  width: 50%;
+  border-bottom-left-radius: 5px;
 }
 
 .modal h3 {
@@ -1207,8 +1211,8 @@ a[href$=none] {
   font-size: 0.5em;
   text-align: center;
   width: 100%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .mid-modal h1 {
@@ -1468,92 +1472,6 @@ a[href$=none] {
     margin-left: 15vw;
     font-size: 3.5vw;
     margin-top: 40vw;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .delivery-services img {
-    width: 70vw;
-  }
-}
-@media screen and (max-width: 900px) {
-  .delivery-services img {
-    width: 90vw;
-  }
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  #bs, #pm, #ue, #dd {
-    height: 50vh;
-  }
-
-  #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
-    height: 49.75vh;
-  }
-
-  [data-is=ubereats] {
-    content: url("../images/test.gif");
-  }
-
-  [data-is=bitesquad] {
-    content: url("../images/test.gif");
-  }
-
-  [data-is=postmates] {
-    content: url("../images/test.gif");
-  }
-
-  [data-is=doordash] {
-    content: url("../images/test.gif");
-  }
-
-  .delivery-services img {
-    width: 40vw;
-    height: 50vw;
-    top: -55vw;
-  }
-}
-@media screen and (max-width: 650px) and (orientation: portrait) {
-  .delivery-services img {
-    width: 45vw;
-    height: 60vw;
-    top: -65vw;
-  }
-}
-@media screen and (max-width: 550px) and (orientation: portrait) {
-  .delivery-services img {
-    width: 45vw;
-    height: 60vw;
-    top: -75vw;
-  }
-}
-@media screen and (max-width: 450px) and (orientation: portrait) {
-  .delivery-services img {
-    width: 45vw;
-    height: 60vw;
-    top: -80vw;
-  }
-}
-@media screen and (max-width: 319px) and (orientation: portrait) {
-  .delivery-services img {
-    width: 45vw;
-    height: 60vw;
-    top: -100vw;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .delivery-services img {
-    padding: 8%;
-  }
-}
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  .close-button {
-    margin-top: 10vw;
-    font-size: 3vw;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .close-button {
-    margin-top: 0;
-    font-size: 2vw;
   }
 }
 

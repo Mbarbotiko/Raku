@@ -1,94 +1,94 @@
-//Delivery images
-@media screen and (max-width: 1200px){
-    .delivery-services img{
-        width:70vw;
-    }
-}
-@media screen and (max-width: 900px){
-    .delivery-services img{
-        width:90vw;
-    }
-}
-@media screen and (max-width: 768px)and(orientation: portrait)
-{
-    #bs, #pm, #ue, #dd{
-        height:50vh;
-    }
-    #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
-        height:49.75vh;
-    }
-    [data-is=ubereats]{
-        content: url('../images/test.gif');
-      }
-    [data-is=bitesquad]{
-        content: url('../images/test.gif');
-     }
-     [data-is=postmates]{
-        content: url('../images/test.gif');
-    }
-     [data-is=doordash]{
-        content: url('../images/test.gif');
-     }
-    .delivery-services img{
-        width:40vw;
-        height:50vw;
-        top:-55vw;
-    }
-}
-@media screen and (max-width: 650px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-65vw;
-    }
-}
+// //Delivery images
+// @media screen and (max-width: 1200px){
+//     .delivery-services img{
+//         width:70vw;
+//     }
+// }
+// @media screen and (max-width: 900px){
+//     .delivery-services img{
+//         width:90vw;
+//     }
+// }
+// @media screen and (max-width: 768px)and(orientation: portrait)
+// {
+//     #bs, #pm, #ue, #dd{
+//         height:50vh;
+//     }
+//     #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
+//         height:49.75vh;
+//     }
+//     [data-is=ubereats]{
+//         content: url('../images/test.gif');
+//       }
+//     [data-is=bitesquad]{
+//         content: url('../images/test.gif');
+//      }
+//      [data-is=postmates]{
+//         content: url('../images/test.gif');
+//     }
+//      [data-is=doordash]{
+//         content: url('../images/test.gif');
+//      }
+//     .delivery-services img{
+//         width:40vw;
+//         height:50vw;
+//         top:-55vw;
+//     }
+// }
+// @media screen and (max-width: 650px)and(orientation: portrait)
+// {
+//     .delivery-services img{
+//         width:45vw;
+//         height:60vw;
+//         top:-65vw;
+//     }
+// }
 
-@media screen and (max-width: 550px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-75vw;
-    }
-}
-@media screen and (max-width: 450px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-80vw;
-    }
-}
-@media screen and (max-width: 319px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-100vw;
-    }
-}
-@media screen and (max-width: 900px)and(orientation: landscape){
-    .delivery-services img{
-        padding:8%
-    }
-}
-//Modal
-@media screen and (max-width: 768px)and(orientation: portrait)
-{
-    .close-button{
-        margin-top:10vw;
-        font-size:3vw;
-    }
-}
-@media screen and (max-width: 320px)and(orientation: portrait)
-{
-    //adjust text and size of icons to fit on screen 
-}
-@media screen and (max-width: 900px)and(orientation: landscape)
-{
-    .close-button{
-        margin-top:0;
-        font-size:2vw;
-    }
-}
+// @media screen and (max-width: 550px)and(orientation: portrait)
+// {
+//     .delivery-services img{
+//         width:45vw;
+//         height:60vw;
+//         top:-75vw;
+//     }
+// }
+// @media screen and (max-width: 450px)and(orientation: portrait)
+// {
+//     .delivery-services img{
+//         width:45vw;
+//         height:60vw;
+//         top:-80vw;
+//     }
+// }
+// @media screen and (max-width: 319px)and(orientation: portrait)
+// {
+//     .delivery-services img{
+//         width:45vw;
+//         height:60vw;
+//         top:-100vw;
+//     }
+// }
+// @media screen and (max-width: 900px)and(orientation: landscape){
+//     .delivery-services img{
+//         padding:8%
+//     }
+// }
+// //Modal
+// @media screen and (max-width: 768px)and(orientation: portrait)
+// {
+//     .close-button{
+//         margin-top:10vw;
+//         font-size:3vw;
+//     }
+// }
+// @media screen and (max-width: 320px)and(orientation: portrait)
+// {
+//     //adjust text and size of icons to fit on screen 
+// }
+// @media screen and (max-width: 900px)and(orientation: landscape)
+// {
+//     .close-button{
+//         margin-top:0;
+//         font-size:2vw;
+//     }
+// }
