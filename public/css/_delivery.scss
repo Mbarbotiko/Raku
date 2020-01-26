@@ -6,12 +6,11 @@
     width:100%;
 }
 .delivery-services img{
-    max-width:900px;
+    width:900px;
+    min-width:900px;
     margin-left:auto;
     margin-right:auto;
-    width:50vw;
     padding:2%;
-    height:100%;
     position: relative;
     top:-250px;
     display:block;

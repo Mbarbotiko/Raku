@@ -1,21 +1,46 @@
 //Delivery images
-@media screen and (max-width: 1200px){
-    .delivery-services img{
-        width:70vw;
-    }
-}
 @media screen and (max-width: 900px){
     .delivery-services img{
-        width:90vw;
+        width:750px;
+        min-width:750px;
+    }
+}
+
+@media screen and (max-width: 900px)and(orientation: landscape)
+{
+    .delivery-services img{
+        top:-28vw;
+        width:100%;
+        min-width:0px;
+    }
+}
+@media screen and (max-width: 900px)and(orientation: landscape)
+{
+    .delivery-services img{
+        top:-30vw;
+    }
+}
+
+@media screen and (max-width: 700px)and(orientation: landscape)
+{
+    .delivery-services img{
+        top:-32vw;
+    }
+}
+
+@media screen and (max-width: 600px)and(orientation: landscape)
+{
+    .delivery-services img{
+        top:-35vw;
     }
 }
 @media screen and (max-width: 768px)and(orientation: portrait)
 {
     #bs, #pm, #ue, #dd{
-        height:50vh;
+        height:75vh;
     }
     #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
-        height:49.75vh;
+        height:74.75vh;
     }
     [data-is=ubereats]{
         content: url('../images/delivery/ms-ubereats.png');
@@ -30,48 +55,27 @@
         content: url('../images/delivery/ms-doordash.png');
      }
     .delivery-services img{
-        width:40vw;
-        height:50vw;
-        top:-55vw;
+        min-width:0px;
+        top:-90%;
+        width:70vw;
+        height:70vw;
     }
 }
-@media screen and (max-width: 650px)and(orientation: portrait)
+@media screen and (max-width: 600px)and(orientation: portrait)
 {
     .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-65vw;
+        top:-80%;
     }
+ 
 }
-@media screen and (max-width: 550px)and(orientation: portrait)
+@media screen and (max-width: 500px)and(orientation: portrait)
 {
     .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-75vw;
+        top:-75%;
     }
 }
-@media screen and (max-width: 450px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-80vw;
-    }
-}
-@media screen and (max-width: 319px)and(orientation: portrait)
-{
-    .delivery-services img{
-        width:45vw;
-        height:60vw;
-        top:-100vw;
-    }
-}
-@media screen and (max-width: 900px)and(orientation: landscape){
-    .delivery-services img{
-        padding:8%
-    }
-}
+
+
 //Modal
 @media screen and (max-width: 600px)and(orientation: portrait)
 {
