@@ -80,7 +80,17 @@ $(function () {
     };
     //Event listener for window on scroll for header footer bar
     window.addEventListener('scroll', headerBarHide);
-    window.addEventListener('resize', headerBarResize)
+    window.addEventListener('resize', headerBarResize);
+    window.addEventListener('load', function(){
+        if(window.location.hash){
+            //on page load check for hash, apply css to the nav bar
+            if (window.innerWidth > 991) {
+                $(navBar).attr('style', 'background:black !important');
+                $(navBar).css({ top: '0px' });//change position of the nav bar 
+            }
+        }
+    })
+
     //Event listener for window on scroll for about us section
     window.addEventListener('scroll', aboutusWrapperInView);
 
