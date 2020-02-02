@@ -28,6 +28,9 @@
 .mapimage:hover{
     cursor: pointer;//zoom-in (later)/grabbing for image
 }
+a[href^=tel]:hover{
+    color:$rkuRed;
+}
 #map-slp .mapimage{
     background: url('../images/locations/slpmap.jpg');
     background-position-x: 35%; 

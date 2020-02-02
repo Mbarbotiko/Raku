@@ -934,6 +934,10 @@ footer .hd-ft-bar {
   cursor: pointer;
 }
 
+a[href^=tel]:hover {
+  color: #eb4a1a;
+}
+
 #map-slp .mapimage {
   background: url("../images/locations/slpmap.jpg");
   background-position-x: 35%;
