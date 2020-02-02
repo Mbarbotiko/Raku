@@ -24,8 +24,11 @@ $(deliveryImages).on('click', function () {
 
 })
 
-$('.close-button').on('click', function () {
-    $('.modal').toggle()
+$('.modal').on('click', function (e) {
+    var target = $(e.target)
+    if (!target.is('p')) {
+        $('.modal').toggle();
+    }
 
 })
 
