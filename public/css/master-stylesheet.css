@@ -241,7 +241,7 @@ header .hd-ft-divider {
 }
 
 .aboutus-wrapper:last-of-type {
-  margin-bottom: 10%;
+  margin-bottom: 9vw;
 }
 
 .panel {
@@ -678,10 +678,6 @@ footer .hd-ft-bar {
     border-top: none;
     border-bottom: none;
     margin-top: 0%;
-  }
-
-  .aboutus-wrapper:last-of-type {
-    margin-bottom: 5%;
   }
 
   .middle {
