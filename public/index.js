@@ -91,25 +91,21 @@ $(function () {
         }
     })
 
+
     //Event listener for window on scroll for about us section
     window.addEventListener('scroll', aboutusWrapperInView);
-
     //Select wrapper for about us section
     function aboutusWrapperInView() {
         var aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
-        //select all wrappers in about section
-        if (window.innerWidth <= 1250) {
-            $(aboutUsWrapper[i]).children('.left-side').css('display', 'none');
-            $(aboutUsWrapper[i]).children('.right-side').css('display', 'none');
-        }
         for (var i = 0; i < aboutUsWrapper.length; i++) {
-            var a = aboutUsWrapper[i].offsetTop;
-            var b = aboutUsWrapper[i].offsetHeight;
-            var c = window.pageYOffset;
-            var d = window.innerHeight;
-            var e = b * 1.1;
-            one = a + b - e < c;
+            var a = aboutUsWrapper[i].offsetTop;//distance from parent
+            var b = aboutUsWrapper[i].offsetHeight;//height of element
+            var c = window.pageYOffset;//window position
+            var d = window.innerHeight;//height of window
+            var e = b * 1.1;//range
+            one = a + b - e < c;//if distance from parent + height of element - range is less than window position, if this element is NOT in the windows position range it must have the overlay assigned to it, applies to scroll up
             two = a > c - e + d;
+            //if distance from parent is more than window position - offset + window height, applies to scroll down
             if (one || two) {
                 $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')//make this overlay appear
                 $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
