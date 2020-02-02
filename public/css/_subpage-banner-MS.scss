@@ -34,3 +34,9 @@
         font-size:10vw;
     }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape){
+    .subpage-content{
+        top:40vh;
+     }
+}

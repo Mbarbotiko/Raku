@@ -1288,6 +1288,11 @@ a[href=none] {
     font-size: 10vw;
   }
 }
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .subpage-content {
+    top: 40vh;
+  }
+}
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .location-wrapper {
     width: 99%;
