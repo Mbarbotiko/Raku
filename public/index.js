@@ -81,8 +81,8 @@ $(function () {
     //Event listener for window on scroll for header footer bar
     window.addEventListener('scroll', headerBarHide);
     window.addEventListener('resize', headerBarResize);
-    window.addEventListener('load', function(){
-        if(window.location.hash){
+    window.addEventListener('load', function () {
+        if (window.location.hash) {
             //on page load check for hash, apply css to the nav bar
             if (window.innerWidth > 991) {
                 $(navBar).attr('style', 'background:black !important');
@@ -95,34 +95,29 @@ $(function () {
     window.addEventListener('scroll', aboutusWrapperInView);
 
     //Select wrapper for about us section
-    let aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
-    //Function for removing and adding classes on scroll for the wrapper
     function aboutusWrapperInView() {
-        //if window width is equal to or higher than __pixels, run this code:
-        if (window.innerWidth >= 1160) {
-            for (var i = 0; i < aboutUsWrapper.length; i++) {
-                if (aboutUsWrapper[i].offsetTop + aboutUsWrapper[i].offsetHeight < window.pageYOffset - 400 || aboutUsWrapper[i].offsetTop > window.pageYOffset - 400 + window.innerHeight) {
-                    $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
-                    $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
-                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
-                } else {
-                    $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
-                    $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
-                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
-
-                }
-            }
-        } if (window.innerWidth < 1159) {
+        var aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
+        //select all wrappers in about section
+        if (window.innerWidth <= 1250) {
             $(aboutUsWrapper[i]).children('.left-side').css('display', 'none');
             $(aboutUsWrapper[i]).children('.right-side').css('display', 'none');
-            for (var i = 0; i < aboutUsWrapper.length; i++) {
-                if (aboutUsWrapper[i].offsetTop + aboutUsWrapper[i].offsetHeight < window.pageYOffset - 400 || aboutUsWrapper[i].offsetTop > window.pageYOffset - 400 + window.innerHeight) {
-                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')
-                } else {
-                    $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')
-
-                }
-
+        }
+        for (var i = 0; i < aboutUsWrapper.length; i++) {
+            var a = aboutUsWrapper[i].offsetTop;
+            var b = aboutUsWrapper[i].offsetHeight;
+            var c = window.pageYOffset;
+            var d = window.innerHeight;
+            var e = b * 1.1;
+            one = a + b - e < c;
+            two = a > c - e + d;
+            if (one || two) {
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').removeClass('disappear')//make this overlay appear
+                $(aboutUsWrapper[i]).children('.left-side').removeClass('left-side-new');
+                $(aboutUsWrapper[i]).children('.right-side').removeClass('right-side-new');
+            } else {
+                $(aboutUsWrapper[i]).children('.panel.middle').find('.overlay-header').addClass('disappear')//make this overlay dissapear
+                $(aboutUsWrapper[i]).children('.left-side').addClass('left-side-new');
+                $(aboutUsWrapper[i]).children('.right-side').addClass('right-side-new');
             }
         }
     }
