@@ -43,22 +43,26 @@ for (var i = 0; i < deliveryImages.length; i++) {
                 slpModalImage.setAttribute('href', linkHrefs.biteSquad.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.biteSquad.edina);
                 $('.unavailable').hide();
+                $('.modal-slp>p').show();
                 break;
             case 'postmates':
                 slpModalImage.setAttribute('href', linkHrefs.postMates.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.postMates.edina);
                 $('.unavailable').hide();
+                $('.modal-slp>p').show();
                 break;
             case 'doordash':
                 slpModalImage.setAttribute('href', linkHrefs.doorDash.slp);
                 //set to a not available class later
                 edinaModalImage.setAttribute('href', linkHrefs.doorDash.edina);
                 $('.unavailable').show();
+                $('.modal-slp>p').hide();
                 break;
             case 'ubereats':
                 slpModalImage.setAttribute('href', linkHrefs.uberEats.slp);
                 edinaModalImage.setAttribute('href', linkHrefs.uberEats.edina);
                 $('.unavailable').hide();
+                $('.modal-slp>p').show();
                 break;
             default: console.log('href not found')//add text with error code and contact information here
 

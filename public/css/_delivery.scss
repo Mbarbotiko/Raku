@@ -53,31 +53,36 @@
 }
 .modal-body{
     padding:0px;
+    
 }
 //modal
 .modal{
-    background: rgba(0, 0, 0, 0.9); 
+   background: rgba(49, 47, 47, 0.9); 
 }
 .modal-dialog,
 .modal-content {
     color:white;
     background-color: transparent!important;
-    border-radius:0px!important;
+   // border-radius: 15px;
     border:none!important;
    
+   
 }
+
 .modal-content{
     box-shadow: 10px 10px 40px 20px white;
+    background-color:rgb(141, 138, 138)!important;
+    
 }
 .modal-slp{
-background-color:$rkuGray;
+//background-color:$rkuGray;
 border-right:solid 1px white;
 }
 .modal-edina{
-    background-color:$rkuGray;
+    //background-color:$rkuGray;
 }
-.modal-slp p:first-of-type{
-    letter-spacing:1.25em;
+.modal-slp>p{
+    letter-spacing:1.25em;  
     //color:black;
 }
 .modal-slp, 
@@ -86,10 +91,13 @@ border-right:solid 1px white;
     float: left;
     width:50%;
     height:25px;
+    position: relative;
+    top:-30px;
 }
-.modal-slp p, .modal-edina p{
+.modal-edina p{
     letter-spacing:.5em;
     margin-top:1%;
+   // background-color:$rkuRed;
 }
 .modal p:hover{
     color:$rkuRed;
@@ -98,20 +106,13 @@ border-right:solid 1px white;
 a[href=none]{
     pointer-events: none;
 }
-.unavailable{
-    display: none;
-    height:24px;
-    background-color:$rkuRed;
-    position: relative;
-    top:-42px;
-    letter-spacing:none!important;
-    font-size: .7em;
-    width:100%;
-}
+
 .mid-modal{
-    height:150px;
-    background-color:rgb(31, 30, 30);
+    height:200px;
     text-align:center;
+    border-radius: 10px;
+  
+   
 }
 .mid-modal h1{
     //margin-top:10%;
@@ -123,6 +124,16 @@ a[href=none]{
     line-height:2em;
     position:relative;
     top:45%;
+}
+.unavailable{
+    display: none;
+   // background-color:$rkuRed;
+    // position: relative;
+    // top:-40px;
+    height:100%;
+    letter-spacing:.5em;
+    font-size: .5em;
+    padding-top:3%;
 }
 // .close-button{
 //     text-align: left;
