@@ -1493,7 +1493,7 @@ a[href=none] {
     height: 400px;
   }
 }
-@media screen and (max-width: 400px) and (orientation: portrait) {
+@media screen and (max-width: 414px) and (orientation: portrait) {
   .modal-dialog-centered {
     width: 70vw;
     margin-left: auto;
@@ -1517,6 +1517,7 @@ a[href=none] {
   .modal-slp {
     border-right: none;
     margin-bottom: 1vw;
+    margin-top: 12vw;
   }
 
   .modal-edina {
@@ -1539,7 +1540,7 @@ a[href=none] {
     font-size: 3vw;
   }
 }
-@media screen and (max-width: 350px) and (orientation: portrait) {
+@media screen and (max-width: 360px) and (orientation: portrait) {
   .modal-dialog-centered {
     width: 70vw;
     margin-left: auto;

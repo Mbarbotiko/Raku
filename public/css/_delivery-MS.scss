@@ -5,7 +5,6 @@
         min-width:750px;
     }
 }
-
 @media screen and (max-width: 900px)and(orientation: landscape)
 {
     .delivery-services img{
@@ -27,7 +26,6 @@
         top:-32vw;
     }
 }
-
 @media screen and (max-width: 600px)and(orientation: landscape)
 {
     .delivery-services img{
@@ -66,7 +64,6 @@
     .delivery-services img{
         top:-80%;
     }
- 
 }
 @media screen and (max-width: 500px)and(orientation: portrait)
 {
@@ -75,44 +72,31 @@
     }
 }
 
-
 //Modal
 @media screen and (max-width: 600px)and(orientation: portrait)
 {
-   
     .modal-dialog-centered{
         width:70vw;
         margin-left:auto;
         margin-right:auto;
-
     }
     .mid-modal{
         height:400px;
-
-      
-       
     }
- 
 }
-@media screen and (max-width: 400px)and(orientation: portrait)
+@media screen and (max-width: 414px)and(orientation: portrait)
 {
-   
     .modal-dialog-centered{
         width:70vw;
         margin-left:auto;
         margin-right:auto;
-
     }
     .mid-modal{
         height:40vh;
-
-      
-       
     }
     .modal-slp, 
 .modal-edina{
     text-align: center;
-    //float: left;
     width:100%;
     height:25px;
     position: relative;
@@ -121,18 +105,15 @@
     
 }
 .modal-slp{
-    //background-color:$rkuGray;
     border-right:none;
     margin-bottom:1vw;
-    
-
+    margin-top:12vw;
     }
     .modal-edina{
         border-top:white solid 1px;
         padding-top:5vw;
         width:50%;
         margin-left:25%;
-       
     }
     .mid-modal h1{
         font-size:5vw;
@@ -140,6 +121,7 @@
     .modal-slp>p{
         letter-spacing:.5em;
         font-size:3vw;
+
     }
     .modal-edina p{
         font-size:3vw;
@@ -148,25 +130,20 @@
 }
 
 
-@media screen and (max-width: 350px)and(orientation: portrait)
+@media screen and (max-width: 360px)and(orientation: portrait)
 {
    
     .modal-dialog-centered{
         width:70vw;
         margin-left:auto;
         margin-right:auto;
-
     }
     .mid-modal{
         height:60vh;
-
-      
-       
     }
     .modal-slp, 
 .modal-edina{
     text-align: center;
-    //float: left;
     width:100%;
     height:25px;
     position: relative;
@@ -175,18 +152,14 @@
     
 }
 .modal-slp{
-    //background-color:$rkuGray;
     border-right:none;
     margin-bottom:1vw;
-    
-
     }
     .modal-edina{
         border-top:white solid 1px;
         padding-top:5vw;
         width:50%;
         margin-left:25%;
-       
     }
     .mid-modal h1{
         font-size:5vw;
