@@ -38,7 +38,7 @@
         height:75vh;
     }
     #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
-        height:74.75vh;
+        height:74.5vh;
     }
     [data-is=ubereats]{
         content: url('../images/delivery/ms-ubereats.png');
@@ -70,7 +70,16 @@
     .delivery-services img{
         top:-75%;
     }
+
 }
+@media screen and (max-width: 360px)and(orientation: portrait)
+{
+
+    #bs .delivery-overlay, #dd .delivery-overlay,#pm .delivery-overlay, #ue .delivery-overlay{
+        height:74.25vh;
+    }
+}
+
 
 //Modal
 @media screen and (max-width: 600px)and(orientation: portrait)

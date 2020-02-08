@@ -1,75 +1,94 @@
-// //section container
-// @media screen and (max-width: 1500px){
-//    .menu-items{
-//       padding-top:15vw;
-//   }
-// }
-// @media screen and (max-width: 1000px){
-//    .menu-items{
-//       padding-top:20vw;
-//   }
-// }
-// @media screen and (max-width: 900px){
-//    .menu-items{
-//       padding-top:25vw;
-//   }
-// }
-// //menu buttons
-// @media screen and (max-width: 990px){
-//    .menu-buttons div{
-//       top:8vh;
-//    }
-// }
-// //switch to hendheld sizes for menu buttons
-// @media screen and (max-width: 865px){
+//Menu buttons
 
-
-
-@media screen and (max-width: 768px)and(orientation: portrait){
-   .menu-buttons h4{
-      font-size:5vw;
- 
-   }
+@media screen and (max-width: 768px)and(orientation: portrait)
+{
    .menu-buttons h3{
+      font-size:22pt;
       width:90vw;
-      margin-left:5vw!important;
+      margin-left:5vw;
    }
-
 }
-//menu items headers
-@media screen and (max-width: 480px)and(orientation: portrait){
-   .menu-buttons p{
-      font-size:4vw;
-   }
+
+@media screen and (max-width: 500px)and(orientation: portrait)
+{
    .menu-buttons h3{
-      font-size:5vw;
+      font-size:18pt;
+      width:98vw;
+      margin-left:1vw;
    }
 }
-//view PDF button
-@media screen and (max-width: 1200px){
-   .pdf{
-      width:30vw;
-      margin-left:35vw;
-  }
-}
-@media screen and (max-width: 865px){
-   .pdf{
-      width:50vw;
-      margin-left:25vw;
-      margin-top:20vw;
-  }
-}
-@media screen and (max-width: 700px){
-   .pdf{
-      margin-top:30vw;
-  }
-}
-@media screen and (max-width: 550px){
-   .pdf{
-      width:70vw;
-      margin-left:15vw;
-      font-size:3.5vw;
-      margin-top:40vw;
-  }
+
+@media screen and (max-width: 850px)and(orientation: landscape)
+{
+   .menu-buttons h3{
+      font-size:18pt;
+      width:90vw;
+      margin-left:5vw;
+   }
 }
 
+//Menu content/list
+@media screen and (max-width: 768px)and(orientation: portrait)
+{
+   .menu-buttons h4{
+      margin-top:6%;
+      font-size:18pt;
+      width:60vw;
+      margin-left:20vw;
+   }
+   .menu-buttons p, .menu-buttons ul{
+      font-size:12pt;
+   }
+}
+@media screen and (max-width: 500px)and(orientation: portrait)
+{
+   .menu-buttons h4{
+      margin-top:6%;
+      font-size:16pt;
+   }
+   .menu-buttons p, .menu-buttons ul{
+      font-size:10pt;
+   }
+}
+
+@media screen and (max-width: 850px)and(orientation: landscape)
+{
+   .menu-buttons h4{
+      margin-top:6%;
+      font-size:16pt;
+   }
+   .menu-buttons p, .menu-buttons ul{
+      font-size:10pt;
+   }
+}
+
+//pdf link
+
+@media screen and (max-width: 1250px)
+{
+   .pdf{
+      margin-top:6%;
+      width:40vw;
+      margin-left:30vw;
+   }
+}
+
+@media screen and (max-width: 768px)and(orientation: portrait)
+{
+   .pdf{
+      margin-top:10%;
+      font-size:12pt;
+      width:60vw;
+      margin-left:20vw;
+    
+   }
+}
+@media screen and (max-width: 400px)and(orientation: portrait)
+{
+   .pdf{
+      font-size:12pt;
+      width:80vw;
+      margin-left:10vw;
+    
+   }
+}

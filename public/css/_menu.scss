@@ -1,93 +1,47 @@
-.menu-buttons :first-child{
-    margin-left:3%;
+.content-container{
+   text-align: center;
 }
-.menu-buttons div{
-    position:relative;
-    top:5vh;
-    width:30%;
-    float:left;
-    margin:1%;
-    text-align: center;
-}
-.menu-buttons div h3{
-    line-height: 2em;
-}
-#happy-hour-button{
-    border-right:solid 1px $rkuRed;
-    border-left:solid 1px $rkuRed;
+
+.menu-buttons{
+   margin-top:5%;
 }
 .menu-buttons div h3:hover{
    color:$rkuRed;
    cursor: pointer;
 }
-// .menu-items{
-//     padding-top:10vw;
-//     text-align: center;
-//     margin-bottom:5%;
-// }
-// .menu-items span{
-//     color:$rkuRed;
-//     margin:10px;
-// }
-// .menu-items h4{
-//    margin-top:2%;
-//    margin-bottom:2%;
-//    border-bottom:solid .25px $rkuRed;
-//    line-height: 80%;
-//    display:inline-block; 
-// }
-
-#m-lunch, #m-dinner, #m-happyhour{
-    padding-bottom:10vw;
-   }
-   #m-dinner{
-      margin-bottom:10vw;
-   }
-   .menu-buttons :first-child{
-      margin-left:0%;
-   } 
-  #dinner-button{
-     margin-bottom:20vw;
-   }
-   .menu-buttons div{
-      top:4vh;
-      width:100%;
-      margin-left:0%;
-      margin-right:0%;
-      margin-bottom:1%;
-      margin-top:0%;
-      color:white;
+.menu-buttons>div{
+   margin-bottom: 1%;
+}
+   .menu-buttons>div>div{
+      margin-bottom: 3%;
    }
    .menu-buttons h3{
+      line-height: 2em;
       width:60vw;
       border:solid 1px white;
-      margin-left:20vw!important; 
+      box-shadow: 1px 1px 6px 1px white;
+      margin-left:20vw;
    }
-   #happy-hour-button{
-      border-right:none;
-      border-left:none;
-   }
-    .menu-items h4{
-      margin-top:10%;
-   }
-    .menu-items div{
-      width:80%;
-      margin:auto;
-   }
+
    .menu-buttons h4{
+      padding-bottom:5px;
+      margin-top:2%;
+      margin-bottom:2%;
       border-bottom:solid .25px $rkuRed;
       width:30vw;
-      margin-left:35vw!important; 
-      margin-top:8%;
-      margin-bottom:8%; 
+      margin-left:35vw;
    }
    .menu-buttons span{
       color:$rkuRed;
       padding:5px;
   }
+  .menu-buttons ul{
+   margin:2% 0%;
+  }
 .pdf{
     @extend %buttons;
-    margin-bottom: 5%;
+    margin-top:2%;
+    margin-bottom:5%;
 }
 .pdf:hover{
     color:$rkuRed;

@@ -970,26 +970,12 @@ a[href^=tel]:hover {
   margin-right: auto;
 }
 
-.menu-buttons :first-child {
-  margin-left: 3%;
-}
-
-.menu-buttons div {
-  position: relative;
-  top: 5vh;
-  width: 30%;
-  float: left;
-  margin: 1%;
+.content-container {
   text-align: center;
 }
 
-.menu-buttons div h3 {
-  line-height: 2em;
-}
-
-#happy-hour-button {
-  border-right: solid 1px #eb4a1a;
-  border-left: solid 1px #eb4a1a;
+.menu-buttons {
+  margin-top: 5%;
 }
 
 .menu-buttons div h3:hover {
@@ -997,58 +983,29 @@ a[href^=tel]:hover {
   cursor: pointer;
 }
 
-#m-lunch, #m-dinner, #m-happyhour {
-  padding-bottom: 10vw;
-}
-
-#m-dinner {
-  margin-bottom: 10vw;
-}
-
-.menu-buttons :first-child {
-  margin-left: 0%;
-}
-
-#dinner-button {
-  margin-bottom: 20vw;
-}
-
-.menu-buttons div {
-  top: 4vh;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
+.menu-buttons > div {
   margin-bottom: 1%;
-  margin-top: 0%;
-  color: white;
+}
+
+.menu-buttons > div > div {
+  margin-bottom: 3%;
 }
 
 .menu-buttons h3 {
+  line-height: 2em;
   width: 60vw;
   border: solid 1px white;
-  margin-left: 20vw !important;
-}
-
-#happy-hour-button {
-  border-right: none;
-  border-left: none;
-}
-
-.menu-items h4 {
-  margin-top: 10%;
-}
-
-.menu-items div {
-  width: 80%;
-  margin: auto;
+  box-shadow: 1px 1px 6px 1px white;
+  margin-left: 20vw;
 }
 
 .menu-buttons h4 {
+  padding-bottom: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-bottom: solid 0.25px #eb4a1a;
   width: 30vw;
-  margin-left: 35vw !important;
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-left: 35vw;
 }
 
 .menu-buttons span {
@@ -1056,7 +1013,12 @@ a[href^=tel]:hover {
   padding: 5px;
 }
 
+.menu-buttons ul {
+  margin: 2% 0%;
+}
+
 .pdf {
+  margin-top: 2%;
   margin-bottom: 5%;
 }
 
@@ -1368,48 +1330,78 @@ a[href=none] {
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  .menu-buttons h4 {
-    font-size: 5vw;
-  }
-
   .menu-buttons h3 {
+    font-size: 22pt;
     width: 90vw;
-    margin-left: 5vw !important;
+    margin-left: 5vw;
   }
 }
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  .menu-buttons p {
-    font-size: 4vw;
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .menu-buttons h3 {
+    font-size: 18pt;
+    width: 98vw;
+    margin-left: 1vw;
+  }
+}
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .menu-buttons h3 {
+    font-size: 18pt;
+    width: 90vw;
+    margin-left: 5vw;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .menu-buttons h4 {
+    margin-top: 6%;
+    font-size: 18pt;
+    width: 60vw;
+    margin-left: 20vw;
   }
 
-  .menu-buttons h3 {
-    font-size: 5vw;
+  .menu-buttons p, .menu-buttons ul {
+    font-size: 12pt;
   }
 }
-@media screen and (max-width: 1200px) {
-  .pdf {
-    width: 30vw;
-    margin-left: 35vw;
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .menu-buttons h4 {
+    margin-top: 6%;
+    font-size: 16pt;
+  }
+
+  .menu-buttons p, .menu-buttons ul {
+    font-size: 10pt;
   }
 }
-@media screen and (max-width: 865px) {
-  .pdf {
-    width: 50vw;
-    margin-left: 25vw;
-    margin-top: 20vw;
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .menu-buttons h4 {
+    margin-top: 6%;
+    font-size: 16pt;
+  }
+
+  .menu-buttons p, .menu-buttons ul {
+    font-size: 10pt;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1250px) {
   .pdf {
-    margin-top: 30vw;
+    margin-top: 6%;
+    width: 40vw;
+    margin-left: 30vw;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .pdf {
-    width: 70vw;
-    margin-left: 15vw;
-    font-size: 3.5vw;
-    margin-top: 40vw;
+    margin-top: 10%;
+    font-size: 12pt;
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}
+@media screen and (max-width: 400px) and (orientation: portrait) {
+  .pdf {
+    font-size: 12pt;
+    width: 80vw;
+    margin-left: 10vw;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1446,7 +1438,7 @@ a[href=none] {
   }
 
   #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
-    height: 74.75vh;
+    height: 74.5vh;
   }
 
   [data-is=ubereats] {
@@ -1480,6 +1472,11 @@ a[href=none] {
 @media screen and (max-width: 500px) and (orientation: portrait) {
   .delivery-services img {
     top: -75%;
+  }
+}
+@media screen and (max-width: 360px) and (orientation: portrait) {
+  #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
+    height: 74.25vh;
   }
 }
 @media screen and (max-width: 600px) and (orientation: portrait) {
