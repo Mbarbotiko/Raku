@@ -974,6 +974,10 @@ a[href^=tel]:hover {
   text-align: center;
 }
 
+#m-lunch, #m-happyhour, #m-dinner {
+  display: none;
+}
+
 .menu-buttons {
   margin-top: 5%;
 }
