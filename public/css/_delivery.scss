@@ -63,27 +63,17 @@
 .modal-content {
     color:white;
     background-color: transparent!important;
-   // border-radius: 15px;
-    border:none!important;
-   
-   
+    border:none!important;   
 }
-
 .modal-content{
     box-shadow: 10px 10px 40px 20px white;
-    background-color:rgb(141, 138, 138)!important;
-    
+    background-color:rgb(141, 138, 138)!important;  
 }
 .modal-slp{
-//background-color:$rkuGray;
 border-right:solid 1px white;
-}
-.modal-edina{
-    //background-color:$rkuGray;
 }
 .modal-slp>p{
     letter-spacing:1.25em;  
-    //color:black;
 }
 .modal-slp, 
 .modal-edina{
@@ -97,7 +87,6 @@ border-right:solid 1px white;
 .modal-edina p{
     letter-spacing:.5em;
     margin-top:1%;
-   // background-color:$rkuRed;
 }
 .modal p:hover{
     color:$rkuRed;
@@ -106,16 +95,12 @@ border-right:solid 1px white;
 a[href=none]{
     pointer-events: none;
 }
-
 .mid-modal{
     height:200px;
     text-align:center;
     border-radius: 10px;
-  
-   
 }
 .mid-modal h1{
-    //margin-top:10%;
     font-size:1.2em;
     width:80%;
     margin-left:auto;
@@ -127,24 +112,8 @@ a[href=none]{
 }
 .unavailable{
     display: none;
-   // background-color:$rkuRed;
-    // position: relative;
-    // top:-40px;
     height:100%;
     letter-spacing:.5em;
     font-size: .5em;
     padding-top:3%;
 }
-// .close-button{
-//     text-align: left;
-//     font-family: 'Rock Salt', cursive;
-//     position:relative;
-//     left:25px;
-//     top:15px;
-//     width:10%;
-//     display:none;
-// }
-// .close-button:hover, .modal-edina:hover{
-//     cursor: pointer;
-//     color:$rkuRed;
-// }

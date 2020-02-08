@@ -101,8 +101,7 @@
     height:25px;
     position: relative;
     top:-100px;
-    font-size:5vw;
-    
+    font-size:5vw;   
 }
 .modal-slp{
     border-right:none;
@@ -121,18 +120,14 @@
     .modal-slp>p{
         letter-spacing:.5em;
         font-size:3vw;
-
     }
     .modal-edina p{
         font-size:3vw;
     }
  
 }
-
-
 @media screen and (max-width: 360px)and(orientation: portrait)
 {
-   
     .modal-dialog-centered{
         width:70vw;
         margin-left:auto;
@@ -148,8 +143,7 @@
     height:25px;
     position: relative;
     top:-100px;
-    font-size:5vw;
-    
+    font-size:5vw; 
 }
 .modal-slp{
     border-right:none;
@@ -171,5 +165,4 @@
     .modal-edina p{
         font-size:3vw;
     }
- 
 }
