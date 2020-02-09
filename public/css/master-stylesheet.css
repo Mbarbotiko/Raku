@@ -1065,6 +1065,7 @@ a[href^=tel]:hover {
 
 .content-container {
   max-width: none;
+  overflow: hidden;
 }
 
 .delivery-services {

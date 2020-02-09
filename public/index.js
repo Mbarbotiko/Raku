@@ -70,6 +70,8 @@ $(function () {
 
     };
     //Event listener for window on scroll for header footer bar
+    //Event listener for window on scroll for about us section
+    window.addEventListener('scroll', aboutusWrapperInView);
     window.addEventListener('scroll', headerBarHide);
     window.addEventListener('resize', headerBarResize);
     window.addEventListener('load', function () {
@@ -82,8 +84,7 @@ $(function () {
         }
     });
 
-    //Event listener for window on scroll for about us section
-    window.addEventListener('scroll', aboutusWrapperInView);
+
     //Select wrapper for about us section
     function aboutusWrapperInView() {
         var aboutUsWrapper = document.getElementsByClassName('aboutus-wrapper');
@@ -93,11 +94,22 @@ $(function () {
             var c = window.pageYOffset;//window position
             var d = window.innerHeight;//height of window
             var e = b * 1.2;//range
-            if (window.innerWidth <= 768 && screen.orientation.type === 'portrait-primary') {
-                e = b * 1.05;//range
-            }
-            if (window.innerWidth <= 1024 && screen.orientation.type === 'landscape-primary') {
-                e = b * .8;//range
+            if (screen.orientation) {
+                //if api orientation type is supported:
+                if (window.innerWidth <= 768 && screen.orientation.type === 'portrait-primary') {
+                    e = b * 1.05;//range
+                }
+                if (window.innerWidth <= 1024 && screen.orientation.type === 'landscape-primary') {
+                    e = b * .8;//range
+                }
+            } else {
+                //not supported default:
+                if (window.innerWidth <= 768) {
+                    e = b * 1.05;//range
+                }
+                if (window.innerWidth <= 1024) {
+                    e = b * .8;//range
+                }
             }
             one = a + b - e < c;//if distance from parent + height of element - range is less than window position, if this element is NOT in the windows position range it must have the overlay assigned to it, applies to scroll up
             two = a > c - e + d;
