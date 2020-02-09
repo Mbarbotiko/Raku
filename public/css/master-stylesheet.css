@@ -146,23 +146,21 @@ header .hd-ft-divider {
   font-family: "Rock Salt", cursive;
   font-size: 10em;
   letter-spacing: 0.1em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .landing-subtext {
   font-size: 2em;
-  line-height: 350%;
   margin-top: 10%;
-  width: 45%;
-  margin-left: auto;
-  margin-right: auto;
   animation-duration: 3s;
 }
 
 .landing-subtext span {
   font-family: "Rock Salt", cursive;
   color: #eb4a1a;
+}
+
+.landing-subtext br {
+  display: none;
 }
 
 .landing-headline span {
@@ -181,6 +179,7 @@ header .hd-ft-divider {
 .landing-pictures img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -221,7 +220,7 @@ header .hd-ft-divider {
 
 .landing-image.overlay {
   background: black;
-  opacity: 0.4;
+  opacity: 0.55;
   position: absolute;
   left: 0;
   top: 0;
@@ -501,103 +500,99 @@ footer .hd-ft-bar {
     line-height: 2.5em;
   }
 }
-@media screen and (max-width: 990px) {
-  .landing-image {
-    height: 100vh;
-  }
-
-  .landing-image.overlay {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 991px) {
   .landing-headline {
     font-size: 9em;
   }
-}
-@media screen and (max-width: 880px) {
-  .landing-headline {
-    top: 20%;
-    font-size: 8em;
-  }
-}
-@media screen and (max-width: 600px) {
-  .landing-headline {
-    top: 25%;
-    font-size: 6.5em;
-    margin-left: 4vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .landing-headline {
-    top: 5vh;
-    font-size: 20vw;
-  }
 
-  .landing-image {
-    height: 100vh;
-  }
-
-  .landing-image.overlay {
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .landing-headline {
-    top: 5vw;
-    font-size: 9vw;
-  }
-}
-@media screen and (max-width: 1025px) and (orientation: portrait) {
-  .landing-headline {
-    top: 8vh;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .landing-subtext {
-    width: 55%;
-  }
-}
-@media screen and (max-width: 1000px) {
   .landing-subtext {
     font-size: 1.75em;
-    width: 70%;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .landing-header {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+  }
+
+  .landing-headline {
+    font-size: 20vw;
+    letter-spacing: 0em;
+  }
+
   .landing-subtext {
-    margin-top: 30%;
+    font-size: 3.5vw;
+    letter-spacing: 0.75em;
+    line-height: 2.5em;
+    margin-top: 15%;
+  }
+
+  .landing-subtext br {
+    display: inline;
   }
 }
-@media screen and (max-width: 650px) {
-  .landing-subtext {
-    border-top: none;
-    padding-bottom: 12px;
-    line-height: 10%;
-    font-size: 1.5em;
-    width: 80%;
-    margin-top: 25vh !important;
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .landing-header {
+    top: 30%;
   }
-}
-@media screen and (max-width: 480px) {
+
+  .landing-headline {
+    font-size: 25vw;
+  }
+
   .landing-subtext {
     font-size: 4vw;
-    width: 80%;
-    margin-top: 20vh;
+    margin-top: 25%;
   }
 }
-@media screen and (max-width: 900px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .landing-header {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+  }
+
+  .landing-headline {
+    font-size: 22vh;
+    letter-spacing: 0em;
+  }
+
   .landing-subtext {
-    font-size: 2.5vw;
-    margin-top: 12vw;
-    border-top: none;
-    padding-bottom: 12px;
-    line-height: 10%;
+    font-size: 3vh;
+    letter-spacing: 0.75em;
+    line-height: 2.5em;
+    margin-top: 10%;
+  }
+
+  .landing-subtext br {
+    display: none;
   }
 }
-@media screen and (max-width: 1025px) and (orientation: portrait) {
+@media screen and (max-width: 823px) and (orientation: landscape) {
+  .landing-header {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+  }
+
+  .landing-headline {
+    font-size: 28vh;
+    letter-spacing: 0em;
+  }
+
   .landing-subtext {
-    margin-top: 14vh;
+    font-size: 4vh;
+    letter-spacing: 0.75em;
+    line-height: 2.5em;
+    margin-top: 10%;
+  }
+
+  .landing-subtext br {
+    display: none;
   }
 }
 @media screen and (max-width: 1400px) {
