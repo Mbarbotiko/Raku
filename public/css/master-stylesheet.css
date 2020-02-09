@@ -230,6 +230,11 @@ header .hd-ft-divider {
   height: 100%;
 }
 
+.landingIE {
+  width: 1500px !important;
+  left: -50% !important;
+}
+
 .home-aboutus {
   width: 100%;
   text-align: center;

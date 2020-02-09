@@ -1,11 +1,21 @@
 $(function () {
-    const ua = window.navigator.userAgent;
-    const msie = ua.indexOf('MSIE ');
-    const trident = ua.indexOf('Trident/');
-    const edge = ua.indexOf('Edge/');
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf('MSIE ');
+    var trident = ua.indexOf('Trident/');
+    var edge = ua.indexOf('Edge/');
     var header = document.getElementsByTagName('header')[0];
     var headerBar = header.getElementsByClassName('hd-ft-bar')[0];
     var navBar = header.getElementsByClassName('navbar')[0];
+    landingImage()
+
+    function landingImage(){
+        if(trident>-1||msie>-1)
+        if(window.innerWidth<=768){
+            $('.landing-pictures img').addClass('landingIE');
+        }else{
+            $('.landing-pictures img').removeClass('landingIE');
+        }
+    }
     function headerBarHide() {
         //check if scroll Y is property of window
         if (!window.scrollY) {
@@ -15,7 +25,6 @@ $(function () {
                 $(navBar).attr('style', 'background: transparent !important');
                 $(navBar).css({ top: '40px' })
             } else {
-                console.log('here')
                 $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
                  if (!navBar.style.background) {
                     $(navBar).attr('style', 'background:black !important');
@@ -25,8 +34,7 @@ $(function () {
         }
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
-            console.log('here')
-
+           
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
             $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important'); if (!navBar.style.background) {
@@ -48,6 +56,7 @@ $(function () {
         }
     };
     function headerBarResize() {
+        landingImage()
 
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.innerWidth < 991) {
