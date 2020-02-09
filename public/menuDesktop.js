@@ -1,8 +1,9 @@
 //add event listener to open and close menu, load menu items
 openCloseMenu()
-loadItems(happyHour, '#m-happyhour');
-loadItems(lunchMenu, '#m-lunch');
-loadItems(dinnerMenu, '#m-dinner');
+loadItems(happyHour, '#happyhour');
+loadItems(lunchMenu, '#lunch');
+loadItems(dinnerMenu, '#dinner');
+
 function loadItems(obj, cssName) {
     var s = '<span>';
     var p = '<p>';
@@ -52,18 +53,8 @@ function openCloseMenu() {
         for (var i = 0; i < menuButtons.length; i++) {
             menuButtons[i].addEventListener('click', function (e) {
                 var menuType = e.target.getAttribute('data-is');
-                switch (menuType) {
-                    case 'lunch':
-                        $('#m-' + menuType).toggle();
-                        break;
-                    case 'happyhour':
-                        $('#m-' + menuType).toggle()
-                        break;
-                    case 'dinner':
-                        $('#m-' + menuType).toggle()
-                        break;
-                    default: console.log('Menu button failing to show menu items, see menu.js');
-                }
+                var menuID = '#' + menuType;
+                $(menuID).toggle();
             })
         }
     } catch (e) {

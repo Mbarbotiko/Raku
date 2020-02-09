@@ -2,7 +2,7 @@
    text-align: center;
 }
 
-#m-lunch, #m-happyhour, #m-dinner{
+#lunch, #happyhour, #dinner{
 display:none;
 }
 
@@ -21,10 +21,6 @@ display:none;
    }
    .menu-buttons h3{
       line-height: 2em;
-      width:60vw;
-      border:solid 1px white;
-      box-shadow: 1px 1px 6px 1px white;
-      margin-left:20vw;
    }
 
    .menu-buttons h4{
@@ -50,4 +46,5 @@ display:none;
 .pdf:hover{
     color:$rkuRed;
 }
+
 
