@@ -7,30 +7,35 @@ $(function () {
     var headerBar = header.getElementsByClassName('hd-ft-bar')[0];
     var navBar = header.getElementsByClassName('navbar')[0];
     function headerBarHide() {
-        //IE doesn't understand what window.scrollY is, so set a background for without scroll position
-        if (trident > -1) {
-            if (window.innerWidth < 768) {
+        //check if scroll Y is property of window
+        if (!window.scrollY) {
+            var isOpen = $('.navbar-toggler').attr('aria-expanded');
+            if (window.innerWidth <= 768 & isOpen === 'false') {
+                //give nav transparent background on screen less than 768
                 $(navBar).attr('style', 'background: transparent !important');
                 $(navBar).css({ top: '40px' })
             } else {
-                $(navBar).attr('style', 'background:black !important');
+                console.log('here')
+                $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
+                 if (!navBar.style.background) {
+                    $(navBar).attr('style', 'background:black !important');
+                }
                 $(navBar).css({ top: '0px' });//change position of the nav bar 
             }
         }
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
         if (window.scrollY > 3 && window.innerWidth > 991) {
+            console.log('here')
 
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
-            if (msie < 0 && trident < 0 && edge < 0) {
-                //if all of these return false:
-                $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
-            } else {
+            $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important'); if (!navBar.style.background) {
                 $(navBar).attr('style', 'background:black !important');
             }
             $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
         }
         if (window.scrollY < 3 && window.innerWidth > 991) {
+           
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
             $(navBar).attr('style', 'background: transparent !important');
@@ -43,18 +48,18 @@ $(function () {
         }
     };
     function headerBarResize() {
+
         //Function hides the address bar at the top of the screen on scroll, to add a fade effect write below:
-        if (window.innerWidth < 991 && window.innerWidth > 767) {
+        if (window.innerWidth < 991) {
             //hide address bar, add black background to nav bar
             headerBar.style.display = 'none';
-            if (msie < 0 && trident < 0 && edge < 0) {
-                //if all of these return false:
-                $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important');
-            } else {
+            //if background opacity is supported/ else use black
+            $(navBar).attr('style', 'background: rgb(0,0,0,.85) !important'); if (!navBar.style.background) {
                 $(navBar).attr('style', 'background:black !important');
             }
-            $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
         }
+        $(navBar).css({ top: '0px' });//change position of the nav bar because the header footer bar disappears
+
         if (window.innerWidth > 991) {
             headerBar.style.display = 'block';
             headerBar.classList.add('hdBarFadeIn');
@@ -67,8 +72,7 @@ $(function () {
             $(navBar).css({ top: '40px' })
             //returns bar
         }
-
-    };
+    }
     //Event listener for window on scroll for header footer bar
     //Event listener for window on scroll for about us section
     window.addEventListener('scroll', aboutusWrapperInView);
@@ -141,26 +145,23 @@ $(function () {
     //for landing page index.js (only index page)
     checkForIE($('.landing-subtext'), 'animation-name', 'shrink');
 
-
-    //event listener to change the background color of the navigation only when berger is opening and closing, once closed go back to transparent
     function addBlack() {
-        if (msie < 0 && trident < 0 && edge < 0) {
-            var isOpen = $(this).attr('aria-expanded');
-            if (isOpen === 'false') {
-                $(navBar).attr('style', 'background:rgb(0,0,0,.85)!important');
-            }
-            if (isOpen === 'true') {
-                setTimeout(function () {
-                    $(navBar).attr('style', 'background:transparent !important');
-                }, 250);
-            }
-        } else {
-            var isOpen = $(this).attr('aria-expanded');
-            if (isOpen === 'false') {
+        //function adds back background when hamberger is opened and transparent when closed
+        var isOpen = $(this).attr('aria-expanded');
+        if (isOpen == 'false') {
+
+            $(navBar).attr('style', 'background:rgb(0,0,0, .85)!important');
+            if (!navBar.style.background) {
+                //if above code failed because opacity property cannot be applies run this instead:
                 $(navBar).attr('style', 'background:black !important');
             }
         }
-
+        if (isOpen == 'true') {
+            //smooth scroll back to being transparent on click
+            setTimeout(function () {
+                $(navBar).attr('style', 'background:transparent !important');
+            }, 250);
+        }
     }
 
     $('.navbar-toggler').on('click', addBlack);
