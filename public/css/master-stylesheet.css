@@ -937,17 +937,28 @@ footer .hd-ft-bar {
   text-align: center;
 }
 
+.edina {
+  width: 50%;
+  float: left;
+}
+
+.slp {
+  width: 50%;
+  float: left;
+  border-right: solid 1px white;
+}
+
 .location li {
   display: inline;
 }
 
 .location-wrapper {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 #map-slp, #map-edina {
-  width: 65%;
-  height: 45vh;
+  width: 250px;
+  height: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3vw;
@@ -975,14 +986,25 @@ a[href^=tel]:hover {
 }
 
 #map-slp .mapimage {
+  border-radius: 100%;
   background: url("../images/locations/slpmap.jpg");
-  background-position-x: 35%;
-  background-position-y: 50%;
+  background-position-x: 48%;
+  background-position-y: 55%;
 }
 
 #map-edina .mapimage {
+  border-radius: 100%;
   background: url("../images/locations/edinamap.jpg");
-  background-position: center;
+  background-position-x: 52%;
+  background-position-y: 56%;
+}
+
+.test {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  border-radius: 100%;
 }
 
 .location ul {
@@ -997,13 +1019,6 @@ a[href^=tel]:hover {
 
 .location ul:nth-of-type(2) {
   padding-top: 5%;
-}
-
-.line-break {
-  width: 90%;
-  border-bottom: #eb4a1a solid 1px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .content-container {
@@ -1278,92 +1293,41 @@ a[href=none] {
     top: 40vh;
   }
 }
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .location-wrapper {
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: portrait) {
-  .location-wrapper {
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   .location-wrapper h3 {
-    font-size: 4vw;
-  }
-}
-@media screen and (max-width: 568px) {
-  .location-wrapper h3 {
-    font-size: 5vw;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .location-wrapper h3 {
-    font-size: 4vw;
-  }
-}
-@media screen and (max-width: 1450px) {
-  #map-slp, #map-edina {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 1150px) {
-  #map-slp, #map-edina {
-    width: 98%;
-    height: 45vh;
-  }
-}
-@media screen and (max-width: 1150px) and (orientation: portrait) {
-  #map-slp, #map-edina {
-    width: 70%;
-    height: 65vh;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: portrait) {
-  #map-slp, #map-edina {
-    width: 90%;
-    height: 65vh;
-  }
-
-  #map-slp .mapimage {
-    background-position-x: 43%;
-    background-position-y: 35%;
-  }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  #map-slp, #map-edina {
-    width: 98%;
-    height: 85vh;
-  }
-
-  #map-slp .mapimage {
-    background-position-x: 44%;
-    background-position-y: 45%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .location ul {
-    font-size: 2vw;
-  }
-}
-@media screen and (max-width: 568px) {
-  .location ul {
     font-size: 2.5vw;
   }
 }
-@media screen and (max-width: 400px) {
-  .location ul {
+@media screen and (max-width: 768px) {
+  .location-wrapper h3 {
+    font-size: 4vw;
+  }
+
+  .location-wrapper h4 {
     font-size: 3vw;
   }
-}
-@media screen and (max-width: 900px) and (orientation: landscape) {
-  .location ul {
+
+  .location-wrapper ul {
     font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location-wrapper {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .edina {
+    width: 100%;
+    float: none;
+  }
+
+  .slp {
+    width: 100%;
+    float: none;
+    border-right: none;
+    border-bottom: solid 1px #eb4a1a;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {

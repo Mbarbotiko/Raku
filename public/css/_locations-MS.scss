@@ -1,90 +1,44 @@
 //Location wrapper
-@media screen and (max-width: 900px)and(orientation: landscape){
-    .location-wrapper{
-        width:99%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}
-@media screen and (max-width: 900px)and(orientation: portrait){
-    .location-wrapper{
-        width:99%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}
-//Map header
-@media screen and (max-width: 768px){
+
+
+//Map header & text
+@media screen and (max-width: 1250px){
     .location-wrapper h3{
-        font-size:4vw;
-    }
-}
-@media screen and (max-width: 568px){
-    .location-wrapper h3{
-        font-size:5vw;
-    }
-}
-@media screen and (max-width: 900px)and(orientation: landscape){
-    .location-wrapper h3{
-        font-size:4vw;
-    }
-}
-//Map wrapper
-@media screen and (max-width: 1450px){
-    #map-slp, #map-edina{
-        width:90%;
-    }
-}
-@media screen and (max-width: 1150px){
-    #map-slp, #map-edina{
-        width:98%;
-        height:45vh;
-    }
-}
-@media screen and (max-width: 1150px)and(orientation:portrait){
-    #map-slp, #map-edina{
-        width:70%;
-        height:65vh;
-    }
-}
-@media screen and (max-width: 900px)and(orientation:portrait){
-    #map-slp, #map-edina{
-        width:90%;
-        height:65vh;
-    }
-    #map-slp .mapimage{
-        background-position-x: 43%; 
-        background-position-y: 35%; 
-    }
-}
-@media screen and (max-width: 900px)and(orientation: landscape){
-    #map-slp, #map-edina{
-        width:98%;
-        height:85vh;
-    }
-    #map-slp .mapimage{
-        background-position-x: 44%; 
-        background-position-y: 45%; 
-    }
- }
-//Location hours
-@media screen and (max-width: 768px){
-    .location ul{
-        font-size:2vw;
-    }   
-}
-@media screen and (max-width: 568px){
-    .location ul{
         font-size:2.5vw;
     }
 }
-@media screen and (max-width: 400px){
-    .location ul{
+@media screen and (max-width: 768px){
+    .location-wrapper h3{
+        font-size:4vw;
+    }
+    .location-wrapper h4{
         font-size:3vw;
     }
-}
-@media screen and (max-width: 900px)and(orientation: landscape){
-    .location ul{
+    .location-wrapper ul{
         font-size:2vw;
     }
 }
+
+//Wrapper
+@media screen and (max-width: 768px){
+    .location-wrapper{
+        width:98%;
+        margin-left:auto;
+        margin-right:auto;
+          
+    }
+    .edina{
+          width:100%;
+          float:none; 
+      }
+      .slp{
+         //background-color:orange;
+         width:100%;
+         float:none;
+         border-right:none;
+         border-bottom:solid 1px $rkuRed;
+         
+      }
+}
+
+
