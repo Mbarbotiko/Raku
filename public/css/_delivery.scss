@@ -6,6 +6,8 @@
     text-align: center;
     width:100%;
 }
+
+
 .delivery-services img{
     width:900px;
     min-width:900px;
@@ -58,7 +60,8 @@
 }
 //modal
 .modal{
-   background: rgba(49, 47, 47, 0.9); 
+   background: $rkuGrayBG;
+  // opacity:.5;
 }
 .modal-dialog,
 .modal-content {
@@ -67,12 +70,24 @@
     border:none!important;   
 }
 .modal-content{
-    box-shadow: 10px 10px 40px 20px white;
-    background-color:rgb(141, 138, 138)!important;  
+   // box-shadow: 10px 10px 40px 20px white;
+    background-color:$rkuGray; 
+   // border-radius:100%;
+ //   height:450px; 
 }
-.modal-slp{
-border-right:solid 1px white;
+.modal-slp p{
+border:$rkuRed solid 1px;
+width:75%;
+margin-left:12.5%;
+line-height:2em;
 }
+
+.modal-edina p{
+    border:$rkuRed solid 1px;
+    width:75%;
+    margin-left:12.5%;
+    line-height:2em;
+    }
 .modal-slp>p{
     letter-spacing:1.25em;  
 }
@@ -83,7 +98,7 @@ border-right:solid 1px white;
     width:50%;
     height:25px;
     position: relative;
-    top:-30px;
+    top:-50px;
 }
 .modal-edina p{
     letter-spacing:.5em;
@@ -96,10 +111,15 @@ border-right:solid 1px white;
 a[href=none]{
     pointer-events: none;
 }
+
 .mid-modal{
+  //  margin-top:10%;
     height:200px;
     text-align:center;
-    border-radius: 10px;
+    background-color:$rkuGrayBG2;
+    border-top:white 1px solid;
+    border-bottom:white 1px solid;
+   
 }
 .mid-modal h1{
     font-size:1.2em;
@@ -107,7 +127,7 @@ a[href=none]{
     margin-left:auto;
     margin-right:auto;
     letter-spacing: .75em;
-    line-height:2em;
+   // line-height:2em;
     position:relative;
     top:45%;
 }

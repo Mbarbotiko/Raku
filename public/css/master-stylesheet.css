@@ -1167,7 +1167,7 @@ a[href^=tel]:hover {
 }
 
 .modal {
-  background: rgba(49, 47, 47, 0.9);
+  background: rgba(60, 60, 60, 0.7);
 }
 
 .modal-dialog,
@@ -1178,12 +1178,21 @@ a[href^=tel]:hover {
 }
 
 .modal-content {
-  box-shadow: 10px 10px 40px 20px white;
-  background-color: #8d8a8a !important;
+  background-color: #3c3c3c;
 }
 
-.modal-slp {
-  border-right: solid 1px white;
+.modal-slp p {
+  border: #eb4a1a solid 1px;
+  width: 75%;
+  margin-left: 12.5%;
+  line-height: 2em;
+}
+
+.modal-edina p {
+  border: #eb4a1a solid 1px;
+  width: 75%;
+  margin-left: 12.5%;
+  line-height: 2em;
 }
 
 .modal-slp > p {
@@ -1197,7 +1206,7 @@ a[href^=tel]:hover {
   width: 50%;
   height: 25px;
   position: relative;
-  top: -30px;
+  top: -50px;
 }
 
 .modal-edina p {
@@ -1217,7 +1226,9 @@ a[href=none] {
 .mid-modal {
   height: 200px;
   text-align: center;
-  border-radius: 10px;
+  background-color: rgba(60, 60, 60, 0.9);
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
 }
 
 .mid-modal h1 {
@@ -1226,7 +1237,6 @@ a[href=none] {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.75em;
-  line-height: 2em;
   position: relative;
   top: 45%;
 }
