@@ -1,11 +1,21 @@
 
 //landing headline
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1200px){
     .landing-headline{
         font-size:9em;
     }
     .landing-subtext{
         font-size:1.75em;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .landing-headline{
+        font-size:8em;
+    }
+    .landing-subtext{
+        font-size:1.5em;
+        animation-duration: 0s;
     }
 }
 
@@ -27,7 +37,9 @@
         letter-spacing: .75em;
         line-height:2.5em;
         margin-top:15%;
+
     }
+
     .landing-subtext br{
         display:inline;
      
@@ -49,29 +61,6 @@
   
 }
 
-@media screen and (max-width: 1024px) and (orientation: landscape){
-    .landing-header{
-        width: 100%;
-        position:absolute;
-        top:25%;
-        text-align: center;
-    }
-    .landing-headline{
-        font-size:22vh;
-        letter-spacing:0em;
-    }
-
-    .landing-subtext{
-        font-size:3vh;
-        letter-spacing: .75em;
-        line-height:2.5em;
-        margin-top:10%;
-    }
-    .landing-subtext br{
-        display:none;
-     
-    }
-}
 
 @media screen and (max-width: 823px) and (orientation: landscape){
     .landing-header{
