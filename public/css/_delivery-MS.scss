@@ -82,96 +82,78 @@
 
 
 //Modal
-@media screen and (max-width: 600px)and(orientation: portrait)
+
+@media screen and (max-width: 768px)and(orientation: portrait)
 {
-    .modal-dialog-centered{
-        width:70vw;
-        margin-left:auto;
-        margin-right:auto;
-    }
+ 
     .mid-modal{
-        height:400px;
-    }
-}
-@media screen and (max-width: 414px)and(orientation: portrait)
-{
-    .modal-dialog-centered{
-        width:70vw;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .mid-modal{
-        height:40vh;
-    }
-    .modal-slp, 
-.modal-edina{
-    text-align: center;
-    width:100%;
-    height:25px;
-    position: relative;
-    top:-100px;
-    font-size:5vw;   
-}
-.modal-slp{
-    border-right:none;
-    margin-bottom:1vw;
-    margin-top:12vw;
-    }
-    .modal-edina{
-        border-top:white solid 1px;
-        padding-top:5vw;
-        width:50%;
-        margin-left:25%;
-    }
-    .mid-modal h1{
-        font-size:5vw;
-    }
-    .modal-slp>p{
-        letter-spacing:.5em;
-        font-size:3vw;
-    }
-    .modal-edina p{
-        font-size:3vw;
-    }
+          height:75vh;
+         
+      }
+
+      
+      .modal-slp, .modal-edina{
+          float:left;
+          width:80%;
+          clear:both;
+          margin-top:0%;
+          margin-left:auto;
+          margin-right:auto;
+      }
+      .modal-slp{
+        margin-top:75%;
+      }
+      .modal-slp p{
+        border:$rkuRed solid 1px;
+        width:100%;
+        //margin-left:25%;
+        line-height:2em;
+        }
+        
+        .modal-edina p{
+            border:$rkuRed solid 1px;
+            width:100%;
+            
+            line-height:2em;
+            }
+
+        .modal-edina{
+            margin-top:5%;
+        }
+
  
 }
-@media screen and (max-width: 360px)and(orientation: portrait)
+
+@media screen and (max-width: 567px)and(orientation: portrait)
 {
-    .modal-dialog-centered{
-        width:70vw;
+
+    .mid-modal{
+        width:90vw;
+        //margin-left:none;
+       
+        margin-left:3vw;
+       
+    }
+}
+
+@media screen and (max-width: 414px)and(orientation: portrait)
+{
+
+     .mid-modal{
+        height:70vh;
+       
+    }
+
+    
+    .modal-slp, .modal-edina{
+        float:left;
+        width:80%;
+        clear:both;
+        margin-top:0%;
         margin-left:auto;
         margin-right:auto;
     }
-    .mid-modal{
-        height:60vh;
-    }
-    .modal-slp, 
-.modal-edina{
-    text-align: center;
-    width:100%;
-    height:25px;
-    position: relative;
-    top:-100px;
-    font-size:5vw; 
-}
-.modal-slp{
-    border-right:none;
-    margin-bottom:1vw;
-    }
-    .modal-edina{
-        border-top:white solid 1px;
-        padding-top:5vw;
-        width:50%;
-        margin-left:25%;
-    }
-    .mid-modal h1{
-        font-size:5vw;
-    }
-    .modal-slp>p{
-        letter-spacing:.5em;
-        font-size:3vw;
-    }
-    .modal-edina p{
-        font-size:3vw;
+    .modal-slp{
+      margin-top:80%;
     }
 }
