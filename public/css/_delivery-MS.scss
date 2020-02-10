@@ -34,6 +34,14 @@
 }
 @media screen and (max-width: 768px)and(orientation: portrait)
 {
+
+    .delivery-services{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:5%;
+        margin-top:5%;
+    }
     #bs, #pm, #ue, #dd{
         height:75vh;
     }
