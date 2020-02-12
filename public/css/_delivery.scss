@@ -1,12 +1,7 @@
-.content-container{
- max-width:none;
- overflow: hidden;
-}
 .delivery-services{
     text-align: center;
     width:100%;
 }
-
 
 .delivery-services img{
     width:900px;
@@ -60,82 +55,47 @@
 }
 //modal
 .modal{
-   background: $rkuGrayBG;
-  // opacity:.5;
+   background: rgb(0,0,0,.85);
+   text-align:center;
 }
 .modal-dialog,
 .modal-content {
-    color:white;
     background-color: transparent!important;
     border:none!important;   
 }
-.modal-content{
-   // box-shadow: 10px 10px 40px 20px white;
-    background-color:$rkuGray; 
-   // border-radius:100%;
- //   height:450px; 
-}
-.modal-slp p{
+
+.modal-slp p, .modal-edina p{
 border:$rkuRed solid 1px;
 width:75%;
 margin-left:12.5%;
 line-height:2em;
 }
-
-.modal-edina p{
-    border:$rkuRed solid 1px;
-    width:75%;
-    margin-left:12.5%;
-    line-height:2em;
-    }
-.modal-slp>p{
+.modal-slp p{
     letter-spacing:1.25em;  
 }
 .modal-slp, 
 .modal-edina{
-    text-align: center;
-    float: left;
-    width:50%;
-    height:25px;
-    position: relative;
-    margin-top:35%;
+    width:100%;
+
 }
 .modal-edina p{
     letter-spacing:.5em;
-    margin-top:1%;
+  
 }
 .modal p:hover{
     color:$rkuRed;
+    background:white;
     cursor: pointer;
 }
 a[href=none]{
     pointer-events: none;
 }
-
-.mid-modal{
-  //  margin-top:10%;
-    height:33vh;
+.modal h4{
     text-align:center;
-    background-color:$rkuGrayBG2;
-    border-top:black 1px solid;
-    border-bottom:black 1px solid;
-    border:solid black 1px;
-   
-}
-.mid-modal h1{
-    font-size:1.2em;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    letter-spacing: .75em;
-   // line-height:2em;
-    position:relative;
-    top:45%;
+    letter-spacing: .2em;
 }
 .unavailable{
     display: none;
     height:100%;
     letter-spacing:.5em;
-   // font-size: .5em;
-   // padding-top:3%;
 }

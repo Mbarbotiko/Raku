@@ -61,7 +61,7 @@
         content: url('../images/delivery/ms-doordash.png');
      }
     .delivery-services img{
-        min-width:0px;
+       min-width:0px;
         top:-90%;
         width:70vw;
         height:70vw;
@@ -91,77 +91,17 @@
 
 //Modal
 
-@media screen and (max-width: 768px)and(orientation: portrait)
+@media screen and (max-width: 380px)and(orientation: portrait)
 {
- 
-    .mid-modal{
-          height:75vh;
-         
-      }
-
-      
-      .modal-slp, .modal-edina{
-          float:left;
-          width:80%;
-          clear:both;
-          margin-top:0%;
-          margin-left:auto;
-          margin-right:auto;
-      }
-      .modal-slp{
-        margin-top:75%;
-      }
-      .modal-slp p{
-        border:$rkuRed solid 1px;
-        width:100%;
-        //margin-left:25%;
-        line-height:2em;
-        }
-        
-        .modal-edina p{
-            border:$rkuRed solid 1px;
-            width:100%;
-            
-            line-height:2em;
-            }
-
-        .modal-edina{
-            margin-top:5%;
+    .modal h4{
+        text-align:center;
+        letter-spacing: .2em;
+        font-size:7vw;
+    }
+    .modal-slp p, .modal-edina p{
+        font-size:4vw;
         }
 
  
 }
 
-@media screen and (max-width: 567px)and(orientation: portrait)
-{
-
-    .mid-modal{
-        width:90vw;
-        //margin-left:none;
-       
-        margin-left:3vw;
-       
-    }
-}
-
-@media screen and (max-width: 414px)and(orientation: portrait)
-{
-
-     .mid-modal{
-        height:70vh;
-       
-    }
-
-    
-    .modal-slp, .modal-edina{
-        float:left;
-        width:80%;
-        clear:both;
-        margin-top:0%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    .modal-slp{
-      margin-top:80%;
-    }
-}
