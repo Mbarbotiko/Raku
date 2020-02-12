@@ -1446,11 +1446,12 @@ a[href=none] {
     height: 74.25vh;
   }
 }
-@media screen and (max-width: 380px) and (orientation: portrait) {
+@media screen and (max-width: 414px) and (orientation: portrait) {
   .modal h4 {
     text-align: center;
     letter-spacing: 0.2em;
     font-size: 7vw;
+    margin-bottom: 15vw;
   }
 
   .modal-slp p, .modal-edina p {

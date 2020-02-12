@@ -61,7 +61,9 @@
 .modal-dialog,
 .modal-content {
     background-color: transparent!important;
-    border:none!important;   
+    border:none!important;  
+    //top:50%;
+  //  -webkit-box-align: start;
 }
 
 .modal-slp p, .modal-edina p{
