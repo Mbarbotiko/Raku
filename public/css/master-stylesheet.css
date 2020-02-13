@@ -1170,11 +1170,15 @@ a[href^=tel]:hover {
   border: none !important;
 }
 
+.modal-dialog-centered {
+  -webkit-box-align: start !important;
+  top: 33%;
+}
+
 .modal-slp p, .modal-edina p {
   border: #eb4a1a solid 1px;
   width: 75%;
   margin-left: 12.5%;
-  line-height: 2em;
 }
 
 .modal-slp p {
@@ -1184,9 +1188,10 @@ a[href^=tel]:hover {
 .modal-slp,
 .modal-edina {
   width: 100%;
+  line-height: 2em;
 }
 
-.modal-edina p {
+.modal-edina p, .unavailable p {
   letter-spacing: 0.5em;
 }
 
@@ -1208,7 +1213,6 @@ a[href=none] {
 .unavailable {
   display: none;
   height: 100%;
-  letter-spacing: 0.5em;
 }
 
 @media screen and (max-width: 1400px) {

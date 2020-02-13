@@ -62,15 +62,17 @@
 .modal-content {
     background-color: transparent!important;
     border:none!important;  
-    //top:50%;
-  //  -webkit-box-align: start;
+   
+}
+.modal-dialog-centered{
+    -webkit-box-align: start!important;
+     top:33%;
 }
 
 .modal-slp p, .modal-edina p{
 border:$rkuRed solid 1px;
 width:75%;
 margin-left:12.5%;
-line-height:2em;
 }
 .modal-slp p{
     letter-spacing:1.25em;  
@@ -78,9 +80,10 @@ line-height:2em;
 .modal-slp, 
 .modal-edina{
     width:100%;
+    line-height:2em;
 
 }
-.modal-edina p{
+.modal-edina p, .unavailable p{
     letter-spacing:.5em;
   
 }
@@ -99,5 +102,4 @@ a[href=none]{
 .unavailable{
     display: none;
     height:100%;
-    letter-spacing:.5em;
 }
