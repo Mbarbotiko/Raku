@@ -168,7 +168,7 @@ header .hd-ft-divider {
 .landing-pictures {
   margin-top: 0;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   top: 0;
   z-index: 0;
@@ -701,21 +701,12 @@ footer .hd-ft-bar {
   }
 
   .middle {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
+    width: 98vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .aboutus-wrapper {
-    width: 100%;
-  }
-
-  .overlay-header {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-
   .overlay-hidden-border {
     border: none;
   }
@@ -727,11 +718,11 @@ footer .hd-ft-bar {
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .aboutus-wrapper {
     margin-left: 0;
-    padding-top: 5vw;
+    padding-top: 2vw;
   }
 
   .aboutus-wrapper:nth-of-type(4) {
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
   }
 
   .middle {
@@ -739,14 +730,14 @@ footer .hd-ft-bar {
   }
 
   .overlay-about {
-    margin-left: 5vw;
-    height: 65vh;
-    width: 90vw;
+    margin-left: 2vw;
+    height: 75vh;
+    width: 96vw;
   }
 
   .overlay-header {
-    height: 65vh;
-    width: 90vw;
+    height: 75vh;
+    width: 96vw;
   }
 
   .overlay-header h5 {
@@ -1032,15 +1023,7 @@ a[href^=tel]:hover {
 
 .menu-buttons h3 {
   line-height: 2em;
-}
-
-.menu-buttons h4 {
-  padding-bottom: 5px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border-bottom: solid 0.25px #eb4a1a;
-  width: 30vw;
-  margin-left: 35vw;
+  letter-spacing: 0.5em;
 }
 
 .menu-buttons span {
@@ -1262,15 +1245,28 @@ a[href=none] {
 }
 @media screen and (max-width: 768px) {
   .location-wrapper h3 {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .location-wrapper h4 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .location-wrapper ul {
-    font-size: 2vw;
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .location-wrapper h3 {
+    font-size: 5vw;
+  }
+
+  .location-wrapper h4 {
+    font-size: 4vw;
+  }
+
+  .location-wrapper ul {
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1397,19 +1393,21 @@ a[href=none] {
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .delivery-services {
-    width: 90%;
+    width: 96vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
   }
 
   #bs, #pm, #ue, #dd {
-    height: 75vh;
+    height: 40vh;
+    border: none;
+    margin-bottom: 2vw;
   }
 
   #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
-    height: 74.5vh;
+    height: 40vh;
   }
 
   [data-is=ubereats] {
@@ -1431,23 +1429,33 @@ a[href=none] {
   .delivery-services img {
     min-width: 0px;
     top: -90%;
-    width: 70vw;
-    height: 70vw;
+    width: 40%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 600px) and (orientation: portrait) {
   .delivery-services img {
-    top: -80%;
+    width: 50%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 500px) and (orientation: portrait) {
   .delivery-services img {
-    top: -75%;
+    width: 70%;
   }
 }
-@media screen and (max-width: 360px) and (orientation: portrait) {
+@media screen and (max-width: 414px) and (orientation: portrait) {
   #bs .delivery-overlay, #dd .delivery-overlay, #pm .delivery-overlay, #ue .delivery-overlay {
-    height: 74.25vh;
+    height: 75vh;
+  }
+
+  #bs, #dd, #pm, #ue {
+    height: 75vh;
+  }
+
+  .delivery-services img {
+    height: 50%;
+    top: -70%;
   }
 }
 @media screen and (max-width: 414px) and (orientation: portrait) {

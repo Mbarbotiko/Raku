@@ -21,16 +21,18 @@ display:none;
    }
    .menu-buttons h3{
       line-height: 2em;
+      letter-spacing: .5em;
    }
 
-   .menu-buttons h4{
-      padding-bottom:5px;
-      margin-top:2%;
-      margin-bottom:2%;
-      border-bottom:solid .25px $rkuRed;
-      width:30vw;
-      margin-left:35vw;
-   }
+   // .menu-buttons h4{
+   //    padding-bottom:5px;
+   //    margin-top:2%;
+   //    margin-bottom:2%;
+   //    border-bottom:solid .25px $rkuRed;
+   //    width:30vw;
+   //    margin-left:35vw;
+     
+   // }
    .menu-buttons span{
       color:$rkuRed;
       padding:5px;
