@@ -279,7 +279,7 @@ header .hd-ft-divider {
 }
 
 .aboutus-wrapper:last-of-type {
-  margin-bottom: 9vw;
+  margin-bottom: 3vw;
 }
 
 .panel {
@@ -974,7 +974,7 @@ a[href^=tel]:hover {
   background-position-y: 56%;
 }
 
-.test {
+.map-overlay {
   background-color: white;
   height: 100%;
   width: 100%;

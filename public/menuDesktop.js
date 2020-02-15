@@ -54,7 +54,8 @@ function openCloseMenu() {
             menuButtons[i].addEventListener('click', function (e) {
                 var menuType = e.target.getAttribute('data-is');
                 var menuID = '#' + menuType;
-               $(menuID).toggle()
+               $(menuID).toggle();
+   
             
             })
         }
