@@ -1154,10 +1154,14 @@ a[href^=tel]:hover {
 }
 
 .modal-dialog-centered {
-  -webkit-box-align: start !important;
   top: 33%;
 }
 
+@supports (-webkit-box-align: center) {
+  .modal-dialog-centered {
+    top: 0%;
+  }
+}
 .modal-slp p, .modal-edina p {
   border: #eb4a1a solid 1px;
   width: 75%;

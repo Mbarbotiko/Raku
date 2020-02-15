@@ -64,10 +64,17 @@
     border:none!important;  
    
 }
-.modal-dialog-centered{
-    -webkit-box-align: start!important;
-     top:33%;
+//for IE or other browsers that do not support box align
+ .modal-dialog-centered{
+        top:33%;
 }
+//override if it is supported
+@supports (-webkit-box-align: center){
+    .modal-dialog-centered{
+        top:0%;
+    }
+}
+
 
 .modal-slp p, .modal-edina p{
 border:$rkuRed solid 1px;
