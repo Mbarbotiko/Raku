@@ -1238,6 +1238,10 @@ a[href=none] {
   .subpage-content {
     top: 50vh;
   }
+
+  .subpage-content {
+    background-image: url("../images/headers/mobile-group1.jpg");
+  }
 }
 @media screen and (max-width: 550px) {
   .subpage-content h5 {

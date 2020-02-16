@@ -2,22 +2,22 @@
 const subpageHeaders =
 {
     menu:{
-        image: './images/menu-banner.jpg',
+        image: './images/headers/menu1280.jpg',
         heading: 'Menu',
         subheading: 'Great food to satisfy all cravings'
     },
     location:{
-        image: './images/location-banner.jpg',
+        image: './images/headers/locations1280.jpg',
         heading: 'Locations',
         subheading: 'Two beautiful metro locations'
     },
     delivery:{
-        image: './images/delivery-banner.jpg',
+        image: './images/headers/delivery.jpg',
         heading: 'Delivery',
         subheading: 'Don\'t feel like going out? We have you covered'
     },
-    test:{
-        image: './images/stockBar.jpg',
+    defaultImage:{
+        image: './images/headers/default.jpg',
         heading: 'Raku Sushi',
         subheading: 'TRADITIONAL JAPANESE COUSINE WITH A MODERN TWIST'
     }
@@ -44,9 +44,9 @@ switch (currentPage) {
             subheading = subpageHeaders.menu.subheading;
         break;
     default: 
-    image = subpageHeaders.test.image;
-    heading = subpageHeaders.test.heading;
-    subheading = subpageHeaders.test.subheading;
+    image = subpageHeaders.defaultImage.image;
+    heading = subpageHeaders.defaultImage.heading;
+    subheading = subpageHeaders.defaultImage.subheading;
     break;
 }
 
