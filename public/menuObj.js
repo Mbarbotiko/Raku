@@ -1,3 +1,6 @@
+(function(){
+
+
 var happyHour = [
     {
         header: 'Appetizers'
@@ -486,3 +489,6 @@ var dinnerMenu = [
     },
 
 ]
+
+
+}());
