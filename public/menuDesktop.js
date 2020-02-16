@@ -1,5 +1,4 @@
 (function () {
-
     var menuObj = [
         {
             happyHour: {
@@ -517,18 +516,46 @@
         }
     ]
 
-    window.digitalData =
-    {
-        pageInstanceID: "Ameriprise Financial (3f4a811bf36b3741c4c5f7f02476a9a2) [prod]",
-        page: { pageInfo: { pageID: "3f4a811bf36b3741c4c5f7f02476a9a2", pageName: "Ameriprise Financial", destinationURL: window.location.href, breadCrumbs: ["Home"], language: "en-us", }, attributes: { siteName: "ameriprise" } }, version: '1.0'
+    openCloseMenu();
+    loadMenu();
+    function loadMenu() {
+        var happyHourContainer = $('#happyhour');
+        //these need to be dynamic too, based on the menu object keys lunch dinner, happyHour
+        var lunchContainer = $('#lunch');
+        var dinnerContainer = $('#dinner');
+        menuObj.forEach(function (menuItems) {
+            console.log(menuItems)
+            function print(path) {
+                path.forEach(function (menuApps) {
+                    if (menuApps.header) {
+                        $(happyHourContainer.append('<h4>' + menuApps.header + '</h4>'))
+                    }
+                    if (menuApps.name && menuApps.price && menuApps.description) {
+                        $(happyHourContainer.append('<p>' + menuApps.name + '<span> | </span>' + menuApps.price + '<p>' + menuApps.description + '</p>'))
+                    }
+
+                    if (menuApps.name && menuApps.price && !menuApps.description) {
+                        $(happyHourContainer.append('<p>' + menuApps.name + '<span> | </span>' + menuApps.price))
+                    }
+                    //need to add printing logic to lunch and dinner objects
+
+                })
+            }
+                //find a better way to reach these keys / loop through them
+            var pathArray = [menuItems.happyHour.appetizers, menuItems.happyHour.raw, menuItems.happyHour.sushiRolls, menuItems.happyHour.specialtyRolls, menuItems.happyHour.drinks, menuItems.lunch.entrees, menuItems.lunch.specialtyRolls, menuItems.lunch.boxes, menuItems.dinner.entrees, menuItems.dinner.specialtyRolls];
+            function callPrint() {
+                for (var i = 0; i < pathArray.length; i++) {
+                    var myPath = pathArray[i];
+                    print(myPath);
+                }
+            }
+            callPrint()
+
+        })
     }
-
-
-    //add event listener to open and close menu, load menu items
-    openCloseMenu()
-    loadItems(happyHour, '#happyhour');
-    loadItems(lunchMenu, '#lunch');
-    loadItems(dinnerMenu, '#dinner');
+    // loadItems(happyHour, '#happyhour');
+    // loadItems(lunchMenu, '#lunch');
+    // loadItems(dinnerMenu, '#dinner');
 
     function loadItems(obj, cssName) {
         var s = '<span>';
@@ -572,24 +599,22 @@
             }
         }
     }
+
+    //add event listener to open and close menu, load menu items
     function openCloseMenu() {
         try {
             var menuButtons = document.getElementsByClassName('menu-buttons')[0].children;
-            //console.log('global scope'+menuType)
             for (var i = 0; i < menuButtons.length; i++) {
                 menuButtons[i].addEventListener('click', function (e) {
                     var menuType = e.target.getAttribute('data-is');
                     var menuID = '#' + menuType;
                     $(menuID).toggle();
-
-
                 })
             }
         } catch (e) {
             console.log('Menu button function failed', e)
         }
     }
-
 
 
 }());
