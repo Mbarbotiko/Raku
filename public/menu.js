@@ -8,17 +8,14 @@
                     },
                     {
                         name: 'Green Salad',
-                        description: '',
                         price: 3
                     },
                     {
                         name: 'Seaweed Salad',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Kani Salad',
-                        description: '',
                         price: 4
                     },
                     {
@@ -58,22 +55,18 @@
                     },
                     {
                         name: 'Vegetable Tempura',
-                        description: '',
                         price: 6
                     },
                     {
                         name: 'Chicken Tempura',
-                        description: '',
                         price: 6
                     },
                     {
                         name: 'Shrimp Tempura',
-                        description: '',
                         price: 7
                     },
                     {
                         name: 'Chicken Lettuce Wrap',
-                        description: '',
                         price: 6
                     },
                     {
@@ -121,82 +114,66 @@
                     },
                     {
                         name: 'Avacado',
-                        description: '',
                         price: 3
                     },
                     {
                         name: 'Cucumber',
-                        description: '',
                         price: 3
                     },
                     {
                         name: 'California',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Crispy Kani',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Boston',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Salmon Skin',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Alaska',
-                        description: '',
                         price: 5
                     },
                     {
                         name: 'Tuna',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Salmon',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'White Tuna',
-                        description: '',
                         price: 4
                     },
                     {
                         name: 'Spicy Tuna',
-                        description: '',
                         price: 5
                     },
                     {
                         name: 'Spicy Salmon',
-                        description: '',
                         price: 5
                     },
                     {
                         name: 'Spicy Yellowtail',
-                        description: '',
                         price: 5
                     },
                     {
                         name: 'Sweet Potato Tempura',
-                        description: '',
                         price: 3
                     },
                     {
                         name: 'Chicken Tempura',
-                        description: '',
                         price: 5
                     },
                     {
                         name: 'Shrimp Tempura',
-                        description: '',
                         price: 6
                     }
 
