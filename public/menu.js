@@ -563,7 +563,6 @@
             }
         }
     }
-
     //add event listener to open and close menu, load menu items
     function openCloseMenu() {
         try {
@@ -579,6 +578,5 @@
             console.log('Menu button function failed', e)
         }
     }
-
 
 }());
