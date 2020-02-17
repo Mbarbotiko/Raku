@@ -519,83 +519,47 @@
     openCloseMenu();
     loadMenu();
     function loadMenu() {
-        var happyHourContainer = $('#happyhour');
-        //these need to be dynamic too, based on the menu object keys lunch dinner, happyHour
-        var lunchContainer = $('#lunch');
-        var dinnerContainer = $('#dinner');
-        menuObj.forEach(function (menuItems) {
-            console.log(menuItems)
-            function print(path) {
-                path.forEach(function (menuApps) {
-                    if (menuApps.header) {
-                        $(happyHourContainer.append('<h4>' + menuApps.header + '</h4>'))
-                    }
-                    if (menuApps.name && menuApps.price && menuApps.description) {
-                        $(happyHourContainer.append('<p>' + menuApps.name + '<span> | </span>' + menuApps.price + '<p>' + menuApps.description + '</p>'))
-                    }
-
-                    if (menuApps.name && menuApps.price && !menuApps.description) {
-                        $(happyHourContainer.append('<p>' + menuApps.name + '<span> | </span>' + menuApps.price))
-                    }
-                    //need to add printing logic to lunch and dinner objects
-
-                })
-            }
-                //find a better way to reach these keys / loop through them
-            var pathArray = [menuItems.happyHour.appetizers, menuItems.happyHour.raw, menuItems.happyHour.sushiRolls, menuItems.happyHour.specialtyRolls, menuItems.happyHour.drinks, menuItems.lunch.entrees, menuItems.lunch.specialtyRolls, menuItems.lunch.boxes, menuItems.dinner.entrees, menuItems.dinner.specialtyRolls];
-            function callPrint() {
-                for (var i = 0; i < pathArray.length; i++) {
-                    var myPath = pathArray[i];
-                    print(myPath);
+        var container = null;
+        for (var keys in menuObj) {
+            //level one within obj
+            for (var keys2 in menuObj[keys]) {
+                //level two
+                switch (keys2) {
+                    case 'happyHour':
+                        container = $('#happyhour');
+                        break;
+                    case 'lunch':
+                        container = $('#lunch');
+                        break;
+                    case 'dinner':
+                        container = $('#dinner');
+                        break;
+                    default: console.log('Missing Obj Keys in menuObj level 2')
                 }
-            }
-            callPrint()
+                for (var keys3 in menuObj[keys][keys2]) {
+                    //level 3 where arrays are stored, loop through all three to print
+                    var printProps = menuObj[keys][keys2][keys3];
+                    printProps.forEach(function (printArrays) {
+                        //all properties listed below:
+                        if (printArrays.header) {
+                            $(container).append(`<h4>${printArrays.header}</h4>`)
+                        }
+                        if (printArrays.name && !printArrays.price) {
+                            $(container).append(`<p>${printArrays.name}</p>`)
+                        }
+                        if (printArrays.name && printArrays.price) {
+                            $(container).append(`<p>${printArrays.name}<span> | </span>${printArrays.price}</p>`)
 
-        })
-    }
-    // loadItems(happyHour, '#happyhour');
-    // loadItems(lunchMenu, '#lunch');
-    // loadItems(dinnerMenu, '#dinner');
-
-    function loadItems(obj, cssName) {
-        var s = '<span>';
-        var p = '<p>';
-        var sc = '</span>'
-        var pc = '</p>'
-        var h = '<h4>'
-        var hc = '</h4>'
-        var ns = '-'
-        for (var i = 0; i < obj.length; i++) {
-            var buildItem = '';
-            try {
-                if (obj[i].header) {
-                    buildItem += h + obj[i].header + hc
-                }
-
-                if (obj[i].name) {
-                    buildItem += p + obj[i].name
-                }
-                if (obj[i].nameSpan) {
-                    buildItem += p + s + ns + sc + obj[i].nameSpan + s + ns + sc
-                }
-                if (obj[i].price) {
-                    buildItem += s + '|' + sc + obj[i].price + pc
+                        }
+                        if (printArrays.nameSpan) {
+                            $(container).append(`<p><span> - </span>${printArrays.nameSpan}<span> - </span></p>`)
+                        }
+                        if (printArrays.description) {
+                            $(container).append(`<p>${printArrays.description}</p>`)
+                        }
+                    });
 
                 }
-                if (obj[i].description) {
-                    buildItem += p + obj[i].description + pc
-                } if (!obj[i].price && !obj[i].description) {
-                    buildItem += pc
-                }
-
-                $(cssName).append(buildItem)
-                //append here after building item string out
-
-            } catch (error) {
-                console.log(error);
-                //create small modal here to try again or view PDF version
-                //or text because its a show/hide function on the page to retry the load o report it/PDF view
-
             }
         }
     }
