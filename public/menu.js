@@ -502,14 +502,15 @@
             for (var keys2 in menuObj[keys]) {
                 //level two
                 switch (keys2) {
+                    //based on what prop(key) change the container to append to later
                     case 'happyHour':
-                        container = $('#happyhour');
+                        container = document.getElementById('happyhour');
                         break;
                     case 'lunch':
-                        container = $('#lunch');
+                        container = document.getElementById('lunch');
                         break;
                     case 'dinner':
-                        container = $('#dinner');
+                        container = document.getElementById('dinner');
                         break;
                     default: console.log('Missing Obj Keys in menuObj level 2')
                 }
@@ -519,20 +520,50 @@
                     printProps.forEach(function (printArrays) {
                         //all properties listed below:
                         if (printArrays.header) {
-                            $(container).append(`<h4>${printArrays.header}</h4>`)
+                            var header = document.createElement('h4');
+                            var text = document.createTextNode(printArrays.header);
+                            container.appendChild(header);
+                            header.appendChild(text);
                         }
                         if (printArrays.name && !printArrays.price) {
-                            $(container).append(`<p>${printArrays.name}</p>`)
+                            var par = document.createElement('p');
+                            var text = document.createTextNode(printArrays.name);
+                            container.appendChild(par);
+                            par.appendChild(text);
                         }
                         if (printArrays.name && printArrays.price) {
-                            $(container).append(`<p>${printArrays.name}<span> | </span>${printArrays.price}</p>`)
-
+                            var span = document.createElement('span');
+                            var para = document.createElement('p');
+                            var sBar = document.createTextNode(' | ');
+                            var pText = document.createTextNode(printArrays.name);
+                            var sText = document.createTextNode(printArrays.price);
+                            span.appendChild(sBar);
+                            para.appendChild(pText);
+                            para.appendChild(span);
+                            para.appendChild(sText);
+                            container.appendChild(para);
                         }
                         if (printArrays.nameSpan) {
-                            $(container).append(`<p><span> - </span>${printArrays.nameSpan}<span> - </span></p>`)
+                            var span = document.createElement('span');
+                            var span2 = document.createElement('span');
+                            var para = document.createElement('p');
+                            var sBar = document.createTextNode(' - ');
+                            var sBar2 = document.createTextNode(' - ');
+                            var text = document.createTextNode(printArrays.nameSpan);
+                            span.appendChild(sBar);
+                            span2.appendChild(sBar2);
+                            para.appendChild(span);
+                            para.appendChild(text);
+                            para.appendChild(span2);
+                           
+                            container.appendChild(para);
                         }
                         if (printArrays.description) {
-                            $(container).append(`<p>${printArrays.description}</p>`)
+                            var para = document.createElement('p');
+                            var text = document.createTextNode(printArrays.description);
+                            para.appendChild(text);
+                            container.appendChild(para);
+                          
                         }
                     });
 
