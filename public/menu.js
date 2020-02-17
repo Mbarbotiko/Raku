@@ -589,8 +589,13 @@
             for (var i = 0; i < menuButtons.length; i++) {
                 menuButtons[i].addEventListener('click', function (e) {
                     var menuType = e.target.getAttribute('data-is');
-                    var menuID = '#' + menuType;
-                    $(menuID).toggle();
+                    var isOpen = document.getElementById(menuType).style.display;
+                    if (!isOpen||isOpen==='none') {
+                        document.getElementById(menuType).style.display =  'block';
+                    } else {
+                        document.getElementById(menuType).style.display =  'none';
+                    }
+
                 })
             }
         } catch (e) {
