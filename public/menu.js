@@ -495,6 +495,7 @@
 
     openCloseMenu();
     loadMenu();
+
     function loadMenu() {
         var container = null;
         for (var keys in menuObj) {
@@ -520,50 +521,20 @@
                     printProps.forEach(function (printArrays) {
                         //all properties listed below:
                         if (printArrays.header) {
-                            var header = document.createElement('h4');
-                            var text = document.createTextNode(printArrays.header);
-                            container.appendChild(header);
-                            header.appendChild(text);
+                            createElement('h4', printArrays.header, container);
                         }
                         if (printArrays.name && !printArrays.price) {
-                            var par = document.createElement('p');
-                            var text = document.createTextNode(printArrays.name);
-                            container.appendChild(par);
-                            par.appendChild(text);
+                            createElement('p', printArrays.name, container);
                         }
                         if (printArrays.name && printArrays.price) {
-                            var span = document.createElement('span');
-                            var para = document.createElement('p');
-                            var sBar = document.createTextNode(' | ');
-                            var pText = document.createTextNode(printArrays.name);
-                            var sText = document.createTextNode(printArrays.price);
-                            span.appendChild(sBar);
-                            para.appendChild(pText);
-                            para.appendChild(span);
-                            para.appendChild(sText);
-                            container.appendChild(para);
+                            createElement('p', printArrays.name, container, 'span', ' | ', printArrays.price)
+
                         }
                         if (printArrays.nameSpan) {
-                            var span = document.createElement('span');
-                            var span2 = document.createElement('span');
-                            var para = document.createElement('p');
-                            var sBar = document.createTextNode(' - ');
-                            var sBar2 = document.createTextNode(' - ');
-                            var text = document.createTextNode(printArrays.nameSpan);
-                            span.appendChild(sBar);
-                            span2.appendChild(sBar2);
-                            para.appendChild(span);
-                            para.appendChild(text);
-                            para.appendChild(span2);
-                           
-                            container.appendChild(para);
+                            createElement('p', printArrays.nameSpan, container, 'span', ' - ', ' - ', 'span');
                         }
                         if (printArrays.description) {
-                            var para = document.createElement('p');
-                            var text = document.createTextNode(printArrays.description);
-                            para.appendChild(text);
-                            container.appendChild(para);
-                          
+                            createElement('p', printArrays.description, container);
                         }
                     });
 
@@ -571,6 +542,46 @@
             }
         }
     }
+
+    //helped function to append elements
+    function createElement(element, node, parent, element2, node2, node3, element3) {
+
+        if (!element2 && !element3 && element) {
+            var paragraph1 = document.createElement(element);
+            var text1 = document.createTextNode(node);
+            paragraph1.appendChild(text1);
+            parent.appendChild(paragraph1);
+        }
+        if (!element3 && element && element2) {
+            var paragraph1 = document.createElement(element); //paragraph
+            var span1 = document.createElement(element2); //span
+            var text1 = document.createTextNode(node);//words
+            var text2 = document.createTextNode(node2);// | 
+            var text3 = document.createTextNode(node3);//words
+            paragraph1.appendChild(text1); //paragraph gets text1
+            span1.appendChild(text2);// span gets node2
+            paragraph1.appendChild(span1);//paragraph gets span
+            paragraph1.appendChild(text3);//paragraph gets third p text
+            parent.appendChild(paragraph1);
+        }
+
+        if (element && element2 && element3) {
+            var paragraph1 = document.createElement(element); //paragraph
+            var span1 = document.createElement(element2); //span
+            var span2 = document.createElement(element3); //span
+            var text1 = document.createTextNode(node);//words
+            var text2 = document.createTextNode(node2);// ' - '
+            var text3 = document.createTextNode(node3);// ' - '
+            span1.appendChild(text2);// span gets node2
+            span2.appendChild(text3);
+            paragraph1.appendChild(span1); //paragraph gets text1
+            paragraph1.appendChild(text1);
+            paragraph1.appendChild(span2);
+            parent.appendChild(paragraph1);
+
+        }
+    }
+
     //add event listener to open and close menu, load menu items
     function openCloseMenu() {
         try {
